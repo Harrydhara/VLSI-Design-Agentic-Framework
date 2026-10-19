@@ -1,0 +1,87 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "adder8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 3,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 13.394,
+  "tokens": {
+    "prompt": 2847,
+    "output": 2316,
+    "total": 5163
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 499,
+      "output_tokens": 1147,
+      "duration_s": 6.104,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 516,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 52,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/516 checks passed):\nFAIL: a=  0, b=  0, cin=0 | Expected   0, Got   x\nFAIL: a=  0, b=  0, cin=1 | Expected   1, Got   x\nFAIL: a=  0, b=  1, cin=0 | Expected   1, Got   x\nFAIL: a=  0, b=  1, cin=1 | Expected   2, Got   x\nFAIL: a=  0, b=  2, cin=0 | Expected   2, Got   x\nFAIL: a=  0, b=  2, cin=1 | Expected   3, Got   x\nFAIL: a=  0, b=  3, cin=0 | Expected   3, Got   x\nFAIL: a=  0, b=  3, cin=1 | Expected   4, Got   x\nFAIL: a=  0, b=  4, cin=0 | Expected   4, Got   x\nFAIL: a=  0, b=  4, cin=1 | Expected   5, Got   x\nFAIL: a=  0, b=  5, cin=0 | Expected   5, Got   x\nFAIL: a=  0, b=  5, cin=1 | Expected   6, Got   x\nFAIL: a=  0, b=  6, cin=0 | Expected   6, Got   x\nFAIL: a=  0, b=  6, cin=1 | Expected   7, Got   x\nFAIL: a=  0, b=  7, cin=0 | Expected   7, Got   x\nFAIL: a=  0, b=  7, cin=1 | Expected   8, Got   x\nFAIL: a=  0, b=  8, cin=0 | Expected   8, Got   x\nFAIL: a=  0, b=  8, cin=1 | Expected   9, Got   x\nFAIL: a=  0, b=  9, cin=0 | Expected   9, Got   x\nFAIL: a=  0, b=  9, cin=1 | Expected  10, Got   x\nFAIL: a=  0, b= 10, cin=0 | Expected  10, Got   x\nFAIL: a=  0, b= 10, cin=1 | Expected  11, Got   x\nFAIL: a=  0, b= 11, cin=0 | Expected  11, Got   x\nFAIL: a=  0, b= 11, cin=1 | Expected  12, Got   x\nFAIL: a=  0, b= 12, cin=0 | Expected  12, Got   x\n... (492 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 131072,
+        "total": 131072
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 2348,
+      "output_tokens": 1169,
+      "duration_s": 6.189,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 516,
+        "tb_total": 516,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 52,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 131072,
+        "total": 131072
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "pass",
+    "passed": 131072,
+    "total": 131072,
+    "detail": "131072/131072 checks passed"
+  }
+}

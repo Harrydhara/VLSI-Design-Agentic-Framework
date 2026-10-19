@@ -1,0 +1,9 @@
+{"t": 0.0, "event": "run_started", "circuit": "adder4", "split": "dev", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first", "workflow": "spec_first"}
+{"t": 0.004, "event": "model_called", "attempt": null, "role": "testbench", "messages": 2}
+{"t": 3.255, "event": "model_replied", "attempt": null, "role": "testbench", "prompt_tokens": 422, "output_tokens": 485, "duration_s": 3.246, "truncated": false}
+{"t": 3.368, "event": "testbench_checked", "version": 1, "usable": true}
+{"t": 3.374, "event": "model_called", "attempt": 1, "role": "design", "messages": 2}
+{"t": 4.482, "event": "model_replied", "attempt": 1, "role": "design", "prompt_tokens": 339, "output_tokens": 112, "duration_s": 1.09, "truncated": false}
+{"t": 4.718, "event": "checks_done", "attempt": 1, "passed": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 512, "tb_total": 512, "sim_timed_out": false, "synth_ok": true, "cells": 23, "latches": 0}
+{"t": 4.917, "event": "reference_scored", "attempt": 1, "final": true, "outcome": "pass", "passed": 512, "total": 512}
+{"t": 4.922, "event": "run_finished", "status": "dev_passed", "attempts": 1, "total_tokens": 1358, "duration_s": 4.922, "reference": "pass"}

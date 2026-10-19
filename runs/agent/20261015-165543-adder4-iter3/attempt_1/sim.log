@@ -1,0 +1,5 @@
+FAIL: a=1 b=15 cin=0 got 0
+FAIL: a=2 b=14 cin=0 got 0
+FAIL: a=2 b=15 cin=0 got 1
+RESULT: 256/512 passed
+tb.v:13: $finish called at 512 (1s)

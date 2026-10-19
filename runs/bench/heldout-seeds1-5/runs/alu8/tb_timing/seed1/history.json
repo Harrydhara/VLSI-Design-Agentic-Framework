@@ -1,0 +1,105 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 1,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 45.132,
+  "tokens": {
+    "prompt": 12268,
+    "output": 7754,
+    "total": 20022
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 1163,
+      "output_tokens": 2816,
+      "duration_s": 14.501,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 256,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:44: error: syntax error\ntb.v:44: error: Malformed conditional expression.\ntb.v:49: error: syntax error\ntb.v:49: error: Malformed conditional expression.",
+      "reference": {
+        "outcome": "pass",
+        "passed": 524288,
+        "total": 524288
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 4165,
+      "output_tokens": 2589,
+      "duration_s": 12.833,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 256,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:44: error: syntax error\ntb.v:44: error: Malformed conditional expression.\ntb.v:49: error: syntax error\ntb.v:49: error: Malformed conditional expression.",
+      "reference": {
+        "outcome": "pass",
+        "passed": 524288,
+        "total": 524288
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 6940,
+      "output_tokens": 2349,
+      "duration_s": 11.95,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 256,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:44: error: syntax error\ntb.v:44: error: Malformed conditional expression.\ntb.v:49: error: syntax error\ntb.v:49: error: Malformed conditional expression.",
+      "reference": {
+        "outcome": "pass",
+        "passed": 524288,
+        "total": 524288
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 524288,
+    "total": 524288,
+    "detail": "524288/524288 checks passed"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "mux4",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 5,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 15.298,
+  "tokens": {
+    "prompt": 3298,
+    "output": 2768,
+    "total": 6066
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 879,
+      "output_tokens": 1265,
+      "duration_s": 6.609,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 12,
+        "tb_total": 16,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 15,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (12/16 checks passed):\nFAIL: time=13 sel=00 d0=1 d1=2 d2=3 d3=4 expected=0 actual=1\nFAIL: time=14 sel=01 d0=1 d1=2 d2=3 d3=4 expected=0 actual=2\nFAIL: time=15 sel=10 d0=1 d1=2 d2=3 d3=4 expected=0 actual=3\nFAIL: time=16 sel=11 d0=1 d1=2 d2=3 d3=4 expected=0 actual=4\nRESULT: 12/16 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 1064,
+        "total": 1064
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 2419,
+      "output_tokens": 1503,
+      "duration_s": 7.524,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 16,
+        "tb_total": 16,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 15,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 1064,
+        "total": 1064
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "pass",
+    "passed": 1064,
+    "total": 1064,
+    "detail": "1064/1064 checks passed"
+  }
+}

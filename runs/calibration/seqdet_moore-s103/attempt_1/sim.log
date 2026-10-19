@@ -1,0 +1,8 @@
+FAIL: din=1, rst=0, expected detected=1, actual detected=0
+FAIL: din=0, rst=0, expected detected=0, actual detected=1
+FAIL: din=1, rst=0, expected detected=1, actual detected=0
+FAIL: din=0, rst=0, expected detected=0, actual detected=1
+FAIL: din=1, rst=0, expected detected=1, actual detected=0
+FAIL: din=1, rst=0, expected detected=1, actual detected=0
+RESULT: 18/24 passed
+tb.v:99: $finish called at 296 (1s)

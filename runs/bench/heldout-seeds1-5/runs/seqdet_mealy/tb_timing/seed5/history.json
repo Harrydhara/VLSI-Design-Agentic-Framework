@@ -1,0 +1,84 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_mealy",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 5,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 31.215,
+  "tokens": {
+    "prompt": 6223,
+    "output": 5367,
+    "total": 11590
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 979,
+      "output_tokens": 4096,
+      "duration_s": 23.014,
+      "truncated": true,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "- Your reply was cut off at the output token limit before it finished. Keep the code complete and shorter.\n\n- The design compiles, but the design plus testbench does not:\ntb.v:146: error: syntax error",
+      "reference": {
+        "outcome": "pass",
+        "passed": 684,
+        "total": 684
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 5244,
+      "output_tokens": 1271,
+      "duration_s": 7.358,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 23,
+        "tb_total": 23,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 684,
+        "total": 684
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "pass",
+    "passed": 684,
+    "total": 684,
+    "detail": "684/684 checks passed"
+  }
+}

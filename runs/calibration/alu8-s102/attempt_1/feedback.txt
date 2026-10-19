@@ -1,0 +1,27 @@
+- The testbench printed no "RESULT: <passed>/<total> passed" line.
+Simulation output:
+FAIL: a=170 b= 85 op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=255 b= 15 op=000 | Exp: y= 15 z=0 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=170 b= 85 op=001 | Exp: y=255 z=0 c=0 o=0 n=1 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=  0 b=  0 op=001 | Exp: y=  0 z=1 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=170 b= 85 op=010 | Exp: y=255 z=0 c=0 o=0 n=1 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=170 b=170 op=010 | Exp: y=  0 z=1 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a= 10 b= 20 op=011 | Exp: y= 30 z=0 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=255 b=  1 op=011 | Exp: y=  0 z=1 c=1 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=127 b=  1 op=011 | Exp: y=128 z=0 c=0 o=1 n=1 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=128 b=128 op=011 | Exp: y=  0 z=1 c=1 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=128 b=128 op=011 | Exp: y=  0 z=1 c=1 o=1 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a= 20 b= 10 op=100 | Exp: y= 10 z=0 c=1 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a= 10 b= 20 op=100 | Exp: y=246 z=0 c=0 o=0 n=1 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=127 b=128 op=100 | Exp: y=255 z=0 c=0 o=1 n=1 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=128 b=127 op=100 | Exp: y=  1 z=0 c=1 o=1 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=131 b=  0 op=101 | Exp: y=193 z=0 c=1 o=0 n=1 | Got: y=  x z=x c=x o=x n=x
+FAIL: a= 64 b=  0 op=101 | Exp: y= 32 z=0 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=131 b=  0 op=110 | Exp: y=  7 z=0 c=1 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a= 64 b=  0 op=110 | Exp: y=128 z=0 c=0 o=0 n=1 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=  5 b= 10 op=111 | Exp: y=  1 z=0 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a= 10 b=  5 op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=251 b=  5 op=111 | Exp: y=  1 z=0 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=  5 b=251 op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+FAIL: a=251 b=246 op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Got: y=  x z=x c=x o=x n=x
+RESULT: -24/24 passed

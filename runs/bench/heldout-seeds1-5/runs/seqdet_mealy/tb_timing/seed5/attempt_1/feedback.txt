@@ -1,0 +1,4 @@
+- Your reply was cut off at the output token limit before it finished. Keep the code complete and shorter.
+
+- The design compiles, but the design plus testbench does not:
+tb.v:146: error: syntax error

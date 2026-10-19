@@ -1,0 +1,833 @@
+FAIL: op=000 a= 0 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b= 1 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b= 2 | exp: y= 2 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b= 3 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b= 4 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b= 5 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b= 6 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b= 7 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b= 8 | exp: y= 8 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b= 9 | exp: y= 9 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b=10 | exp: y=10 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b=11 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b=12 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b=13 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b=14 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 0 b=15 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 0 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 1 | exp: y= 2 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 2 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 3 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 4 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 5 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 6 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 7 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 8 | exp: y= 9 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b= 9 | exp: y=10 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b=10 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b=11 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b=12 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b=13 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b=14 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 1 b=15 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 0 | exp: y= 2 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 1 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 2 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 3 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 4 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 5 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 6 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 7 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 8 | exp: y=10 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b= 9 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b=10 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b=11 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b=12 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b=13 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b=14 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 2 b=15 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 0 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 1 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 2 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 3 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 4 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 5 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 6 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 7 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 8 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b= 9 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b=10 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b=11 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b=12 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b=13 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b=14 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 3 b=15 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 0 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 1 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 2 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 3 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 4 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 5 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 6 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 7 | exp: y=11 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 8 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b= 9 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b=10 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b=11 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b=12 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b=13 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b=14 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 4 b=15 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 0 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 1 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 2 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 3 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 4 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 5 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 6 | exp: y=11 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 7 | exp: y=12 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 8 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b= 9 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b=10 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b=11 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b=12 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b=13 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b=14 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 5 b=15 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 0 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 1 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 2 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 3 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 4 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 5 | exp: y=11 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 6 | exp: y=12 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 7 | exp: y=13 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 8 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b= 9 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b=10 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b=11 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b=12 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b=13 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b=14 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 6 b=15 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 0 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 1 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 2 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 3 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 4 | exp: y=11 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 5 | exp: y=12 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 6 | exp: y=13 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 7 | exp: y=14 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 8 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b= 9 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b=10 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b=11 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b=12 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b=13 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b=14 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 7 b=15 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 0 | exp: y= 8 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 1 | exp: y= 9 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 2 | exp: y=10 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 3 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 4 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 5 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 6 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 7 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 8 | exp: y= 0 z=1 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b= 9 | exp: y= 1 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b=10 | exp: y= 2 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b=11 | exp: y= 3 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b=12 | exp: y= 4 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b=13 | exp: y= 5 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b=14 | exp: y= 6 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 8 b=15 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 0 | exp: y= 9 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 1 | exp: y=10 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 2 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 3 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 4 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 5 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 6 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 7 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 8 | exp: y= 1 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b= 9 | exp: y= 2 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b=10 | exp: y= 3 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b=11 | exp: y= 4 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b=12 | exp: y= 5 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b=13 | exp: y= 6 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b=14 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a= 9 b=15 | exp: y= 8 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 0 | exp: y=10 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 1 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 2 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 3 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 4 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 5 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 6 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 7 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 8 | exp: y= 2 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b= 9 | exp: y= 3 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b=10 | exp: y= 4 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b=11 | exp: y= 5 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b=12 | exp: y= 6 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b=13 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b=14 | exp: y= 8 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=10 b=15 | exp: y= 9 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 0 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 1 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 2 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 3 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 4 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 5 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 6 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 7 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 8 | exp: y= 3 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b= 9 | exp: y= 4 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b=10 | exp: y= 5 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b=11 | exp: y= 6 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b=12 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b=13 | exp: y= 8 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b=14 | exp: y= 9 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=11 b=15 | exp: y=10 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 0 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 1 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 2 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 3 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 4 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 5 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 6 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 7 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 8 | exp: y= 4 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b= 9 | exp: y= 5 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b=10 | exp: y= 6 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b=11 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b=12 | exp: y= 8 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b=13 | exp: y= 9 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b=14 | exp: y=10 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=12 b=15 | exp: y=11 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 0 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 1 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 2 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 3 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 4 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 5 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 6 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 7 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 8 | exp: y= 5 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b= 9 | exp: y= 6 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b=10 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b=11 | exp: y= 8 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b=12 | exp: y= 9 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b=13 | exp: y=10 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b=14 | exp: y=11 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=13 b=15 | exp: y=12 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 0 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 1 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 2 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 3 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 4 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 5 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 6 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 7 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 8 | exp: y= 6 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b= 9 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b=10 | exp: y= 8 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b=11 | exp: y= 9 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b=12 | exp: y=10 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b=13 | exp: y=11 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b=14 | exp: y=12 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=14 b=15 | exp: y=13 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 0 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 1 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 2 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 3 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 4 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 5 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 6 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 7 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 8 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b= 9 | exp: y= 8 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b=10 | exp: y= 9 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b=11 | exp: y=10 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b=12 | exp: y=11 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b=13 | exp: y=12 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b=14 | exp: y=13 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=000 a=15 b=15 | exp: y=14 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 0 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 1 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 2 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 3 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 4 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 5 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 6 | exp: y=10 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 7 | exp: y= 9 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 8 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b= 9 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b=10 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b=11 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b=12 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b=13 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b=14 | exp: y= 2 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 0 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 0 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 1 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 2 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 3 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 4 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 5 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 6 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 7 | exp: y=10 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 8 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b= 9 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b=10 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b=11 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b=12 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b=13 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b=14 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 1 b=15 | exp: y= 2 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 0 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 1 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 2 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 3 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 4 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 5 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 6 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 7 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 8 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b= 9 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b=10 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b=11 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b=12 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b=13 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b=14 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 2 b=15 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 0 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 1 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 2 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 3 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 4 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 5 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 6 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 7 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 8 | exp: y=11 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b= 9 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b=10 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b=11 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b=12 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b=13 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b=14 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 3 b=15 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 0 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 1 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 2 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 3 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 4 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 5 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 6 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 7 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 8 | exp: y=12 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b= 9 | exp: y=11 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b=10 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b=11 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b=12 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b=13 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b=14 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 4 b=15 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 0 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 1 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 2 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 3 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 4 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 5 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 6 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 7 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 8 | exp: y=13 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b= 9 | exp: y=12 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b=10 | exp: y=11 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b=11 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b=12 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b=13 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b=14 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 5 b=15 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 0 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 1 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 2 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 3 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 4 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 5 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 6 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 7 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 8 | exp: y=14 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b= 9 | exp: y=13 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b=10 | exp: y=12 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b=11 | exp: y=11 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b=12 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b=13 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b=14 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 6 b=15 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 0 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 1 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 2 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 3 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 4 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 5 | exp: y= 2 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 6 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 7 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 8 | exp: y=15 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b= 9 | exp: y=14 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b=10 | exp: y=13 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b=11 | exp: y=12 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b=12 | exp: y=11 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b=13 | exp: y=10 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b=14 | exp: y= 9 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 7 b=15 | exp: y= 8 z=0 c=0 o=1 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 0 | exp: y= 8 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 1 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 2 | exp: y= 6 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 3 | exp: y= 5 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 4 | exp: y= 4 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 5 | exp: y= 3 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 6 | exp: y= 2 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 7 | exp: y= 1 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 8 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b= 9 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b=10 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b=11 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b=12 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b=13 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b=14 | exp: y=10 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 8 b=15 | exp: y= 9 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 0 | exp: y= 9 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 1 | exp: y= 8 z=0 c=1 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 2 | exp: y= 7 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 3 | exp: y= 6 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 4 | exp: y= 5 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 5 | exp: y= 4 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 6 | exp: y= 3 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 7 | exp: y= 2 z=0 c=1 o=1 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 8 | exp: y= 1 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b= 9 | exp: y= 0 z=1 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b=10 | exp: y=15 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b=11 | exp: y=14 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b=12 | exp: y=13 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b=13 | exp: y=12 z=0 c=0 o=0 n=1 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=001 a= 9 b=14 | exp: y=11 z=0 c=0 o=0 n=1 | act: y= 0
+... [96316 bytes of output omitted] ...
+0
+FAIL: op=110 a= 6 b= 2 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b= 3 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b= 4 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b= 5 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b= 6 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b= 7 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b= 8 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b= 9 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b=10 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b=11 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b=12 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b=13 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b=14 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 6 b=15 | exp: y= 3 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 0 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 1 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 2 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 3 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 4 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 5 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 6 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 7 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 8 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b= 9 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b=10 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b=11 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b=12 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b=13 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b=14 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 7 b=15 | exp: y= 3 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 0 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 1 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 2 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 3 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 4 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 5 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 6 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 7 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 8 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b= 9 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b=10 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b=11 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b=12 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b=13 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b=14 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 8 b=15 | exp: y= 4 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 0 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 1 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 2 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 3 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 4 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 5 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 6 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 7 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 8 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b= 9 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b=10 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b=11 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b=12 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b=13 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b=14 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a= 9 b=15 | exp: y= 4 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 0 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 1 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 2 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 3 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 4 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 5 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 6 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 7 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 8 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b= 9 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b=10 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b=11 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b=12 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b=13 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b=14 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=10 b=15 | exp: y= 5 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 0 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 1 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 2 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 3 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 4 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 5 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 6 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 7 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 8 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b= 9 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b=10 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b=11 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b=12 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b=13 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b=14 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=11 b=15 | exp: y= 5 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 0 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 1 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 2 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 3 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 4 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 5 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 6 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 7 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 8 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b= 9 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b=10 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b=11 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b=12 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b=13 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b=14 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=12 b=15 | exp: y= 6 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 0 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 1 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 2 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 3 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 4 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 5 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 6 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 7 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 8 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b= 9 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b=10 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b=11 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b=12 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b=13 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b=14 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=13 b=15 | exp: y= 6 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 0 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 1 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 2 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 3 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 4 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 5 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 6 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 7 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 8 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b= 9 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b=10 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b=11 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b=12 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b=13 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b=14 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=14 b=15 | exp: y= 7 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 0 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 1 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 2 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 3 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 4 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 5 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 6 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 7 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 8 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b= 9 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b=10 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b=11 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b=12 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b=13 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b=14 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=110 a=15 b=15 | exp: y= 7 z=0 c=1 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 1 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 2 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 3 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 4 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 5 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 6 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 7 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 8 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 9 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 2 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 3 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 4 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 5 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 6 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 7 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 8 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 9 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 3 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 4 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 5 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 6 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 7 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 8 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 9 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 4 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 5 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 6 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 7 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 8 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 9 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 5 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 6 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 7 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 8 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b= 9 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 4 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 6 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 7 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 8 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b= 9 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 5 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 7 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 8 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b= 9 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 6 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 7 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 8 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b= 9 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 7 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 7 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b= 9 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 8 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 7 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b=10 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 9 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 7 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b=11 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=10 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 7 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b=12 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=11 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 7 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b=13 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=12 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 7 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b=14 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=13 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 7 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=14 b=15 | exp: y= 1 z=0 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 0 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 1 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 2 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 3 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 4 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 5 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 6 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 7 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+FAIL: op=111 a=15 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 0 z=0 c=0 o=0 n=0
+RESULT: 0/2048 passed
+tb.v:120: $finish called at 2048 (1s)

@@ -1,0 +1,2 @@
+- The design compiles, but the design plus testbench does not:
+tb.v:163: error: syntax error

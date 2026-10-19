@@ -1,0 +1,130 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "counter4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 2,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 21.677,
+  "tokens": {
+    "prompt": 7755,
+    "output": 3372,
+    "total": 11127
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 446,
+      "output_tokens": 1052,
+      "duration_s": 5.976,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 363,
+      "output_tokens": 113,
+      "duration_s": 1.066,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 1,
+      "prompt_tokens": 2161,
+      "output_tokens": 1016,
+      "duration_s": 5.403,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 1078,
+      "output_tokens": 113,
+      "duration_s": 1.13,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 3707,
+      "output_tokens": 1078,
+      "duration_s": 6.058,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 363,
+      "output_tokens": 113,
+      "duration_s": 1.066,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": -18,
+        "tb_total": 26,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 10,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (-18/26 checks passed):\nFAIL: rst=1, en=1, Expected count= 0, Actual count= x\nFAIL: rst=0, en=1, Expected count= 1, Actual count= 0\nFAIL: rst=0, en=1, Expected count= 2, Actual count= 1\nFAIL: rst=1, en=1, Expected count= 0, Actual count= 2\nFAIL: rst=0, en=1, Expected count= 1, Actual count= 0\nFAIL: rst=0, en=1, Expected count= 2, Actual count= 1\nFAIL: rst=0, en=1, Expected count= 3, Actual count= 2\nFAIL: rst=0, en=1, Expected count= 4, Actual count= 3\nFAIL: rst=0, en=1, Expected count= 5, Actual count= 4\nFAIL: rst=0, en=1, Expected count= 6, Actual count= 5\nFAIL: rst=0, en=1, Expected count= 7, Actual count= 6\nFAIL: rst=0, en=1, Expected count= 8, Actual count= 7\nFAIL: rst=0, en=1, Expected count= 9, Actual count= 8\nFAIL: rst=0, en=1, Expected count=10, Actual count= 9\nFAIL: rst=0, en=1, Expected count=11, Actual count=10\nFAIL: rst=0, en=1, Expected count=12, Actual count=11\nFAIL: rst=0, en=1, Expected count=13, Actual count=12\nFAIL: rst=0, en=1, Expected count=14, Actual count=13\nFAIL: rst=0, en=1, Expected count=15, Actual count=14\nFAIL: rst=0, en=1, Expected count= 0, Actual count=15\nFAIL: rst=0, en=1, Expected count= 1, Actual count= 0\nFAIL: rst=1, en=1, Expected count= 0, Actual count= 1\nRESULT: -18/26 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 249,
+        "total": 249
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 1078,
+      "output_tokens": 113,
+      "duration_s": 1.13,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 26,
+        "tb_total": 26,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 10,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 249,
+        "total": 249
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "pass",
+    "passed": 249,
+    "total": 249,
+    "detail": "249/249 checks passed"
+  }
+}

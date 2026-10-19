@@ -1,0 +1,2 @@
+RESULT db0319f20ff5cd6b: 524/524 passed
+reference_tb.v:51: $finish called at 524000 (1ps)

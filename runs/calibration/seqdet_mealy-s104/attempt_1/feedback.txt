@@ -1,0 +1,2 @@
+- The design does not compile:
+design.v:56: error: syntax error

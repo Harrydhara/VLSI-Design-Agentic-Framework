@@ -1,0 +1,4 @@
+tb.v:44: syntax error
+tb.v:44: error: Malformed conditional expression.
+tb.v:49: syntax error
+tb.v:49: error: Malformed conditional expression.

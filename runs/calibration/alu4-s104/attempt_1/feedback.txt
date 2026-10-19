@@ -1,0 +1,23 @@
+- The testbench reported failures (0/21 checks passed):
+FAIL: a= 5 b= 2 op=000 | Exp: y=0111 z=0 c=0 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a=10 b= 7 op=000 | Exp: y=0001 z=0 c=1 v=0 n=1 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 8 b= 8 op=000 | Exp: y=0000 z=1 c=1 v=1 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 7 b= 1 op=000 | Exp: y=1000 z=0 c=0 v=1 n=1 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a=10 b= 5 op=001 | Exp: y=0101 z=0 c=1 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 3 b= 5 op=001 | Exp: y=1110 z=0 c=0 v=0 n=1 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 3 b= 5 op=001 | Exp: y=1110 z=0 c=0 v=0 n=1 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 8 b= 7 op=001 | Exp: y=0001 z=0 c=1 v=1 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 8 b= 7 op=001 | Exp: y=0001 z=0 c=1 v=1 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a=10 b=12 op=010 | Exp: y=1000 z=0 c=0 v=0 n=1 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a=15 b= 0 op=010 | Exp: y=0000 z=1 c=0 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a=10 b= 5 op=011 | Exp: y=1111 z=0 c=0 v=0 n=1 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a=10 b=12 op=100 | Exp: y=0110 z=0 c=0 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a=11 b=12 op=101 | Exp: y=0110 z=0 c=1 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 7 b=12 op=101 | Exp: y=1110 z=0 c=0 v=0 n=1 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a=13 b=12 op=110 | Exp: y=0110 z=0 c=1 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a=10 b=12 op=110 | Exp: y=0101 z=0 c=0 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 7 b= 8 op=111 | Exp: y=0001 z=0 c=0 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 8 b= 7 op=111 | Exp: y=0000 z=1 c=0 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 8 b= 7 op=111 | Exp: y=0001 z=0 c=0 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+FAIL: a= 7 b= 7 op=111 | Exp: y=0000 z=1 c=0 v=0 n=0 | Got: y=xxxx z=x c=x v=x n=x
+RESULT: 0/21 passed

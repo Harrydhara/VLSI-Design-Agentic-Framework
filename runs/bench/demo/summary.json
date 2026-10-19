@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "tool_version": "0.1.0",
+    "date": "2026-10-15 17:30",
+    "model": "gemma4:26b",
+    "temperature": 0.2,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "strategies": {
+      "default": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+      "tb_timing": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing"
+    },
+    "circuits": [
+      "adder4"
+    ]
+  },
+  "by_strategy": {
+    "default": {
+      "runs": 3,
+      "oneshot_pass": "0/3",
+      "final_pass": "3/3",
+      "pass_after_attempt": {
+        "1": "0/3",
+        "2": "3/3",
+        "3": "3/3"
+      },
+      "fixed": 3,
+      "broken": 0,
+      "own_checks_passed": "3/3",
+      "oneshot_compiled": "3/3",
+      "final_compiled": "3/3",
+      "oneshot_synth_ok": "3/3",
+      "final_synth_ok": "3/3",
+      "mean_attempts": 2,
+      "mean_tokens": 1597,
+      "mean_seconds": 0.9,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 3
+      }
+    },
+    "tb_timing": {
+      "runs": 3,
+      "oneshot_pass": "0/3",
+      "final_pass": "3/3",
+      "pass_after_attempt": {
+        "1": "0/3",
+        "2": "3/3",
+        "3": "3/3"
+      },
+      "fixed": 3,
+      "broken": 0,
+      "own_checks_passed": "3/3",
+      "oneshot_compiled": "3/3",
+      "final_compiled": "3/3",
+      "oneshot_synth_ok": "3/3",
+      "final_synth_ok": "3/3",
+      "mean_attempts": 2,
+      "mean_tokens": 2318,
+      "mean_seconds": 0.7,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 3
+      }
+    }
+  },
+  "by_split": {
+    "default / dev": {
+      "runs": 3,
+      "oneshot_pass": "0/3",
+      "final_pass": "3/3",
+      "pass_after_attempt": {
+        "1": "0/3",
+        "2": "3/3",
+        "3": "3/3"
+      },
+      "fixed": 3,
+      "broken": 0,
+      "own_checks_passed": "3/3",
+      "oneshot_compiled": "3/3",
+      "final_compiled": "3/3",
+      "oneshot_synth_ok": "3/3",
+      "final_synth_ok": "3/3",
+      "mean_attempts": 2,
+      "mean_tokens": 1597,
+      "mean_seconds": 0.9,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 3
+      }
+    },
+    "tb_timing / dev": {
+      "runs": 3,
+      "oneshot_pass": "0/3",
+      "final_pass": "3/3",
+      "pass_after_attempt": {
+        "1": "0/3",
+        "2": "3/3",
+        "3": "3/3"
+      },
+      "fixed": 3,
+      "broken": 0,
+      "own_checks_passed": "3/3",
+      "oneshot_compiled": "3/3",
+      "final_compiled": "3/3",
+      "oneshot_synth_ok": "3/3",
+      "final_synth_ok": "3/3",
+      "mean_attempts": 2,
+      "mean_tokens": 2318,
+      "mean_seconds": 0.7,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 3
+      }
+    }
+  },
+  "by_circuit": {
+    "adder4 / default": {
+      "runs": 3,
+      "oneshot_pass": "0/3",
+      "final_pass": "3/3",
+      "pass_after_attempt": {
+        "1": "0/3",
+        "2": "3/3",
+        "3": "3/3"
+      },
+      "fixed": 3,
+      "broken": 0,
+      "own_checks_passed": "3/3",
+      "oneshot_compiled": "3/3",
+      "final_compiled": "3/3",
+      "oneshot_synth_ok": "3/3",
+      "final_synth_ok": "3/3",
+      "mean_attempts": 2,
+      "mean_tokens": 1597,
+      "mean_seconds": 0.9,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 3
+      }
+    },
+    "adder4 / tb_timing": {
+      "runs": 3,
+      "oneshot_pass": "0/3",
+      "final_pass": "3/3",
+      "pass_after_attempt": {
+        "1": "0/3",
+        "2": "3/3",
+        "3": "3/3"
+      },
+      "fixed": 3,
+      "broken": 0,
+      "own_checks_passed": "3/3",
+      "oneshot_compiled": "3/3",
+      "final_compiled": "3/3",
+      "oneshot_synth_ok": "3/3",
+      "final_synth_ok": "3/3",
+      "mean_attempts": 2,
+      "mean_tokens": 2318,
+      "mean_seconds": 0.7,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 3
+      }
+    }
+  }
+}

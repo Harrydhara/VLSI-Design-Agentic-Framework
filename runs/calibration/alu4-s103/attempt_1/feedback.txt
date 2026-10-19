@@ -1,0 +1,25 @@
+- The testbench reported failures (0/23 checks passed):
+FAIL: a= 5 b= 2 op=000 | Expected y= 7 z=0 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a=10 b= 7 op=000 | Expected y= 1 z=0 c=1 v=1 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 8 b= 8 op=000 | Expected y= 0 z=1 c=1 v=1 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 7 b= 1 op=000 | Expected y= 8 z=0 c=0 v=1 n=1 | Actual y= x z=x c=x v=x n=x
+FAIL: a=10 b= 7 op=001 | Expected y= 3 z=0 c=1 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 5 b= 7 op=001 | Expected y=14 z=0 c=0 v=0 n=1 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 8 b= 1 op=001 | Expected y= 7 z=0 c=1 v=1 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 7 b= 8 op=001 | Expected y=15 z=0 c=0 v=1 n=1 | Actual y= x z=x c=x v=x n=x
+FAIL: a=10 b=12 op=010 | Expected y= 8 z=0 c=0 v=0 n=1 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 0 b=15 op=010 | Expected y= 0 z=1 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a=10 b= 5 op=011 | Expected y=15 z=0 c=0 v=0 n=1 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 0 b= 0 op=011 | Expected y= 0 z=1 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a=10 b=12 op=100 | Expected y= 6 z=0 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a=15 b=15 op=100 | Expected y= 0 z=1 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 9 b=15 op=101 | Expected y= 2 z=0 c=1 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 6 b=15 op=101 | Expected y=12 z=0 c=0 v=0 n=1 | Actual y= x z=x c=x v=x n=x
+FAIL: a=11 b=15 op=110 | Expected y= 5 z=0 c=1 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a=12 b=15 op=110 | Expected y= 6 z=0 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 7 b= 8 op=111 | Expected y= 1 z=0 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 7 b= 8 op=111 | Expected y= 0 z=1 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 8 b= 7 op=111 | Expected y= 1 z=0 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a=15 b= 0 op=111 | Expected y= 1 z=0 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+FAIL: a= 0 b=15 op=111 | Expected y= 0 z=1 c=0 v=0 n=0 | Actual y= x z=x c=x v=x n=x
+RESULT: 0/23 passed

@@ -1,0 +1,8 @@
+tb.v:84: syntax error
+tb.v:85: error: Incomprehensible case expression.
+tb.v:85: syntax error
+tb.v:86: error: Incomprehensible case expression.
+tb.v:86: syntax error
+tb.v:87: error: Incomprehensible case expression.
+tb.v:87: syntax error
+I give up.

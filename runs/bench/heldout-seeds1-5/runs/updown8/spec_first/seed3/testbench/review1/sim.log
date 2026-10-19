@@ -1,0 +1,12 @@
+FAIL: rst_n=1, en=1, up=1 | Expected:   1, Actual:   0
+FAIL: rst_n=1, en=1, up=1 | Expected:   2, Actual:   0
+FAIL: rst_n=1, en=1, up=1 | Expected:   3, Actual:   0
+FAIL: rst_n=1, en=1, up=1 | Expected:   4, Actual:   0
+FAIL: rst_n=1, en=1, up=1 | Expected:   5, Actual:   0
+FAIL: rst_n=1, en=1, up=0 | Expected:   4, Actual:   0
+FAIL: rst_n=1, en=1, up=0 | Expected:   3, Actual:   0
+FAIL: rst_n=1, en=1, up=0 | Expected:   2, Actual:   0
+FAIL: rst_n=1, en=1, up=0 | Expected: 255, Actual:   0
+FAIL: rst_n=1, en=0, up=0 | Expected: 255, Actual:   0
+RESULT: 5/15 passed
+tb.v:175: $finish called at 2753 (1s)

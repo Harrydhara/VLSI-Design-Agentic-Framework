@@ -1,0 +1,165 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 2,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 31.707,
+  "tokens": {
+    "prompt": 18705,
+    "output": 5146,
+    "total": 23851
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 711,
+      "output_tokens": 1756,
+      "duration_s": 9.245,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 629,
+      "output_tokens": 931,
+      "duration_s": 4.945,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 1,
+      "prompt_tokens": 3704,
+      "output_tokens": 320,
+      "duration_s": 2.678,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 3010,
+      "output_tokens": 930,
+      "duration_s": 4.959,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 5261,
+      "output_tokens": 311,
+      "duration_s": 2.554,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 5390,
+      "output_tokens": 898,
+      "duration_s": 5.214,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 629,
+      "output_tokens": 931,
+      "duration_s": 4.945,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 1920,
+        "tb_total": 2048,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 136,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (1920/2048 checks passed):\nFAIL: op=111 a= 0 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 3 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\n... (104 more lines)",
+      "reference": {
+        "outcome": "fail",
+        "passed": 1920,
+        "total": 2048
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 3010,
+      "output_tokens": 930,
+      "duration_s": 4.959,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 1920,
+        "tb_total": 2048,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 136,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (1920/2048 checks passed):\nFAIL: op=111 a= 0 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 0 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 1 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 2 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\nFAIL: op=111 a= 3 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0\n... (104 more lines)",
+      "reference": {
+        "outcome": "fail",
+        "passed": 1920,
+        "total": 2048
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 5390,
+      "output_tokens": 898,
+      "duration_s": 5.214,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 2048,
+        "tb_total": 2048,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 134,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 2048,
+    "total": 2048,
+    "detail": "2048/2048 checks passed"
+  }
+}

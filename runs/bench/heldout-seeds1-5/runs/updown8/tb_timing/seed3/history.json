@@ -1,0 +1,114 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "updown8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 3,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 34.073,
+  "tokens": {
+    "prompt": 11830,
+    "output": 6112,
+    "total": 17942
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 904,
+      "output_tokens": 3470,
+      "duration_s": 18.259,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 4,
+        "tb_total": 12,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (4/12 checks passed):\nFAIL: time=36 expected=00 actual=01 en=1 up=1\nFAIL: time=46 expected=01 actual=02 en=1 up=1\nFAIL: time=56 expected=02 actual=01 en=1 up=0\nFAIL: time=66 expected=ff actual=02 en=1 up=1\nFAIL: time=76 expected=00 actual=01 en=1 up=0\nFAIL: time=86 expected=ff actual=01 en=0 up=1\nFAIL: time=96 expected=ff actual=02 en=1 up=1\nFAIL: time=126 expected=00 actual=02 en=1 up=1\nRESULT: 4/12 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 4681,
+      "output_tokens": 1319,
+      "duration_s": 7.328,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 7,
+        "tb_total": 12,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (7/12 checks passed):\nFAIL: time=66 expected=ff actual=02 en=1 up=1\nFAIL: time=76 expected=00 actual=01 en=1 up=0\nFAIL: time=86 expected=ff actual=01 en=0 up=1\nFAIL: time=96 expected=00 actual=02 en=1 up=1\nFAIL: time=116 expected=00 actual=01 en=1 up=1\nRESULT: 7/12 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 6245,
+      "output_tokens": 1323,
+      "duration_s": 7.194,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 7,
+        "tb_total": 12,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (7/12 checks passed):\nFAIL: time=66 expected=ff actual=02 en=1 up=1\nFAIL: time=76 expected=00 actual=01 en=1 up=0\nFAIL: time=86 expected=ff actual=01 en=0 up=1\nFAIL: time=96 expected=00 actual=02 en=1 up=1\nFAIL: time=116 expected=00 actual=01 en=1 up=1\nRESULT: 7/12 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 380,
+    "total": 380,
+    "detail": "380/380 checks passed"
+  }
+}

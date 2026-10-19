@@ -1,0 +1,24 @@
+- The testbench reported failures (0/22 checks passed):
+FAIL: op=000 a=0101 b=0010 | Expected: y=0111 z=0 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=000 a=1010 b=0111 | Expected: y=0001 z=0 c=1 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=000 a=0111 b=0001 | Expected: y=1000 z=0 c=0 o=1 n=1 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=000 a=1000 b=1111 | Expected: y=0111 z=0 c=1 o=1 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=001 a=0101 b=0010 | Expected: y=0011 z=0 c=1 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=001 a=0010 b=0101 | Expected: y=1101 z=0 c=0 o=0 n=1 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=001 a=0111 b=1000 | Expected: y=1001 z=0 c=0 o=1 n=1 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=001 a=1000 b=0111 | Expected: y=0001 z=0 c=1 o=1 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=010 a=1010 b=1100 | Expected: y=1000 z=0 c=0 o=0 n=1 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=010 a=0101 b=1010 | Expected: y=0000 z=1 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=011 a=1010 b=0101 | Expected: y=1111 z=0 c=0 o=0 n=1 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=011 a=0000 b=0000 | Expected: y=0000 z=1 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=100 a=1010 b=1100 | Expected: y=0110 z=0 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=100 a=1111 b=1111 | Expected: y=0000 z=1 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=101 a=1011 b=0000 | Expected: y=0110 z=0 c=1 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=101 a=0101 b=0000 | Expected: y=1010 z=0 c=0 o=0 n=1 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=110 a=1011 b=0000 | Expected: y=0101 z=0 c=1 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=110 a=1100 b=0000 | Expected: y=0110 z=0 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=111 a=0001 b=0010 | Expected: y=0001 z=0 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=111 a=1111 b=0001 | Expected: y=0000 z=1 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=111 a=1000 b=1111 | Expected: y=0001 z=0 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+FAIL: op=111 a=0000 b=0000 | Expected: y=0000 z=1 c=0 o=0 n=0 | Actual: y=xxxx z=x c=x o=x n=x
+RESULT: 0/22 passed

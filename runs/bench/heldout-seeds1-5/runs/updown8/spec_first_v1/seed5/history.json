@@ -1,0 +1,173 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "updown8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 5,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first_v1",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 13.332,
+  "tokens": {
+    "prompt": 10813,
+    "output": 1556,
+    "total": 12369
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 479,
+      "output_tokens": 1098,
+      "duration_s": 5.694,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 397,
+      "output_tokens": 151,
+      "duration_s": 1.184,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 1,
+      "prompt_tokens": 2013,
+      "output_tokens": 5,
+      "duration_s": 0.598,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 992,
+      "output_tokens": 147,
+      "duration_s": 1.144,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 2454,
+      "output_tokens": 5,
+      "duration_s": 0.717,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 1583,
+      "output_tokens": 145,
+      "duration_s": 1.218,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 3,
+      "prompt_tokens": 2895,
+      "output_tokens": 5,
+      "duration_s": 0.78,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 397,
+      "output_tokens": 151,
+      "duration_s": 1.184,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": -4,
+        "tb_total": 20,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (-4/20 checks passed):\nFAIL: rst_n=1, en=1, up=1 | Expected count=  0, Actual count=  3\nFAIL: rst_n=1, en=1, up=0 | Expected count=255, Actual count=  2\nFAIL: rst_n=1, en=1, up=1 | Expected count=  0, Actual count=  3\nFAIL: rst_n=0, en=1, up=1 | Expected count=  0, Actual count=  4\nFAIL: rst_n=1, en=1, up=1 | Expected count=  1, Actual count=  0\nFAIL: rst_n=1, en=1, up=1 | Expected count=  2, Actual count=  1\nFAIL: rst_n=1, en=1, up=1 | Expected count=  3, Actual count=  2\nFAIL: rst_n=1, en=1, up=1 | Expected count=  4, Actual count=  3\nFAIL: rst_n=1, en=1, up=1 | Expected count=  5, Actual count=  4\nFAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4\nFAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4\nFAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4\nRESULT: -4/20 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 992,
+      "output_tokens": 147,
+      "duration_s": 1.144,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": -4,
+        "tb_total": 20,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (-4/20 checks passed):\nFAIL: rst_n=1, en=1, up=1 | Expected count=  0, Actual count=  3\nFAIL: rst_n=1, en=1, up=0 | Expected count=255, Actual count=  2\nFAIL: rst_n=1, en=1, up=1 | Expected count=  0, Actual count=  3\nFAIL: rst_n=0, en=1, up=1 | Expected count=  0, Actual count=  4\nFAIL: rst_n=1, en=1, up=1 | Expected count=  1, Actual count=  0\nFAIL: rst_n=1, en=1, up=1 | Expected count=  2, Actual count=  1\nFAIL: rst_n=1, en=1, up=1 | Expected count=  3, Actual count=  2\nFAIL: rst_n=1, en=1, up=1 | Expected count=  4, Actual count=  3\nFAIL: rst_n=1, en=1, up=1 | Expected count=  5, Actual count=  4\nFAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4\nFAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4\nFAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4\nRESULT: -4/20 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 1583,
+      "output_tokens": 145,
+      "duration_s": 1.218,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": -4,
+        "tb_total": 20,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (-4/20 checks passed):\nFAIL: rst_n=1, en=1, up=1 | Expected count=  0, Actual count=  3\nFAIL: rst_n=1, en=1, up=0 | Expected count=255, Actual count=  2\nFAIL: rst_n=1, en=1, up=1 | Expected count=  0, Actual count=  3\nFAIL: rst_n=0, en=1, up=1 | Expected count=  0, Actual count=  4\nFAIL: rst_n=1, en=1, up=1 | Expected count=  1, Actual count=  0\nFAIL: rst_n=1, en=1, up=1 | Expected count=  2, Actual count=  1\nFAIL: rst_n=1, en=1, up=1 | Expected count=  3, Actual count=  2\nFAIL: rst_n=1, en=1, up=1 | Expected count=  4, Actual count=  3\nFAIL: rst_n=1, en=1, up=1 | Expected count=  5, Actual count=  4\nFAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4\nFAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4\nFAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4\nRESULT: -4/20 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 380,
+    "total": 380,
+    "detail": "380/380 checks passed"
+  }
+}

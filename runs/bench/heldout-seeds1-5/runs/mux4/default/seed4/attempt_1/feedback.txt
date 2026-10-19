@@ -1,0 +1,6 @@
+- The design does not compile:
+design.v:12: error: y is not a valid l-value in mux4.
+design.v:13: error: y is not a valid l-value in mux4.
+design.v:14: error: y is not a valid l-value in mux4.
+design.v:15: error: y is not a valid l-value in mux4.
+design.v:16: error: y is not a valid l-value in mux4.

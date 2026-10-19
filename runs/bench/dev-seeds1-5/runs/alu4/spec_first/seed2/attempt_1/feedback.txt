@@ -1,0 +1,27 @@
+- The testbench reported failures (1920/2048 checks passed):
+FAIL: op=111 a= 0 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 0 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 1 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b= 9 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=10 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=11 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=12 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=13 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=14 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 2 b=15 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+FAIL: op=111 a= 3 b= 8 | exp: y= 0 z=1 c=0 o=0 n=0 | act: y= 1 z=0 c=0 o=0 n=0
+... (104 more lines)

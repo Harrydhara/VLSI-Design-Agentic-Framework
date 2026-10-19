@@ -1,0 +1,5 @@
+FAIL: din=1, history=110, expected=1, actual=0
+FAIL: din=1, history=110, expected=1, actual=0
+FAIL: din=1, history=110, expected=1, actual=0
+RESULT: 15/21 passed
+tb.v:120: $finish called at 245000 (1ps)

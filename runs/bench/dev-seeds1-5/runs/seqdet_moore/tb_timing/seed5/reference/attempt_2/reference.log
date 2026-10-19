@@ -1,0 +1,7 @@
+MISMATCH at 176 ns: after the rising edge (rst=0, last bits sampled 1011), expected detected=1, got 0
+MISMATCH at 181 ns: din changed to 1 between clock edges and detected is 0; expected 1 (a Moore output changes only after a rising edge)
+MISMATCH at 846 ns: after the rising edge (rst=0, last bits sampled 1011), expected detected=1, got 0
+MISMATCH at 851 ns: din changed to 1 between clock edges and detected is 0; expected 1 (a Moore output changes only after a rising edge)
+MISMATCH at 1146 ns: after the rising edge (rst=0, last bits sampled 1011), expected detected=1, got 0
+RESULT e6c961be5b815b3c: 676/686 passed
+reference_tb.v:94: $finish called at 3436000 (1ps)

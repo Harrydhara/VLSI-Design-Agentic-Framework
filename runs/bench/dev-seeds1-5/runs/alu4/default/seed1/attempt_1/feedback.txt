@@ -1,0 +1,3 @@
+- Your reply was cut off at the output token limit before it finished. Keep the code complete and shorter.
+
+- No testbench was found. Include a module named tb that checks the design and ends with $display("RESULT: %0d/%0d passed", passed, total); $finish;

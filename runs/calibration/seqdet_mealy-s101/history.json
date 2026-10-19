@@ -1,0 +1,60 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_mealy",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 101,
+    "think": false,
+    "max_attempts": 1,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": false
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 9.693,
+  "tokens": {
+    "prompt": 632,
+    "output": 1727,
+    "total": 2359
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 632,
+      "output_tokens": 1727,
+      "duration_s": 9.334,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 11,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (11/19 checks passed):\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nRESULT: 11/19 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 684,
+        "total": 684
+      }
+    }
+  ],
+  "final_attempt": 1,
+  "reference": {
+    "outcome": "pass",
+    "passed": 684,
+    "total": 684,
+    "detail": "684/684 checks passed"
+  }
+}

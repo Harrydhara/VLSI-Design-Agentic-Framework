@@ -1,0 +1,87 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "updown8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 1,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 17.974,
+  "tokens": {
+    "prompt": 4106,
+    "output": 2988,
+    "total": 7094
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 904,
+      "output_tokens": 1606,
+      "duration_s": 9.297,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 12,
+        "tb_total": 268,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (12/268 checks passed):\nFAIL: time=76 expected=00 actual=01 en=1 up=1\nFAIL: time=116 expected=03 actual=02 en=1 up=1\nFAIL: time=126 expected=05 actual=03 en=1 up=1\nFAIL: time=136 expected=07 actual=04 en=1 up=1\nFAIL: time=146 expected=09 actual=05 en=1 up=1\nFAIL: time=156 expected=0b actual=06 en=1 up=1\nFAIL: time=166 expected=0d actual=07 en=1 up=1\nFAIL: time=176 expected=0f actual=08 en=1 up=1\nFAIL: time=186 expected=11 actual=09 en=1 up=1\nFAIL: time=196 expected=13 actual=0a en=1 up=1\nFAIL: time=206 expected=15 actual=0b en=1 up=1\nFAIL: time=216 expected=17 actual=0c en=1 up=1\nFAIL: time=226 expected=19 actual=0d en=1 up=1\nFAIL: time=236 expected=1b actual=0e en=1 up=1\nFAIL: time=246 expected=1d actual=0f en=1 up=1\nFAIL: time=256 expected=1f actual=10 en=1 up=1\nFAIL: time=266 expected=21 actual=11 en=1 up=1\nFAIL: time=276 expected=23 actual=12 en=1 up=1\nFAIL: time=286 expected=25 actual=13 en=1 up=1\nFAIL: time=296 expected=27 actual=14 en=1 up=1\nFAIL: time=306 expected=29 actual=15 en=1 up=1\nFAIL: time=316 expected=2b actual=16 en=1 up=1\nFAIL: time=326 expected=2d actual=17 en=1 up=1\nFAIL: time=336 expected=2f actual=18 en=1 up=1\nFAIL: time=346 expected=31 actual=19 en=1 up=1\n... (232 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 3202,
+      "output_tokens": 1382,
+      "duration_s": 7.47,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 268,
+        "tb_total": 268,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "pass",
+    "passed": 380,
+    "total": 380,
+    "detail": "380/380 checks passed"
+  }
+}

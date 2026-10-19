@@ -1,0 +1,7 @@
+design.v:34: error: detected is not a valid l-value in seqdet_mealy.
+design.v:5:      : detected is declared here as wire.
+design.v:60: error: detected is not a valid l-value in seqdet_mealy.
+design.v:5:      : detected is declared here as wire.
+design.v:86: error: detected is not a valid l-value in seqdet_mealy.
+design.v:5:      : detected is declared here as wire.
+3 error(s) during elaboration.

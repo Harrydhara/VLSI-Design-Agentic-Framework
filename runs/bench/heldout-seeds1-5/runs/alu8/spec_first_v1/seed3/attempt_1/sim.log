@@ -1,0 +1,2 @@
+RESULT: 524288/524288 passed
+tb.v:129: $finish called at 524288 (1s)

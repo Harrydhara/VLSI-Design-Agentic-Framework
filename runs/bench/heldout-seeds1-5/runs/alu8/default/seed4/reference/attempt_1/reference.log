@@ -1,0 +1,7 @@
+MISMATCH op=111 a=0 b=128: expected y=0 zero=1 carry=0 overflow=0 negative=0, got y=1 zero=0 carry=0 overflow=0 negative=0
+MISMATCH op=111 a=0 b=129: expected y=0 zero=1 carry=0 overflow=0 negative=0, got y=1 zero=0 carry=0 overflow=0 negative=0
+MISMATCH op=111 a=0 b=130: expected y=0 zero=1 carry=0 overflow=0 negative=0, got y=1 zero=0 carry=0 overflow=0 negative=0
+MISMATCH op=111 a=0 b=131: expected y=0 zero=1 carry=0 overflow=0 negative=0, got y=1 zero=0 carry=0 overflow=0 negative=0
+MISMATCH op=111 a=0 b=132: expected y=0 zero=1 carry=0 overflow=0 negative=0, got y=1 zero=0 carry=0 overflow=0 negative=0
+RESULT 82b7a7b8dd8a6eb2: 491520/524288 passed
+reference_tb.v:65: $finish called at 524288000 (1ps)

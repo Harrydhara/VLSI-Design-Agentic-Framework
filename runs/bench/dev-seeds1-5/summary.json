@@ -1,0 +1,722 @@
+{
+  "meta": {
+    "tool_version": "0.1.0",
+    "date": "2026-10-15 18:52",
+    "model": "gemma4:26b",
+    "temperature": 0.2,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "strategies": {
+      "default": "prompts/default",
+      "tb_timing": "prompts/examples/tb_timing",
+      "spec_first_v1": "prompts/examples/spec_first_v1",
+      "spec_first": "prompts/examples/spec_first"
+    },
+    "circuits": [
+      "adder4",
+      "alu4",
+      "counter4",
+      "mux2",
+      "seqdet_moore"
+    ]
+  },
+  "by_strategy": {
+    "default": {
+      "runs": 25,
+      "oneshot_pass": "24/25",
+      "final_pass": "24/25",
+      "pass_after_attempt": {
+        "1": "24/25",
+        "2": "24/25",
+        "3": "24/25"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "19/25",
+      "oneshot_compiled": "25/25",
+      "final_compiled": "25/25",
+      "oneshot_synth_ok": "25/25",
+      "final_synth_ok": "25/25",
+      "mean_attempts": 1.7,
+      "mean_tokens": 7296.5,
+      "mean_seconds": 16.6,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 6,
+        "dev_passed": 19
+      }
+    },
+    "tb_timing": {
+      "runs": 25,
+      "oneshot_pass": "23/25",
+      "final_pass": "22/25",
+      "pass_after_attempt": {
+        "1": "23/25",
+        "2": "22/25",
+        "3": "22/25"
+      },
+      "fixed": 0,
+      "broken": 1,
+      "own_checks_passed": "23/25",
+      "oneshot_compiled": "25/25",
+      "final_compiled": "25/25",
+      "oneshot_synth_ok": "25/25",
+      "final_synth_ok": "25/25",
+      "mean_attempts": 1.6,
+      "mean_tokens": 5905.7,
+      "mean_seconds": 15.9,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 2,
+        "dev_passed": 23
+      }
+    },
+    "spec_first_v1": {
+      "runs": 25,
+      "oneshot_pass": "23/25",
+      "final_pass": "24/25",
+      "pass_after_attempt": {
+        "1": "23/25",
+        "2": "24/25",
+        "3": "24/25"
+      },
+      "fixed": 1,
+      "broken": 0,
+      "own_checks_passed": "24/25",
+      "oneshot_compiled": "25/25",
+      "final_compiled": "25/25",
+      "oneshot_synth_ok": "25/25",
+      "final_synth_ok": "25/25",
+      "mean_attempts": 1.2,
+      "mean_tokens": 5984.6,
+      "mean_seconds": 15.4,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 1,
+        "dev_passed": 24
+      }
+    },
+    "spec_first": {
+      "runs": 25,
+      "oneshot_pass": "23/25",
+      "final_pass": "23/25",
+      "pass_after_attempt": {
+        "1": "23/25",
+        "2": "24/25",
+        "3": "23/25"
+      },
+      "fixed": 2,
+      "broken": 2,
+      "own_checks_passed": "22/25",
+      "oneshot_compiled": "25/25",
+      "final_compiled": "24/25",
+      "oneshot_synth_ok": "25/25",
+      "final_synth_ok": "24/25",
+      "mean_attempts": 1.4,
+      "mean_tokens": 6744,
+      "mean_seconds": 15.6,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 3,
+        "dev_passed": 22
+      }
+    }
+  },
+  "by_split": {
+    "default / dev": {
+      "runs": 25,
+      "oneshot_pass": "24/25",
+      "final_pass": "24/25",
+      "pass_after_attempt": {
+        "1": "24/25",
+        "2": "24/25",
+        "3": "24/25"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "19/25",
+      "oneshot_compiled": "25/25",
+      "final_compiled": "25/25",
+      "oneshot_synth_ok": "25/25",
+      "final_synth_ok": "25/25",
+      "mean_attempts": 1.7,
+      "mean_tokens": 7296.5,
+      "mean_seconds": 16.6,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 6,
+        "dev_passed": 19
+      }
+    },
+    "tb_timing / dev": {
+      "runs": 25,
+      "oneshot_pass": "23/25",
+      "final_pass": "22/25",
+      "pass_after_attempt": {
+        "1": "23/25",
+        "2": "22/25",
+        "3": "22/25"
+      },
+      "fixed": 0,
+      "broken": 1,
+      "own_checks_passed": "23/25",
+      "oneshot_compiled": "25/25",
+      "final_compiled": "25/25",
+      "oneshot_synth_ok": "25/25",
+      "final_synth_ok": "25/25",
+      "mean_attempts": 1.6,
+      "mean_tokens": 5905.7,
+      "mean_seconds": 15.9,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 2,
+        "dev_passed": 23
+      }
+    },
+    "spec_first_v1 / dev": {
+      "runs": 25,
+      "oneshot_pass": "23/25",
+      "final_pass": "24/25",
+      "pass_after_attempt": {
+        "1": "23/25",
+        "2": "24/25",
+        "3": "24/25"
+      },
+      "fixed": 1,
+      "broken": 0,
+      "own_checks_passed": "24/25",
+      "oneshot_compiled": "25/25",
+      "final_compiled": "25/25",
+      "oneshot_synth_ok": "25/25",
+      "final_synth_ok": "25/25",
+      "mean_attempts": 1.2,
+      "mean_tokens": 5984.6,
+      "mean_seconds": 15.4,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 1,
+        "dev_passed": 24
+      }
+    },
+    "spec_first / dev": {
+      "runs": 25,
+      "oneshot_pass": "23/25",
+      "final_pass": "23/25",
+      "pass_after_attempt": {
+        "1": "23/25",
+        "2": "24/25",
+        "3": "23/25"
+      },
+      "fixed": 2,
+      "broken": 2,
+      "own_checks_passed": "22/25",
+      "oneshot_compiled": "25/25",
+      "final_compiled": "24/25",
+      "oneshot_synth_ok": "25/25",
+      "final_synth_ok": "24/25",
+      "mean_attempts": 1.4,
+      "mean_tokens": 6744,
+      "mean_seconds": 15.6,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 3,
+        "dev_passed": 22
+      }
+    }
+  },
+  "by_circuit": {
+    "adder4 / default": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1.4,
+      "mean_tokens": 2619.6,
+      "mean_seconds": 7.4,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "adder4 / tb_timing": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1.4,
+      "mean_tokens": 3218.4,
+      "mean_seconds": 8.8,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "adder4 / spec_first_v1": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1,
+      "mean_tokens": 1385.2,
+      "mean_seconds": 4.8,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "adder4 / spec_first": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1,
+      "mean_tokens": 1385.2,
+      "mean_seconds": 4.8,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "alu4 / default": {
+      "runs": 5,
+      "oneshot_pass": "4/5",
+      "final_pass": "4/5",
+      "pass_after_attempt": {
+        "1": "4/5",
+        "2": "4/5",
+        "3": "4/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "0/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 3,
+      "mean_tokens": 23682,
+      "mean_seconds": 45.5,
+      "median_cells_passing": 134,
+      "statuses": {
+        "attempts_exhausted": 5
+      }
+    },
+    "alu4 / tb_timing": {
+      "runs": 5,
+      "oneshot_pass": "4/5",
+      "final_pass": "3/5",
+      "pass_after_attempt": {
+        "1": "4/5",
+        "2": "3/5",
+        "3": "3/5"
+      },
+      "fixed": 0,
+      "broken": 1,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1.8,
+      "mean_tokens": 9430,
+      "mean_seconds": 26.0,
+      "median_cells_passing": 134,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "alu4 / spec_first_v1": {
+      "runs": 5,
+      "oneshot_pass": "3/5",
+      "final_pass": "4/5",
+      "pass_after_attempt": {
+        "1": "3/5",
+        "2": "4/5",
+        "3": "4/5"
+      },
+      "fixed": 1,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1.2,
+      "mean_tokens": 8343.2,
+      "mean_seconds": 21.8,
+      "median_cells_passing": 134,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "alu4 / spec_first": {
+      "runs": 5,
+      "oneshot_pass": "3/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "3/5",
+        "2": "4/5",
+        "3": "5/5"
+      },
+      "fixed": 2,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1.6,
+      "mean_tokens": 10134.8,
+      "mean_seconds": 20.4,
+      "median_cells_passing": 134,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "counter4 / default": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1,
+      "mean_tokens": 1454.6,
+      "mean_seconds": 5.8,
+      "median_cells_passing": 10,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "counter4 / tb_timing": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1,
+      "mean_tokens": 1998.4,
+      "mean_seconds": 6.8,
+      "median_cells_passing": 10,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "counter4 / spec_first_v1": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1.6,
+      "mean_tokens": 8410.8,
+      "mean_seconds": 17.7,
+      "median_cells_passing": 10,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "counter4 / spec_first": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "3/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "3/5"
+      },
+      "fixed": 0,
+      "broken": 2,
+      "own_checks_passed": "3/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "4/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "4/5",
+      "mean_attempts": 2.2,
+      "mean_tokens": 11022.8,
+      "mean_seconds": 22.9,
+      "median_cells_passing": 10,
+      "statuses": {
+        "attempts_exhausted": 2,
+        "dev_passed": 3
+      }
+    },
+    "mux2 / default": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1,
+      "mean_tokens": 1385,
+      "mean_seconds": 5.2,
+      "median_cells_passing": 8,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "mux2 / tb_timing": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1,
+      "mean_tokens": 1671.4,
+      "mean_seconds": 5.3,
+      "median_cells_passing": 8,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "mux2 / spec_first_v1": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1,
+      "mean_tokens": 1690.2,
+      "mean_seconds": 6.3,
+      "median_cells_passing": 8,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "mux2 / spec_first": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "5/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1,
+      "mean_tokens": 1690.2,
+      "mean_seconds": 6.5,
+      "median_cells_passing": 8,
+      "statuses": {
+        "dev_passed": 5
+      }
+    },
+    "seqdet_moore / default": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "4/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 2,
+      "mean_tokens": 7341.2,
+      "mean_seconds": 18.9,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 1,
+        "dev_passed": 4
+      }
+    },
+    "seqdet_moore / tb_timing": {
+      "runs": 5,
+      "oneshot_pass": "4/5",
+      "final_pass": "4/5",
+      "pass_after_attempt": {
+        "1": "4/5",
+        "2": "4/5",
+        "3": "4/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "3/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 2.6,
+      "mean_tokens": 13210.2,
+      "mean_seconds": 32.6,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 2,
+        "dev_passed": 3
+      }
+    },
+    "seqdet_moore / spec_first_v1": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "4/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1.4,
+      "mean_tokens": 10093.4,
+      "mean_seconds": 26.5,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 1,
+        "dev_passed": 4
+      }
+    },
+    "seqdet_moore / spec_first": {
+      "runs": 5,
+      "oneshot_pass": "5/5",
+      "final_pass": "5/5",
+      "pass_after_attempt": {
+        "1": "5/5",
+        "2": "5/5",
+        "3": "5/5"
+      },
+      "fixed": 0,
+      "broken": 0,
+      "own_checks_passed": "4/5",
+      "oneshot_compiled": "5/5",
+      "final_compiled": "5/5",
+      "oneshot_synth_ok": "5/5",
+      "final_synth_ok": "5/5",
+      "mean_attempts": 1.4,
+      "mean_tokens": 9487,
+      "mean_seconds": 23.6,
+      "median_cells_passing": 18,
+      "statuses": {
+        "attempts_exhausted": 1,
+        "dev_passed": 4
+      }
+    }
+  }
+}

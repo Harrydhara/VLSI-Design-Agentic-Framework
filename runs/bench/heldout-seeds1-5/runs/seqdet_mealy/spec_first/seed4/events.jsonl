@@ -1,0 +1,25 @@
+{"t": 0.0, "event": "run_started", "circuit": "seqdet_mealy", "split": "heldout", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first", "workflow": "spec_first"}
+{"t": 0.007, "event": "model_called", "attempt": null, "role": "testbench", "messages": 2}
+{"t": 7.258, "event": "model_replied", "attempt": null, "role": "testbench", "prompt_tokens": 552, "output_tokens": 1258, "duration_s": 7.244, "truncated": false}
+{"t": 7.37, "event": "testbench_checked", "version": 1, "usable": true}
+{"t": 7.375, "event": "model_called", "attempt": 1, "role": "design", "messages": 2}
+{"t": 12.99, "event": "model_replied", "attempt": 1, "role": "design", "prompt_tokens": 472, "output_tokens": 1051, "duration_s": 5.611, "truncated": false}
+{"t": 13.113, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": false}
+{"t": 13.128, "event": "feedback_sent", "attempt": 1, "chars": 237}
+{"t": 13.143, "event": "model_called", "attempt": 2, "role": "design", "messages": 4}
+{"t": 16.319, "event": "model_replied", "attempt": 2, "role": "design", "prompt_tokens": 1677, "output_tokens": 571, "duration_s": 3.166, "truncated": false}
+{"t": 16.674, "event": "checks_done", "attempt": 2, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 9, "tb_total": 21, "sim_timed_out": false, "synth_ok": true, "cells": 9, "latches": 0}
+{"t": 16.679, "event": "model_called", "attempt": 2, "role": "testbench_review", "messages": 4}
+{"t": 19.715, "event": "model_replied", "attempt": 2, "role": "testbench_review", "prompt_tokens": 2128, "output_tokens": 521, "duration_s": 3.032, "truncated": false}
+{"t": 19.724, "event": "testbench_confirmed", "attempt": 2}
+{"t": 19.728, "event": "feedback_sent", "attempt": 2, "chars": 357}
+{"t": 19.731, "event": "model_called", "attempt": 3, "role": "design", "messages": 6}
+{"t": 22.819, "event": "model_replied", "attempt": 3, "role": "design", "prompt_tokens": 2463, "output_tokens": 571, "duration_s": 3.084, "truncated": false}
+{"t": 23.048, "event": "checks_done", "attempt": 3, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 9, "tb_total": 21, "sim_timed_out": false, "synth_ok": true, "cells": 9, "latches": 0}
+{"t": 23.053, "event": "model_called", "attempt": 3, "role": "testbench_review", "messages": 6}
+{"t": 26.192, "event": "model_replied", "attempt": 3, "role": "testbench_review", "prompt_tokens": 2967, "output_tokens": 521, "duration_s": 3.115, "truncated": false}
+{"t": 26.206, "event": "testbench_confirmed", "attempt": 3}
+{"t": 26.256, "event": "reference_scored", "attempt": 1, "final": false, "outcome": "compile_error", "passed": null, "total": null}
+{"t": 26.361, "event": "reference_scored", "attempt": 2, "final": false, "outcome": "pass", "passed": 684, "total": 684}
+{"t": 26.445, "event": "reference_scored", "attempt": 3, "final": true, "outcome": "pass", "passed": 684, "total": 684}
+{"t": 26.448, "event": "run_finished", "status": "attempts_exhausted", "attempts": 3, "total_tokens": 14752, "duration_s": 26.448, "reference": "pass"}

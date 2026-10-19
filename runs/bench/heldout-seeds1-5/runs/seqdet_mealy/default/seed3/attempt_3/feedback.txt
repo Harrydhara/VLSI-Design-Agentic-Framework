@@ -1,0 +1,3 @@
+- The testbench reported failures (17/18 checks passed):
+FAIL: Mealy output failed during reset test. expected=1, actual=0
+RESULT: 17/18 passed

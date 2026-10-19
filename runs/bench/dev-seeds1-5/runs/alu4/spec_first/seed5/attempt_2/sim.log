@@ -1,0 +1,2 @@
+RESULT: 2048/2048 passed
+tb.v:121: $finish called at 2048 (1s)

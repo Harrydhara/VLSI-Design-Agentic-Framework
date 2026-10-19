@@ -1,0 +1,173 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "updown8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 4,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 28.611,
+  "tokens": {
+    "prompt": 15276,
+    "output": 4809,
+    "total": 20085
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 479,
+      "output_tokens": 1227,
+      "duration_s": 6.323,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 397,
+      "output_tokens": 145,
+      "duration_s": 1.165,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 1,
+      "prompt_tokens": 2124,
+      "output_tokens": 2725,
+      "duration_s": 13.116,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 678,
+      "output_tokens": 153,
+      "duration_s": 1.188,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 5085,
+      "output_tokens": 225,
+      "duration_s": 2.019,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 967,
+      "output_tokens": 144,
+      "duration_s": 1.177,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 3,
+      "prompt_tokens": 5546,
+      "output_tokens": 190,
+      "duration_s": 1.928,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 397,
+      "output_tokens": 145,
+      "duration_s": 1.165,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 515,
+        "tb_total": 519,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (515/519 checks passed):\nFAIL: rst_n=0 | Expected: 0, Actual:   x\nFAIL: Post-Reset | Expected:   0, Actual:   1\nRESULT: 515/519 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 678,
+      "output_tokens": 153,
+      "duration_s": 1.188,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 515,
+        "tb_total": 519,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (515/519 checks passed):\nFAIL: rst_n=0 | Expected: 0, Actual:   x\nFAIL: Post-Reset | Expected:   0, Actual:   1\nRESULT: 515/519 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 967,
+      "output_tokens": 144,
+      "duration_s": 1.177,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 515,
+        "tb_total": 519,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (515/519 checks passed):\nFAIL: rst_n=0 | Expected: 0, Actual:   x\nFAIL: Post-Reset | Expected:   0, Actual:   1\nRESULT: 515/519 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 380,
+    "total": 380,
+    "detail": "380/380 checks passed"
+  }
+}

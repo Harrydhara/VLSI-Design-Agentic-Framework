@@ -1,0 +1,5 @@
+FAIL: rst_n=1, en=1, up=1 | Expected:   0, Actual:   3
+FAIL: rst_n=1, en=1, up=0 | Expected: 255, Actual:   2
+FAIL: Async reset during operation failed. Expected: 0, Actual:   3
+RESULT: 13/16 passed
+tb.v:136: $finish called at 158 (1s)

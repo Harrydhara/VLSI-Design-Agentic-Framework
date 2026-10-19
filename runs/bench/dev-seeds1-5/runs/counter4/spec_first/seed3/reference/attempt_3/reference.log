@@ -1,0 +1,5 @@
+reference_tb.v:12: error: Unknown module type: counter4
+2 error(s) during elaboration.
+*** These modules were missing:
+        counter4 referenced 1 times.
+***

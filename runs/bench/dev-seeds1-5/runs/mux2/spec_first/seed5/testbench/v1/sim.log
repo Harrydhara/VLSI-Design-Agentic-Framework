@@ -1,0 +1,10 @@
+FAIL: a=255, b=  0, sel=0 | Expected y=255, Actual y=  0
+FAIL: a= 85, b=255, sel=1 | Expected y=255, Actual y=  0
+FAIL: a= 18, b= 52, sel=0 | Expected y= 18, Actual y=  0
+FAIL: a= 18, b= 52, sel=1 | Expected y= 52, Actual y=  0
+FAIL: a=170, b= 85, sel=0 | Expected y=170, Actual y=  0
+FAIL: a=170, b= 85, sel=1 | Expected y= 85, Actual y=  0
+FAIL: a=255, b=255, sel=0 | Expected y=255, Actual y=  0
+FAIL: a=255, b=255, sel=1 | Expected y=255, Actual y=  0
+RESULT: 4/12 passed
+tb.v:89: $finish called at 12 (1s)

@@ -1,0 +1,16 @@
+FAIL: a=170, b=187, sel=0 | Expected y=170, Actual y=  0
+FAIL: a= 85, b=204, sel=0 | Expected y= 85, Actual y=  0
+FAIL: a=170, b=187, sel=1 | Expected y=187, Actual y=  0
+FAIL: a= 18, b= 52, sel=1 | Expected y= 52, Actual y=  0
+FAIL: a=255, b=255, sel=0 | Expected y=255, Actual y=  0
+FAIL: a=255, b=255, sel=1 | Expected y=255, Actual y=  0
+FAIL: a=  1, b=  2, sel=0 | Expected y=  1, Actual y=  0
+FAIL: a=  1, b=  2, sel=1 | Expected y=  2, Actual y=  0
+FAIL: a=254, b=253, sel=0 | Expected y=254, Actual y=  0
+FAIL: a=254, b=253, sel=1 | Expected y=253, Actual y=  0
+FAIL: a= 90, b= 85, sel=0 | Expected y= 90, Actual y=  0
+FAIL: a= 90, b= 85, sel=1 | Expected y= 85, Actual y=  0
+FAIL: a= 15, b=240, sel=0 | Expected y= 15, Actual y=  0
+FAIL: a= 15, b=240, sel=1 | Expected y=240, Actual y=  0
+RESULT: 4/18 passed
+tb.v:87: $finish called at 18 (1s)

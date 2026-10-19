@@ -1,0 +1,3 @@
+- Your reply was cut off at the output token limit before it finished. Keep the code complete and shorter.
+
+- The design has no module named counter4 (modules found: none). Use exactly the module header you were given.

@@ -1,0 +1,54 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "adder4",
+  "split": "dev",
+  "settings": {
+    "model": "fake",
+    "temperature": 0.2,
+    "seed": 42,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 100,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys"
+  },
+  "status": "token_budget_exhausted",
+  "error": null,
+  "duration_s": 0.423,
+  "tokens": {
+    "prompt": 465,
+    "output": 189,
+    "total": 654
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 465,
+      "output_tokens": 189,
+      "duration_s": 0.0,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 256,
+        "tb_total": 512,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 17,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (256/512 checks passed):\nFAIL: a=1 b=15 cin=0 got 0\nFAIL: a=2 b=14 cin=0 got 0\nFAIL: a=2 b=15 cin=0 got 1\nRESULT: 256/512 passed"
+    }
+  ],
+  "final_attempt": 1,
+  "reference": {
+    "outcome": "fail",
+    "passed": 256,
+    "total": 512,
+    "detail": "256/512 checks passed"
+  }
+}

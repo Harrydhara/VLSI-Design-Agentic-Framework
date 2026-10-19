@@ -1,0 +1,7 @@
+circuit,split,family,strategy,seed,status,attempts_used,oneshot_outcome,final_outcome,attempt_outcomes,oneshot_compiled,final_compiled,oneshot_synth_ok,final_synth_ok,oneshot_cells,final_cells,final_latches,own_checks_passed,prompt_tokens,output_tokens,total_tokens,duration_s,run_dir
+adder4,dev,adder,default,1,dev_passed,2,fail,pass,fail|pass,True,True,True,True,17,23,0,True,1223,374,1597,0.798,/mnt/c/Users/harrydhara16/Documents/Claude framework/runs/bench/demo/runs/adder4/default/seed1
+adder4,dev,adder,default,2,dev_passed,2,fail,pass,fail|pass,True,True,True,True,17,23,0,True,1223,374,1597,0.869,/mnt/c/Users/harrydhara16/Documents/Claude framework/runs/bench/demo/runs/adder4/default/seed2
+adder4,dev,adder,default,3,dev_passed,2,fail,pass,fail|pass,True,True,True,True,17,23,0,True,1223,374,1597,0.901,/mnt/c/Users/harrydhara16/Documents/Claude framework/runs/bench/demo/runs/adder4/default/seed3
+adder4,dev,adder,tb_timing,1,dev_passed,2,fail,pass,fail|pass,True,True,True,True,17,23,0,True,1944,374,2318,0.765,/mnt/c/Users/harrydhara16/Documents/Claude framework/runs/bench/demo/runs/adder4/tb_timing/seed1
+adder4,dev,adder,tb_timing,2,dev_passed,2,fail,pass,fail|pass,True,True,True,True,17,23,0,True,1944,374,2318,0.653,/mnt/c/Users/harrydhara16/Documents/Claude framework/runs/bench/demo/runs/adder4/tb_timing/seed2
+adder4,dev,adder,tb_timing,3,dev_passed,2,fail,pass,fail|pass,True,True,True,True,17,23,0,True,1944,374,2318,0.828,/mnt/c/Users/harrydhara16/Documents/Claude framework/runs/bench/demo/runs/adder4/tb_timing/seed3

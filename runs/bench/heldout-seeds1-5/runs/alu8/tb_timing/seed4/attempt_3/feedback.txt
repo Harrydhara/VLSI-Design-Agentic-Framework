@@ -1,0 +1,5 @@
+- The design compiles, but the design plus testbench does not:
+tb.v:38: error: syntax error
+tb.v:38: error: Malformed statement
+tb.v:43: error: syntax error
+tb.v:43: error: Malformed statement

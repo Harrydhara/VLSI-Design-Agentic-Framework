@@ -1,0 +1,6 @@
+FAIL: din=1, expected detected=1, actual=0
+FAIL: din=1, expected detected=1, actual=0
+FAIL: din=1, expected detected=1, actual=0
+FAIL: Reset failed, state=01
+RESULT: 5/13 passed
+tb.v:101: $finish called at 191 (1s)

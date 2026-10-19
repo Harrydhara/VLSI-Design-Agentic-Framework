@@ -1,0 +1,844 @@
+FAIL: a=  0, b=  0, cin=1 | Expected sum=  1, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  1, cin=0 | Expected sum=  1, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  1, cin=1 | Expected sum=  2, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  2, cin=0 | Expected sum=  2, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  2, cin=1 | Expected sum=  3, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  3, cin=0 | Expected sum=  3, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  3, cin=1 | Expected sum=  4, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  4, cin=0 | Expected sum=  4, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  4, cin=1 | Expected sum=  5, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  5, cin=0 | Expected sum=  5, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  5, cin=1 | Expected sum=  6, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  6, cin=0 | Expected sum=  6, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  6, cin=1 | Expected sum=  7, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  7, cin=0 | Expected sum=  7, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  7, cin=1 | Expected sum=  8, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  8, cin=0 | Expected sum=  8, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  8, cin=1 | Expected sum=  9, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  9, cin=0 | Expected sum=  9, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=  9, cin=1 | Expected sum= 10, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 10, cin=0 | Expected sum= 10, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 10, cin=1 | Expected sum= 11, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 11, cin=0 | Expected sum= 11, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 11, cin=1 | Expected sum= 12, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 12, cin=0 | Expected sum= 12, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 12, cin=1 | Expected sum= 13, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 13, cin=0 | Expected sum= 13, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 13, cin=1 | Expected sum= 14, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 14, cin=0 | Expected sum= 14, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 14, cin=1 | Expected sum= 15, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 15, cin=0 | Expected sum= 15, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 15, cin=1 | Expected sum= 16, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 16, cin=0 | Expected sum= 16, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 16, cin=1 | Expected sum= 17, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 17, cin=0 | Expected sum= 17, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 17, cin=1 | Expected sum= 18, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 18, cin=0 | Expected sum= 18, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 18, cin=1 | Expected sum= 19, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 19, cin=0 | Expected sum= 19, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 19, cin=1 | Expected sum= 20, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 20, cin=0 | Expected sum= 20, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 20, cin=1 | Expected sum= 21, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 21, cin=0 | Expected sum= 21, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 21, cin=1 | Expected sum= 22, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 22, cin=0 | Expected sum= 22, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 22, cin=1 | Expected sum= 23, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 23, cin=0 | Expected sum= 23, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 23, cin=1 | Expected sum= 24, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 24, cin=0 | Expected sum= 24, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 24, cin=1 | Expected sum= 25, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 25, cin=0 | Expected sum= 25, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 25, cin=1 | Expected sum= 26, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 26, cin=0 | Expected sum= 26, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 26, cin=1 | Expected sum= 27, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 27, cin=0 | Expected sum= 27, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 27, cin=1 | Expected sum= 28, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 28, cin=0 | Expected sum= 28, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 28, cin=1 | Expected sum= 29, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 29, cin=0 | Expected sum= 29, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 29, cin=1 | Expected sum= 30, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 30, cin=0 | Expected sum= 30, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 30, cin=1 | Expected sum= 31, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 31, cin=0 | Expected sum= 31, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 31, cin=1 | Expected sum= 32, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 32, cin=0 | Expected sum= 32, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 32, cin=1 | Expected sum= 33, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 33, cin=0 | Expected sum= 33, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 33, cin=1 | Expected sum= 34, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 34, cin=0 | Expected sum= 34, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 34, cin=1 | Expected sum= 35, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 35, cin=0 | Expected sum= 35, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 35, cin=1 | Expected sum= 36, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 36, cin=0 | Expected sum= 36, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 36, cin=1 | Expected sum= 37, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 37, cin=0 | Expected sum= 37, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 37, cin=1 | Expected sum= 38, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 38, cin=0 | Expected sum= 38, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 38, cin=1 | Expected sum= 39, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 39, cin=0 | Expected sum= 39, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 39, cin=1 | Expected sum= 40, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 40, cin=0 | Expected sum= 40, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 40, cin=1 | Expected sum= 41, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 41, cin=0 | Expected sum= 41, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 41, cin=1 | Expected sum= 42, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 42, cin=0 | Expected sum= 42, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 42, cin=1 | Expected sum= 43, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 43, cin=0 | Expected sum= 43, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 43, cin=1 | Expected sum= 44, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 44, cin=0 | Expected sum= 44, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 44, cin=1 | Expected sum= 45, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 45, cin=0 | Expected sum= 45, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 45, cin=1 | Expected sum= 46, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 46, cin=0 | Expected sum= 46, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 46, cin=1 | Expected sum= 47, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 47, cin=0 | Expected sum= 47, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 47, cin=1 | Expected sum= 48, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 48, cin=0 | Expected sum= 48, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 48, cin=1 | Expected sum= 49, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 49, cin=0 | Expected sum= 49, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 49, cin=1 | Expected sum= 50, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 50, cin=0 | Expected sum= 50, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 50, cin=1 | Expected sum= 51, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 51, cin=0 | Expected sum= 51, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 51, cin=1 | Expected sum= 52, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 52, cin=0 | Expected sum= 52, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 52, cin=1 | Expected sum= 53, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 53, cin=0 | Expected sum= 53, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 53, cin=1 | Expected sum= 54, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 54, cin=0 | Expected sum= 54, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 54, cin=1 | Expected sum= 55, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 55, cin=0 | Expected sum= 55, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 55, cin=1 | Expected sum= 56, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 56, cin=0 | Expected sum= 56, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 56, cin=1 | Expected sum= 57, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 57, cin=0 | Expected sum= 57, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 57, cin=1 | Expected sum= 58, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 58, cin=0 | Expected sum= 58, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 58, cin=1 | Expected sum= 59, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 59, cin=0 | Expected sum= 59, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 59, cin=1 | Expected sum= 60, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 60, cin=0 | Expected sum= 60, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 60, cin=1 | Expected sum= 61, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 61, cin=0 | Expected sum= 61, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 61, cin=1 | Expected sum= 62, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 62, cin=0 | Expected sum= 62, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 62, cin=1 | Expected sum= 63, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 63, cin=0 | Expected sum= 63, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 63, cin=1 | Expected sum= 64, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 64, cin=0 | Expected sum= 64, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 64, cin=1 | Expected sum= 65, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 65, cin=0 | Expected sum= 65, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 65, cin=1 | Expected sum= 66, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 66, cin=0 | Expected sum= 66, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 66, cin=1 | Expected sum= 67, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 67, cin=0 | Expected sum= 67, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 67, cin=1 | Expected sum= 68, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 68, cin=0 | Expected sum= 68, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 68, cin=1 | Expected sum= 69, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 69, cin=0 | Expected sum= 69, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 69, cin=1 | Expected sum= 70, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 70, cin=0 | Expected sum= 70, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 70, cin=1 | Expected sum= 71, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 71, cin=0 | Expected sum= 71, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 71, cin=1 | Expected sum= 72, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 72, cin=0 | Expected sum= 72, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 72, cin=1 | Expected sum= 73, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 73, cin=0 | Expected sum= 73, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 73, cin=1 | Expected sum= 74, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 74, cin=0 | Expected sum= 74, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 74, cin=1 | Expected sum= 75, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 75, cin=0 | Expected sum= 75, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 75, cin=1 | Expected sum= 76, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 76, cin=0 | Expected sum= 76, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 76, cin=1 | Expected sum= 77, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 77, cin=0 | Expected sum= 77, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 77, cin=1 | Expected sum= 78, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 78, cin=0 | Expected sum= 78, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 78, cin=1 | Expected sum= 79, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 79, cin=0 | Expected sum= 79, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 79, cin=1 | Expected sum= 80, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 80, cin=0 | Expected sum= 80, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 80, cin=1 | Expected sum= 81, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 81, cin=0 | Expected sum= 81, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 81, cin=1 | Expected sum= 82, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 82, cin=0 | Expected sum= 82, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 82, cin=1 | Expected sum= 83, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 83, cin=0 | Expected sum= 83, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 83, cin=1 | Expected sum= 84, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 84, cin=0 | Expected sum= 84, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 84, cin=1 | Expected sum= 85, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 85, cin=0 | Expected sum= 85, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 85, cin=1 | Expected sum= 86, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 86, cin=0 | Expected sum= 86, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 86, cin=1 | Expected sum= 87, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 87, cin=0 | Expected sum= 87, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 87, cin=1 | Expected sum= 88, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 88, cin=0 | Expected sum= 88, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 88, cin=1 | Expected sum= 89, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 89, cin=0 | Expected sum= 89, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 89, cin=1 | Expected sum= 90, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 90, cin=0 | Expected sum= 90, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 90, cin=1 | Expected sum= 91, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 91, cin=0 | Expected sum= 91, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 91, cin=1 | Expected sum= 92, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 92, cin=0 | Expected sum= 92, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 92, cin=1 | Expected sum= 93, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 93, cin=0 | Expected sum= 93, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 93, cin=1 | Expected sum= 94, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 94, cin=0 | Expected sum= 94, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 94, cin=1 | Expected sum= 95, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 95, cin=0 | Expected sum= 95, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 95, cin=1 | Expected sum= 96, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 96, cin=0 | Expected sum= 96, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 96, cin=1 | Expected sum= 97, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 97, cin=0 | Expected sum= 97, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 97, cin=1 | Expected sum= 98, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 98, cin=0 | Expected sum= 98, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 98, cin=1 | Expected sum= 99, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 99, cin=0 | Expected sum= 99, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b= 99, cin=1 | Expected sum=100, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=100, cin=0 | Expected sum=100, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=100, cin=1 | Expected sum=101, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=101, cin=0 | Expected sum=101, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=101, cin=1 | Expected sum=102, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=102, cin=0 | Expected sum=102, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=102, cin=1 | Expected sum=103, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=103, cin=0 | Expected sum=103, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=103, cin=1 | Expected sum=104, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=104, cin=0 | Expected sum=104, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=104, cin=1 | Expected sum=105, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=105, cin=0 | Expected sum=105, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=105, cin=1 | Expected sum=106, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=106, cin=0 | Expected sum=106, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=106, cin=1 | Expected sum=107, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=107, cin=0 | Expected sum=107, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=107, cin=1 | Expected sum=108, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=108, cin=0 | Expected sum=108, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=108, cin=1 | Expected sum=109, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=109, cin=0 | Expected sum=109, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=109, cin=1 | Expected sum=110, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=110, cin=0 | Expected sum=110, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=110, cin=1 | Expected sum=111, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=111, cin=0 | Expected sum=111, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=111, cin=1 | Expected sum=112, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=112, cin=0 | Expected sum=112, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=112, cin=1 | Expected sum=113, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=113, cin=0 | Expected sum=113, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=113, cin=1 | Expected sum=114, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=114, cin=0 | Expected sum=114, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=114, cin=1 | Expected sum=115, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=115, cin=0 | Expected sum=115, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=115, cin=1 | Expected sum=116, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=116, cin=0 | Expected sum=116, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=116, cin=1 | Expected sum=117, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=117, cin=0 | Expected sum=117, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=117, cin=1 | Expected sum=118, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=118, cin=0 | Expected sum=118, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=118, cin=1 | Expected sum=119, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=119, cin=0 | Expected sum=119, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=119, cin=1 | Expected sum=120, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=120, cin=0 | Expected sum=120, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=120, cin=1 | Expected sum=121, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=121, cin=0 | Expected sum=121, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=121, cin=1 | Expected sum=122, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=122, cin=0 | Expected sum=122, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=122, cin=1 | Expected sum=123, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=123, cin=0 | Expected sum=123, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=123, cin=1 | Expected sum=124, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=124, cin=0 | Expected sum=124, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=124, cin=1 | Expected sum=125, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=125, cin=0 | Expected sum=125, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=125, cin=1 | Expected sum=126, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=126, cin=0 | Expected sum=126, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=126, cin=1 | Expected sum=127, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=127, cin=0 | Expected sum=127, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=127, cin=1 | Expected sum=128, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=128, cin=0 | Expected sum=128, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=128, cin=1 | Expected sum=129, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=129, cin=0 | Expected sum=129, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=129, cin=1 | Expected sum=130, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=130, cin=0 | Expected sum=130, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=130, cin=1 | Expected sum=131, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=131, cin=0 | Expected sum=131, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=131, cin=1 | Expected sum=132, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=132, cin=0 | Expected sum=132, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=132, cin=1 | Expected sum=133, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=133, cin=0 | Expected sum=133, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=133, cin=1 | Expected sum=134, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=134, cin=0 | Expected sum=134, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=134, cin=1 | Expected sum=135, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=135, cin=0 | Expected sum=135, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=135, cin=1 | Expected sum=136, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=136, cin=0 | Expected sum=136, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=136, cin=1 | Expected sum=137, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=137, cin=0 | Expected sum=137, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=137, cin=1 | Expected sum=138, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=138, cin=0 | Expected sum=138, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=138, cin=1 | Expected sum=139, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=139, cin=0 | Expected sum=139, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=139, cin=1 | Expected sum=140, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=140, cin=0 | Expected sum=140, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=140, cin=1 | Expected sum=141, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=141, cin=0 | Expected sum=141, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=141, cin=1 | Expected sum=142, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=142, cin=0 | Expected sum=142, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=142, cin=1 | Expected sum=143, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=143, cin=0 | Expected sum=143, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=143, cin=1 | Expected sum=144, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=144, cin=0 | Expected sum=144, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=144, cin=1 | Expected sum=145, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=145, cin=0 | Expected sum=145, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=145, cin=1 | Expected sum=146, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=146, cin=0 | Expected sum=146, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=146, cin=1 | Expected sum=147, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=147, cin=0 | Expected sum=147, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=147, cin=1 | Expected sum=148, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=148, cin=0 | Expected sum=148, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=148, cin=1 | Expected sum=149, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=149, cin=0 | Expected sum=149, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=149, cin=1 | Expected sum=150, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=150, cin=0 | Expected sum=150, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=150, cin=1 | Expected sum=151, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=151, cin=0 | Expected sum=151, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=151, cin=1 | Expected sum=152, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=152, cin=0 | Expected sum=152, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=152, cin=1 | Expected sum=153, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=153, cin=0 | Expected sum=153, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=153, cin=1 | Expected sum=154, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=154, cin=0 | Expected sum=154, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=154, cin=1 | Expected sum=155, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=155, cin=0 | Expected sum=155, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=155, cin=1 | Expected sum=156, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=156, cin=0 | Expected sum=156, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=156, cin=1 | Expected sum=157, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=157, cin=0 | Expected sum=157, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=157, cin=1 | Expected sum=158, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=158, cin=0 | Expected sum=158, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=158, cin=1 | Expected sum=159, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=159, cin=0 | Expected sum=159, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=159, cin=1 | Expected sum=160, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=160, cin=0 | Expected sum=160, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=160, cin=1 | Expected sum=161, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=161, cin=0 | Expected sum=161, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=161, cin=1 | Expected sum=162, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=162, cin=0 | Expected sum=162, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=162, cin=1 | Expected sum=163, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=163, cin=0 | Expected sum=163, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=163, cin=1 | Expected sum=164, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=164, cin=0 | Expected sum=164, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=164, cin=1 | Expected sum=165, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=165, cin=0 | Expected sum=165, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=165, cin=1 | Expected sum=166, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=166, cin=0 | Expected sum=166, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=166, cin=1 | Expected sum=167, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=167, cin=0 | Expected sum=167, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=167, cin=1 | Expected sum=168, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=168, cin=0 | Expected sum=168, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=168, cin=1 | Expected sum=169, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=169, cin=0 | Expected sum=169, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=169, cin=1 | Expected sum=170, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=170, cin=0 | Expected sum=170, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=170, cin=1 | Expected sum=171, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=171, cin=0 | Expected sum=171, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=171, cin=1 | Expected sum=172, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=172, cin=0 | Expected sum=172, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=172, cin=1 | Expected sum=173, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=173, cin=0 | Expected sum=173, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=173, cin=1 | Expected sum=174, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=174, cin=0 | Expected sum=174, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=174, cin=1 | Expected sum=175, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=175, cin=0 | Expected sum=175, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=175, cin=1 | Expected sum=176, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=176, cin=0 | Expected sum=176, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=176, cin=1 | Expected sum=177, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=177, cin=0 | Expected sum=177, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=177, cin=1 | Expected sum=178, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=178, cin=0 | Expected sum=178, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=178, cin=1 | Expected sum=179, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=179, cin=0 | Expected sum=179, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=179, cin=1 | Expected sum=180, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=180, cin=0 | Expected sum=180, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=180, cin=1 | Expected sum=181, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=181, cin=0 | Expected sum=181, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=181, cin=1 | Expected sum=182, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=182, cin=0 | Expected sum=182, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=182, cin=1 | Expected sum=183, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=183, cin=0 | Expected sum=183, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=183, cin=1 | Expected sum=184, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=184, cin=0 | Expected sum=184, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=184, cin=1 | Expected sum=185, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=185, cin=0 | Expected sum=185, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=185, cin=1 | Expected sum=186, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=186, cin=0 | Expected sum=186, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=186, cin=1 | Expected sum=187, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=187, cin=0 | Expected sum=187, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=187, cin=1 | Expected sum=188, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=188, cin=0 | Expected sum=188, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=188, cin=1 | Expected sum=189, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=189, cin=0 | Expected sum=189, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=189, cin=1 | Expected sum=190, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=190, cin=0 | Expected sum=190, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=190, cin=1 | Expected sum=191, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=191, cin=0 | Expected sum=191, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=191, cin=1 | Expected sum=192, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=192, cin=0 | Expected sum=192, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=192, cin=1 | Expected sum=193, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=193, cin=0 | Expected sum=193, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=193, cin=1 | Expected sum=194, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=194, cin=0 | Expected sum=194, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=194, cin=1 | Expected sum=195, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=195, cin=0 | Expected sum=195, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=195, cin=1 | Expected sum=196, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=196, cin=0 | Expected sum=196, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=196, cin=1 | Expected sum=197, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=197, cin=0 | Expected sum=197, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=197, cin=1 | Expected sum=198, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=198, cin=0 | Expected sum=198, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=198, cin=1 | Expected sum=199, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=199, cin=0 | Expected sum=199, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=199, cin=1 | Expected sum=200, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=200, cin=0 | Expected sum=200, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=200, cin=1 | Expected sum=201, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=201, cin=0 | Expected sum=201, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=201, cin=1 | Expected sum=202, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=202, cin=0 | Expected sum=202, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=202, cin=1 | Expected sum=203, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=203, cin=0 | Expected sum=203, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=203, cin=1 | Expected sum=204, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=204, cin=0 | Expected sum=204, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=204, cin=1 | Expected sum=205, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=205, cin=0 | Expected sum=205, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=205, cin=1 | Expected sum=206, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=206, cin=0 | Expected sum=206, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=206, cin=1 | Expected sum=207, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=207, cin=0 | Expected sum=207, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=207, cin=1 | Expected sum=208, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=208, cin=0 | Expected sum=208, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=208, cin=1 | Expected sum=209, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=209, cin=0 | Expected sum=209, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=209, cin=1 | Expected sum=210, cout=0 | Actual sum=  0, cout=0
+FAIL: a=  0, b=210, cin=0 | Expected sum=210, cout=0 | Actual sum=  0, cout=0
+FAIL: a=
+... [10158221 bytes of output omitted] ...
+Actual sum=  0, cout=0
+FAIL: a=255, b= 47, cin=1 | Expected sum= 47, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 48, cin=0 | Expected sum= 47, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 48, cin=1 | Expected sum= 48, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 49, cin=0 | Expected sum= 48, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 49, cin=1 | Expected sum= 49, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 50, cin=0 | Expected sum= 49, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 50, cin=1 | Expected sum= 50, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 51, cin=0 | Expected sum= 50, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 51, cin=1 | Expected sum= 51, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 52, cin=0 | Expected sum= 51, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 52, cin=1 | Expected sum= 52, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 53, cin=0 | Expected sum= 52, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 53, cin=1 | Expected sum= 53, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 54, cin=0 | Expected sum= 53, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 54, cin=1 | Expected sum= 54, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 55, cin=0 | Expected sum= 54, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 55, cin=1 | Expected sum= 55, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 56, cin=0 | Expected sum= 55, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 56, cin=1 | Expected sum= 56, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 57, cin=0 | Expected sum= 56, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 57, cin=1 | Expected sum= 57, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 58, cin=0 | Expected sum= 57, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 58, cin=1 | Expected sum= 58, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 59, cin=0 | Expected sum= 58, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 59, cin=1 | Expected sum= 59, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 60, cin=0 | Expected sum= 59, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 60, cin=1 | Expected sum= 60, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 61, cin=0 | Expected sum= 60, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 61, cin=1 | Expected sum= 61, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 62, cin=0 | Expected sum= 61, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 62, cin=1 | Expected sum= 62, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 63, cin=0 | Expected sum= 62, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 63, cin=1 | Expected sum= 63, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 64, cin=0 | Expected sum= 63, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 64, cin=1 | Expected sum= 64, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 65, cin=0 | Expected sum= 64, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 65, cin=1 | Expected sum= 65, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 66, cin=0 | Expected sum= 65, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 66, cin=1 | Expected sum= 66, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 67, cin=0 | Expected sum= 66, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 67, cin=1 | Expected sum= 67, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 68, cin=0 | Expected sum= 67, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 68, cin=1 | Expected sum= 68, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 69, cin=0 | Expected sum= 68, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 69, cin=1 | Expected sum= 69, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 70, cin=0 | Expected sum= 69, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 70, cin=1 | Expected sum= 70, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 71, cin=0 | Expected sum= 70, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 71, cin=1 | Expected sum= 71, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 72, cin=0 | Expected sum= 71, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 72, cin=1 | Expected sum= 72, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 73, cin=0 | Expected sum= 72, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 73, cin=1 | Expected sum= 73, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 74, cin=0 | Expected sum= 73, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 74, cin=1 | Expected sum= 74, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 75, cin=0 | Expected sum= 74, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 75, cin=1 | Expected sum= 75, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 76, cin=0 | Expected sum= 75, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 76, cin=1 | Expected sum= 76, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 77, cin=0 | Expected sum= 76, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 77, cin=1 | Expected sum= 77, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 78, cin=0 | Expected sum= 77, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 78, cin=1 | Expected sum= 78, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 79, cin=0 | Expected sum= 78, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 79, cin=1 | Expected sum= 79, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 80, cin=0 | Expected sum= 79, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 80, cin=1 | Expected sum= 80, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 81, cin=0 | Expected sum= 80, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 81, cin=1 | Expected sum= 81, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 82, cin=0 | Expected sum= 81, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 82, cin=1 | Expected sum= 82, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 83, cin=0 | Expected sum= 82, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 83, cin=1 | Expected sum= 83, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 84, cin=0 | Expected sum= 83, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 84, cin=1 | Expected sum= 84, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 85, cin=0 | Expected sum= 84, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 85, cin=1 | Expected sum= 85, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 86, cin=0 | Expected sum= 85, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 86, cin=1 | Expected sum= 86, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 87, cin=0 | Expected sum= 86, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 87, cin=1 | Expected sum= 87, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 88, cin=0 | Expected sum= 87, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 88, cin=1 | Expected sum= 88, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 89, cin=0 | Expected sum= 88, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 89, cin=1 | Expected sum= 89, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 90, cin=0 | Expected sum= 89, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 90, cin=1 | Expected sum= 90, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 91, cin=0 | Expected sum= 90, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 91, cin=1 | Expected sum= 91, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 92, cin=0 | Expected sum= 91, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 92, cin=1 | Expected sum= 92, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 93, cin=0 | Expected sum= 92, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 93, cin=1 | Expected sum= 93, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 94, cin=0 | Expected sum= 93, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 94, cin=1 | Expected sum= 94, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 95, cin=0 | Expected sum= 94, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 95, cin=1 | Expected sum= 95, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 96, cin=0 | Expected sum= 95, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 96, cin=1 | Expected sum= 96, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 97, cin=0 | Expected sum= 96, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 97, cin=1 | Expected sum= 97, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 98, cin=0 | Expected sum= 97, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 98, cin=1 | Expected sum= 98, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 99, cin=0 | Expected sum= 98, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b= 99, cin=1 | Expected sum= 99, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=100, cin=0 | Expected sum= 99, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=100, cin=1 | Expected sum=100, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=101, cin=0 | Expected sum=100, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=101, cin=1 | Expected sum=101, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=102, cin=0 | Expected sum=101, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=102, cin=1 | Expected sum=102, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=103, cin=0 | Expected sum=102, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=103, cin=1 | Expected sum=103, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=104, cin=0 | Expected sum=103, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=104, cin=1 | Expected sum=104, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=105, cin=0 | Expected sum=104, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=105, cin=1 | Expected sum=105, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=106, cin=0 | Expected sum=105, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=106, cin=1 | Expected sum=106, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=107, cin=0 | Expected sum=106, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=107, cin=1 | Expected sum=107, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=108, cin=0 | Expected sum=107, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=108, cin=1 | Expected sum=108, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=109, cin=0 | Expected sum=108, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=109, cin=1 | Expected sum=109, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=110, cin=0 | Expected sum=109, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=110, cin=1 | Expected sum=110, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=111, cin=0 | Expected sum=110, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=111, cin=1 | Expected sum=111, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=112, cin=0 | Expected sum=111, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=112, cin=1 | Expected sum=112, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=113, cin=0 | Expected sum=112, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=113, cin=1 | Expected sum=113, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=114, cin=0 | Expected sum=113, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=114, cin=1 | Expected sum=114, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=115, cin=0 | Expected sum=114, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=115, cin=1 | Expected sum=115, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=116, cin=0 | Expected sum=115, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=116, cin=1 | Expected sum=116, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=117, cin=0 | Expected sum=116, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=117, cin=1 | Expected sum=117, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=118, cin=0 | Expected sum=117, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=118, cin=1 | Expected sum=118, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=119, cin=0 | Expected sum=118, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=119, cin=1 | Expected sum=119, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=120, cin=0 | Expected sum=119, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=120, cin=1 | Expected sum=120, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=121, cin=0 | Expected sum=120, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=121, cin=1 | Expected sum=121, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=122, cin=0 | Expected sum=121, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=122, cin=1 | Expected sum=122, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=123, cin=0 | Expected sum=122, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=123, cin=1 | Expected sum=123, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=124, cin=0 | Expected sum=123, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=124, cin=1 | Expected sum=124, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=125, cin=0 | Expected sum=124, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=125, cin=1 | Expected sum=125, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=126, cin=0 | Expected sum=125, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=126, cin=1 | Expected sum=126, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=127, cin=0 | Expected sum=126, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=127, cin=1 | Expected sum=127, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=128, cin=0 | Expected sum=127, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=128, cin=1 | Expected sum=128, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=129, cin=0 | Expected sum=128, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=129, cin=1 | Expected sum=129, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=130, cin=0 | Expected sum=129, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=130, cin=1 | Expected sum=130, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=131, cin=0 | Expected sum=130, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=131, cin=1 | Expected sum=131, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=132, cin=0 | Expected sum=131, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=132, cin=1 | Expected sum=132, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=133, cin=0 | Expected sum=132, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=133, cin=1 | Expected sum=133, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=134, cin=0 | Expected sum=133, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=134, cin=1 | Expected sum=134, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=135, cin=0 | Expected sum=134, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=135, cin=1 | Expected sum=135, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=136, cin=0 | Expected sum=135, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=136, cin=1 | Expected sum=136, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=137, cin=0 | Expected sum=136, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=137, cin=1 | Expected sum=137, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=138, cin=0 | Expected sum=137, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=138, cin=1 | Expected sum=138, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=139, cin=0 | Expected sum=138, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=139, cin=1 | Expected sum=139, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=140, cin=0 | Expected sum=139, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=140, cin=1 | Expected sum=140, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=141, cin=0 | Expected sum=140, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=141, cin=1 | Expected sum=141, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=142, cin=0 | Expected sum=141, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=142, cin=1 | Expected sum=142, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=143, cin=0 | Expected sum=142, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=143, cin=1 | Expected sum=143, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=144, cin=0 | Expected sum=143, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=144, cin=1 | Expected sum=144, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=145, cin=0 | Expected sum=144, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=145, cin=1 | Expected sum=145, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=146, cin=0 | Expected sum=145, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=146, cin=1 | Expected sum=146, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=147, cin=0 | Expected sum=146, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=147, cin=1 | Expected sum=147, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=148, cin=0 | Expected sum=147, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=148, cin=1 | Expected sum=148, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=149, cin=0 | Expected sum=148, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=149, cin=1 | Expected sum=149, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=150, cin=0 | Expected sum=149, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=150, cin=1 | Expected sum=150, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=151, cin=0 | Expected sum=150, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=151, cin=1 | Expected sum=151, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=152, cin=0 | Expected sum=151, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=152, cin=1 | Expected sum=152, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=153, cin=0 | Expected sum=152, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=153, cin=1 | Expected sum=153, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=154, cin=0 | Expected sum=153, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=154, cin=1 | Expected sum=154, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=155, cin=0 | Expected sum=154, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=155, cin=1 | Expected sum=155, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=156, cin=0 | Expected sum=155, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=156, cin=1 | Expected sum=156, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=157, cin=0 | Expected sum=156, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=157, cin=1 | Expected sum=157, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=158, cin=0 | Expected sum=157, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=158, cin=1 | Expected sum=158, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=159, cin=0 | Expected sum=158, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=159, cin=1 | Expected sum=159, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=160, cin=0 | Expected sum=159, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=160, cin=1 | Expected sum=160, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=161, cin=0 | Expected sum=160, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=161, cin=1 | Expected sum=161, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=162, cin=0 | Expected sum=161, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=162, cin=1 | Expected sum=162, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=163, cin=0 | Expected sum=162, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=163, cin=1 | Expected sum=163, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=164, cin=0 | Expected sum=163, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=164, cin=1 | Expected sum=164, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=165, cin=0 | Expected sum=164, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=165, cin=1 | Expected sum=165, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=166, cin=0 | Expected sum=165, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=166, cin=1 | Expected sum=166, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=167, cin=0 | Expected sum=166, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=167, cin=1 | Expected sum=167, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=168, cin=0 | Expected sum=167, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=168, cin=1 | Expected sum=168, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=169, cin=0 | Expected sum=168, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=169, cin=1 | Expected sum=169, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=170, cin=0 | Expected sum=169, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=170, cin=1 | Expected sum=170, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=171, cin=0 | Expected sum=170, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=171, cin=1 | Expected sum=171, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=172, cin=0 | Expected sum=171, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=172, cin=1 | Expected sum=172, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=173, cin=0 | Expected sum=172, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=173, cin=1 | Expected sum=173, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=174, cin=0 | Expected sum=173, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=174, cin=1 | Expected sum=174, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=175, cin=0 | Expected sum=174, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=175, cin=1 | Expected sum=175, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=176, cin=0 | Expected sum=175, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=176, cin=1 | Expected sum=176, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=177, cin=0 | Expected sum=176, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=177, cin=1 | Expected sum=177, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=178, cin=0 | Expected sum=177, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=178, cin=1 | Expected sum=178, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=179, cin=0 | Expected sum=178, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=179, cin=1 | Expected sum=179, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=180, cin=0 | Expected sum=179, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=180, cin=1 | Expected sum=180, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=181, cin=0 | Expected sum=180, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=181, cin=1 | Expected sum=181, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=182, cin=0 | Expected sum=181, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=182, cin=1 | Expected sum=182, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=183, cin=0 | Expected sum=182, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=183, cin=1 | Expected sum=183, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=184, cin=0 | Expected sum=183, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=184, cin=1 | Expected sum=184, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=185, cin=0 | Expected sum=184, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=185, cin=1 | Expected sum=185, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=186, cin=0 | Expected sum=185, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=186, cin=1 | Expected sum=186, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=187, cin=0 | Expected sum=186, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=187, cin=1 | Expected sum=187, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=188, cin=0 | Expected sum=187, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=188, cin=1 | Expected sum=188, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=189, cin=0 | Expected sum=188, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=189, cin=1 | Expected sum=189, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=190, cin=0 | Expected sum=189, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=190, cin=1 | Expected sum=190, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=191, cin=0 | Expected sum=190, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=191, cin=1 | Expected sum=191, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=192, cin=0 | Expected sum=191, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=192, cin=1 | Expected sum=192, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=193, cin=0 | Expected sum=192, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=193, cin=1 | Expected sum=193, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=194, cin=0 | Expected sum=193, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=194, cin=1 | Expected sum=194, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=195, cin=0 | Expected sum=194, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=195, cin=1 | Expected sum=195, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=196, cin=0 | Expected sum=195, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=196, cin=1 | Expected sum=196, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=197, cin=0 | Expected sum=196, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=197, cin=1 | Expected sum=197, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=198, cin=0 | Expected sum=197, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=198, cin=1 | Expected sum=198, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=199, cin=0 | Expected sum=198, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=199, cin=1 | Expected sum=199, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=200, cin=0 | Expected sum=199, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=200, cin=1 | Expected sum=200, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=201, cin=0 | Expected sum=200, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=201, cin=1 | Expected sum=201, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=202, cin=0 | Expected sum=201, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=202, cin=1 | Expected sum=202, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=203, cin=0 | Expected sum=202, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=203, cin=1 | Expected sum=203, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=204, cin=0 | Expected sum=203, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=204, cin=1 | Expected sum=204, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=205, cin=0 | Expected sum=204, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=205, cin=1 | Expected sum=205, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=206, cin=0 | Expected sum=205, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=206, cin=1 | Expected sum=206, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=207, cin=0 | Expected sum=206, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=207, cin=1 | Expected sum=207, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=208, cin=0 | Expected sum=207, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=208, cin=1 | Expected sum=208, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=209, cin=0 | Expected sum=208, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=209, cin=1 | Expected sum=209, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=210, cin=0 | Expected sum=209, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=210, cin=1 | Expected sum=210, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=211, cin=0 | Expected sum=210, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=211, cin=1 | Expected sum=211, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=212, cin=0 | Expected sum=211, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=212, cin=1 | Expected sum=212, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=213, cin=0 | Expected sum=212, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=213, cin=1 | Expected sum=213, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=214, cin=0 | Expected sum=213, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=214, cin=1 | Expected sum=214, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=215, cin=0 | Expected sum=214, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=215, cin=1 | Expected sum=215, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=216, cin=0 | Expected sum=215, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=216, cin=1 | Expected sum=216, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=217, cin=0 | Expected sum=216, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=217, cin=1 | Expected sum=217, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=218, cin=0 | Expected sum=217, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=218, cin=1 | Expected sum=218, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=219, cin=0 | Expected sum=218, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=219, cin=1 | Expected sum=219, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=220, cin=0 | Expected sum=219, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=220, cin=1 | Expected sum=220, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=221, cin=0 | Expected sum=220, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=221, cin=1 | Expected sum=221, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=222, cin=0 | Expected sum=221, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=222, cin=1 | Expected sum=222, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=223, cin=0 | Expected sum=222, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=223, cin=1 | Expected sum=223, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=224, cin=0 | Expected sum=223, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=224, cin=1 | Expected sum=224, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=225, cin=0 | Expected sum=224, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=225, cin=1 | Expected sum=225, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=226, cin=0 | Expected sum=225, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=226, cin=1 | Expected sum=226, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=227, cin=0 | Expected sum=226, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=227, cin=1 | Expected sum=227, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=228, cin=0 | Expected sum=227, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=228, cin=1 | Expected sum=228, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=229, cin=0 | Expected sum=228, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=229, cin=1 | Expected sum=229, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=230, cin=0 | Expected sum=229, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=230, cin=1 | Expected sum=230, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=231, cin=0 | Expected sum=230, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=231, cin=1 | Expected sum=231, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=232, cin=0 | Expected sum=231, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=232, cin=1 | Expected sum=232, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=233, cin=0 | Expected sum=232, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=233, cin=1 | Expected sum=233, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=234, cin=0 | Expected sum=233, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=234, cin=1 | Expected sum=234, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=235, cin=0 | Expected sum=234, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=235, cin=1 | Expected sum=235, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=236, cin=0 | Expected sum=235, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=236, cin=1 | Expected sum=236, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=237, cin=0 | Expected sum=236, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=237, cin=1 | Expected sum=237, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=238, cin=0 | Expected sum=237, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=238, cin=1 | Expected sum=238, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=239, cin=0 | Expected sum=238, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=239, cin=1 | Expected sum=239, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=240, cin=0 | Expected sum=239, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=240, cin=1 | Expected sum=240, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=241, cin=0 | Expected sum=240, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=241, cin=1 | Expected sum=241, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=242, cin=0 | Expected sum=241, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=242, cin=1 | Expected sum=242, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=243, cin=0 | Expected sum=242, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=243, cin=1 | Expected sum=243, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=244, cin=0 | Expected sum=243, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=244, cin=1 | Expected sum=244, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=245, cin=0 | Expected sum=244, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=245, cin=1 | Expected sum=245, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=246, cin=0 | Expected sum=245, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=246, cin=1 | Expected sum=246, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=247, cin=0 | Expected sum=246, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=247, cin=1 | Expected sum=247, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=248, cin=0 | Expected sum=247, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=248, cin=1 | Expected sum=248, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=249, cin=0 | Expected sum=248, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=249, cin=1 | Expected sum=249, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=250, cin=0 | Expected sum=249, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=250, cin=1 | Expected sum=250, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=251, cin=0 | Expected sum=250, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=251, cin=1 | Expected sum=251, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=252, cin=0 | Expected sum=251, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=252, cin=1 | Expected sum=252, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=253, cin=0 | Expected sum=252, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=253, cin=1 | Expected sum=253, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=254, cin=0 | Expected sum=253, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=254, cin=1 | Expected sum=254, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=255, cin=0 | Expected sum=254, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=255, cin=1 | Expected sum=255, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=255, cin=1 | Expected sum=255, cout=1 | Actual sum=  0, cout=0
+FAIL: a=255, b=255, cin=0 | Expected sum=254, cout=1 | Actual sum=  0, cout=0
+RESULT: 2/131075 passed
+tb.v:90: $finish called at 131075 (1s)

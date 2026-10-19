@@ -1,0 +1,3 @@
+FAIL: e (Mealy stable) | din=1, history_bits=110, expected=1, actual=0
+RESULT: 45/46 passed
+tb.v:153: $finish called at 235200 (1ps)

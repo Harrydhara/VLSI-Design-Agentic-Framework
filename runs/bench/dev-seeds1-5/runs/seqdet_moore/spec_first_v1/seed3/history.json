@@ -1,0 +1,173 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_moore",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 3,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 56.161,
+  "tokens": {
+    "prompt": 23313,
+    "output": 9612,
+    "total": 32925
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 563,
+      "output_tokens": 4096,
+      "duration_s": 22.296,
+      "truncated": true
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 483,
+      "output_tokens": 610,
+      "duration_s": 3.64,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 1,
+      "prompt_tokens": 4862,
+      "output_tokens": 1233,
+      "duration_s": 7.125,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 1304,
+      "output_tokens": 670,
+      "duration_s": 3.945,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 6297,
+      "output_tokens": 1120,
+      "duration_s": 5.544,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 2185,
+      "output_tokens": 763,
+      "duration_s": 4.322,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 3,
+      "prompt_tokens": 7619,
+      "output_tokens": 1120,
+      "duration_s": 5.774,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 483,
+      "output_tokens": 610,
+      "duration_s": 3.64,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 17,
+        "tb_total": 23,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (17/23 checks passed):\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=0, rst=0, expected=0, actual=1\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=1, rst=0, expected=1, actual=0\nRESULT: 17/23 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 1304,
+      "output_tokens": 670,
+      "duration_s": 3.945,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 17,
+        "tb_total": 23,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (17/23 checks passed):\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=0, rst=0, expected=0, actual=1\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=1, rst=0, expected=1, actual=0\nRESULT: 17/23 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 2185,
+      "output_tokens": 763,
+      "duration_s": 4.322,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 17,
+        "tb_total": 23,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (17/23 checks passed):\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=0, rst=0, expected=0, actual=1\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=1, rst=0, expected=1, actual=0\nFAIL: din=1, rst=0, expected=1, actual=0\nRESULT: 17/23 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 686,
+    "total": 686,
+    "detail": "686/686 checks passed"
+  }
+}

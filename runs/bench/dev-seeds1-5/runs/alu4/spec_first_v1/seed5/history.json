@@ -1,0 +1,122 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 5,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 27.603,
+  "tokens": {
+    "prompt": 7849,
+    "output": 4864,
+    "total": 12713
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 711,
+      "output_tokens": 1181,
+      "duration_s": 6.342,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 629,
+      "output_tokens": 972,
+      "duration_s": 5.169,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 1,
+      "prompt_tokens": 3208,
+      "output_tokens": 1773,
+      "duration_s": 9.374,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 3301,
+      "output_tokens": 938,
+      "duration_s": 5.15,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 629,
+      "output_tokens": 972,
+      "duration_s": 5.169,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 1920,
+        "tb_total": 2048,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 136,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (1920/2048 checks passed):\nFAIL: a= 0, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 0, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 0, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 0, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 0, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 0, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 0, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 0, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 1, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 1, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 1, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 1, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 1, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 1, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 1, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 1, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 2, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 2, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 2, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 2, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 2, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 2, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 2, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 2, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\nFAIL: a= 3, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0\n... (104 more lines)",
+      "reference": {
+        "outcome": "fail",
+        "passed": 1920,
+        "total": 2048
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 3301,
+      "output_tokens": 938,
+      "duration_s": 5.15,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 2048,
+        "tb_total": 2048,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 134,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "pass",
+    "passed": 2048,
+    "total": 2048,
+    "detail": "2048/2048 checks passed"
+  }
+}

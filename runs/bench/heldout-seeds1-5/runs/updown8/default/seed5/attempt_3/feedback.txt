@@ -1,0 +1,3 @@
+- The testbench reported failures (13/14 checks passed):
+FAIL: Async reset failed mid-count. expected=0, actual=  1
+RESULT: 13/14 passed

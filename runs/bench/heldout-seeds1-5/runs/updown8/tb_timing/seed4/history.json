@@ -1,0 +1,114 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "updown8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 4,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 24.848,
+  "tokens": {
+    "prompt": 8005,
+    "output": 3824,
+    "total": 11829
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 904,
+      "output_tokens": 1328,
+      "duration_s": 7.563,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 4,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (4/19 checks passed):\nFAIL: time=46 expected=00 actual=02 en=1 up=1\nFAIL: time=56 expected=00 actual=01 en=1 up=0\nFAIL: time=66 expected=ff actual=00 en=1 up=0\nFAIL: time=76 expected=ff actual=00 en=0 up=1\nFAIL: time=86 expected=00 actual=01 en=1 up=1\nFAIL: time=116 expected=00 actual=01 en=0 up=1\nFAIL: time=126 expected=01 actual=02 en=1 up=1\nFAIL: time=136 expected=02 actual=03 en=1 up=1\nFAIL: time=146 expected=01 actual=02 en=1 up=0\nFAIL: time=156 expected=02 actual=03 en=1 up=1\nFAIL: time=166 expected=02 actual=03 en=0 up=1\nFAIL: time=176 expected=01 actual=02 en=1 up=0\nFAIL: time=186 expected=00 actual=01 en=1 up=0\nFAIL: time=196 expected=ff actual=00 en=1 up=0\nFAIL: time=206 expected=00 actual=01 en=1 up=1\nRESULT: 4/19 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 2695,
+      "output_tokens": 1248,
+      "duration_s": 6.455,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 4,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (4/19 checks passed):\nFAIL: time=46 expected=00 actual=02 en=1 up=1\nFAIL: time=56 expected=00 actual=01 en=1 up=0\nFAIL: time=66 expected=ff actual=00 en=1 up=0\nFAIL: time=76 expected=ff actual=00 en=0 up=1\nFAIL: time=86 expected=00 actual=01 en=1 up=1\nFAIL: time=116 expected=00 actual=01 en=0 up=1\nFAIL: time=126 expected=01 actual=02 en=1 up=1\nFAIL: time=136 expected=02 actual=03 en=1 up=1\nFAIL: time=146 expected=01 actual=02 en=1 up=0\nFAIL: time=156 expected=02 actual=03 en=1 up=1\nFAIL: time=166 expected=02 actual=03 en=0 up=1\nFAIL: time=176 expected=01 actual=02 en=1 up=0\nFAIL: time=186 expected=00 actual=01 en=1 up=0\nFAIL: time=196 expected=ff actual=00 en=1 up=0\nFAIL: time=206 expected=00 actual=01 en=1 up=1\nRESULT: 4/19 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 4406,
+      "output_tokens": 1248,
+      "duration_s": 6.538,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 4,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (4/19 checks passed):\nFAIL: time=46 expected=00 actual=02 en=1 up=1\nFAIL: time=56 expected=00 actual=01 en=1 up=0\nFAIL: time=66 expected=ff actual=00 en=1 up=0\nFAIL: time=76 expected=ff actual=00 en=0 up=1\nFAIL: time=86 expected=00 actual=01 en=1 up=1\nFAIL: time=116 expected=00 actual=01 en=0 up=1\nFAIL: time=126 expected=01 actual=02 en=1 up=1\nFAIL: time=136 expected=02 actual=03 en=1 up=1\nFAIL: time=146 expected=01 actual=02 en=1 up=0\nFAIL: time=156 expected=02 actual=03 en=1 up=1\nFAIL: time=166 expected=02 actual=03 en=0 up=1\nFAIL: time=176 expected=01 actual=02 en=1 up=0\nFAIL: time=186 expected=00 actual=01 en=1 up=0\nFAIL: time=196 expected=ff actual=00 en=1 up=0\nFAIL: time=206 expected=00 actual=01 en=1 up=1\nRESULT: 4/19 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 380,
+        "total": 380
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 380,
+    "total": 380,
+    "detail": "380/380 checks passed"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "adder4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 42,
+    "think": false,
+    "max_attempts": 5,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "workflow": "single",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 4.826,
+  "tokens": {
+    "prompt": 499,
+    "output": 627,
+    "total": 1126
+  },
+  "calls": [
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 499,
+      "output_tokens": 627,
+      "duration_s": 4.342,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 499,
+      "output_tokens": 627,
+      "duration_s": 4.342,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 512,
+        "tb_total": 512,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 23,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 512,
+        "total": 512
+      }
+    }
+  ],
+  "final_attempt": 1,
+  "reference": {
+    "outcome": "pass",
+    "passed": 512,
+    "total": 512,
+    "detail": "512/512 checks passed"
+  }
+}

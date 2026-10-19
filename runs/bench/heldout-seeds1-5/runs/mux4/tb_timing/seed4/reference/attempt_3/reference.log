@@ -1,0 +1,2 @@
+RESULT afb0263bb3babcdb: 1064/1064 passed
+reference_tb.v:57: $finish called at 1064000 (1ps)

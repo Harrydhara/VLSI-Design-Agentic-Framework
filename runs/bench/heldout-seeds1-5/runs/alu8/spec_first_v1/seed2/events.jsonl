@@ -1,0 +1,29 @@
+{"t": 0.0, "event": "run_started", "circuit": "alu8", "split": "heldout", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first_v1", "workflow": "spec_first"}
+{"t": 0.002, "event": "model_called", "attempt": null, "role": "testbench", "messages": 2}
+{"t": 11.301, "event": "model_replied", "attempt": null, "role": "testbench", "prompt_tokens": 738, "output_tokens": 2092, "duration_s": 11.294, "truncated": false}
+{"t": 11.412, "event": "testbench_checked", "version": 1, "usable": true}
+{"t": 11.418, "event": "model_called", "attempt": 1, "role": "design", "messages": 2}
+{"t": 17.294, "event": "model_replied", "attempt": 1, "role": "design", "prompt_tokens": 656, "output_tokens": 1086, "duration_s": 5.872, "truncated": false}
+{"t": 17.724, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 0, "tb_total": 3017, "sim_timed_out": false, "synth_ok": true, "cells": 256, "latches": 0}
+{"t": 17.728, "event": "model_called", "attempt": 1, "role": "testbench_review", "messages": 4}
+{"t": 31.588, "event": "model_replied", "attempt": 1, "role": "testbench_review", "prompt_tokens": 3934, "output_tokens": 2610, "duration_s": 13.857, "truncated": false}
+{"t": 31.765, "event": "testbench_revised", "attempt": 1}
+{"t": 32.284, "event": "checks_done", "attempt": 1, "passed": false, "recheck": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 0, "tb_total": 3593, "sim_timed_out": false, "synth_ok": true, "cells": 256, "latches": 0}
+{"t": 32.288, "event": "feedback_sent", "attempt": 1, "chars": 2053}
+{"t": 32.293, "event": "model_called", "attempt": 2, "role": "design", "messages": 4}
+{"t": 37.592, "event": "model_replied", "attempt": 2, "role": "design", "prompt_tokens": 3164, "output_tokens": 964, "duration_s": 5.292, "truncated": false}
+{"t": 38.073, "event": "checks_done", "attempt": 2, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 0, "tb_total": 3593, "sim_timed_out": false, "synth_ok": true, "cells": 256, "latches": 0}
+{"t": 38.086, "event": "model_called", "attempt": 2, "role": "testbench_review", "messages": 6}
+{"t": 39.486, "event": "model_replied", "attempt": 2, "role": "testbench_review", "prompt_tokens": 7648, "output_tokens": 5, "duration_s": 1.394, "truncated": false}
+{"t": 39.506, "event": "testbench_confirmed", "attempt": 2}
+{"t": 39.513, "event": "feedback_sent", "attempt": 2, "chars": 2053}
+{"t": 39.521, "event": "model_called", "attempt": 3, "role": "design", "messages": 6}
+{"t": 43.983, "event": "model_replied", "attempt": 3, "role": "design", "prompt_tokens": 5550, "output_tokens": 767, "duration_s": 4.455, "truncated": false}
+{"t": 44.682, "event": "checks_done", "attempt": 3, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 0, "tb_total": 3593, "sim_timed_out": false, "synth_ok": true, "cells": 256, "latches": 0}
+{"t": 44.69, "event": "model_called", "attempt": 3, "role": "testbench_review", "messages": 8}
+{"t": 46.303, "event": "model_replied", "attempt": 3, "role": "testbench_review", "prompt_tokens": 8757, "output_tokens": 5, "duration_s": 1.605, "truncated": false}
+{"t": 46.332, "event": "testbench_confirmed", "attempt": 3}
+{"t": 47.925, "event": "reference_scored", "attempt": 1, "final": false, "outcome": "pass", "passed": 524288, "total": 524288}
+{"t": 49.443, "event": "reference_scored", "attempt": 2, "final": false, "outcome": "pass", "passed": 524288, "total": 524288}
+{"t": 50.953, "event": "reference_scored", "attempt": 3, "final": true, "outcome": "pass", "passed": 524288, "total": 524288}
+{"t": 50.962, "event": "run_finished", "status": "attempts_exhausted", "attempts": 3, "total_tokens": 37976, "duration_s": 50.962, "reference": "pass"}

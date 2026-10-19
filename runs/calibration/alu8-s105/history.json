@@ -1,0 +1,60 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 105,
+    "think": false,
+    "max_attempts": 1,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": false
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 17.858,
+  "tokens": {
+    "prompt": 816,
+    "output": 2988,
+    "total": 3804
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 816,
+      "output_tokens": 2988,
+      "duration_s": 15.919,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 20,
+        "tb_total": 23,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 257,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (20/23 checks passed):\nFAIL: op=001 a=170 b= 85 | expected y=255 z=0 c=0 o=0 n=0, actual y=255 z=0 c=0 o=0 n=1\nFAIL: op=010 a=170 b= 85 | expected y=255 z=0 c=0 o=0 n=0, actual y=255 z=0 c=0 o=0 n=1\nFAIL: op=011 a=128 b=128 | expected y=  0 z=1 c=1 o=0 n=0, actual y=  0 z=1 c=1 o=1 n=0\nRESULT: 20/23 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 524288,
+        "total": 524288
+      }
+    }
+  ],
+  "final_attempt": 1,
+  "reference": {
+    "outcome": "pass",
+    "passed": 524288,
+    "total": 524288,
+    "detail": "524288/524288 checks passed"
+  }
+}

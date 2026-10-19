@@ -1,0 +1,3 @@
+FAIL: din=1, rst=1, expected detected=1, actual detected=0
+RESULT: 23/25 passed
+tb.v:97: $finish called at 246 (1s)

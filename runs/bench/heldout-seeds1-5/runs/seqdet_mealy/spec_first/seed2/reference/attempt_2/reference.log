@@ -1,0 +1,5 @@
+MISMATCH at 531 ns: din changed to 1 between clock edges (last bits sampled 010); expected detected=0 at once, got 1 (a Mealy output follows din)
+MISMATCH at 1581 ns: din changed to 1 between clock edges (last bits sampled 010); expected detected=0 at once, got 1 (a Mealy output follows din)
+MISMATCH at 3321 ns: din changed to 1 between clock edges (last bits sampled 010); expected detected=0 at once, got 1 (a Mealy output follows din)
+RESULT 3cb18f06a6a8d2d0: 681/684 passed
+reference_tb.v:117: $finish called at 3416000 (1ps)

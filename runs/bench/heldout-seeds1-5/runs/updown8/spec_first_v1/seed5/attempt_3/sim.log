@@ -1,0 +1,14 @@
+FAIL: rst_n=1, en=1, up=1 | Expected count=  0, Actual count=  3
+FAIL: rst_n=1, en=1, up=0 | Expected count=255, Actual count=  2
+FAIL: rst_n=1, en=1, up=1 | Expected count=  0, Actual count=  3
+FAIL: rst_n=0, en=1, up=1 | Expected count=  0, Actual count=  4
+FAIL: rst_n=1, en=1, up=1 | Expected count=  1, Actual count=  0
+FAIL: rst_n=1, en=1, up=1 | Expected count=  2, Actual count=  1
+FAIL: rst_n=1, en=1, up=1 | Expected count=  3, Actual count=  2
+FAIL: rst_n=1, en=1, up=1 | Expected count=  4, Actual count=  3
+FAIL: rst_n=1, en=1, up=1 | Expected count=  5, Actual count=  4
+FAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4
+FAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4
+FAIL: rst_n=1, en=0, up=1 | Expected count=  5, Actual count=  4
+RESULT: -4/20 passed
+tb.v:131: $finish called at 185 (1s)

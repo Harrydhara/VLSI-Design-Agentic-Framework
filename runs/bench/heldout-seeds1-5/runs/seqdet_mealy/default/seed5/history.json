@@ -1,0 +1,114 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_mealy",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 5,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 29.435,
+  "tokens": {
+    "prompt": 8092,
+    "output": 5247,
+    "total": 13339
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 632,
+      "output_tokens": 2015,
+      "duration_s": 11.079,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 16,
+        "tb_total": 24,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (16/24 checks passed):\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nRESULT: 16/24 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 684,
+        "total": 684
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 2803,
+      "output_tokens": 1698,
+      "duration_s": 9.066,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 16,
+        "tb_total": 24,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (16/24 checks passed):\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nRESULT: 16/24 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 684,
+        "total": 684
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 4657,
+      "output_tokens": 1534,
+      "duration_s": 7.892,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 16,
+        "tb_total": 24,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (16/24 checks passed):\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nFAIL: din=1, expected detected=1, actual detected=0\nRESULT: 16/24 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 684,
+        "total": 684
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 684,
+    "total": 684,
+    "detail": "684/684 checks passed"
+  }
+}

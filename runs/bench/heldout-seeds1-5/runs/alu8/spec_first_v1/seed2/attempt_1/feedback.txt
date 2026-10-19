@@ -1,0 +1,27 @@
+- The testbench reported failures (0/3593 checks passed):
+FAIL: op=000 a=00 b=00 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=001 a=00 b=00 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=010 a=00 b=00 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=000 a=00 b=01 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=001 a=00 b=01 | exp: y=01 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=010 a=00 b=01 | exp: y=01 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=000 a=00 b=02 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=001 a=00 b=02 | exp: y=02 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=010 a=00 b=02 | exp: y=02 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=000 a=00 b=03 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=001 a=00 b=03 | exp: y=03 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=010 a=00 b=03 | exp: y=03 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=000 a=00 b=04 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=001 a=00 b=04 | exp: y=04 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=010 a=00 b=04 | exp: y=04 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=000 a=00 b=05 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=001 a=00 b=05 | exp: y=05 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=010 a=00 b=05 | exp: y=05 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=000 a=00 b=06 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=001 a=00 b=06 | exp: y=06 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=010 a=00 b=06 | exp: y=06 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=000 a=00 b=07 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=001 a=00 b=07 | exp: y=07 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=010 a=00 b=07 | exp: y=07 z=0 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+FAIL: op=000 a=00 b=08 | exp: y=00 z=1 c=0 o=0 n=0 | act: y=xx z=x c=x o=x n=x
+... (807 more lines)

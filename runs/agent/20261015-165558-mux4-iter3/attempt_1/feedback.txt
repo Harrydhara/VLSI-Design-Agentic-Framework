@@ -1,0 +1,15 @@
+- The testbench reported failures (0/13 checks passed):
+FAIL: sel=00, expected=a, actual=x
+FAIL: sel=01, expected=b, actual=x
+FAIL: sel=10, expected=c, actual=x
+FAIL: sel=11, expected=d, actual=x
+FAIL: sel=00, expected=0, actual=x
+FAIL: sel=01, expected=0, actual=x
+FAIL: sel=10, expected=0, actual=x
+FAIL: sel=11, expected=0, actual=x
+FAIL: sel=00, expected=f, actual=x
+FAIL: sel=01, expected=f, actual=x
+FAIL: sel=10, expected=f, actual=x
+FAIL: sel=11, expected=f, actual=x
+FAIL: sel=10, expected=c, actual=x
+RESULT: 0/13 passed

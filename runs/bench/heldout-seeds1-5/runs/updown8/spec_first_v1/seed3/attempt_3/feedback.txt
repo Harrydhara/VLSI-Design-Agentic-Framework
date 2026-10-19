@@ -1,0 +1,4 @@
+- Your reply was cut off at the output token limit before it finished. Keep the code complete and shorter.
+
+- The design does not compile:
+design.v:48: error: syntax error

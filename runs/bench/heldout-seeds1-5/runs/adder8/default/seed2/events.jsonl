@@ -1,0 +1,16 @@
+{"t": 0.0, "event": "run_started", "circuit": "adder8", "split": "heldout", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default"}
+{"t": 0.003, "event": "model_called", "attempt": 1, "messages": 2}
+{"t": 5.74, "event": "model_replied", "attempt": 1, "prompt_tokens": 499, "output_tokens": 969, "duration_s": 5.732, "truncated": false}
+{"t": 6.042, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": null, "tb_total": null, "sim_timed_out": false, "synth_ok": true, "cells": 52, "latches": 0}
+{"t": 6.048, "event": "feedback_sent", "attempt": 1, "chars": 157}
+{"t": 6.055, "event": "model_called", "attempt": 2, "messages": 4}
+{"t": 10.706, "event": "model_replied", "attempt": 2, "prompt_tokens": 1583, "output_tokens": 886, "duration_s": 4.646, "truncated": false}
+{"t": 11.012, "event": "checks_done", "attempt": 2, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 0, "tb_total": 567, "sim_timed_out": false, "synth_ok": true, "cells": 52, "latches": 0}
+{"t": 11.016, "event": "feedback_sent", "attempt": 2, "chars": 1402}
+{"t": 11.021, "event": "model_called", "attempt": 3, "messages": 6}
+{"t": 15.806, "event": "model_replied", "attempt": 3, "prompt_tokens": 3171, "output_tokens": 887, "duration_s": 4.781, "truncated": false}
+{"t": 16.113, "event": "checks_done", "attempt": 3, "passed": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 567, "tb_total": 567, "sim_timed_out": false, "synth_ok": true, "cells": 52, "latches": 0}
+{"t": 16.367, "event": "reference_scored", "attempt": 1, "final": false, "outcome": "pass", "passed": 131072, "total": 131072}
+{"t": 16.605, "event": "reference_scored", "attempt": 2, "final": false, "outcome": "pass", "passed": 131072, "total": 131072}
+{"t": 16.842, "event": "reference_scored", "attempt": 3, "final": true, "outcome": "pass", "passed": 131072, "total": 131072}
+{"t": 16.848, "event": "run_finished", "status": "dev_passed", "attempts": 3, "total_tokens": 7995, "duration_s": 16.848, "reference": "pass"}

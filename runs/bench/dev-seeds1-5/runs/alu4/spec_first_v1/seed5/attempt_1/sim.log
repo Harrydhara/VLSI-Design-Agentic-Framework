@@ -1,0 +1,130 @@
+FAIL: a= 0, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 3, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 3, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 3, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 3, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 3, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 3, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 3, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 3, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 4, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 4, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 4, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 4, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 4, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 4, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 4, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 4, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 5, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 5, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 5, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 5, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 5, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 5, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 5, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 5, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 6, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 6, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 6, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 6, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 6, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 6, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 6, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 6, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 7, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 7, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 7, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 7, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 7, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 7, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 7, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 7, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 8, b= 0, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 8, b= 1, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 8, b= 2, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 8, b= 3, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 8, b= 4, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 8, b= 5, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 8, b= 6, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 8, b= 7, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 9, b= 0, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 9, b= 1, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 9, b= 2, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 9, b= 3, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 9, b= 4, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 9, b= 5, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 9, b= 6, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a= 9, b= 7, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=10, b= 0, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=10, b= 1, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=10, b= 2, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=10, b= 3, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=10, b= 4, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=10, b= 5, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=10, b= 6, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=10, b= 7, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=11, b= 0, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=11, b= 1, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=11, b= 2, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=11, b= 3, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=11, b= 4, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=11, b= 5, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=11, b= 6, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=11, b= 7, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=12, b= 0, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=12, b= 1, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=12, b= 2, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=12, b= 3, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=12, b= 4, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=12, b= 5, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=12, b= 6, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=12, b= 7, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=13, b= 0, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=13, b= 1, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=13, b= 2, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=13, b= 3, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=13, b= 4, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=13, b= 5, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=13, b= 6, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=13, b= 7, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=14, b= 0, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=14, b= 1, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=14, b= 2, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=14, b= 3, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=14, b= 4, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=14, b= 5, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=14, b= 6, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=14, b= 7, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=15, b= 0, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=15, b= 1, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=15, b= 2, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=15, b= 3, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=15, b= 4, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=15, b= 5, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=15, b= 6, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+FAIL: a=15, b= 7, op=111 | Expected: y= 1, z=0, c=0, v=0, n=0 | Actual: y= 0, z=1, c=0, v=0, n=0
+RESULT: 1920/2048 passed
+tb.v:126: $finish called at 2048 (1s)

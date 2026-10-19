@@ -1,0 +1,30 @@
+{"t": 0.0, "event": "run_started", "circuit": "seqdet_mealy", "split": "heldout", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first_v1", "workflow": "spec_first"}
+{"t": 0.003, "event": "model_called", "attempt": null, "role": "testbench", "messages": 2}
+{"t": 20.599, "event": "model_replied", "attempt": null, "role": "testbench", "prompt_tokens": 552, "output_tokens": 4096, "duration_s": 20.593, "truncated": true}
+{"t": 20.642, "event": "testbench_checked", "version": 1, "usable": false}
+{"t": 20.647, "event": "model_called", "attempt": null, "role": "testbench_fix", "messages": 4}
+{"t": 26.522, "event": "model_replied", "attempt": null, "role": "testbench_fix", "prompt_tokens": 4736, "output_tokens": 1080, "duration_s": 5.871, "truncated": false}
+{"t": 26.603, "event": "testbench_checked", "version": 2, "usable": true}
+{"t": 26.607, "event": "model_called", "attempt": 1, "role": "design", "messages": 2}
+{"t": 29.973, "event": "model_replied", "attempt": 1, "role": "design", "prompt_tokens": 472, "output_tokens": 583, "duration_s": 3.363, "truncated": false}
+{"t": 30.026, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": false}
+{"t": 30.03, "event": "feedback_sent", "attempt": 1, "chars": 237}
+{"t": 30.039, "event": "model_called", "attempt": 2, "role": "design", "messages": 4}
+{"t": 33.263, "event": "model_replied", "attempt": 2, "role": "design", "prompt_tokens": 1209, "output_tokens": 618, "duration_s": 3.22, "truncated": false}
+{"t": 33.633, "event": "checks_done", "attempt": 2, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 33, "tb_total": 39, "sim_timed_out": false, "synth_ok": true, "cells": 9, "latches": 0}
+{"t": 33.637, "event": "model_called", "attempt": 2, "role": "testbench_review", "messages": 6}
+{"t": 40.21, "event": "model_replied", "attempt": 2, "role": "testbench_review", "prompt_tokens": 6024, "output_tokens": 1180, "duration_s": 6.566, "truncated": false}
+{"t": 41.301, "event": "testbench_revised", "attempt": 2}
+{"t": 43.418, "event": "checks_done", "attempt": 2, "passed": false, "recheck": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 33, "tb_total": 39, "sim_timed_out": false, "synth_ok": true, "cells": 9, "latches": 0}
+{"t": 43.457, "event": "feedback_sent", "attempt": 2, "chars": 293}
+{"t": 43.501, "event": "model_called", "attempt": 3, "role": "design", "messages": 6}
+{"t": 47.232, "event": "model_replied", "attempt": 3, "role": "design", "prompt_tokens": 2044, "output_tokens": 647, "duration_s": 3.694, "truncated": false}
+{"t": 49.83, "event": "checks_done", "attempt": 3, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 33, "tb_total": 39, "sim_timed_out": false, "synth_ok": true, "cells": 9, "latches": 0}
+{"t": 49.873, "event": "model_called", "attempt": 3, "role": "testbench_review", "messages": 8}
+{"t": 57.134, "event": "model_replied", "attempt": 3, "role": "testbench_review", "prompt_tokens": 7412, "output_tokens": 1256, "duration_s": 7.229, "truncated": false}
+{"t": 57.899, "event": "testbench_revised", "attempt": 3}
+{"t": 60.515, "event": "checks_done", "attempt": 3, "passed": false, "recheck": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 33, "tb_total": 39, "sim_timed_out": false, "synth_ok": true, "cells": 9, "latches": 0}
+{"t": 61.286, "event": "reference_scored", "attempt": 1, "final": false, "outcome": "compile_error", "passed": null, "total": null}
+{"t": 61.68, "event": "reference_scored", "attempt": 2, "final": false, "outcome": "pass", "passed": 684, "total": 684}
+{"t": 61.856, "event": "reference_scored", "attempt": 3, "final": true, "outcome": "pass", "passed": 684, "total": 684}
+{"t": 61.875, "event": "run_finished", "status": "attempts_exhausted", "attempts": 3, "total_tokens": 31909, "duration_s": 61.875, "reference": "pass"}

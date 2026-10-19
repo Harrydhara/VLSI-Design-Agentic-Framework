@@ -1,0 +1,5 @@
+- The testbench reported failures (16/22 checks passed):
+FAIL: din=1, exp=1 act=1
+FAIL: din=1, exp=1 act=1
+FAIL: din=1, exp=1 act=1
+RESULT: 16/22 passed

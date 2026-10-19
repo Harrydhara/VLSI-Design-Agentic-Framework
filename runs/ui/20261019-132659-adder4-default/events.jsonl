@@ -1,0 +1,6 @@
+{"t": 0.0, "event": "run_started", "circuit": "adder4", "split": "dev", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default", "workflow": "single"}
+{"t": 0.003, "event": "model_called", "attempt": 1, "role": "design", "messages": 2}
+{"t": 4.189, "event": "model_replied", "attempt": 1, "role": "design", "prompt_tokens": 499, "output_tokens": 627, "duration_s": 4.181, "truncated": false}
+{"t": 4.587, "event": "checks_done", "attempt": 1, "passed": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 512, "tb_total": 512, "sim_timed_out": false, "synth_ok": true, "cells": 23, "latches": 0}
+{"t": 4.702, "event": "reference_scored", "attempt": 1, "final": true, "outcome": "pass", "passed": 512, "total": 512}
+{"t": 4.708, "event": "run_finished", "status": "dev_passed", "attempts": 1, "total_tokens": 1126, "duration_s": 4.708, "reference": "pass"}

@@ -1,0 +1,5 @@
+FAIL: din=1, exp=1 act=1
+FAIL: din=1, exp=1 act=1
+FAIL: din=1, exp=1 act=1
+RESULT: 16/22 passed
+tb.v:109: $finish called at 216 (1s)

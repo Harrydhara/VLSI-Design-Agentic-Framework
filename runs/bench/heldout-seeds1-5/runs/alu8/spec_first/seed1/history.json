@@ -1,0 +1,173 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 1,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 57.394,
+  "tokens": {
+    "prompt": 28240,
+    "output": 9009,
+    "total": 37249
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 738,
+      "output_tokens": 2050,
+      "duration_s": 10.52,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 656,
+      "output_tokens": 1039,
+      "duration_s": 5.335,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 1,
+      "prompt_tokens": 3995,
+      "output_tokens": 436,
+      "duration_s": 3.22,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 3107,
+      "output_tokens": 966,
+      "duration_s": 4.996,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 5638,
+      "output_tokens": 1776,
+      "duration_s": 8.982,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 5485,
+      "output_tokens": 966,
+      "duration_s": 5.255,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 3,
+      "prompt_tokens": 8621,
+      "output_tokens": 1776,
+      "duration_s": 9.236,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 656,
+      "output_tokens": 1039,
+      "duration_s": 5.335,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 3085,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 257,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/3085 checks passed):\nFAIL: op=000 a=aa b=00 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=00 b=01 | exp: y=01 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=00 b=ff | exp: y=01 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=01 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=01 b=02 | exp: y=03 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=01 b=00 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=02 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=02 b=03 | exp: y=05 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=02 b=01 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=03 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=03 b=04 | exp: y=07 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=03 b=02 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=04 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=04 b=05 | exp: y=09 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=04 b=03 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=05 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=05 b=06 | exp: y=0b z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=05 b=04 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=06 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=06 b=07 | exp: y=0d z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=06 b=05 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=07 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=07 b=08 | exp: y=0f z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=07 b=06 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=08 | exp: y=08 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\n... (807 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 524288,
+        "total": 524288
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 3107,
+      "output_tokens": 966,
+      "duration_s": 4.996,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 3085,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 257,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/3085 checks passed):\nFAIL: op=000 a=aa b=00 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=00 b=01 | exp: y=01 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=00 b=ff | exp: y=01 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=01 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=01 b=02 | exp: y=03 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=01 b=00 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=02 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=02 b=03 | exp: y=05 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=02 b=01 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=03 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=03 b=04 | exp: y=07 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=03 b=02 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=04 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=04 b=05 | exp: y=09 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=04 b=03 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=05 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=05 b=06 | exp: y=0b z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=05 b=04 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=06 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=06 b=07 | exp: y=0d z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=06 b=05 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=07 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=07 b=08 | exp: y=0f z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=07 b=06 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=08 | exp: y=08 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\n... (807 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 524288,
+        "total": 524288
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 5485,
+      "output_tokens": 966,
+      "duration_s": 5.255,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 3085,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 257,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/3085 checks passed):\nFAIL: op=000 a=aa b=00 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=00 b=01 | exp: y=01 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=00 b=ff | exp: y=01 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=01 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=01 b=02 | exp: y=03 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=01 b=00 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=02 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=02 b=03 | exp: y=05 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=02 b=01 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=03 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=03 b=04 | exp: y=07 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=03 b=02 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=04 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=04 b=05 | exp: y=09 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=04 b=03 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=05 | exp: y=00 z=1 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=05 b=06 | exp: y=0b z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=05 b=04 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=06 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=06 b=07 | exp: y=0d z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=06 b=05 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=07 | exp: y=02 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=011 a=07 b=08 | exp: y=0f z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=100 a=07 b=06 | exp: y=01 z=0 c=1 v=0 n=0 | act: y=xx z=x c=x v=x n=x\nFAIL: op=000 a=aa b=08 | exp: y=08 z=0 c=0 v=0 n=0 | act: y=xx z=x c=x v=x n=x\n... (807 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 524288,
+        "total": 524288
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 524288,
+    "total": 524288,
+    "detail": "524288/524288 checks passed"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 2,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 26.012,
+  "tokens": {
+    "prompt": 5115,
+    "output": 4930,
+    "total": 10045
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 1136,
+      "output_tokens": 2636,
+      "duration_s": 13.452,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 134,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:84: error: syntax error\ntb.v:84: error: Malformed statement\ntb.v:85: error: syntax error\ntb.v:85: error: Malformed statement\ntb.v:85: error: syntax error\ntb.v:85: error: Malformed statement",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 3979,
+      "output_tokens": 2294,
+      "duration_s": 11.258,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 21,
+        "tb_total": 21,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 136,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "fail",
+        "passed": 1920,
+        "total": 2048
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "fail",
+    "passed": 1920,
+    "total": 2048,
+    "detail": "1920/2048 checks passed"
+  }
+}

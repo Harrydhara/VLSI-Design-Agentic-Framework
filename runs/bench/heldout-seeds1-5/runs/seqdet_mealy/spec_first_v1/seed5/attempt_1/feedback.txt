@@ -1,0 +1,5 @@
+- The design does not compile:
+design.v:34: error: detected is not a valid l-value in seqdet_mealy.
+design.v:60: error: detected is not a valid l-value in seqdet_mealy.
+design.v:91: error: detected is not a valid l-value in seqdet_mealy.
+design.v:107: error: detected is not a valid l-value in seqdet_mealy.

@@ -1,0 +1,18 @@
+FAIL: sel=00, expected=a, actual=x
+FAIL: sel=01, expected=b, actual=x
+FAIL: sel=10, expected=c, actual=x
+FAIL: sel=11, expected=d, actual=x
+FAIL: sel=00, expected=0, actual=x
+FAIL: sel=01, expected=0, actual=x
+FAIL: sel=10, expected=0, actual=x
+FAIL: sel=11, expected=0, actual=x
+FAIL: sel=00, expected=F, actual=x
+FAIL: sel=01, expected=F, actual=x
+FAIL: sel=10, expected=F, actual=x
+FAIL: sel=11, expected=F, actual=x
+FAIL: sel=00, expected=5, actual=x
+FAIL: sel=01, expected=A, actual=x
+FAIL: sel=10, expected=5, actual=x
+FAIL: sel=11, expected=A, actual=x
+RESULT: 0/16 passed
+tb.v:93: $finish called at 0 (1s)

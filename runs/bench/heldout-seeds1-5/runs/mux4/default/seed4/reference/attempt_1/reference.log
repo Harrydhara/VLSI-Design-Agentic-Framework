@@ -1,0 +1,11 @@
+design.v:12: error: y is not a valid l-value in ref_tb.dut.
+design.v:7:      : y is declared here as wire.
+design.v:13: error: y is not a valid l-value in ref_tb.dut.
+design.v:7:      : y is declared here as wire.
+design.v:14: error: y is not a valid l-value in ref_tb.dut.
+design.v:7:      : y is declared here as wire.
+design.v:15: error: y is not a valid l-value in ref_tb.dut.
+design.v:7:      : y is declared here as wire.
+design.v:16: error: y is not a valid l-value in ref_tb.dut.
+design.v:7:      : y is declared here as wire.
+5 error(s) during elaboration.

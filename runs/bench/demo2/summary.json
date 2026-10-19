@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "tool_version": "0.1.0",
+    "date": "2026-10-15 17:31",
+    "model": "gemma4:26b",
+    "temperature": 0.2,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "seeds": [
+      1
+    ],
+    "strategies": {
+      "default": "prompts/default"
+    },
+    "circuits": [
+      "adder4"
+    ]
+  },
+  "by_strategy": {
+    "default": {
+      "runs": 1,
+      "oneshot_pass": "0/1",
+      "final_pass": "1/1",
+      "pass_after_attempt": {
+        "1": "0/1",
+        "2": "1/1",
+        "3": "1/1"
+      },
+      "fixed": 1,
+      "broken": 0,
+      "own_checks_passed": "1/1",
+      "oneshot_compiled": "1/1",
+      "final_compiled": "1/1",
+      "oneshot_synth_ok": "1/1",
+      "final_synth_ok": "1/1",
+      "mean_attempts": 2,
+      "mean_tokens": 1597,
+      "mean_seconds": 0.8,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 1
+      }
+    }
+  },
+  "by_split": {
+    "default / dev": {
+      "runs": 1,
+      "oneshot_pass": "0/1",
+      "final_pass": "1/1",
+      "pass_after_attempt": {
+        "1": "0/1",
+        "2": "1/1",
+        "3": "1/1"
+      },
+      "fixed": 1,
+      "broken": 0,
+      "own_checks_passed": "1/1",
+      "oneshot_compiled": "1/1",
+      "final_compiled": "1/1",
+      "oneshot_synth_ok": "1/1",
+      "final_synth_ok": "1/1",
+      "mean_attempts": 2,
+      "mean_tokens": 1597,
+      "mean_seconds": 0.8,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 1
+      }
+    }
+  },
+  "by_circuit": {
+    "adder4 / default": {
+      "runs": 1,
+      "oneshot_pass": "0/1",
+      "final_pass": "1/1",
+      "pass_after_attempt": {
+        "1": "0/1",
+        "2": "1/1",
+        "3": "1/1"
+      },
+      "fixed": 1,
+      "broken": 0,
+      "own_checks_passed": "1/1",
+      "oneshot_compiled": "1/1",
+      "final_compiled": "1/1",
+      "oneshot_synth_ok": "1/1",
+      "final_synth_ok": "1/1",
+      "mean_attempts": 2,
+      "mean_tokens": 1597,
+      "mean_seconds": 0.8,
+      "median_cells_passing": 23,
+      "statuses": {
+        "dev_passed": 1
+      }
+    }
+  }
+}

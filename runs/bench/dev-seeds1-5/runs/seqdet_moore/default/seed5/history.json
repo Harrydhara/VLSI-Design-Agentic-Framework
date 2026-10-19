@@ -1,0 +1,114 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_moore",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 5,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 29.225,
+  "tokens": {
+    "prompt": 7788,
+    "output": 5526,
+    "total": 13314
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 643,
+      "output_tokens": 1842,
+      "duration_s": 9.667,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 25,
+        "tb_total": 27,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (25/27 checks passed):\nFAIL: din=1, rst=1, expected=1, actual=0\nRESULT: 25/27 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 2596,
+      "output_tokens": 1842,
+      "duration_s": 9.12,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 25,
+        "tb_total": 27,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (25/27 checks passed):\nFAIL: din=1, rst=1, expected=1, actual=0\nRESULT: 25/27 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 4549,
+      "output_tokens": 1842,
+      "duration_s": 9.197,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 25,
+        "tb_total": 27,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (25/27 checks passed):\nFAIL: din=1, rst=1, expected=1, actual=0\nRESULT: 25/27 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 686,
+    "total": 686,
+    "detail": "686/686 checks passed"
+  }
+}

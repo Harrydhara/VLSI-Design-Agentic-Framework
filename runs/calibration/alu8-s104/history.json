@@ -1,0 +1,60 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 104,
+    "think": false,
+    "max_attempts": 1,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": false
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 17.767,
+  "tokens": {
+    "prompt": 816,
+    "output": 2716,
+    "total": 3532
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 816,
+      "output_tokens": 2716,
+      "duration_s": 14.213,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 22,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 256,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/22 checks passed):\nFAIL: op=000 a=170 b= 85 | Exp: y=  0 z=1 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=000 a=255 b= 15 | Exp: y= 15 z=0 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=001 a=170 b= 85 | Exp: y=255 z=0 c=0 v=0 n=1 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=001 a=  0 b=  0 | Exp: y=  0 z=1 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=010 a=170 b= 85 | Exp: y=255 z=0 c=0 v=0 n=1 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=010 a=170 b=170 | Exp: y=  0 z=1 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=011 a= 10 b= 20 | Exp: y= 30 z=0 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=011 a=255 b=  1 | Exp: y=  0 z=1 c=1 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=011 a=127 b=  1 | Exp: y=128 z=0 c=0 v=1 n=1 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=011 a=128 b=128 | Exp: y=  0 z=1 c=1 v=1 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=100 a= 20 b= 10 | Exp: y= 10 z=0 c=1 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=100 a= 10 b= 20 | Exp: y=246 z=0 c=0 v=0 n=1 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=100 a=127 b=128 | Exp: y=255 z=0 c=0 v=1 n=1 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=100 a=128 b=127 | Exp: y=  1 z=0 c=1 v=1 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=101 a=131 b=  0 | Exp: y=193 z=0 c=1 v=0 n=1 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=101 a= 66 b=  0 | Exp: y= 33 z=0 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=110 a=131 b=  0 | Exp: y=  7 z=0 c=1 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=110 a= 67 b=  0 | Exp: y=134 z=0 c=0 v=0 n=1 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=111 a=  5 b= 10 | Exp: y=  1 z=0 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=111 a= 10 b=  5 | Exp: y=  0 z=1 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=111 a=251 b=  5 | Exp: y=  1 z=0 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nFAIL: op=111 a=  5 b=251 | Exp: y=  0 z=1 c=0 v=0 n=0 | Got: y=  x z=x c=x v=x n=x\nRESULT: 0/22 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 524288,
+        "total": 524288
+      }
+    }
+  ],
+  "final_attempt": 1,
+  "reference": {
+    "outcome": "pass",
+    "passed": 524288,
+    "total": 524288,
+    "detail": "524288/524288 checks passed"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_moore",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 1,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 28.491,
+  "tokens": {
+    "prompt": 7449,
+    "output": 5155,
+    "total": 12604
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 643,
+      "output_tokens": 1685,
+      "duration_s": 9.315,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 20,
+        "tb_total": 22,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (20/22 checks passed):\nFAIL: din=1, rst=0, expected detected=0, actual=1\nRESULT: 20/22 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 2440,
+      "output_tokens": 1781,
+      "duration_s": 9.201,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 19,
+        "tb_total": 23,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (19/23 checks passed):\nFAIL: All ones 2 | din=1, rst=0, expected detected=0, actual=1\nFAIL: All ones 3 (Match) | din=1, rst=0, expected detected=1, actual=0\nRESULT: 19/23 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 4366,
+      "output_tokens": 1689,
+      "duration_s": 8.58,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 22,
+        "tb_total": 22,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 686,
+    "total": 686,
+    "detail": "686/686 checks passed"
+  }
+}

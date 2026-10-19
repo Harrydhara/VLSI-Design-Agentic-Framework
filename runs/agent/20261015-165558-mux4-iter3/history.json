@@ -1,0 +1,76 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "mux4",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 42,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys"
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 12.241,
+  "tokens": {
+    "prompt": 2448,
+    "output": 2246,
+    "total": 4694
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 532,
+      "output_tokens": 1099,
+      "duration_s": 5.761,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 13,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 20,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/13 checks passed):\nFAIL: sel=00, expected=a, actual=x\nFAIL: sel=01, expected=b, actual=x\nFAIL: sel=10, expected=c, actual=x\nFAIL: sel=11, expected=d, actual=x\nFAIL: sel=00, expected=0, actual=x\nFAIL: sel=01, expected=0, actual=x\nFAIL: sel=10, expected=0, actual=x\nFAIL: sel=11, expected=0, actual=x\nFAIL: sel=00, expected=f, actual=x\nFAIL: sel=01, expected=f, actual=x\nFAIL: sel=10, expected=f, actual=x\nFAIL: sel=11, expected=f, actual=x\nFAIL: sel=10, expected=c, actual=x\nRESULT: 0/13 passed"
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 1916,
+      "output_tokens": 1147,
+      "duration_s": 5.813,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 13,
+        "tb_total": 13,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 20,
+        "latches": 0
+      },
+      "feedback": ""
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "pass",
+    "passed": 1064,
+    "total": 1064,
+    "detail": "1064/1064 checks passed"
+  }
+}

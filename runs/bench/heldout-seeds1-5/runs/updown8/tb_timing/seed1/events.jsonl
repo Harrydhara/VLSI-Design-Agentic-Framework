@@ -1,0 +1,11 @@
+{"t": 0.0, "event": "run_started", "circuit": "updown8", "split": "heldout", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing"}
+{"t": 0.003, "event": "model_called", "attempt": 1, "messages": 2}
+{"t": 9.303, "event": "model_replied", "attempt": 1, "prompt_tokens": 904, "output_tokens": 1606, "duration_s": 9.297, "truncated": false}
+{"t": 9.771, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 12, "tb_total": 268, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 9.78, "event": "feedback_sent", "attempt": 1, "chars": 1252}
+{"t": 9.792, "event": "model_called", "attempt": 2, "messages": 4}
+{"t": 17.27, "event": "model_replied", "attempt": 2, "prompt_tokens": 3202, "output_tokens": 1382, "duration_s": 7.47, "truncated": false}
+{"t": 17.763, "event": "checks_done", "attempt": 2, "passed": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 268, "tb_total": 268, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 17.871, "event": "reference_scored", "attempt": 1, "final": false, "outcome": "pass", "passed": 380, "total": 380}
+{"t": 17.97, "event": "reference_scored", "attempt": 2, "final": true, "outcome": "pass", "passed": 380, "total": 380}
+{"t": 17.974, "event": "run_finished", "status": "dev_passed", "attempts": 2, "total_tokens": 7094, "duration_s": 17.974, "reference": "pass"}

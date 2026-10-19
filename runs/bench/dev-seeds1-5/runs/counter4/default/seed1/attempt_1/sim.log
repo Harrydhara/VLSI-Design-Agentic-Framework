@@ -1,0 +1,2 @@
+RESULT: 24/24 passed
+tb.v:95: $finish called at 255 (1s)

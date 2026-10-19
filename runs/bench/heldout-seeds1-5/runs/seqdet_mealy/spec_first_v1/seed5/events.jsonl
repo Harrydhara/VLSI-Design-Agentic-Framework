@@ -1,0 +1,14 @@
+{"t": 0.0, "event": "run_started", "circuit": "seqdet_mealy", "split": "heldout", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first_v1", "workflow": "spec_first"}
+{"t": 0.002, "event": "model_called", "attempt": null, "role": "testbench", "messages": 2}
+{"t": 21.788, "event": "model_replied", "attempt": null, "role": "testbench", "prompt_tokens": 552, "output_tokens": 4096, "duration_s": 21.782, "truncated": true}
+{"t": 21.856, "event": "testbench_checked", "version": 1, "usable": true}
+{"t": 21.86, "event": "model_called", "attempt": 1, "role": "design", "messages": 2}
+{"t": 27.742, "event": "model_replied", "attempt": 1, "role": "design", "prompt_tokens": 472, "output_tokens": 1091, "duration_s": 5.878, "truncated": false}
+{"t": 27.814, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": false}
+{"t": 27.822, "event": "feedback_sent", "attempt": 1, "chars": 307}
+{"t": 27.83, "event": "model_called", "attempt": 2, "role": "design", "messages": 4}
+{"t": 31.054, "event": "model_replied", "attempt": 2, "role": "design", "prompt_tokens": 1743, "output_tokens": 578, "duration_s": 3.217, "truncated": false}
+{"t": 31.384, "event": "checks_done", "attempt": 2, "passed": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 53, "tb_total": 53, "sim_timed_out": false, "synth_ok": true, "cells": 9, "latches": 0}
+{"t": 31.438, "event": "reference_scored", "attempt": 1, "final": false, "outcome": "compile_error", "passed": null, "total": null}
+{"t": 31.524, "event": "reference_scored", "attempt": 2, "final": true, "outcome": "pass", "passed": 684, "total": 684}
+{"t": 31.528, "event": "run_finished", "status": "dev_passed", "attempts": 2, "total_tokens": 8532, "duration_s": 31.528, "reference": "pass"}

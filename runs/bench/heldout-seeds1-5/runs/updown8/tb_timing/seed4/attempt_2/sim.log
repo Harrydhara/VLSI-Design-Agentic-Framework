@@ -1,0 +1,17 @@
+FAIL: time=46 expected=00 actual=02 en=1 up=1
+FAIL: time=56 expected=00 actual=01 en=1 up=0
+FAIL: time=66 expected=ff actual=00 en=1 up=0
+FAIL: time=76 expected=ff actual=00 en=0 up=1
+FAIL: time=86 expected=00 actual=01 en=1 up=1
+FAIL: time=116 expected=00 actual=01 en=0 up=1
+FAIL: time=126 expected=01 actual=02 en=1 up=1
+FAIL: time=136 expected=02 actual=03 en=1 up=1
+FAIL: time=146 expected=01 actual=02 en=1 up=0
+FAIL: time=156 expected=02 actual=03 en=1 up=1
+FAIL: time=166 expected=02 actual=03 en=0 up=1
+FAIL: time=176 expected=01 actual=02 en=1 up=0
+FAIL: time=186 expected=00 actual=01 en=1 up=0
+FAIL: time=196 expected=ff actual=00 en=1 up=0
+FAIL: time=206 expected=00 actual=01 en=1 up=1
+RESULT: 4/19 passed
+tb.v:125: $finish called at 206 (1s)

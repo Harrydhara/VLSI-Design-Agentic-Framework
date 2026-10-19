@@ -1,0 +1,4 @@
+- The simulator stopped with exit code 2:
+tb.v:29: Error: System task/function $bitstoh() is not defined by any module.
+tb.v:29: Error: System task/function $bitstoh() is not defined by any module.
+sim.vvp: Program not runnable, 2 errors.

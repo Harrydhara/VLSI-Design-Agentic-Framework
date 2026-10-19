@@ -1,0 +1,618 @@
+FAIL: a=  0, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  0, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  1, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  2, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  3, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  4, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  5, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  6, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  7, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  8, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a=  9, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 10, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 11, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 12, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 13, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 14, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  0, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  0, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  1, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  1, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  2, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  2, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  3, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  3, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  4, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  4, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  5, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  5, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  6, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  6, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  7, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  7, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  8, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  8, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  9, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b=  9, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 10, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 10, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 11, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 11, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 12, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 12, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 13, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 13, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 14, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 14, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 15, cin=0 | Expected {x,  x}, Got {x,  x}
+FAIL: a= 15, b= 15, cin=1 | Expected {x,  x}, Got {x,  x}
+FAIL: a=ff, b=ff, cin=1 | Expected 511, Got   x
+FAIL: a=ff, b=ff, cin=0 | Expected 510, Got   x
+FAIL: a=00, b=00, cin=0 | Expected   0, Got   x
+FAIL: a=00, b=00, cin=1 | Expected   1, Got   x
+FAIL: a=24, b=81, cin=1 | Expected 166, Got   x
+FAIL: a=63, b=0d, cin=1 | Expected 113, Got   x
+FAIL: a=65, b=12, cin=1 | Expected 120, Got   x
+FAIL: a=0d, b=76, cin=1 | Expected 132, Got   x
+FAIL: a=ed, b=8c, cin=1 | Expected 378, Got   x
+FAIL: a=c6, b=c5, cin=0 | Expected 395, Got   x
+FAIL: a=e5, b=77, cin=0 | Expected 348, Got   x
+FAIL: a=8f, b=f2, cin=0 | Expected 385, Got   x
+FAIL: a=e8, b=c5, cin=0 | Expected 429, Got   x
+FAIL: a=bd, b=2d, cin=1 | Expected 235, Got   x
+FAIL: a=63, b=0a, cin=0 | Expected 109, Got   x
+FAIL: a=20, b=aa, cin=1 | Expected 203, Got   x
+FAIL: a=96, b=13, cin=1 | Expected 170, Got   x
+FAIL: a=53, b=6b, cin=1 | Expected 191, Got   x
+FAIL: a=02, b=ae, cin=1 | Expected 177, Got   x
+FAIL: a=cf, b=23, cin=0 | Expected 242, Got   x
+FAIL: a=ca, b=3c, cin=0 | Expected 262, Got   x
+FAIL: a=8a, b=41, cin=0 | Expected 203, Got   x
+FAIL: a=78, b=89, cin=1 | Expected 258, Got   x
+FAIL: a=b6, b=c6, cin=0 | Expected 380, Got   x
+FAIL: a=bc, b=2a, cin=1 | Expected 231, Got   x
+FAIL: a=71, b=85, cin=1 | Expected 247, Got   x
+FAIL: a=3b, b=3a, cin=0 | Expected 117, Got   x
+FAIL: a=15, b=f1, cin=1 | Expected 263, Got   x
+FAIL: a=62, b=4c, cin=1 | Expected 175, Got   x
+FAIL: a=8f, b=f8, cin=1 | Expected 392, Got   x
+FAIL: a=9f, b=5c, cin=1 | Expected 252, Got   x
+FAIL: a=89, b=49, cin=0 | Expected 210, Got   x
+FAIL: a=d7, b=51, cin=0 | Expected 296, Got   x
+FAIL: a=0c, b=c2, cin=0 | Expected 206, Got   x
+FAIL: a=77, b=3d, cin=0 | Expected 180, Got   x
+FAIL: a=7e, b=6d, cin=1 | Expected 236, Got   x
+FAIL: a=1f, b=d3, cin=1 | Expected 243, Got   x
+FAIL: a=78, b=5b, cin=1 | Expected 212, Got   x
+FAIL: a=3f, b=2a, cin=0 | Expected 105, Got   x
+FAIL: a=86, b=8e, cin=0 | Expected 276, Got   x
+FAIL: a=fa, b=26, cin=1 | Expected 289, Got   x
+FAIL: a=a3, b=2f, cin=1 | Expected 211, Got   x
+FAIL: a=5f, b=44, cin=1 | Expected 164, Got   x
+FAIL: a=cb, b=e6, cin=0 | Expected 433, Got   x
+FAIL: a=29, b=ed, cin=0 | Expected 278, Got   x
+FAIL: a=65, b=b5, cin=1 | Expected 283, Got   x
+FAIL: a=79, b=44, cin=0 | Expected 189, Got   x
+FAIL: a=2a, b=ab, cin=0 | Expected 213, Got   x
+FAIL: a=dc, b=9a, cin=1 | Expected 375, Got   x
+FAIL: a=c3, b=56, cin=0 | Expected 281, Got   x
+FAIL: a=67, b=0a, cin=0 | Expected 113, Got   x
+FAIL: a=38, b=79, cin=0 | Expected 177, Got   x
+FAIL: a=94, b=93, cin=0 | Expected 295, Got   x
+FAIL: a=59, b=db, cin=1 | Expected 309, Got   x
+FAIL: a=d9, b=6d, cin=0 | Expected 326, Got   x
+FAIL: a=ca, b=b6, cin=1 | Expected 385, Got   x
+FAIL: a=46, b=04, cin=1 | Expected  75, Got   x
+FAIL: a=69, b=b4, cin=0 | Expected 285, Got   x
+FAIL: a=28, b=2d, cin=1 | Expected  86, Got   x
+FAIL: a=2e, b=08, cin=0 | Expected  54, Got   x
+FAIL: a=fd, b=29, cin=0 | Expected 294, Got   x
+FAIL: a=86, b=da, cin=1 | Expected 353, Got   x
+FAIL: a=66, b=70, cin=1 | Expected 215, Got   x
+FAIL: a=ba, b=5e, cin=0 | Expected 280, Got   x
+FAIL: a=d5, b=1a, cin=1 | Expected 240, Got   x
+FAIL: a=37, b=96, cin=0 | Expected 205, Got   x
+FAIL: a=26, b=b6, cin=1 | Expected 221, Got   x
+FAIL: a=dc, b=86, cin=0 | Expected 354, Got   x
+FAIL: a=7e, b=db, cin=1 | Expected 346, Got   x
+FAIL: a=79, b=fa, cin=1 | Expected 372, Got   x
+FAIL: a=17, b=a1, cin=0 | Expected 184, Got   x
+FAIL: a=50, b=f5, cin=1 | Expected 326, Got   x
+FAIL: a=29, b=c1, cin=1 | Expected 235, Got   x
+FAIL: a=98, b=4b, cin=1 | Expected 228, Got   x
+FAIL: a=ec, b=8a, cin=0 | Expected 374, Got   x
+FAIL: a=a8, b=a9, cin=1 | Expected 338, Got   x
+FAIL: a=0e, b=e6, cin=1 | Expected 245, Got   x
+FAIL: a=2a, b=2a, cin=1 | Expected  85, Got   x
+FAIL: a=9e, b=38, cin=1 | Expected 215, Got   x
+FAIL: a=c8, b=ca, cin=1 | Expected 403, Got   x
+FAIL: a=6b, b=c7, cin=0 | Expected 306, Got   x
+FAIL: a=ba, b=c4, cin=1 | Expected 383, Got   x
+FAIL: a=92, b=b4, cin=1 | Expected 327, Got   x
+FAIL: a=86, b=fa, cin=0 | Expected 384, Got   x
+FAIL: a=32, b=bd, cin=0 | Expected 239, Got   x
+FAIL: a=e4, b=ca, cin=1 | Expected 431, Got   x
+FAIL: a=a1, b=8e, cin=1 | Expected 304, Got   x
+FAIL: a=0b, b=ef, cin=1 | Expected 251, Got   x
+FAIL: a=36, b=75, cin=1 | Expected 172, Got   x
+FAIL: a=6b, b=88, cin=0 | Expected 243, Got   x
+FAIL: a=9b, b=92, cin=0 | Expected 301, Got   x
+FAIL: a=2d, b=4b, cin=0 | Expected 120, Got   x
+FAIL: a=1e, b=0d, cin=0 | Expected  43, Got   x
+FAIL: a=18, b=d1, cin=0 | Expected 233, Got   x
+FAIL: a=41, b=3b, cin=0 | Expected 124, Got   x
+FAIL: a=53, b=56, cin=1 | Expected 170, Got   x
+FAIL: a=e2, b=04, cin=1 | Expected 231, Got   x
+FAIL: a=d8, b=12, cin=0 | Expected 234, Got   x
+FAIL: a=39, b=e5, cin=1 | Expected 287, Got   x
+FAIL: a=2b, b=81, cin=0 | Expected 172, Got   x
+FAIL: a=27, b=a1, cin=1 | Expected 201, Got   x
+FAIL: a=04, b=58, cin=0 | Expected  92, Got   x
+FAIL: a=14, b=12, cin=0 | Expected  38, Got   x
+FAIL: a=b1, b=55, cin=1 | Expected 263, Got   x
+RESULT: 0/616 passed
+tb.v:110: $finish called at 0 (1s)

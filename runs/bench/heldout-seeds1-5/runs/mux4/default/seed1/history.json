@@ -1,0 +1,81 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "mux4",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 1,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 12.166,
+  "tokens": {
+    "prompt": 2361,
+    "output": 2227,
+    "total": 4588
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 532,
+      "output_tokens": 1113,
+      "duration_s": 6.016,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": false
+      },
+      "feedback": "- The design does not compile:\ndesign.v:12: error: y is not a valid l-value in mux4.\ndesign.v:13: error: y is not a valid l-value in mux4.\ndesign.v:14: error: y is not a valid l-value in mux4.\ndesign.v:15: error: y is not a valid l-value in mux4.\ndesign.v:16: error: y is not a valid l-value in mux4.",
+      "reference": {
+        "outcome": "compile_error",
+        "passed": null,
+        "total": null
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 1829,
+      "output_tokens": 1114,
+      "duration_s": 5.569,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 14,
+        "tb_total": 14,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 28,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 1064,
+        "total": 1064
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "pass",
+    "passed": 1064,
+    "total": 1064,
+    "detail": "1064/1064 checks passed"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "adder4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 2,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 8.514,
+  "tokens": {
+    "prompt": 2616,
+    "output": 1274,
+    "total": 3890
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 499,
+      "output_tokens": 652,
+      "duration_s": 3.801,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 512,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 23,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/512 checks passed):\nFAIL: a= 0, b= 0, cin=0 | Expected sum= 0, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 0, cin=1 | Expected sum= 1, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 1, cin=0 | Expected sum= 1, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 1, cin=1 | Expected sum= 2, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 2, cin=0 | Expected sum= 2, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 2, cin=1 | Expected sum= 3, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 3, cin=0 | Expected sum= 3, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 3, cin=1 | Expected sum= 4, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 4, cin=0 | Expected sum= 4, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 4, cin=1 | Expected sum= 5, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 5, cin=0 | Expected sum= 5, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 5, cin=1 | Expected sum= 6, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 6, cin=0 | Expected sum= 6, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 6, cin=1 | Expected sum= 7, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 7, cin=0 | Expected sum= 7, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 7, cin=1 | Expected sum= 8, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 8, cin=0 | Expected sum= 8, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 8, cin=1 | Expected sum= 9, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 9, cin=0 | Expected sum= 9, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b= 9, cin=1 | Expected sum=10, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b=10, cin=0 | Expected sum=10, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b=10, cin=1 | Expected sum=11, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b=11, cin=0 | Expected sum=11, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b=11, cin=1 | Expected sum=12, cout=0 | Actual sum= x, cout=x\nFAIL: a= 0, b=12, cin=0 | Expected sum=12, cout=0 | Actual sum= x, cout=x\n... (488 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 512,
+        "total": 512
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 2117,
+      "output_tokens": 622,
+      "duration_s": 3.626,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 512,
+        "tb_total": 512,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 23,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 512,
+        "total": 512
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "pass",
+    "passed": 512,
+    "total": 512,
+    "detail": "512/512 checks passed"
+  }
+}

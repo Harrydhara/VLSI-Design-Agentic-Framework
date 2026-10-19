@@ -1,0 +1,114 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_moore",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 3,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 33.898,
+  "tokens": {
+    "prompt": 9656,
+    "output": 6123,
+    "total": 15779
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 990,
+      "output_tokens": 1977,
+      "duration_s": 10.458,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 14,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (14/19 checks passed):\nFAIL: time=56 expected=0 actual=1 din=1 rst=0\nFAIL: time=66 expected=1 actual=0 din=0 rst=0\nFAIL: time=86 expected=0 actual=1 din=1 rst=0\nFAIL: time=96 expected=1 actual=0 din=1 rst=0\nFAIL: time=196 expected=0 actual=1 din=1 rst=0\nRESULT: 14/19 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 3211,
+      "output_tokens": 2000,
+      "duration_s": 10.339,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 14,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (14/19 checks passed):\nFAIL: time=56 expected=0 actual=1 din=1 rst=0\nFAIL: time=66 expected=1 actual=0 din=0 rst=0\nFAIL: time=86 expected=0 actual=1 din=1 rst=0\nFAIL: time=96 expected=1 actual=0 din=1 rst=0\nFAIL: time=196 expected=0 actual=1 din=1 rst=0\nRESULT: 14/19 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 5455,
+      "output_tokens": 2146,
+      "duration_s": 11.496,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 19,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 686,
+        "total": 686
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 686,
+    "total": 686,
+    "detail": "686/686 checks passed"
+  }
+}

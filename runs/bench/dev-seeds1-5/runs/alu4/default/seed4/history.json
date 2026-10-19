@@ -1,0 +1,114 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 4,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 45.275,
+  "tokens": {
+    "prompt": 14895,
+    "output": 8520,
+    "total": 23415
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 789,
+      "output_tokens": 3090,
+      "duration_s": 15.874,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 134,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/19 checks passed):\nFAIL: a=0111 b=0001 op=000 | exp: y=1000 c=0 o=1 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0010 b=0011 op=000 | exp: y=0101 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1111 b=0001 op=000 | exp: y=0000 c=1 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0101 b=0010 op=001 | exp: y=0011 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0010 b=0101 op=001 | exp: y=1101 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0111 b=1111 op=001 | exp: y=1000 c=0 o=0 z=1 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1010 b=1100 op=010 | exp: y=1000 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1010 b=0101 op=011 | exp: y=1111 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1010 b=1100 op=100 | exp: y=0110 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1011 b=0000 op=101 | exp: y=0110 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0011 b=0000 op=101 | exp: y=0110 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1101 b=0000 op=110 | exp: y=0110 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0110 b=0000 op=110 | exp: y=0011 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0001 b=0010 op=111 | exp: y=0001 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1111 b=0001 op=111 | exp: y=0001 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1111 b=1110 op=111 | exp: y=0000 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0000 b=0000 op=111 | exp: y=0000 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0000 b=0000 op=010 | exp: y=0000 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1000 b=0000 op=010 | exp: y=1000 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nRESULT: 0/19 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 5090,
+      "output_tokens": 2715,
+      "duration_s": 13.644,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 134,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/19 checks passed):\nFAIL: a=0111 b=0001 op=000 | exp: y=1000 c=0 o=1 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0010 b=0011 op=000 | exp: y=0101 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1111 b=0001 op=000 | exp: y=0000 c=1 o=0 z=1 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0101 b=0010 op=001 | exp: y=0011 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0010 b=0101 op=001 | exp: y=1101 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0111 b=1111 op=001 | exp: y=1000 c=0 o=0 z=1 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1010 b=1100 op=010 | exp: y=1000 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1010 b=0101 op=011 | exp: y=1111 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1010 b=1100 op=100 | exp: y=0110 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1011 b=0000 op=101 | exp: y=0110 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0011 b=0000 op=101 | exp: y=0110 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1101 b=0000 op=110 | exp: y=0110 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0110 b=0000 op=110 | exp: y=0011 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0001 b=0010 op=111 | exp: y=0001 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1111 b=0001 op=111 | exp: y=0001 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1111 b=1110 op=111 | exp: y=0000 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0000 b=0000 op=111 | exp: y=0000 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0000 b=0000 op=010 | exp: y=0000 c=0 o=0 z=1 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1000 b=0000 op=010 | exp: y=1000 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nRESULT: 0/19 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 9016,
+      "output_tokens": 2715,
+      "duration_s": 13.873,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 134,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/19 checks passed):\nFAIL: a=0111 b=0001 op=000 | exp: y=1000 c=0 o=1 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0010 b=0011 op=000 | exp: y=0101 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1111 b=0001 op=000 | exp: y=0000 c=1 o=0 z=1 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0101 b=0010 op=001 | exp: y=0011 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0010 b=0101 op=001 | exp: y=1101 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0111 b=1111 op=001 | exp: y=1000 c=0 o=0 z=1 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1010 b=1100 op=010 | exp: y=1000 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1010 b=0101 op=011 | exp: y=1111 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1010 b=1100 op=100 | exp: y=0110 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1011 b=0000 op=101 | exp: y=0110 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0011 b=0000 op=101 | exp: y=0110 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1101 b=0000 op=110 | exp: y=0110 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0110 b=0000 op=110 | exp: y=0011 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0001 b=0010 op=111 | exp: y=0001 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1111 b=0001 op=111 | exp: y=0001 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1111 b=1110 op=111 | exp: y=0000 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0000 b=0000 op=111 | exp: y=0000 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=0000 b=0000 op=010 | exp: y=0000 c=0 o=0 z=1 n=0 | act: y=xxxx c=x o=x z=x n=x\nFAIL: a=1000 b=0000 op=010 | exp: y=1000 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x\nRESULT: 0/19 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 2048,
+    "total": 2048,
+    "detail": "2048/2048 checks passed"
+  }
+}

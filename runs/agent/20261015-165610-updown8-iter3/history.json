@@ -1,0 +1,98 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "updown8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 42,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys"
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 18.719,
+  "tokens": {
+    "prompt": 5375,
+    "output": 3247,
+    "total": 8622
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 557,
+      "output_tokens": 1059,
+      "duration_s": 5.944,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 11,
+        "tb_total": 14,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (11/14 checks passed):\nFAIL: rst_n=1, en=1, up=1, expected=  0, actual=255\nFAIL: rst_n=1, en=1, up=1, expected=  1, actual=  0\nFAIL: Async reset during operation failed. expected=0, actual=  2\nRESULT: 11/14 passed"
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 1780,
+      "output_tokens": 1094,
+      "duration_s": 5.966,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 11,
+        "tb_total": 14,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (11/14 checks passed):\nFAIL: rst_n=1, en=1, up=1, expected=  0, actual=255\nFAIL: rst_n=1, en=1, up=1, expected=  1, actual=  0\nFAIL: Async reset during operation failed. expected=0, actual=  2\nRESULT: 11/14 passed"
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 3038,
+      "output_tokens": 1094,
+      "duration_s": 5.713,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 11,
+        "tb_total": 14,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 47,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (11/14 checks passed):\nFAIL: rst_n=1, en=1, up=1, expected=  0, actual=255\nFAIL: rst_n=1, en=1, up=1, expected=  1, actual=  0\nFAIL: Async reset during operation failed. expected=0, actual=  2\nRESULT: 11/14 passed"
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 380,
+    "total": 380,
+    "detail": "380/380 checks passed"
+  }
+}

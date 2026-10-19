@@ -1,0 +1,19 @@
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 2, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 3, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 4, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 5, Actual count= 0
+FAIL: rst=0, en=0, clk_edge=rising. Expected count= 5, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 6, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 7, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 8, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 9, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count=10, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count=11, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count=12, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count=13, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count=14, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count=15, Actual count= 0
+FAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0
+RESULT: -10/24 passed
+tb.v:130: $finish called at 275000 (1ps)

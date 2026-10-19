@@ -1,0 +1,105 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_moore",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 5,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 31.46,
+  "tokens": {
+    "prompt": 9618,
+    "output": 5639,
+    "total": 15257
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 990,
+      "output_tokens": 2240,
+      "duration_s": 12.392,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:93: error: syntax error",
+      "reference": {
+        "outcome": "fail",
+        "passed": 676,
+        "total": 686
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 3374,
+      "output_tokens": 1736,
+      "duration_s": 9.371,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:51: error: syntax error",
+      "reference": {
+        "outcome": "fail",
+        "passed": 676,
+        "total": 686
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 5254,
+      "output_tokens": 1663,
+      "duration_s": 8.578,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 18,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:62: error: syntax error",
+      "reference": {
+        "outcome": "fail",
+        "passed": 676,
+        "total": 686
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "fail",
+    "passed": 676,
+    "total": 686,
+    "detail": "676/686 checks passed"
+  }
+}

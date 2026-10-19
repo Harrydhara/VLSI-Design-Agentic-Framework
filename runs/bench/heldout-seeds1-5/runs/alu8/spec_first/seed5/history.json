@@ -1,0 +1,145 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu8",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 5,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 32.058,
+  "tokens": {
+    "prompt": 12338,
+    "output": 4739,
+    "total": 17077
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 738,
+      "output_tokens": 1731,
+      "duration_s": 8.784,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 656,
+      "output_tokens": 933,
+      "duration_s": 4.895,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 1,
+      "prompt_tokens": 3743,
+      "output_tokens": 278,
+      "duration_s": 2.496,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 3088,
+      "output_tokens": 921,
+      "duration_s": 4.878,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 4113,
+      "output_tokens": 876,
+      "duration_s": 4.859,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 656,
+      "output_tokens": 933,
+      "duration_s": 4.895,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 393732,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 258,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/393732 checks passed):\nFAIL: a=  0, b=  0, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  0, op=001 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  0, op=010 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  1, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  1, op=001 | Exp: y=  1 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  1, op=010 | Exp: y=  1 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  2, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  2, op=001 | Exp: y=  2 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  2, op=010 | Exp: y=  2 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  3, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  3, op=001 | Exp: y=  3 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  3, op=010 | Exp: y=  3 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  4, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  4, op=001 | Exp: y=  4 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  4, op=010 | Exp: y=  4 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  5, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  5, op=001 | Exp: y=  5 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  5, op=010 | Exp: y=  5 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  6, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  6, op=001 | Exp: y=  6 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  6, op=010 | Exp: y=  6 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  7, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  7, op=001 | Exp: y=  7 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  7, op=010 | Exp: y=  7 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\nFAIL: a=  0, b=  8, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x\n... (748 more lines)",
+      "reference": {
+        "outcome": "fail",
+        "passed": 491520,
+        "total": 524288
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 3088,
+      "output_tokens": 921,
+      "duration_s": 4.878,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": false
+      },
+      "feedback": "- The design does not compile:\ndesign.v:58: error: syntax error\ndesign.v:58: error: Malformed statement",
+      "reference": {
+        "outcome": "compile_error",
+        "passed": null,
+        "total": null
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 4113,
+      "output_tokens": 876,
+      "duration_s": 4.859,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": false
+      },
+      "feedback": "- The design does not compile:\ndesign.v:56: error: syntax error\ndesign.v:56: error: Malformed statement",
+      "reference": {
+        "outcome": "compile_error",
+        "passed": null,
+        "total": null
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "compile_error",
+    "passed": null,
+    "total": null,
+    "detail": "design.v:56: syntax error"
+  }
+}

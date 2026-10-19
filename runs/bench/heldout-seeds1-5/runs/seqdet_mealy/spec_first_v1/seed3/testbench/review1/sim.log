@@ -1,0 +1,5 @@
+FAIL: din=1, rst_n=1, history=110, expected detected=1, actual detected=0
+FAIL: din=1, rst_n=1, history=110, expected detected=1, actual detected=0
+FAIL: din=1, rst_n=1, history=110, expected detected=1, actual detected=0
+RESULT: 25/28 passed
+tb.v:140: $finish called at 135100 (1ps)

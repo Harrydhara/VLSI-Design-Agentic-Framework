@@ -1,0 +1,60 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 101,
+    "think": false,
+    "max_attempts": 1,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": false
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 13.908,
+  "tokens": {
+    "prompt": 789,
+    "output": 2640,
+    "total": 3429
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 789,
+      "output_tokens": 2640,
+      "duration_s": 13.535,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 13,
+        "tb_total": 17,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 136,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (13/17 checks passed):\nFAIL: op=000 a=0101 b=0011 | Exp: y=1000 z=0 c=0 v=0 n=0 | Got: y=1000 z=0 c=0 v=1 n=1\nFAIL: op=001 a=1010 b=0100 | Exp: y=0110 z=0 c=1 v=0 n=0 | Got: y=0110 z=0 c=1 v=1 n=0\nFAIL: op=001 a=0111 b=1000 | Exp: y=1111 z=0 c=1 v=1 n=1 | Got: y=1111 z=0 c=0 v=1 n=1\nFAIL: op=111 a=1110 b=0001 | Exp: y=0001 z=0 c=0 v=0 n=0 | Got: y=0000 z=1 c=0 v=0 n=0\nRESULT: 13/17 passed",
+      "reference": {
+        "outcome": "fail",
+        "passed": 1920,
+        "total": 2048
+      }
+    }
+  ],
+  "final_attempt": 1,
+  "reference": {
+    "outcome": "fail",
+    "passed": 1920,
+    "total": 2048,
+    "detail": "1920/2048 checks passed"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_mealy",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 2,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first_v1",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 43.517,
+  "tokens": {
+    "prompt": 15863,
+    "output": 7740,
+    "total": 23603
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 552,
+      "output_tokens": 1695,
+      "duration_s": 9.539,
+      "truncated": false
+    },
+    {
+      "role": "testbench_fix",
+      "attempt": null,
+      "prompt_tokens": 2382,
+      "output_tokens": 1347,
+      "duration_s": 6.874,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 472,
+      "output_tokens": 583,
+      "duration_s": 3.245,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 1234,
+      "output_tokens": 623,
+      "duration_s": 3.22,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 3846,
+      "output_tokens": 1431,
+      "duration_s": 7.251,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 1983,
+      "output_tokens": 721,
+      "duration_s": 3.957,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 3,
+      "prompt_tokens": 5394,
+      "output_tokens": 1340,
+      "duration_s": 7.165,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 472,
+      "output_tokens": 583,
+      "duration_s": 3.245,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": false
+      },
+      "feedback": "- The design does not compile:\ndesign.v:34: error: detected is not a valid l-value in seqdet_mealy.\ndesign.v:61: error: detected is not a valid l-value in seqdet_mealy.\ndesign.v:64: error: detected is not a valid l-value in seqdet_mealy.\ndesign.v:71: error: detected is not a valid l-value in seqdet_mealy.",
+      "reference": {
+        "outcome": "compile_error",
+        "passed": null,
+        "total": null
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 1234,
+      "output_tokens": 623,
+      "duration_s": 3.22,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 45,
+        "tb_total": 46,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (45/46 checks passed):\nFAIL: e (Mealy stable) | din=1, history_bits=110, expected=1, actual=0\nRESULT: 45/46 passed",
+      "reference": {
+        "outcome": "fail",
+        "passed": 681,
+        "total": 684
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 1983,
+      "output_tokens": 721,
+      "duration_s": 3.957,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 46,
+        "tb_total": 46,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "fail",
+        "passed": 681,
+        "total": 684
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "fail",
+    "passed": 681,
+    "total": 684,
+    "detail": "681/684 checks passed"
+  }
+}

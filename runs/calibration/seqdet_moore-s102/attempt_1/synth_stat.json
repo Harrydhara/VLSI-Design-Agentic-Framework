@@ -1,0 +1,47 @@
+{
+   "creator": "Yosys 0.57+260 (git sha1 ed4eb6d33, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\seqdet_moore": {
+         "num_wires":         18,
+         "num_wire_bits":     22,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 9,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         18,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 6,
+            "$_DFF_P_": 5,
+            "$_NOR_": 3,
+            "$_ORNOT_": 1,
+            "$_OR_": 3
+         }
+      }
+   },
+      "design": {
+         "num_wires":         18,
+         "num_wire_bits":     22,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 9,
+         "num_ports":         4,
+         "num_port_bits":     4,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         18,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 6,
+            "$_DFF_P_": 5,
+            "$_NOR_": 3,
+            "$_ORNOT_": 1,
+            "$_OR_": 3
+         }
+      }
+}
+

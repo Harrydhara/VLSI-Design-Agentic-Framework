@@ -1,0 +1,3 @@
+- The testbench reported failures (14/15 checks passed):
+FAIL: time=6 sel=11 d0=5 d1=b d2=c d3=d expected=5 actual=d
+RESULT: 14/15 passed

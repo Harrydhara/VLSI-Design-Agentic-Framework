@@ -1,0 +1,774 @@
+FAIL: a=  0, b=  0, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  0, op=001 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  0, op=010 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  1, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  1, op=001 | Exp: y=  1 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  1, op=010 | Exp: y=  1 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  2, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  2, op=001 | Exp: y=  2 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  2, op=010 | Exp: y=  2 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  3, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  3, op=001 | Exp: y=  3 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  3, op=010 | Exp: y=  3 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  4, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  4, op=001 | Exp: y=  4 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  4, op=010 | Exp: y=  4 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  5, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  5, op=001 | Exp: y=  5 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  5, op=010 | Exp: y=  5 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  6, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  6, op=001 | Exp: y=  6 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  6, op=010 | Exp: y=  6 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  7, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  7, op=001 | Exp: y=  7 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  7, op=010 | Exp: y=  7 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  8, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  8, op=001 | Exp: y=  8 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  8, op=010 | Exp: y=  8 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  9, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  9, op=001 | Exp: y=  9 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  9, op=010 | Exp: y=  9 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 10, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 10, op=001 | Exp: y= 10 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 10, op=010 | Exp: y= 10 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 11, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 11, op=001 | Exp: y= 11 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 11, op=010 | Exp: y= 11 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 12, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 12, op=001 | Exp: y= 12 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 12, op=010 | Exp: y= 12 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 13, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 13, op=001 | Exp: y= 13 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 13, op=010 | Exp: y= 13 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 14, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 14, op=001 | Exp: y= 14 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 14, op=010 | Exp: y= 14 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 15, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 15, op=001 | Exp: y= 15 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 15, op=010 | Exp: y= 15 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 16, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 16, op=001 | Exp: y= 16 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 16, op=010 | Exp: y= 16 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 17, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 17, op=001 | Exp: y= 17 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 17, op=010 | Exp: y= 17 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 18, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 18, op=001 | Exp: y= 18 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 18, op=010 | Exp: y= 18 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 19, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 19, op=001 | Exp: y= 19 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 19, op=010 | Exp: y= 19 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 20, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 20, op=001 | Exp: y= 20 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 20, op=010 | Exp: y= 20 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 21, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 21, op=001 | Exp: y= 21 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 21, op=010 | Exp: y= 21 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 22, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 22, op=001 | Exp: y= 22 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 22, op=010 | Exp: y= 22 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 23, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 23, op=001 | Exp: y= 23 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 23, op=010 | Exp: y= 23 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 24, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 24, op=001 | Exp: y= 24 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 24, op=010 | Exp: y= 24 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 25, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 25, op=001 | Exp: y= 25 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 25, op=010 | Exp: y= 25 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 26, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 26, op=001 | Exp: y= 26 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 26, op=010 | Exp: y= 26 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 27, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 27, op=001 | Exp: y= 27 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 27, op=010 | Exp: y= 27 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 28, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 28, op=001 | Exp: y= 28 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 28, op=010 | Exp: y= 28 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 29, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 29, op=001 | Exp: y= 29 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 29, op=010 | Exp: y= 29 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 30, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 30, op=001 | Exp: y= 30 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 30, op=010 | Exp: y= 30 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 31, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 31, op=001 | Exp: y= 31 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 31, op=010 | Exp: y= 31 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 32, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 32, op=001 | Exp: y= 32 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 32, op=010 | Exp: y= 32 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 33, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 33, op=001 | Exp: y= 33 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 33, op=010 | Exp: y= 33 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 34, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 34, op=001 | Exp: y= 34 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 34, op=010 | Exp: y= 34 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 35, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 35, op=001 | Exp: y= 35 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 35, op=010 | Exp: y= 35 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 36, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 36, op=001 | Exp: y= 36 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 36, op=010 | Exp: y= 36 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 37, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 37, op=001 | Exp: y= 37 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 37, op=010 | Exp: y= 37 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 38, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 38, op=001 | Exp: y= 38 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 38, op=010 | Exp: y= 38 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 39, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 39, op=001 | Exp: y= 39 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 39, op=010 | Exp: y= 39 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 40, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 40, op=001 | Exp: y= 40 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 40, op=010 | Exp: y= 40 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 41, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 41, op=001 | Exp: y= 41 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 41, op=010 | Exp: y= 41 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 42, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 42, op=001 | Exp: y= 42 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 42, op=010 | Exp: y= 42 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 43, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 43, op=001 | Exp: y= 43 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 43, op=010 | Exp: y= 43 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 44, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 44, op=001 | Exp: y= 44 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 44, op=010 | Exp: y= 44 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 45, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 45, op=001 | Exp: y= 45 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 45, op=010 | Exp: y= 45 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 46, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 46, op=001 | Exp: y= 46 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 46, op=010 | Exp: y= 46 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 47, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 47, op=001 | Exp: y= 47 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 47, op=010 | Exp: y= 47 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 48, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 48, op=001 | Exp: y= 48 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 48, op=010 | Exp: y= 48 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 49, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 49, op=001 | Exp: y= 49 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 49, op=010 | Exp: y= 49 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 50, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 50, op=001 | Exp: y= 50 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 50, op=010 | Exp: y= 50 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 51, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 51, op=001 | Exp: y= 51 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 51, op=010 | Exp: y= 51 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 52, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 52, op=001 | Exp: y= 52 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 52, op=010 | Exp: y= 52 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 53, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 53, op=001 | Exp: y= 53 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 53, op=010 | Exp: y= 53 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 54, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 54, op=001 | Exp: y= 54 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 54, op=010 | Exp: y= 54 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 55, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 55, op=001 | Exp: y= 55 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 55, op=010 | Exp: y= 55 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 56, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 56, op=001 | Exp: y= 56 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 56, op=010 | Exp: y= 56 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 57, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 57, op=001 | Exp: y= 57 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 57, op=010 | Exp: y= 57 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 58, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 58, op=001 | Exp: y= 58 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 58, op=010 | Exp: y= 58 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 59, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 59, op=001 | Exp: y= 59 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 59, op=010 | Exp: y= 59 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 60, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 60, op=001 | Exp: y= 60 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 60, op=010 | Exp: y= 60 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 61, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 61, op=001 | Exp: y= 61 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 61, op=010 | Exp: y= 61 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 62, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 62, op=001 | Exp: y= 62 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 62, op=010 | Exp: y= 62 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 63, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 63, op=001 | Exp: y= 63 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 63, op=010 | Exp: y= 63 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 64, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 64, op=001 | Exp: y= 64 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 64, op=010 | Exp: y= 64 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 65, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 65, op=001 | Exp: y= 65 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 65, op=010 | Exp: y= 65 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 66, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 66, op=001 | Exp: y= 66 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 66, op=010 | Exp: y= 66 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 67, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 67, op=001 | Exp: y= 67 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 67, op=010 | Exp: y= 67 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 68, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 68, op=001 | Exp: y= 68 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 68, op=010 | Exp: y= 68 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 69, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 69, op=001 | Exp: y= 69 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 69, op=010 | Exp: y= 69 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 70, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 70, op=001 | Exp: y= 70 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 70, op=010 | Exp: y= 70 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 71, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 71, op=001 | Exp: y= 71 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 71, op=010 | Exp: y= 71 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 72, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 72, op=001 | Exp: y= 72 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 72, op=010 | Exp: y= 72 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 73, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 73, op=001 | Exp: y= 73 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 73, op=010 | Exp: y= 73 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 74, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 74, op=001 | Exp: y= 74 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 74, op=010 | Exp: y= 74 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 75, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 75, op=001 | Exp: y= 75 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 75, op=010 | Exp: y= 75 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 76, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 76, op=001 | Exp: y= 76 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 76, op=010 | Exp: y= 76 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 77, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 77, op=001 | Exp: y= 77 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 77, op=010 | Exp: y= 77 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 78, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 78, op=001 | Exp: y= 78 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 78, op=010 | Exp: y= 78 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 79, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 79, op=001 | Exp: y= 79 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 79, op=010 | Exp: y= 79 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 80, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 80, op=001 | Exp: y= 80 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 80, op=010 | Exp: y= 80 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 81, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 81, op=001 | Exp: y= 81 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 81, op=010 | Exp: y= 81 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 82, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 82, op=001 | Exp: y= 82 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 82, op=010 | Exp: y= 82 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 83, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 83, op=001 | Exp: y= 83 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 83, op=010 | Exp: y= 83 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 84, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 84, op=001 | Exp: y= 84 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 84, op=010 | Exp: y= 84 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 85, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 85, op=001 | Exp: y= 85 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 85, op=010 | Exp: y= 85 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 86, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 86, op=001 | Exp: y= 86 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 86, op=010 | Exp: y= 86 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 87, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 87, op=001 | Exp: y= 87 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 87, op=010 | Exp: y= 87 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 88, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 88, op=001 | Exp: y= 88 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 88, op=010 | Exp: y= 88 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 89, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 89, op=001 | Exp: y= 89 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 89, op=010 | Exp: y= 89 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 90, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 90, op=001 | Exp: y= 90 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 90, op=010 | Exp: y= 90 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 91, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 91, op=001 | Exp: y= 91 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 91, op=010 | Exp: y= 91 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 92, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 92, op=001 | Exp: y= 92 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 92, op=010 | Exp: y= 92 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 93, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 93, op=001 | Exp: y= 93 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 93, op=010 | Exp: y= 93 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 94, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 94, op=001 | Exp: y= 94 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 94, op=010 | Exp: y= 94 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 95, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 95, op=001 | Exp: y= 95 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 95, op=010 | Exp: y= 95 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 96, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 96, op=001 | Exp: y= 96 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 96, op=010 | Exp: y= 96 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 97, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 97, op=001 | Exp: y= 97 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 97, op=010 | Exp: y= 97 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 98, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 98, op=001 | Exp: y= 98 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 98, op=010 | Exp: y= 98 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 99, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 99, op=001 | Exp: y= 99 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b= 99, op=010 | Exp: y= 99 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=100, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=100, op=001 | Exp: y=100 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=100, op=010 | Exp: y=100 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=101, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=101, op=001 | Exp: y=101 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=101, op=010 | Exp: y=101 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=102, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=102, op=001 | Exp: y=102 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=102, op=010 | Exp: y=102 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=103, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=103, op=001 | Exp: y=103 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=103, op=010 | Exp: y=103 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=104, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=104, op=001 | Exp: y=104 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=104, op=010 | Exp: y=104 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=105, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=105, op=001 | Exp: y=105 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=105, op=010 | Exp: y=105 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=106, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=106, op=001 | Exp: y=106 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=106, op=010 | Exp: y=106 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=107, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=107, op=001 | Exp: y=107 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=107, op=010 | Exp: y=107 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=108, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=108, op=001 | Exp: y=108 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=108, op=010 | Exp: y=108 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=109, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=109, op=001 | Exp: y=109 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=109, op=010 | Exp: y=109 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=110, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=110, op=001 | Exp: y=110 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=110, op=010 | Exp: y=110 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=111, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=111, op=001 | Exp: y=111 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=111, op=010 | Exp: y=111 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=112, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=112, op=001 | Exp: y=112 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=112, op=010 | Exp: y=112 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=113, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=113, op=001 | Exp: y=113 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=113, op=010 | Exp: y=113 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=114, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=114, op=001 | Exp: y=114 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=114, op=010 | Exp: y=114 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=115, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=115, op=001 | Exp: y=115 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=115, op=010 | Exp: y=115 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=116, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=116, op=001 | Exp: y=116 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=116, op=010 | Exp: y=116 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=117, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=117, op=001 | Exp: y=117 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=117, op=010 | Exp: y=117 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=118, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=118, op=001 | Exp: y=118 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=118, op=010 | Exp: y=118 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=119, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=119, op=001 | Exp: y=119 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=119, op=010 | Exp: y=119 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=120, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=120, op=001 | Exp: y=120 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=120, op=010 | Exp: y=120 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=121, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=121, op=001 | Exp: y=121 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=121, op=010 | Exp: y=121 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=122, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=122, op=001 | Exp: y=122 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=122, op=010 | Exp: y=122 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=123, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=123, op=001 | Exp: y=123 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=123, op=010 | Exp: y=123 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=124, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=124, op=001 | Exp: y=124 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=124, op=010 | Exp: y=124 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=125, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=125, op=001 | Exp: y=125 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=125, op=010 | Exp: y=125 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=126, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=126, op=001 | Exp: y=126 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=126, op=010 | Exp: y=126 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=127, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=127, op=001 | Exp: y=127 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=127, op=010 | Exp: y=127 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=128, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=128, op=001 | Exp: y=128 z=0
+... [33401743 bytes of output omitted] ...
+31, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=132, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=133, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=134, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=135, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=136, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=137, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=138, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=139, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=140, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=141, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=142, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=143, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=144, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=145, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=146, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=147, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=148, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=149, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=150, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=151, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=152, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=153, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=154, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=155, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=156, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=157, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=158, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=159, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=160, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=161, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=162, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=163, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=164, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=165, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=166, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=167, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=168, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=169, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=170, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=171, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=172, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=173, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=174, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=175, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=176, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=177, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=178, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=179, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=180, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=181, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=182, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=183, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=184, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=185, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=186, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=187, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=188, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=189, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=190, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=191, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=192, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=193, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=194, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=195, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=196, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=197, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=198, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=199, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=200, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=201, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=202, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=203, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=204, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=205, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=206, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=207, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=208, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=209, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=210, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=211, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=212, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=213, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=214, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=215, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=216, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=217, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=218, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=219, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=220, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=221, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=222, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=223, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=224, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=225, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=226, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=227, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=228, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=229, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=230, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=231, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=232, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=233, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=234, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=235, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=236, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=237, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=238, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=239, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=240, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=241, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=242, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=243, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=244, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=245, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=246, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=247, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=248, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=249, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=250, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=251, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=252, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=253, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=254, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=254, b=255, op=111 | Exp: y=  1 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  0, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  1, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  2, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  3, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  4, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  5, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  6, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  7, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  8, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=  9, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 10, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 11, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 12, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 13, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 14, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 15, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 16, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 17, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 18, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 19, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 20, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 21, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 22, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 23, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 24, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 25, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 26, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 27, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 28, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 29, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 30, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 31, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 32, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 33, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 34, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 35, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 36, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 37, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 38, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 39, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 40, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 41, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 42, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 43, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 44, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 45, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 46, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 47, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 48, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 49, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 50, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 51, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 52, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 53, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 54, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 55, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 56, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 57, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 58, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 59, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 60, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 61, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 62, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 63, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 64, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 65, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 66, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 67, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 68, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 69, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 70, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 71, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 72, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 73, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 74, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 75, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 76, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 77, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 78, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 79, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 80, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 81, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 82, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 83, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 84, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 85, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 86, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 87, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 88, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 89, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 90, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 91, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 92, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 93, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 94, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 95, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 96, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 97, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 98, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b= 99, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=100, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=101, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=102, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=103, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=104, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=105, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=106, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=107, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=108, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=109, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=110, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=111, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=112, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=113, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=114, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=115, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=116, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=117, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=118, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=119, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=120, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=121, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=122, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=123, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=124, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=125, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=126, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=127, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=128, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=129, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=130, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=131, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=132, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=133, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=134, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=135, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=136, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=137, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=138, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=139, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=140, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=141, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=142, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=143, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=144, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=145, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=146, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=147, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=148, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=149, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=150, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=151, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=152, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=153, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=154, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=155, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=156, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=157, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=158, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=159, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=160, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=161, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=162, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=163, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=164, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=165, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=166, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=167, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=168, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=169, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=170, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=171, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=172, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=173, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=174, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=175, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=176, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=177, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=178, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=179, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=180, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=181, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=182, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=183, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=184, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=185, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=186, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=187, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=188, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=189, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=190, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=191, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=192, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=193, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=194, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=195, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=196, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=197, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=198, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=199, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=200, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=201, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=202, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=203, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=204, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=205, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=206, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=207, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=208, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=209, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=210, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=211, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=212, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=213, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=214, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=215, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=216, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=217, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=218, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=219, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=220, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=221, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=222, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=223, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=224, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=225, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=226, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=227, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=228, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=229, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=230, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=231, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=232, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=233, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=234, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=235, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=236, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=237, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=238, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=239, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=240, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=241, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=242, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=243, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=244, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=245, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=246, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=247, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=248, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=249, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=250, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=251, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=252, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=253, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=254, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=255, b=255, op=111 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=127, b=  1, op=011 | Exp: y=128 z=0 c=0 o=1 n=1 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=128, b=  1, op=100 | Exp: y=127 z=0 c=1 o=1 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  1, op=100 | Exp: y=255 z=0 c=0 o=0 n=1 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  1, b=  1, op=100 | Exp: y=  0 z=1 c=1 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+RESULT: 0/393732 passed
+tb.v:149: $finish called at 0 (1s)

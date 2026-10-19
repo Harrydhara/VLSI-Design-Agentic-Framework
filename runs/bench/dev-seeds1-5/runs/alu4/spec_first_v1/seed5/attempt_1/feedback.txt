@@ -1,0 +1,27 @@
+- The testbench reported failures (1920/2048 checks passed):
+FAIL: a= 0, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 0, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 1, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b= 9, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=10, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=11, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=12, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=13, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=14, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 2, b=15, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+FAIL: a= 3, b= 8, op=111 | Expected: y= 0, z=1, c=0, v=0, n=0 | Actual: y= 1, z=0, c=0, v=0, n=0
+... (104 more lines)

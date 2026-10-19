@@ -1,0 +1,5 @@
+FAIL: a=128 b=128 op=011 | Exp: y=  0 z=1 c=1 v=0 n=0 | Got: y=  0 z=1 c=1 v=1 n=0
+FAIL: a=129 b=127 op=011 | Exp: y=  0 z=1 c=0 v=0 n=0 | Got: y=  0 z=1 c=1 v=0 n=0
+FAIL: a=128 b=  1 op=100 | Exp: y=127 z=0 c=0 v=1 n=0 | Got: y=127 z=0 c=1 v=1 n=0
+RESULT: 21/24 passed
+tb.v:79: $finish called at 24 (1s)

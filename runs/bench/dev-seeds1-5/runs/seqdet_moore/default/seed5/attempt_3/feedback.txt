@@ -1,0 +1,3 @@
+- The testbench reported failures (25/27 checks passed):
+FAIL: din=1, rst=1, expected=1, actual=0
+RESULT: 25/27 passed

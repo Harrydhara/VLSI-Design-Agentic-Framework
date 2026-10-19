@@ -1,0 +1,914 @@
+FAIL: a=  0, b=  0, cin=1 | Expected {cout,sum}=  1, Got {cout,sum}=  0
+FAIL: a=  0, b=  1, cin=0 | Expected {cout,sum}=  1, Got {cout,sum}=  0
+FAIL: a=  0, b=  1, cin=1 | Expected {cout,sum}=  2, Got {cout,sum}=  0
+FAIL: a=  0, b=  2, cin=0 | Expected {cout,sum}=  2, Got {cout,sum}=  0
+FAIL: a=  0, b=  2, cin=1 | Expected {cout,sum}=  3, Got {cout,sum}=  0
+FAIL: a=  0, b=  3, cin=0 | Expected {cout,sum}=  3, Got {cout,sum}=  0
+FAIL: a=  0, b=  3, cin=1 | Expected {cout,sum}=  4, Got {cout,sum}=  0
+FAIL: a=  0, b=  4, cin=0 | Expected {cout,sum}=  4, Got {cout,sum}=  0
+FAIL: a=  0, b=  4, cin=1 | Expected {cout,sum}=  5, Got {cout,sum}=  0
+FAIL: a=  0, b=  5, cin=0 | Expected {cout,sum}=  5, Got {cout,sum}=  0
+FAIL: a=  0, b=  5, cin=1 | Expected {cout,sum}=  6, Got {cout,sum}=  0
+FAIL: a=  0, b=  6, cin=0 | Expected {cout,sum}=  6, Got {cout,sum}=  0
+FAIL: a=  0, b=  6, cin=1 | Expected {cout,sum}=  7, Got {cout,sum}=  0
+FAIL: a=  0, b=  7, cin=0 | Expected {cout,sum}=  7, Got {cout,sum}=  0
+FAIL: a=  0, b=  7, cin=1 | Expected {cout,sum}=  8, Got {cout,sum}=  0
+FAIL: a=  0, b=  8, cin=0 | Expected {cout,sum}=  8, Got {cout,sum}=  0
+FAIL: a=  0, b=  8, cin=1 | Expected {cout,sum}=  9, Got {cout,sum}=  0
+FAIL: a=  0, b=  9, cin=0 | Expected {cout,sum}=  9, Got {cout,sum}=  0
+FAIL: a=  0, b=  9, cin=1 | Expected {cout,sum}= 10, Got {cout,sum}=  0
+FAIL: a=  0, b= 10, cin=0 | Expected {cout,sum}= 10, Got {cout,sum}=  0
+FAIL: a=  0, b= 10, cin=1 | Expected {cout,sum}= 11, Got {cout,sum}=  0
+FAIL: a=  0, b= 11, cin=0 | Expected {cout,sum}= 11, Got {cout,sum}=  0
+FAIL: a=  0, b= 11, cin=1 | Expected {cout,sum}= 12, Got {cout,sum}=  0
+FAIL: a=  0, b= 12, cin=0 | Expected {cout,sum}= 12, Got {cout,sum}=  0
+FAIL: a=  0, b= 12, cin=1 | Expected {cout,sum}= 13, Got {cout,sum}=  0
+FAIL: a=  0, b= 13, cin=0 | Expected {cout,sum}= 13, Got {cout,sum}=  0
+FAIL: a=  0, b= 13, cin=1 | Expected {cout,sum}= 14, Got {cout,sum}=  0
+FAIL: a=  0, b= 14, cin=0 | Expected {cout,sum}= 14, Got {cout,sum}=  0
+FAIL: a=  0, b= 14, cin=1 | Expected {cout,sum}= 15, Got {cout,sum}=  0
+FAIL: a=  0, b= 15, cin=0 | Expected {cout,sum}= 15, Got {cout,sum}=  0
+FAIL: a=  0, b= 15, cin=1 | Expected {cout,sum}= 16, Got {cout,sum}=  0
+FAIL: a=  0, b= 16, cin=0 | Expected {cout,sum}= 16, Got {cout,sum}=  0
+FAIL: a=  0, b= 16, cin=1 | Expected {cout,sum}= 17, Got {cout,sum}=  0
+FAIL: a=  0, b= 17, cin=0 | Expected {cout,sum}= 17, Got {cout,sum}=  0
+FAIL: a=  0, b= 17, cin=1 | Expected {cout,sum}= 18, Got {cout,sum}=  0
+FAIL: a=  0, b= 18, cin=0 | Expected {cout,sum}= 18, Got {cout,sum}=  0
+FAIL: a=  0, b= 18, cin=1 | Expected {cout,sum}= 19, Got {cout,sum}=  0
+FAIL: a=  0, b= 19, cin=0 | Expected {cout,sum}= 19, Got {cout,sum}=  0
+FAIL: a=  0, b= 19, cin=1 | Expected {cout,sum}= 20, Got {cout,sum}=  0
+FAIL: a=  0, b= 20, cin=0 | Expected {cout,sum}= 20, Got {cout,sum}=  0
+FAIL: a=  0, b= 20, cin=1 | Expected {cout,sum}= 21, Got {cout,sum}=  0
+FAIL: a=  0, b= 21, cin=0 | Expected {cout,sum}= 21, Got {cout,sum}=  0
+FAIL: a=  0, b= 21, cin=1 | Expected {cout,sum}= 22, Got {cout,sum}=  0
+FAIL: a=  0, b= 22, cin=0 | Expected {cout,sum}= 22, Got {cout,sum}=  0
+FAIL: a=  0, b= 22, cin=1 | Expected {cout,sum}= 23, Got {cout,sum}=  0
+FAIL: a=  0, b= 23, cin=0 | Expected {cout,sum}= 23, Got {cout,sum}=  0
+FAIL: a=  0, b= 23, cin=1 | Expected {cout,sum}= 24, Got {cout,sum}=  0
+FAIL: a=  0, b= 24, cin=0 | Expected {cout,sum}= 24, Got {cout,sum}=  0
+FAIL: a=  0, b= 24, cin=1 | Expected {cout,sum}= 25, Got {cout,sum}=  0
+FAIL: a=  0, b= 25, cin=0 | Expected {cout,sum}= 25, Got {cout,sum}=  0
+FAIL: a=  0, b= 25, cin=1 | Expected {cout,sum}= 26, Got {cout,sum}=  0
+FAIL: a=  0, b= 26, cin=0 | Expected {cout,sum}= 26, Got {cout,sum}=  0
+FAIL: a=  0, b= 26, cin=1 | Expected {cout,sum}= 27, Got {cout,sum}=  0
+FAIL: a=  0, b= 27, cin=0 | Expected {cout,sum}= 27, Got {cout,sum}=  0
+FAIL: a=  0, b= 27, cin=1 | Expected {cout,sum}= 28, Got {cout,sum}=  0
+FAIL: a=  0, b= 28, cin=0 | Expected {cout,sum}= 28, Got {cout,sum}=  0
+FAIL: a=  0, b= 28, cin=1 | Expected {cout,sum}= 29, Got {cout,sum}=  0
+FAIL: a=  0, b= 29, cin=0 | Expected {cout,sum}= 29, Got {cout,sum}=  0
+FAIL: a=  0, b= 29, cin=1 | Expected {cout,sum}= 30, Got {cout,sum}=  0
+FAIL: a=  0, b= 30, cin=0 | Expected {cout,sum}= 30, Got {cout,sum}=  0
+FAIL: a=  0, b= 30, cin=1 | Expected {cout,sum}= 31, Got {cout,sum}=  0
+FAIL: a=  0, b= 31, cin=0 | Expected {cout,sum}= 31, Got {cout,sum}=  0
+FAIL: a=  0, b= 31, cin=1 | Expected {cout,sum}= 32, Got {cout,sum}=  0
+FAIL: a=  0, b= 32, cin=0 | Expected {cout,sum}= 32, Got {cout,sum}=  0
+FAIL: a=  0, b= 32, cin=1 | Expected {cout,sum}= 33, Got {cout,sum}=  0
+FAIL: a=  0, b= 33, cin=0 | Expected {cout,sum}= 33, Got {cout,sum}=  0
+FAIL: a=  0, b= 33, cin=1 | Expected {cout,sum}= 34, Got {cout,sum}=  0
+FAIL: a=  0, b= 34, cin=0 | Expected {cout,sum}= 34, Got {cout,sum}=  0
+FAIL: a=  0, b= 34, cin=1 | Expected {cout,sum}= 35, Got {cout,sum}=  0
+FAIL: a=  0, b= 35, cin=0 | Expected {cout,sum}= 35, Got {cout,sum}=  0
+FAIL: a=  0, b= 35, cin=1 | Expected {cout,sum}= 36, Got {cout,sum}=  0
+FAIL: a=  0, b= 36, cin=0 | Expected {cout,sum}= 36, Got {cout,sum}=  0
+FAIL: a=  0, b= 36, cin=1 | Expected {cout,sum}= 37, Got {cout,sum}=  0
+FAIL: a=  0, b= 37, cin=0 | Expected {cout,sum}= 37, Got {cout,sum}=  0
+FAIL: a=  0, b= 37, cin=1 | Expected {cout,sum}= 38, Got {cout,sum}=  0
+FAIL: a=  0, b= 38, cin=0 | Expected {cout,sum}= 38, Got {cout,sum}=  0
+FAIL: a=  0, b= 38, cin=1 | Expected {cout,sum}= 39, Got {cout,sum}=  0
+FAIL: a=  0, b= 39, cin=0 | Expected {cout,sum}= 39, Got {cout,sum}=  0
+FAIL: a=  0, b= 39, cin=1 | Expected {cout,sum}= 40, Got {cout,sum}=  0
+FAIL: a=  0, b= 40, cin=0 | Expected {cout,sum}= 40, Got {cout,sum}=  0
+FAIL: a=  0, b= 40, cin=1 | Expected {cout,sum}= 41, Got {cout,sum}=  0
+FAIL: a=  0, b= 41, cin=0 | Expected {cout,sum}= 41, Got {cout,sum}=  0
+FAIL: a=  0, b= 41, cin=1 | Expected {cout,sum}= 42, Got {cout,sum}=  0
+FAIL: a=  0, b= 42, cin=0 | Expected {cout,sum}= 42, Got {cout,sum}=  0
+FAIL: a=  0, b= 42, cin=1 | Expected {cout,sum}= 43, Got {cout,sum}=  0
+FAIL: a=  0, b= 43, cin=0 | Expected {cout,sum}= 43, Got {cout,sum}=  0
+FAIL: a=  0, b= 43, cin=1 | Expected {cout,sum}= 44, Got {cout,sum}=  0
+FAIL: a=  0, b= 44, cin=0 | Expected {cout,sum}= 44, Got {cout,sum}=  0
+FAIL: a=  0, b= 44, cin=1 | Expected {cout,sum}= 45, Got {cout,sum}=  0
+FAIL: a=  0, b= 45, cin=0 | Expected {cout,sum}= 45, Got {cout,sum}=  0
+FAIL: a=  0, b= 45, cin=1 | Expected {cout,sum}= 46, Got {cout,sum}=  0
+FAIL: a=  0, b= 46, cin=0 | Expected {cout,sum}= 46, Got {cout,sum}=  0
+FAIL: a=  0, b= 46, cin=1 | Expected {cout,sum}= 47, Got {cout,sum}=  0
+FAIL: a=  0, b= 47, cin=0 | Expected {cout,sum}= 47, Got {cout,sum}=  0
+FAIL: a=  0, b= 47, cin=1 | Expected {cout,sum}= 48, Got {cout,sum}=  0
+FAIL: a=  0, b= 48, cin=0 | Expected {cout,sum}= 48, Got {cout,sum}=  0
+FAIL: a=  0, b= 48, cin=1 | Expected {cout,sum}= 49, Got {cout,sum}=  0
+FAIL: a=  0, b= 49, cin=0 | Expected {cout,sum}= 49, Got {cout,sum}=  0
+FAIL: a=  0, b= 49, cin=1 | Expected {cout,sum}= 50, Got {cout,sum}=  0
+FAIL: a=  0, b= 50, cin=0 | Expected {cout,sum}= 50, Got {cout,sum}=  0
+FAIL: a=  0, b= 50, cin=1 | Expected {cout,sum}= 51, Got {cout,sum}=  0
+FAIL: a=  0, b= 51, cin=0 | Expected {cout,sum}= 51, Got {cout,sum}=  0
+FAIL: a=  0, b= 51, cin=1 | Expected {cout,sum}= 52, Got {cout,sum}=  0
+FAIL: a=  0, b= 52, cin=0 | Expected {cout,sum}= 52, Got {cout,sum}=  0
+FAIL: a=  0, b= 52, cin=1 | Expected {cout,sum}= 53, Got {cout,sum}=  0
+FAIL: a=  0, b= 53, cin=0 | Expected {cout,sum}= 53, Got {cout,sum}=  0
+FAIL: a=  0, b= 53, cin=1 | Expected {cout,sum}= 54, Got {cout,sum}=  0
+FAIL: a=  0, b= 54, cin=0 | Expected {cout,sum}= 54, Got {cout,sum}=  0
+FAIL: a=  0, b= 54, cin=1 | Expected {cout,sum}= 55, Got {cout,sum}=  0
+FAIL: a=  0, b= 55, cin=0 | Expected {cout,sum}= 55, Got {cout,sum}=  0
+FAIL: a=  0, b= 55, cin=1 | Expected {cout,sum}= 56, Got {cout,sum}=  0
+FAIL: a=  0, b= 56, cin=0 | Expected {cout,sum}= 56, Got {cout,sum}=  0
+FAIL: a=  0, b= 56, cin=1 | Expected {cout,sum}= 57, Got {cout,sum}=  0
+FAIL: a=  0, b= 57, cin=0 | Expected {cout,sum}= 57, Got {cout,sum}=  0
+FAIL: a=  0, b= 57, cin=1 | Expected {cout,sum}= 58, Got {cout,sum}=  0
+FAIL: a=  0, b= 58, cin=0 | Expected {cout,sum}= 58, Got {cout,sum}=  0
+FAIL: a=  0, b= 58, cin=1 | Expected {cout,sum}= 59, Got {cout,sum}=  0
+FAIL: a=  0, b= 59, cin=0 | Expected {cout,sum}= 59, Got {cout,sum}=  0
+FAIL: a=  0, b= 59, cin=1 | Expected {cout,sum}= 60, Got {cout,sum}=  0
+FAIL: a=  0, b= 60, cin=0 | Expected {cout,sum}= 60, Got {cout,sum}=  0
+FAIL: a=  0, b= 60, cin=1 | Expected {cout,sum}= 61, Got {cout,sum}=  0
+FAIL: a=  0, b= 61, cin=0 | Expected {cout,sum}= 61, Got {cout,sum}=  0
+FAIL: a=  0, b= 61, cin=1 | Expected {cout,sum}= 62, Got {cout,sum}=  0
+FAIL: a=  0, b= 62, cin=0 | Expected {cout,sum}= 62, Got {cout,sum}=  0
+FAIL: a=  0, b= 62, cin=1 | Expected {cout,sum}= 63, Got {cout,sum}=  0
+FAIL: a=  0, b= 63, cin=0 | Expected {cout,sum}= 63, Got {cout,sum}=  0
+FAIL: a=  0, b= 63, cin=1 | Expected {cout,sum}= 64, Got {cout,sum}=  0
+FAIL: a=  0, b= 64, cin=0 | Expected {cout,sum}= 64, Got {cout,sum}=  0
+FAIL: a=  0, b= 64, cin=1 | Expected {cout,sum}= 65, Got {cout,sum}=  0
+FAIL: a=  0, b= 65, cin=0 | Expected {cout,sum}= 65, Got {cout,sum}=  0
+FAIL: a=  0, b= 65, cin=1 | Expected {cout,sum}= 66, Got {cout,sum}=  0
+FAIL: a=  0, b= 66, cin=0 | Expected {cout,sum}= 66, Got {cout,sum}=  0
+FAIL: a=  0, b= 66, cin=1 | Expected {cout,sum}= 67, Got {cout,sum}=  0
+FAIL: a=  0, b= 67, cin=0 | Expected {cout,sum}= 67, Got {cout,sum}=  0
+FAIL: a=  0, b= 67, cin=1 | Expected {cout,sum}= 68, Got {cout,sum}=  0
+FAIL: a=  0, b= 68, cin=0 | Expected {cout,sum}= 68, Got {cout,sum}=  0
+FAIL: a=  0, b= 68, cin=1 | Expected {cout,sum}= 69, Got {cout,sum}=  0
+FAIL: a=  0, b= 69, cin=0 | Expected {cout,sum}= 69, Got {cout,sum}=  0
+FAIL: a=  0, b= 69, cin=1 | Expected {cout,sum}= 70, Got {cout,sum}=  0
+FAIL: a=  0, b= 70, cin=0 | Expected {cout,sum}= 70, Got {cout,sum}=  0
+FAIL: a=  0, b= 70, cin=1 | Expected {cout,sum}= 71, Got {cout,sum}=  0
+FAIL: a=  0, b= 71, cin=0 | Expected {cout,sum}= 71, Got {cout,sum}=  0
+FAIL: a=  0, b= 71, cin=1 | Expected {cout,sum}= 72, Got {cout,sum}=  0
+FAIL: a=  0, b= 72, cin=0 | Expected {cout,sum}= 72, Got {cout,sum}=  0
+FAIL: a=  0, b= 72, cin=1 | Expected {cout,sum}= 73, Got {cout,sum}=  0
+FAIL: a=  0, b= 73, cin=0 | Expected {cout,sum}= 73, Got {cout,sum}=  0
+FAIL: a=  0, b= 73, cin=1 | Expected {cout,sum}= 74, Got {cout,sum}=  0
+FAIL: a=  0, b= 74, cin=0 | Expected {cout,sum}= 74, Got {cout,sum}=  0
+FAIL: a=  0, b= 74, cin=1 | Expected {cout,sum}= 75, Got {cout,sum}=  0
+FAIL: a=  0, b= 75, cin=0 | Expected {cout,sum}= 75, Got {cout,sum}=  0
+FAIL: a=  0, b= 75, cin=1 | Expected {cout,sum}= 76, Got {cout,sum}=  0
+FAIL: a=  0, b= 76, cin=0 | Expected {cout,sum}= 76, Got {cout,sum}=  0
+FAIL: a=  0, b= 76, cin=1 | Expected {cout,sum}= 77, Got {cout,sum}=  0
+FAIL: a=  0, b= 77, cin=0 | Expected {cout,sum}= 77, Got {cout,sum}=  0
+FAIL: a=  0, b= 77, cin=1 | Expected {cout,sum}= 78, Got {cout,sum}=  0
+FAIL: a=  0, b= 78, cin=0 | Expected {cout,sum}= 78, Got {cout,sum}=  0
+FAIL: a=  0, b= 78, cin=1 | Expected {cout,sum}= 79, Got {cout,sum}=  0
+FAIL: a=  0, b= 79, cin=0 | Expected {cout,sum}= 79, Got {cout,sum}=  0
+FAIL: a=  0, b= 79, cin=1 | Expected {cout,sum}= 80, Got {cout,sum}=  0
+FAIL: a=  0, b= 80, cin=0 | Expected {cout,sum}= 80, Got {cout,sum}=  0
+FAIL: a=  0, b= 80, cin=1 | Expected {cout,sum}= 81, Got {cout,sum}=  0
+FAIL: a=  0, b= 81, cin=0 | Expected {cout,sum}= 81, Got {cout,sum}=  0
+FAIL: a=  0, b= 81, cin=1 | Expected {cout,sum}= 82, Got {cout,sum}=  0
+FAIL: a=  0, b= 82, cin=0 | Expected {cout,sum}= 82, Got {cout,sum}=  0
+FAIL: a=  0, b= 82, cin=1 | Expected {cout,sum}= 83, Got {cout,sum}=  0
+FAIL: a=  0, b= 83, cin=0 | Expected {cout,sum}= 83, Got {cout,sum}=  0
+FAIL: a=  0, b= 83, cin=1 | Expected {cout,sum}= 84, Got {cout,sum}=  0
+FAIL: a=  0, b= 84, cin=0 | Expected {cout,sum}= 84, Got {cout,sum}=  0
+FAIL: a=  0, b= 84, cin=1 | Expected {cout,sum}= 85, Got {cout,sum}=  0
+FAIL: a=  0, b= 85, cin=0 | Expected {cout,sum}= 85, Got {cout,sum}=  0
+FAIL: a=  0, b= 85, cin=1 | Expected {cout,sum}= 86, Got {cout,sum}=  0
+FAIL: a=  0, b= 86, cin=0 | Expected {cout,sum}= 86, Got {cout,sum}=  0
+FAIL: a=  0, b= 86, cin=1 | Expected {cout,sum}= 87, Got {cout,sum}=  0
+FAIL: a=  0, b= 87, cin=0 | Expected {cout,sum}= 87, Got {cout,sum}=  0
+FAIL: a=  0, b= 87, cin=1 | Expected {cout,sum}= 88, Got {cout,sum}=  0
+FAIL: a=  0, b= 88, cin=0 | Expected {cout,sum}= 88, Got {cout,sum}=  0
+FAIL: a=  0, b= 88, cin=1 | Expected {cout,sum}= 89, Got {cout,sum}=  0
+FAIL: a=  0, b= 89, cin=0 | Expected {cout,sum}= 89, Got {cout,sum}=  0
+FAIL: a=  0, b= 89, cin=1 | Expected {cout,sum}= 90, Got {cout,sum}=  0
+FAIL: a=  0, b= 90, cin=0 | Expected {cout,sum}= 90, Got {cout,sum}=  0
+FAIL: a=  0, b= 90, cin=1 | Expected {cout,sum}= 91, Got {cout,sum}=  0
+FAIL: a=  0, b= 91, cin=0 | Expected {cout,sum}= 91, Got {cout,sum}=  0
+FAIL: a=  0, b= 91, cin=1 | Expected {cout,sum}= 92, Got {cout,sum}=  0
+FAIL: a=  0, b= 92, cin=0 | Expected {cout,sum}= 92, Got {cout,sum}=  0
+FAIL: a=  0, b= 92, cin=1 | Expected {cout,sum}= 93, Got {cout,sum}=  0
+FAIL: a=  0, b= 93, cin=0 | Expected {cout,sum}= 93, Got {cout,sum}=  0
+FAIL: a=  0, b= 93, cin=1 | Expected {cout,sum}= 94, Got {cout,sum}=  0
+FAIL: a=  0, b= 94, cin=0 | Expected {cout,sum}= 94, Got {cout,sum}=  0
+FAIL: a=  0, b= 94, cin=1 | Expected {cout,sum}= 95, Got {cout,sum}=  0
+FAIL: a=  0, b= 95, cin=0 | Expected {cout,sum}= 95, Got {cout,sum}=  0
+FAIL: a=  0, b= 95, cin=1 | Expected {cout,sum}= 96, Got {cout,sum}=  0
+FAIL: a=  0, b= 96, cin=0 | Expected {cout,sum}= 96, Got {cout,sum}=  0
+FAIL: a=  0, b= 96, cin=1 | Expected {cout,sum}= 97, Got {cout,sum}=  0
+FAIL: a=  0, b= 97, cin=0 | Expected {cout,sum}= 97, Got {cout,sum}=  0
+FAIL: a=  0, b= 97, cin=1 | Expected {cout,sum}= 98, Got {cout,sum}=  0
+FAIL: a=  0, b= 98, cin=0 | Expected {cout,sum}= 98, Got {cout,sum}=  0
+FAIL: a=  0, b= 98, cin=1 | Expected {cout,sum}= 99, Got {cout,sum}=  0
+FAIL: a=  0, b= 99, cin=0 | Expected {cout,sum}= 99, Got {cout,sum}=  0
+FAIL: a=  0, b= 99, cin=1 | Expected {cout,sum}=100, Got {cout,sum}=  0
+FAIL: a=  0, b=100, cin=0 | Expected {cout,sum}=100, Got {cout,sum}=  0
+FAIL: a=  0, b=100, cin=1 | Expected {cout,sum}=101, Got {cout,sum}=  0
+FAIL: a=  0, b=101, cin=0 | Expected {cout,sum}=101, Got {cout,sum}=  0
+FAIL: a=  0, b=101, cin=1 | Expected {cout,sum}=102, Got {cout,sum}=  0
+FAIL: a=  0, b=102, cin=0 | Expected {cout,sum}=102, Got {cout,sum}=  0
+FAIL: a=  0, b=102, cin=1 | Expected {cout,sum}=103, Got {cout,sum}=  0
+FAIL: a=  0, b=103, cin=0 | Expected {cout,sum}=103, Got {cout,sum}=  0
+FAIL: a=  0, b=103, cin=1 | Expected {cout,sum}=104, Got {cout,sum}=  0
+FAIL: a=  0, b=104, cin=0 | Expected {cout,sum}=104, Got {cout,sum}=  0
+FAIL: a=  0, b=104, cin=1 | Expected {cout,sum}=105, Got {cout,sum}=  0
+FAIL: a=  0, b=105, cin=0 | Expected {cout,sum}=105, Got {cout,sum}=  0
+FAIL: a=  0, b=105, cin=1 | Expected {cout,sum}=106, Got {cout,sum}=  0
+FAIL: a=  0, b=106, cin=0 | Expected {cout,sum}=106, Got {cout,sum}=  0
+FAIL: a=  0, b=106, cin=1 | Expected {cout,sum}=107, Got {cout,sum}=  0
+FAIL: a=  0, b=107, cin=0 | Expected {cout,sum}=107, Got {cout,sum}=  0
+FAIL: a=  0, b=107, cin=1 | Expected {cout,sum}=108, Got {cout,sum}=  0
+FAIL: a=  0, b=108, cin=0 | Expected {cout,sum}=108, Got {cout,sum}=  0
+FAIL: a=  0, b=108, cin=1 | Expected {cout,sum}=109, Got {cout,sum}=  0
+FAIL: a=  0, b=109, cin=0 | Expected {cout,sum}=109, Got {cout,sum}=  0
+FAIL: a=  0, b=109, cin=1 | Expected {cout,sum}=110, Got {cout,sum}=  0
+FAIL: a=  0, b=110, cin=0 | Expected {cout,sum}=110, Got {cout,sum}=  0
+FAIL: a=  0, b=110, cin=1 | Expected {cout,sum}=111, Got {cout,sum}=  0
+FAIL: a=  0, b=111, cin=0 | Expected {cout,sum}=111, Got {cout,sum}=  0
+FAIL: a=  0, b=111, cin=1 | Expected {cout,sum}=112, Got {cout,sum}=  0
+FAIL: a=  0, b=112, cin=0 | Expected {cout,sum}=112, Got {cout,sum}=  0
+FAIL: a=  0, b=112, cin=1 | Expected {cout,sum}=113, Got {cout,sum}=  0
+FAIL: a=  0, b=113, cin=0 | Expected {cout,sum}=113, Got {cout,sum}=  0
+FAIL: a=  0, b=113, cin=1 | Expected {cout,sum}=114, Got {cout,sum}=  0
+FAIL: a=  0, b=114, cin=0 | Expected {cout,sum}=114, Got {cout,sum}=  0
+FAIL: a=  0, b=114, cin=1 | Expected {cout,sum}=115, Got {cout,sum}=  0
+FAIL: a=  0, b=115, cin=0 | Expected {cout,sum}=115, Got {cout,sum}=  0
+FAIL: a=  0, b=115, cin=1 | Expected {cout,sum}=116, Got {cout,sum}=  0
+FAIL: a=  0, b=116, cin=0 | Expected {cout,sum}=116, Got {cout,sum}=  0
+FAIL: a=  0, b=116, cin=1 | Expected {cout,sum}=117, Got {cout,sum}=  0
+FAIL: a=  0, b=117, cin=0 | Expected {cout,sum}=117, Got {cout,sum}=  0
+FAIL: a=  0, b=117, cin=1 | Expected {cout,sum}=118, Got {cout,sum}=  0
+FAIL: a=  0, b=118, cin=0 | Expected {cout,sum}=118, Got {cout,sum}=  0
+FAIL: a=  0, b=118, cin=1 | Expected {cout,sum}=119, Got {cout,sum}=  0
+FAIL: a=  0, b=119, cin=0 | Expected {cout,sum}=119, Got {cout,sum}=  0
+FAIL: a=  0, b=119, cin=1 | Expected {cout,sum}=120, Got {cout,sum}=  0
+FAIL: a=  0, b=120, cin=0 | Expected {cout,sum}=120, Got {cout,sum}=  0
+FAIL: a=  0, b=120, cin=1 | Expected {cout,sum}=121, Got {cout,sum}=  0
+FAIL: a=  0, b=121, cin=0 | Expected {cout,sum}=121, Got {cout,sum}=  0
+FAIL: a=  0, b=121, cin=1 | Expected {cout,sum}=122, Got {cout,sum}=  0
+FAIL: a=  0, b=122, cin=0 | Expected {cout,sum}=122, Got {cout,sum}=  0
+FAIL: a=  0, b=122, cin=1 | Expected {cout,sum}=123, Got {cout,sum}=  0
+FAIL: a=  0, b=123, cin=0 | Expected {cout,sum}=123, Got {cout,sum}=  0
+FAIL: a=  0, b=123, cin=1 | Expected {cout,sum}=124, Got {cout,sum}=  0
+FAIL: a=  0, b=124, cin=0 | Expected {cout,sum}=124, Got {cout,sum}=  0
+FAIL: a=  0, b=124, cin=1 | Expected {cout,sum}=125, Got {cout,sum}=  0
+FAIL: a=  0, b=125, cin=0 | Expected {cout,sum}=125, Got {cout,sum}=  0
+FAIL: a=  0, b=125, cin=1 | Expected {cout,sum}=126, Got {cout,sum}=  0
+FAIL: a=  0, b=126, cin=0 | Expected {cout,sum}=126, Got {cout,sum}=  0
+FAIL: a=  0, b=126, cin=1 | Expected {cout,sum}=127, Got {cout,sum}=  0
+FAIL: a=  0, b=127, cin=0 | Expected {cout,sum}=127, Got {cout,sum}=  0
+FAIL: a=  0, b=127, cin=1 | Expected {cout,sum}=128, Got {cout,sum}=  0
+FAIL: a=  0, b=128, cin=0 | Expected {cout,sum}=128, Got {cout,sum}=  0
+FAIL: a=  0, b=128, cin=1 | Expected {cout,sum}=129, Got {cout,sum}=  0
+FAIL: a=  0, b=129, cin=0 | Expected {cout,sum}=129, Got {cout,sum}=  0
+FAIL: a=  0, b=129, cin=1 | Expected {cout,sum}=130, Got {cout,sum}=  0
+FAIL: a=  0, b=130, cin=0 | Expected {cout,sum}=130, Got {cout,sum}=  0
+FAIL: a=  0, b=130, cin=1 | Expected {cout,sum}=131, Got {cout,sum}=  0
+FAIL: a=  0, b=131, cin=0 | Expected {cout,sum}=131, Got {cout,sum}=  0
+FAIL: a=  0, b=131, cin=1 | Expected {cout,sum}=132, Got {cout,sum}=  0
+FAIL: a=  0, b=132, cin=0 | Expected {cout,sum}=132, Got {cout,sum}=  0
+FAIL: a=  0, b=132, cin=1 | Expected {cout,sum}=133, Got {cout,sum}=  0
+FAIL: a=  0, b=133, cin=0 | Expected {cout,sum}=133, Got {cout,sum}=  0
+FAIL: a=  0, b=133, cin=1 | Expected {cout,sum}=134, Got {cout,sum}=  0
+FAIL: a=  0, b=134, cin=0 | Expected {cout,sum}=134, Got {cout,sum}=  0
+FAIL: a=  0, b=134, cin=1 | Expected {cout,sum}=135, Got {cout,sum}=  0
+FAIL: a=  0, b=135, cin=0 | Expected {cout,sum}=135, Got {cout,sum}=  0
+FAIL: a=  0, b=135, cin=1 | Expected {cout,sum}=136, Got {cout,sum}=  0
+FAIL: a=  0, b=136, cin=0 | Expected {cout,sum}=136, Got {cout,sum}=  0
+FAIL: a=  0, b=136, cin=1 | Expected {cout,sum}=137, Got {cout,sum}=  0
+FAIL: a=  0, b=137, cin=0 | Expected {cout,sum}=137, Got {cout,sum}=  0
+FAIL: a=  0, b=137, cin=1 | Expected {cout,sum}=138, Got {cout,sum}=  0
+FAIL: a=  0, b=138, cin=0 | Expected {cout,sum}=138, Got {cout,sum}=  0
+FAIL: a=  0, b=138, cin=1 | Expected {cout,sum}=139, Got {cout,sum}=  0
+FAIL: a=  0, b=139, cin=0 | Expected {cout,sum}=139, Got {cout,sum}=  0
+FAIL: a=  0, b=139, cin=1 | Expected {cout,sum}=140, Got {cout,sum}=  0
+FAIL: a=  0, b=140, cin=0 | Expected {cout,sum}=140, Got {cout,sum}=  0
+FAIL: a=  0, b=140, cin=1 | Expected {cout,sum}=141, Got {cout,sum}=  0
+FAIL: a=  0, b=141, cin=0 | Expected {cout,sum}=141, Got {cout,sum}=  0
+FAIL: a=  0, b=141, cin=1 | Expected {cout,sum}=142, Got {cout,sum}=  0
+FAIL: a=  0, b=142, cin=0 | Expected {cout,sum}=142, Got {cout,sum}=  0
+FAIL: a=  0, b=142, cin=1 | Expected {cout,sum}=143, Got {cout,sum}=  0
+FAIL: a=  0, b=143, cin=0 | Expected {cout,sum}=143, Got {cout,sum}=  0
+FAIL: a=  0, b=143, cin=1 | Expected {cout,sum}=144, Got {cout,sum}=  0
+FAIL: a=  0, b=144, cin=0 | Expected {cout,sum}=144, Got {cout,sum}=  0
+FAIL: a=  0, b=144, cin=1 | Expected {cout,sum}=145, Got {cout,sum}=  0
+FAIL: a=  0, b=145, cin=0 | Expected {cout,sum}=145, Got {cout,sum}=  0
+FAIL: a=  0, b=145, cin=1 | Expected {cout,sum}=146, Got {cout,sum}=  0
+FAIL: a=  0, b=146, cin=0 | Expected {cout,sum}=146, Got {cout,sum}=  0
+FAIL: a=  0, b=146, cin=1 | Expected {cout,sum}=147, Got {cout,sum}=  0
+FAIL: a=  0, b=147, cin=0 | Expected {cout,sum}=147, Got {cout,sum}=  0
+FAIL: a=  0, b=147, cin=1 | Expected {cout,sum}=148, Got {cout,sum}=  0
+FAIL: a=  0, b=148, cin=0 | Expected {cout,sum}=148, Got {cout,sum}=  0
+FAIL: a=  0, b=148, cin=1 | Expected {cout,sum}=149, Got {cout,sum}=  0
+FAIL: a=  0, b=149, cin=0 | Expected {cout,sum}=149, Got {cout,sum}=  0
+FAIL: a=  0, b=149, cin=1 | Expected {cout,sum}=150, Got {cout,sum}=  0
+FAIL: a=  0, b=150, cin=0 | Expected {cout,sum}=150, Got {cout,sum}=  0
+FAIL: a=  0, b=150, cin=1 | Expected {cout,sum}=151, Got {cout,sum}=  0
+FAIL: a=  0, b=151, cin=0 | Expected {cout,sum}=151, Got {cout,sum}=  0
+FAIL: a=  0, b=151, cin=1 | Expected {cout,sum}=152, Got {cout,sum}=  0
+FAIL: a=  0, b=152, cin=0 | Expected {cout,sum}=152, Got {cout,sum}=  0
+FAIL: a=  0, b=152, cin=1 | Expected {cout,sum}=153, Got {cout,sum}=  0
+FAIL: a=  0, b=153, cin=0 | Expected {cout,sum}=153, Got {cout,sum}=  0
+FAIL: a=  0, b=153, cin=1 | Expected {cout,sum}=154, Got {cout,sum}=  0
+FAIL: a=  0, b=154, cin=0 | Expected {cout,sum}=154, Got {cout,sum}=  0
+FAIL: a=  0, b=154, cin=1 | Expected {cout,sum}=155, Got {cout,sum}=  0
+FAIL: a=  0, b=155, cin=0 | Expected {cout,sum}=155, Got {cout,sum}=  0
+FAIL: a=  0, b=155, cin=1 | Expected {cout,sum}=156, Got {cout,sum}=  0
+FAIL: a=  0, b=156, cin=0 | Expected {cout,sum}=156, Got {cout,sum}=  0
+FAIL: a=  0, b=156, cin=1 | Expected {cout,sum}=157, Got {cout,sum}=  0
+FAIL: a=  0, b=157, cin=0 | Expected {cout,sum}=157, Got {cout,sum}=  0
+FAIL: a=  0, b=157, cin=1 | Expected {cout,sum}=158, Got {cout,sum}=  0
+FAIL: a=  0, b=158, cin=0 | Expected {cout,sum}=158, Got {cout,sum}=  0
+FAIL: a=  0, b=158, cin=1 | Expected {cout,sum}=159, Got {cout,sum}=  0
+FAIL: a=  0, b=159, cin=0 | Expected {cout,sum}=159, Got {cout,sum}=  0
+FAIL: a=  0, b=159, cin=1 | Expected {cout,sum}=160, Got {cout,sum}=  0
+FAIL: a=  0, b=160, cin=0 | Expected {cout,sum}=160, Got {cout,sum}=  0
+FAIL: a=  0, b=160, cin=1 | Expected {cout,sum}=161, Got {cout,sum}=  0
+FAIL: a=  0, b=161, cin=0 | Expected {cout,sum}=161, Got {cout,sum}=  0
+FAIL: a=  0, b=161, cin=1 | Expected {cout,sum}=162, Got {cout,sum}=  0
+FAIL: a=  0, b=162, cin=0 | Expected {cout,sum}=162, Got {cout,sum}=  0
+FAIL: a=  0, b=162, cin=1 | Expected {cout,sum}=163, Got {cout,sum}=  0
+FAIL: a=  0, b=163, cin=0 | Expected {cout,sum}=163, Got {cout,sum}=  0
+FAIL: a=  0, b=163, cin=1 | Expected {cout,sum}=164, Got {cout,sum}=  0
+FAIL: a=  0, b=164, cin=0 | Expected {cout,sum}=164, Got {cout,sum}=  0
+FAIL: a=  0, b=164, cin=1 | Expected {cout,sum}=165, Got {cout,sum}=  0
+FAIL: a=  0, b=165, cin=0 | Expected {cout,sum}=165, Got {cout,sum}=  0
+FAIL: a=  0, b=165, cin=1 | Expected {cout,sum}=166, Got {cout,sum}=  0
+FAIL: a=  0, b=166, cin=0 | Expected {cout,sum}=166, Got {cout,sum}=  0
+FAIL: a=  0, b=166, cin=1 | Expected {cout,sum}=167, Got {cout,sum}=  0
+FAIL: a=  0, b=167, cin=0 | Expected {cout,sum}=167, Got {cout,sum}=  0
+FAIL: a=  0, b=167, cin=1 | Expected {cout,sum}=168, Got {cout,sum}=  0
+FAIL: a=  0, b=168, cin=0 | Expected {cout,sum}=168, Got {cout,sum}=  0
+FAIL: a=  0, b=168, cin=1 | Expected {cout,sum}=169, Got {cout,sum}=  0
+FAIL: a=  0, b=169, cin=0 | Expected {cout,sum}=169, Got {cout,sum}=  0
+FAIL: a=  0, b=169, cin=1 | Expected {cout,sum}=170, Got {cout,sum}=  0
+FAIL: a=  0, b=170, cin=0 | Expected {cout,sum}=170, Got {cout,sum}=  0
+FAIL: a=  0, b=170, cin=1 | Expected {cout,sum}=171, Got {cout,sum}=  0
+FAIL: a=  0, b=171, cin=0 | Expected {cout,sum}=171, Got {cout,sum}=  0
+FAIL: a=  0, b=171, cin=1 | Expected {cout,sum}=172, Got {cout,sum}=  0
+FAIL: a=  0, b=172, cin=0 | Expected {cout,sum}=172, Got {cout,sum}=  0
+FAIL: a=  0, b=172, cin=1 | Expected {cout,sum}=173, Got {cout,sum}=  0
+FAIL: a=  0, b=173, cin=0 | Expected {cout,sum}=173, Got {cout,sum}=  0
+FAIL: a=  0, b=173, cin=1 | Expected {cout,sum}=174, Got {cout,sum}=  0
+FAIL: a=  0, b=174, cin=0 | Expected {cout,sum}=174, Got {cout,sum}=  0
+FAIL: a=  0, b=174, cin=1 | Expected {cout,sum}=175, Got {cout,sum}=  0
+FAIL: a=  0, b=175, cin=0 | Expected {cout,sum}=175, Got {cout,sum}=  0
+FAIL: a=  0, b=175, cin=1 | Expected {cout,sum}=176, Got {cout,sum}=  0
+FAIL: a=  0, b=176, cin=0 | Expected {cout,sum}=176, Got {cout,sum}=  0
+FAIL: a=  0, b=176, cin=1 | Expected {cout,sum}=177, Got {cout,sum}=  0
+FAIL: a=  0, b=177, cin=0 | Expected {cout,sum}=177, Got {cout,sum}=  0
+FAIL: a=  0, b=177, cin=1 | Expected {cout,sum}=178, Got {cout,sum}=  0
+FAIL: a=  0, b=178, cin=0 | Expected {cout,sum}=178, Got {cout,sum}=  0
+FAIL: a=  0, b=178, cin=1 | Expected {cout,sum}=179, Got {cout,sum}=  0
+FAIL: a=  0, b=179, cin=0 | Expected {cout,sum}=179, Got {cout,sum}=  0
+FAIL: a=  0, b=179, cin=1 | Expected {cout,sum}=180, Got {cout,sum}=  0
+FAIL: a=  0, b=180, cin=0 | Expected {cout,sum}=180, Got {cout,sum}=  0
+FAIL: a=  0, b=180, cin=1 | Expected {cout,sum}=181, Got {cout,sum}=  0
+FAIL: a=  0, b=181, cin=0 | Expected {cout,sum}=181, Got {cout,sum}=  0
+FAIL: a=  0, b=181, cin=1 | Expected {cout,sum}=182, Got {cout,sum}=  0
+FAIL: a=  0, b=182, cin=0 | Expected {cout,sum}=182, Got {cout,sum}=  0
+FAIL: a=  0, b=182, cin=1 | Expected {cout,sum}=183, Got {cout,sum}=  0
+FAIL: a=  0, b=183, cin=0 | Expected {cout,sum}=183, Got {cout,sum}=  0
+FAIL: a=  0, b=183, cin=1 | Expected {cout,sum}=184, Got {cout,sum}=  0
+FAIL: a=  0, b=184, cin=0 | Expected {cout,sum}=184, Got {cout,sum}=  0
+FAIL: a=  0, b=184, cin=1 | Expected {cout,sum}=185, Got {cout,sum}=  0
+FAIL: a=  0, b=185, cin=0 | Expected {cout,sum}=185, Got {cout,sum}=  0
+FAIL: a=  0, b=185, cin=1 | Expected {cout,sum}=186, Got {cout,sum}=  0
+FAIL: a=  0, b=186, cin=0 | Expected {cout,sum}=186, Got {cout,sum}=  0
+FAIL: a=  0, b=186, cin=1 | Expected {cout,sum}=187, Got {cout,sum}=  0
+FAIL: a=  0, b=187, cin=0 | Expected {cout,sum}=187, Got {cout,sum}=  0
+FAIL: a=  0, b=187, cin=1 | Expected {cout,sum}=188, Got {cout,sum}=  0
+FAIL: a=  0, b=188, cin=0 | Expected {cout,sum}=188, Got {cout,sum}=  0
+FAIL: a=  0, b=188, cin=1 | Expected {cout,sum}=189, Got {cout,sum}=  0
+FAIL: a=  0, b=189, cin=0 | Expected {cout,sum}=189, Got {cout,sum}=  0
+FAIL: a=  0, b=189, cin=1 | Expected {cout,sum}=190, Got {cout,sum}=  0
+FAIL: a=  0, b=190, cin=0 | Expected {cout,sum}=190, Got {cout,sum}=  0
+FAIL: a=  0, b=190, cin=1 | Expected {cout,sum}=191, Got {cout,sum}=  0
+FAIL: a=  0, b=191, cin=0 | Expected {cout,sum}=191, Got {cout,sum}=  0
+FAIL: a=  0, b=191, cin=1 | Expected {cout,sum}=192, Got {cout,sum}=  0
+FAIL: a=  0, b=192, cin=0 | Expected {cout,sum}=192, Got {cout,sum}=  0
+FAIL: a=  0, b=192, cin=1 | Expected {cout,sum}=193, Got {cout,sum}=  0
+FAIL: a=  0, b=193, cin=0 | Expected {cout,sum}=193, Got {cout,sum}=  0
+FAIL: a=  0, b=193, cin=1 | Expected {cout,sum}=194, Got {cout,sum}=  0
+FAIL: a=  0, b=194, cin=0 | Expected {cout,sum}=194, Got {cout,sum}=  0
+FAIL: a=  0, b=194, cin=1 | Expected {cout,sum}=195, Got {cout,sum}=  0
+FAIL: a=  0, b=195, cin=0 | Expected {cout,sum}=195, Got {cout,sum}=  0
+FAIL: a=  0, b=195, cin=1 | Expected {cout,sum}=196, Got {cout,sum}=  0
+FAIL: a=  0, b=196, cin=0 | Expected {cout,sum}=196, Got {cout,sum}=  0
+FAIL: a=  0, b=196, cin=1 | Expected {cout,sum}=197, Got {cout,sum}=  0
+FAIL: a=  0, b=197, cin=0 | Expected {cout,sum}=197, Got {cout,sum}=  0
+FAIL: a=  0, b=197, cin=1 | Expected {cout,sum}=198, Got {cout,sum}=  0
+FAIL: a=  0, b=198, cin=0 | Expected {cout,sum}=198, Got {cout,sum}=  0
+FAIL: a=  0, b=198, cin=1 | Expected {cout,sum}=199, Got {cout,sum}=  0
+FAIL: a=  0, b=199, cin=0 | Expected {cout,sum}=199, Got {cout,sum}=  0
+FAIL: a=  0, b=199, cin=1 | Expected {cout,sum}=200, Got {cout,sum}=  0
+FAIL: a=  0, b=200, cin=0 | Expected {cout,sum}=200, Got {cout,sum}=  0
+FAIL: a=  0, b=200, cin=1 | Expected {cout,sum}=201, Got {cout,sum}=  0
+FAIL: a=  0, b=201, cin=0 | Expected {cout,sum}=201, Got {cout,sum}=  0
+FAIL: a=  0, b=201, cin=1 | Expected {cout,sum}=202, Got {cout,sum}=  0
+FAIL: a=  0, b=202, cin=0 | Expected {cout,sum}=202, Got {cout,sum}=  0
+FAIL: a=  0, b=202, cin=1 | Expected {cout,sum}=203, Got {cout,sum}=  0
+FAIL: a=  0, b=203, cin=0 | Expected {cout,sum}=203, Got {cout,sum}=  0
+FAIL: a=  0, b=203, cin=1 | Expected {cout,sum}=204, Got {cout,sum}=  0
+FAIL: a=  0, b=204, cin=0 | Expected {cout,sum}=204, Got {cout,sum}=  0
+FAIL: a=  0, b=204, cin=1 | Expected {cout,sum}=205, Got {cout,sum}=  0
+FAIL: a=  0, b=205, cin=0 | Expected {cout,sum}=205, Got {cout,sum}=  0
+FAIL: a=  0, b=205, cin=1 | Expected {cout,sum}=206, Got {cout,sum}=  0
+FAIL: a=  0, b=206, cin=0 | Expected {cout,sum}=206, Got {cout,sum}=  0
+FAIL: a=  0, b=206, cin=1 | Expected {cout,sum}=207, Got {cout,sum}=  0
+FAIL: a=  0, b=207, cin=0 | Expected {cout,sum}=207, Got {cout,sum}=  0
+FAIL: a=  0, b=207, cin=1 | Expected {cout,sum}=208, Got {cout,sum}=  0
+FAIL: a=  0, b=208, cin=0 | Expected {cout,sum}=208, Got {cout,sum}=  0
+FAIL: a=  0, b=208, cin=1 | Expected {cout,sum}=209, Got {cout,sum}=  0
+FAIL: a=  0, b=209, cin=0 | Expected {cout,sum}=209, Got {cout,sum}=  0
+FAIL: a=  0, b=209, cin=1 | Expected {cout,sum}=210, Got {cout,sum}=  0
+FAIL: a=  0, b=210, cin=0 | Expected {cout,sum}=210, Got {cout,sum}=  0
+FAIL: a=  0, b=210, cin=1 | Expected {cout,sum}=211, Got {cout,sum}=  0
+FAIL: a=  0, b=211, cin=0 | Expected {cout,sum}=211, Got {cout,sum}=  0
+FAIL: a=  0, b=211, cin=1 | Expected {cout,sum}=212, Got {cout,sum}=  0
+FAIL: a=  0, b=212, cin=0 | Expected {cout,sum}=212, Got {cout,sum}=  0
+FAIL: a=  0, b=212, cin=1 | Expected {cout,sum}=213, Got {cout,sum}=  0
+FAIL: a=  0, b=213, cin=0 | Expected {cout,sum}=213, Got {cout,sum}=  0
+FAIL: a=  0, b=213, cin=1 | Expected {cout,sum}=214, Got {cout,sum}=  0
+FAIL: a=  0, b=214, cin=0 | Expected {cout,sum}=214, Got {cout,sum}=  0
+FAIL: a=  0, b=214, cin=1 | Expected {cout,sum}=215, Got {cout,sum}=  0
+FAIL: a=  0, b=215, cin=0 | Expected {cout,sum}=215, Got {cout,sum}=  0
+FAIL: a=  0, b=215, cin=1 | Expected {cout,sum}=216, Got {cout,sum}=  0
+FAIL: a=  0, b=216, cin=0 | Expected {cout,sum}=216, Got {cout,sum}=  0
+FAIL: a=  0, b=216, cin=1 | Expected {cout,sum}=217, Got {cout,sum}=  0
+FAIL: a=  0, b=217, cin=0 | Expected {cout,sum}=217, Got {cout,sum}=  0
+FAIL: a=  0, b=217, cin=1 | Expected {cout,sum}=218, Got {cout,sum}=  0
+FAIL: a=  0, b=218, cin=0 | Expected {cout,sum}=218, Got {cout,sum}=  0
+FAIL: a=  0, b=218, cin=1 | Expected {cout,sum}=219, Got {cout,sum}=  0
+FAIL: a=  0, b=219, cin=0 | Expected {cout,sum}=219, Got {cout,sum}=  0
+FAIL: a=  0, b=219, cin=1 | Expected {cout,sum}=220, Got {cout,sum}=  0
+FAIL: a=  0, b=220, cin=0 | Expected {cout,sum}=220, Got {cout,sum}=  0
+FAIL: a=  0, b=220, cin=1 | Expected {cout,sum}=221, Got {cout,sum}=  0
+FAIL: a=  0, b=221, cin=0 | Expected {cout,sum}=221, Got {cout,sum}=  0
+FAIL: a=  0, b=221, cin=1 | Expected {cout,sum}=222, Got {cout,sum}=  0
+FAIL: a=  0, b=222, cin=0 | Expected {cout,sum}=222, Got {cout,sum}=  0
+FAIL: a=  0, b=222, cin=1 | Expected {cout,sum}=223, Got {cout,sum}=  0
+FAIL: a=  0, b=223, cin=0 | Expected {cout,sum}=223, Got {cout,sum}=  0
+FAIL: a=  0, b=223, cin=1 | Expected {cout,sum}=224, Got {cout,sum}=  0
+FAIL: a=  0, b=224, cin=0 | Expected {cout,sum}=224, Got {cout,sum}=  0
+FAIL: a=  0, b=224, cin=1 | Expected {cout,sum}=225, Got {cout,sum}=  0
+FAIL: a=  0, b=225, cin=0 | Expected {cout,sum}=225, Got {cout,sum}=  0
+FAIL: a=  0, b=225, cin=1 | Expected {cout,sum}=226, Got {cout,sum}=  0
+FAIL: a=  0, b=226, cin=0 | Expected {cout,sum}=226, Got {cout,sum}=  0
+FAIL: a=  0, b=226, cin=1 | Expected {cout,sum}=227, Got {cout,sum}=  0
+FAIL: a=  0, b=227, cin=0 | Expected {cout,sum}=227, Got {cout,sum}=  0
+FAIL: a=  0, b=227, cin=1 | Expected {cout,sum}=228, Got {cout,sum}=  0
+FAIL: a=
+... [9371761 bytes of output omitted] ...
+ted {cout,sum}=285, Got {cout,sum}=  0
+FAIL: a=255, b= 30, cin=0 | Expected {cout,sum}=285, Got {cout,sum}=  0
+FAIL: a=255, b= 30, cin=1 | Expected {cout,sum}=286, Got {cout,sum}=  0
+FAIL: a=255, b= 31, cin=0 | Expected {cout,sum}=286, Got {cout,sum}=  0
+FAIL: a=255, b= 31, cin=1 | Expected {cout,sum}=287, Got {cout,sum}=  0
+FAIL: a=255, b= 32, cin=0 | Expected {cout,sum}=287, Got {cout,sum}=  0
+FAIL: a=255, b= 32, cin=1 | Expected {cout,sum}=288, Got {cout,sum}=  0
+FAIL: a=255, b= 33, cin=0 | Expected {cout,sum}=288, Got {cout,sum}=  0
+FAIL: a=255, b= 33, cin=1 | Expected {cout,sum}=289, Got {cout,sum}=  0
+FAIL: a=255, b= 34, cin=0 | Expected {cout,sum}=289, Got {cout,sum}=  0
+FAIL: a=255, b= 34, cin=1 | Expected {cout,sum}=290, Got {cout,sum}=  0
+FAIL: a=255, b= 35, cin=0 | Expected {cout,sum}=290, Got {cout,sum}=  0
+FAIL: a=255, b= 35, cin=1 | Expected {cout,sum}=291, Got {cout,sum}=  0
+FAIL: a=255, b= 36, cin=0 | Expected {cout,sum}=291, Got {cout,sum}=  0
+FAIL: a=255, b= 36, cin=1 | Expected {cout,sum}=292, Got {cout,sum}=  0
+FAIL: a=255, b= 37, cin=0 | Expected {cout,sum}=292, Got {cout,sum}=  0
+FAIL: a=255, b= 37, cin=1 | Expected {cout,sum}=293, Got {cout,sum}=  0
+FAIL: a=255, b= 38, cin=0 | Expected {cout,sum}=293, Got {cout,sum}=  0
+FAIL: a=255, b= 38, cin=1 | Expected {cout,sum}=294, Got {cout,sum}=  0
+FAIL: a=255, b= 39, cin=0 | Expected {cout,sum}=294, Got {cout,sum}=  0
+FAIL: a=255, b= 39, cin=1 | Expected {cout,sum}=295, Got {cout,sum}=  0
+FAIL: a=255, b= 40, cin=0 | Expected {cout,sum}=295, Got {cout,sum}=  0
+FAIL: a=255, b= 40, cin=1 | Expected {cout,sum}=296, Got {cout,sum}=  0
+FAIL: a=255, b= 41, cin=0 | Expected {cout,sum}=296, Got {cout,sum}=  0
+FAIL: a=255, b= 41, cin=1 | Expected {cout,sum}=297, Got {cout,sum}=  0
+FAIL: a=255, b= 42, cin=0 | Expected {cout,sum}=297, Got {cout,sum}=  0
+FAIL: a=255, b= 42, cin=1 | Expected {cout,sum}=298, Got {cout,sum}=  0
+FAIL: a=255, b= 43, cin=0 | Expected {cout,sum}=298, Got {cout,sum}=  0
+FAIL: a=255, b= 43, cin=1 | Expected {cout,sum}=299, Got {cout,sum}=  0
+FAIL: a=255, b= 44, cin=0 | Expected {cout,sum}=299, Got {cout,sum}=  0
+FAIL: a=255, b= 44, cin=1 | Expected {cout,sum}=300, Got {cout,sum}=  0
+FAIL: a=255, b= 45, cin=0 | Expected {cout,sum}=300, Got {cout,sum}=  0
+FAIL: a=255, b= 45, cin=1 | Expected {cout,sum}=301, Got {cout,sum}=  0
+FAIL: a=255, b= 46, cin=0 | Expected {cout,sum}=301, Got {cout,sum}=  0
+FAIL: a=255, b= 46, cin=1 | Expected {cout,sum}=302, Got {cout,sum}=  0
+FAIL: a=255, b= 47, cin=0 | Expected {cout,sum}=302, Got {cout,sum}=  0
+FAIL: a=255, b= 47, cin=1 | Expected {cout,sum}=303, Got {cout,sum}=  0
+FAIL: a=255, b= 48, cin=0 | Expected {cout,sum}=303, Got {cout,sum}=  0
+FAIL: a=255, b= 48, cin=1 | Expected {cout,sum}=304, Got {cout,sum}=  0
+FAIL: a=255, b= 49, cin=0 | Expected {cout,sum}=304, Got {cout,sum}=  0
+FAIL: a=255, b= 49, cin=1 | Expected {cout,sum}=305, Got {cout,sum}=  0
+FAIL: a=255, b= 50, cin=0 | Expected {cout,sum}=305, Got {cout,sum}=  0
+FAIL: a=255, b= 50, cin=1 | Expected {cout,sum}=306, Got {cout,sum}=  0
+FAIL: a=255, b= 51, cin=0 | Expected {cout,sum}=306, Got {cout,sum}=  0
+FAIL: a=255, b= 51, cin=1 | Expected {cout,sum}=307, Got {cout,sum}=  0
+FAIL: a=255, b= 52, cin=0 | Expected {cout,sum}=307, Got {cout,sum}=  0
+FAIL: a=255, b= 52, cin=1 | Expected {cout,sum}=308, Got {cout,sum}=  0
+FAIL: a=255, b= 53, cin=0 | Expected {cout,sum}=308, Got {cout,sum}=  0
+FAIL: a=255, b= 53, cin=1 | Expected {cout,sum}=309, Got {cout,sum}=  0
+FAIL: a=255, b= 54, cin=0 | Expected {cout,sum}=309, Got {cout,sum}=  0
+FAIL: a=255, b= 54, cin=1 | Expected {cout,sum}=310, Got {cout,sum}=  0
+FAIL: a=255, b= 55, cin=0 | Expected {cout,sum}=310, Got {cout,sum}=  0
+FAIL: a=255, b= 55, cin=1 | Expected {cout,sum}=311, Got {cout,sum}=  0
+FAIL: a=255, b= 56, cin=0 | Expected {cout,sum}=311, Got {cout,sum}=  0
+FAIL: a=255, b= 56, cin=1 | Expected {cout,sum}=312, Got {cout,sum}=  0
+FAIL: a=255, b= 57, cin=0 | Expected {cout,sum}=312, Got {cout,sum}=  0
+FAIL: a=255, b= 57, cin=1 | Expected {cout,sum}=313, Got {cout,sum}=  0
+FAIL: a=255, b= 58, cin=0 | Expected {cout,sum}=313, Got {cout,sum}=  0
+FAIL: a=255, b= 58, cin=1 | Expected {cout,sum}=314, Got {cout,sum}=  0
+FAIL: a=255, b= 59, cin=0 | Expected {cout,sum}=314, Got {cout,sum}=  0
+FAIL: a=255, b= 59, cin=1 | Expected {cout,sum}=315, Got {cout,sum}=  0
+FAIL: a=255, b= 60, cin=0 | Expected {cout,sum}=315, Got {cout,sum}=  0
+FAIL: a=255, b= 60, cin=1 | Expected {cout,sum}=316, Got {cout,sum}=  0
+FAIL: a=255, b= 61, cin=0 | Expected {cout,sum}=316, Got {cout,sum}=  0
+FAIL: a=255, b= 61, cin=1 | Expected {cout,sum}=317, Got {cout,sum}=  0
+FAIL: a=255, b= 62, cin=0 | Expected {cout,sum}=317, Got {cout,sum}=  0
+FAIL: a=255, b= 62, cin=1 | Expected {cout,sum}=318, Got {cout,sum}=  0
+FAIL: a=255, b= 63, cin=0 | Expected {cout,sum}=318, Got {cout,sum}=  0
+FAIL: a=255, b= 63, cin=1 | Expected {cout,sum}=319, Got {cout,sum}=  0
+FAIL: a=255, b= 64, cin=0 | Expected {cout,sum}=319, Got {cout,sum}=  0
+FAIL: a=255, b= 64, cin=1 | Expected {cout,sum}=320, Got {cout,sum}=  0
+FAIL: a=255, b= 65, cin=0 | Expected {cout,sum}=320, Got {cout,sum}=  0
+FAIL: a=255, b= 65, cin=1 | Expected {cout,sum}=321, Got {cout,sum}=  0
+FAIL: a=255, b= 66, cin=0 | Expected {cout,sum}=321, Got {cout,sum}=  0
+FAIL: a=255, b= 66, cin=1 | Expected {cout,sum}=322, Got {cout,sum}=  0
+FAIL: a=255, b= 67, cin=0 | Expected {cout,sum}=322, Got {cout,sum}=  0
+FAIL: a=255, b= 67, cin=1 | Expected {cout,sum}=323, Got {cout,sum}=  0
+FAIL: a=255, b= 68, cin=0 | Expected {cout,sum}=323, Got {cout,sum}=  0
+FAIL: a=255, b= 68, cin=1 | Expected {cout,sum}=324, Got {cout,sum}=  0
+FAIL: a=255, b= 69, cin=0 | Expected {cout,sum}=324, Got {cout,sum}=  0
+FAIL: a=255, b= 69, cin=1 | Expected {cout,sum}=325, Got {cout,sum}=  0
+FAIL: a=255, b= 70, cin=0 | Expected {cout,sum}=325, Got {cout,sum}=  0
+FAIL: a=255, b= 70, cin=1 | Expected {cout,sum}=326, Got {cout,sum}=  0
+FAIL: a=255, b= 71, cin=0 | Expected {cout,sum}=326, Got {cout,sum}=  0
+FAIL: a=255, b= 71, cin=1 | Expected {cout,sum}=327, Got {cout,sum}=  0
+FAIL: a=255, b= 72, cin=0 | Expected {cout,sum}=327, Got {cout,sum}=  0
+FAIL: a=255, b= 72, cin=1 | Expected {cout,sum}=328, Got {cout,sum}=  0
+FAIL: a=255, b= 73, cin=0 | Expected {cout,sum}=328, Got {cout,sum}=  0
+FAIL: a=255, b= 73, cin=1 | Expected {cout,sum}=329, Got {cout,sum}=  0
+FAIL: a=255, b= 74, cin=0 | Expected {cout,sum}=329, Got {cout,sum}=  0
+FAIL: a=255, b= 74, cin=1 | Expected {cout,sum}=330, Got {cout,sum}=  0
+FAIL: a=255, b= 75, cin=0 | Expected {cout,sum}=330, Got {cout,sum}=  0
+FAIL: a=255, b= 75, cin=1 | Expected {cout,sum}=331, Got {cout,sum}=  0
+FAIL: a=255, b= 76, cin=0 | Expected {cout,sum}=331, Got {cout,sum}=  0
+FAIL: a=255, b= 76, cin=1 | Expected {cout,sum}=332, Got {cout,sum}=  0
+FAIL: a=255, b= 77, cin=0 | Expected {cout,sum}=332, Got {cout,sum}=  0
+FAIL: a=255, b= 77, cin=1 | Expected {cout,sum}=333, Got {cout,sum}=  0
+FAIL: a=255, b= 78, cin=0 | Expected {cout,sum}=333, Got {cout,sum}=  0
+FAIL: a=255, b= 78, cin=1 | Expected {cout,sum}=334, Got {cout,sum}=  0
+FAIL: a=255, b= 79, cin=0 | Expected {cout,sum}=334, Got {cout,sum}=  0
+FAIL: a=255, b= 79, cin=1 | Expected {cout,sum}=335, Got {cout,sum}=  0
+FAIL: a=255, b= 80, cin=0 | Expected {cout,sum}=335, Got {cout,sum}=  0
+FAIL: a=255, b= 80, cin=1 | Expected {cout,sum}=336, Got {cout,sum}=  0
+FAIL: a=255, b= 81, cin=0 | Expected {cout,sum}=336, Got {cout,sum}=  0
+FAIL: a=255, b= 81, cin=1 | Expected {cout,sum}=337, Got {cout,sum}=  0
+FAIL: a=255, b= 82, cin=0 | Expected {cout,sum}=337, Got {cout,sum}=  0
+FAIL: a=255, b= 82, cin=1 | Expected {cout,sum}=338, Got {cout,sum}=  0
+FAIL: a=255, b= 83, cin=0 | Expected {cout,sum}=338, Got {cout,sum}=  0
+FAIL: a=255, b= 83, cin=1 | Expected {cout,sum}=339, Got {cout,sum}=  0
+FAIL: a=255, b= 84, cin=0 | Expected {cout,sum}=339, Got {cout,sum}=  0
+FAIL: a=255, b= 84, cin=1 | Expected {cout,sum}=340, Got {cout,sum}=  0
+FAIL: a=255, b= 85, cin=0 | Expected {cout,sum}=340, Got {cout,sum}=  0
+FAIL: a=255, b= 85, cin=1 | Expected {cout,sum}=341, Got {cout,sum}=  0
+FAIL: a=255, b= 86, cin=0 | Expected {cout,sum}=341, Got {cout,sum}=  0
+FAIL: a=255, b= 86, cin=1 | Expected {cout,sum}=342, Got {cout,sum}=  0
+FAIL: a=255, b= 87, cin=0 | Expected {cout,sum}=342, Got {cout,sum}=  0
+FAIL: a=255, b= 87, cin=1 | Expected {cout,sum}=343, Got {cout,sum}=  0
+FAIL: a=255, b= 88, cin=0 | Expected {cout,sum}=343, Got {cout,sum}=  0
+FAIL: a=255, b= 88, cin=1 | Expected {cout,sum}=344, Got {cout,sum}=  0
+FAIL: a=255, b= 89, cin=0 | Expected {cout,sum}=344, Got {cout,sum}=  0
+FAIL: a=255, b= 89, cin=1 | Expected {cout,sum}=345, Got {cout,sum}=  0
+FAIL: a=255, b= 90, cin=0 | Expected {cout,sum}=345, Got {cout,sum}=  0
+FAIL: a=255, b= 90, cin=1 | Expected {cout,sum}=346, Got {cout,sum}=  0
+FAIL: a=255, b= 91, cin=0 | Expected {cout,sum}=346, Got {cout,sum}=  0
+FAIL: a=255, b= 91, cin=1 | Expected {cout,sum}=347, Got {cout,sum}=  0
+FAIL: a=255, b= 92, cin=0 | Expected {cout,sum}=347, Got {cout,sum}=  0
+FAIL: a=255, b= 92, cin=1 | Expected {cout,sum}=348, Got {cout,sum}=  0
+FAIL: a=255, b= 93, cin=0 | Expected {cout,sum}=348, Got {cout,sum}=  0
+FAIL: a=255, b= 93, cin=1 | Expected {cout,sum}=349, Got {cout,sum}=  0
+FAIL: a=255, b= 94, cin=0 | Expected {cout,sum}=349, Got {cout,sum}=  0
+FAIL: a=255, b= 94, cin=1 | Expected {cout,sum}=350, Got {cout,sum}=  0
+FAIL: a=255, b= 95, cin=0 | Expected {cout,sum}=350, Got {cout,sum}=  0
+FAIL: a=255, b= 95, cin=1 | Expected {cout,sum}=351, Got {cout,sum}=  0
+FAIL: a=255, b= 96, cin=0 | Expected {cout,sum}=351, Got {cout,sum}=  0
+FAIL: a=255, b= 96, cin=1 | Expected {cout,sum}=352, Got {cout,sum}=  0
+FAIL: a=255, b= 97, cin=0 | Expected {cout,sum}=352, Got {cout,sum}=  0
+FAIL: a=255, b= 97, cin=1 | Expected {cout,sum}=353, Got {cout,sum}=  0
+FAIL: a=255, b= 98, cin=0 | Expected {cout,sum}=353, Got {cout,sum}=  0
+FAIL: a=255, b= 98, cin=1 | Expected {cout,sum}=354, Got {cout,sum}=  0
+FAIL: a=255, b= 99, cin=0 | Expected {cout,sum}=354, Got {cout,sum}=  0
+FAIL: a=255, b= 99, cin=1 | Expected {cout,sum}=355, Got {cout,sum}=  0
+FAIL: a=255, b=100, cin=0 | Expected {cout,sum}=355, Got {cout,sum}=  0
+FAIL: a=255, b=100, cin=1 | Expected {cout,sum}=356, Got {cout,sum}=  0
+FAIL: a=255, b=101, cin=0 | Expected {cout,sum}=356, Got {cout,sum}=  0
+FAIL: a=255, b=101, cin=1 | Expected {cout,sum}=357, Got {cout,sum}=  0
+FAIL: a=255, b=102, cin=0 | Expected {cout,sum}=357, Got {cout,sum}=  0
+FAIL: a=255, b=102, cin=1 | Expected {cout,sum}=358, Got {cout,sum}=  0
+FAIL: a=255, b=103, cin=0 | Expected {cout,sum}=358, Got {cout,sum}=  0
+FAIL: a=255, b=103, cin=1 | Expected {cout,sum}=359, Got {cout,sum}=  0
+FAIL: a=255, b=104, cin=0 | Expected {cout,sum}=359, Got {cout,sum}=  0
+FAIL: a=255, b=104, cin=1 | Expected {cout,sum}=360, Got {cout,sum}=  0
+FAIL: a=255, b=105, cin=0 | Expected {cout,sum}=360, Got {cout,sum}=  0
+FAIL: a=255, b=105, cin=1 | Expected {cout,sum}=361, Got {cout,sum}=  0
+FAIL: a=255, b=106, cin=0 | Expected {cout,sum}=361, Got {cout,sum}=  0
+FAIL: a=255, b=106, cin=1 | Expected {cout,sum}=362, Got {cout,sum}=  0
+FAIL: a=255, b=107, cin=0 | Expected {cout,sum}=362, Got {cout,sum}=  0
+FAIL: a=255, b=107, cin=1 | Expected {cout,sum}=363, Got {cout,sum}=  0
+FAIL: a=255, b=108, cin=0 | Expected {cout,sum}=363, Got {cout,sum}=  0
+FAIL: a=255, b=108, cin=1 | Expected {cout,sum}=364, Got {cout,sum}=  0
+FAIL: a=255, b=109, cin=0 | Expected {cout,sum}=364, Got {cout,sum}=  0
+FAIL: a=255, b=109, cin=1 | Expected {cout,sum}=365, Got {cout,sum}=  0
+FAIL: a=255, b=110, cin=0 | Expected {cout,sum}=365, Got {cout,sum}=  0
+FAIL: a=255, b=110, cin=1 | Expected {cout,sum}=366, Got {cout,sum}=  0
+FAIL: a=255, b=111, cin=0 | Expected {cout,sum}=366, Got {cout,sum}=  0
+FAIL: a=255, b=111, cin=1 | Expected {cout,sum}=367, Got {cout,sum}=  0
+FAIL: a=255, b=112, cin=0 | Expected {cout,sum}=367, Got {cout,sum}=  0
+FAIL: a=255, b=112, cin=1 | Expected {cout,sum}=368, Got {cout,sum}=  0
+FAIL: a=255, b=113, cin=0 | Expected {cout,sum}=368, Got {cout,sum}=  0
+FAIL: a=255, b=113, cin=1 | Expected {cout,sum}=369, Got {cout,sum}=  0
+FAIL: a=255, b=114, cin=0 | Expected {cout,sum}=369, Got {cout,sum}=  0
+FAIL: a=255, b=114, cin=1 | Expected {cout,sum}=370, Got {cout,sum}=  0
+FAIL: a=255, b=115, cin=0 | Expected {cout,sum}=370, Got {cout,sum}=  0
+FAIL: a=255, b=115, cin=1 | Expected {cout,sum}=371, Got {cout,sum}=  0
+FAIL: a=255, b=116, cin=0 | Expected {cout,sum}=371, Got {cout,sum}=  0
+FAIL: a=255, b=116, cin=1 | Expected {cout,sum}=372, Got {cout,sum}=  0
+FAIL: a=255, b=117, cin=0 | Expected {cout,sum}=372, Got {cout,sum}=  0
+FAIL: a=255, b=117, cin=1 | Expected {cout,sum}=373, Got {cout,sum}=  0
+FAIL: a=255, b=118, cin=0 | Expected {cout,sum}=373, Got {cout,sum}=  0
+FAIL: a=255, b=118, cin=1 | Expected {cout,sum}=374, Got {cout,sum}=  0
+FAIL: a=255, b=119, cin=0 | Expected {cout,sum}=374, Got {cout,sum}=  0
+FAIL: a=255, b=119, cin=1 | Expected {cout,sum}=375, Got {cout,sum}=  0
+FAIL: a=255, b=120, cin=0 | Expected {cout,sum}=375, Got {cout,sum}=  0
+FAIL: a=255, b=120, cin=1 | Expected {cout,sum}=376, Got {cout,sum}=  0
+FAIL: a=255, b=121, cin=0 | Expected {cout,sum}=376, Got {cout,sum}=  0
+FAIL: a=255, b=121, cin=1 | Expected {cout,sum}=377, Got {cout,sum}=  0
+FAIL: a=255, b=122, cin=0 | Expected {cout,sum}=377, Got {cout,sum}=  0
+FAIL: a=255, b=122, cin=1 | Expected {cout,sum}=378, Got {cout,sum}=  0
+FAIL: a=255, b=123, cin=0 | Expected {cout,sum}=378, Got {cout,sum}=  0
+FAIL: a=255, b=123, cin=1 | Expected {cout,sum}=379, Got {cout,sum}=  0
+FAIL: a=255, b=124, cin=0 | Expected {cout,sum}=379, Got {cout,sum}=  0
+FAIL: a=255, b=124, cin=1 | Expected {cout,sum}=380, Got {cout,sum}=  0
+FAIL: a=255, b=125, cin=0 | Expected {cout,sum}=380, Got {cout,sum}=  0
+FAIL: a=255, b=125, cin=1 | Expected {cout,sum}=381, Got {cout,sum}=  0
+FAIL: a=255, b=126, cin=0 | Expected {cout,sum}=381, Got {cout,sum}=  0
+FAIL: a=255, b=126, cin=1 | Expected {cout,sum}=382, Got {cout,sum}=  0
+FAIL: a=255, b=127, cin=0 | Expected {cout,sum}=382, Got {cout,sum}=  0
+FAIL: a=255, b=127, cin=1 | Expected {cout,sum}=383, Got {cout,sum}=  0
+FAIL: a=255, b=128, cin=0 | Expected {cout,sum}=383, Got {cout,sum}=  0
+FAIL: a=255, b=128, cin=1 | Expected {cout,sum}=384, Got {cout,sum}=  0
+FAIL: a=255, b=129, cin=0 | Expected {cout,sum}=384, Got {cout,sum}=  0
+FAIL: a=255, b=129, cin=1 | Expected {cout,sum}=385, Got {cout,sum}=  0
+FAIL: a=255, b=130, cin=0 | Expected {cout,sum}=385, Got {cout,sum}=  0
+FAIL: a=255, b=130, cin=1 | Expected {cout,sum}=386, Got {cout,sum}=  0
+FAIL: a=255, b=131, cin=0 | Expected {cout,sum}=386, Got {cout,sum}=  0
+FAIL: a=255, b=131, cin=1 | Expected {cout,sum}=387, Got {cout,sum}=  0
+FAIL: a=255, b=132, cin=0 | Expected {cout,sum}=387, Got {cout,sum}=  0
+FAIL: a=255, b=132, cin=1 | Expected {cout,sum}=388, Got {cout,sum}=  0
+FAIL: a=255, b=133, cin=0 | Expected {cout,sum}=388, Got {cout,sum}=  0
+FAIL: a=255, b=133, cin=1 | Expected {cout,sum}=389, Got {cout,sum}=  0
+FAIL: a=255, b=134, cin=0 | Expected {cout,sum}=389, Got {cout,sum}=  0
+FAIL: a=255, b=134, cin=1 | Expected {cout,sum}=390, Got {cout,sum}=  0
+FAIL: a=255, b=135, cin=0 | Expected {cout,sum}=390, Got {cout,sum}=  0
+FAIL: a=255, b=135, cin=1 | Expected {cout,sum}=391, Got {cout,sum}=  0
+FAIL: a=255, b=136, cin=0 | Expected {cout,sum}=391, Got {cout,sum}=  0
+FAIL: a=255, b=136, cin=1 | Expected {cout,sum}=392, Got {cout,sum}=  0
+FAIL: a=255, b=137, cin=0 | Expected {cout,sum}=392, Got {cout,sum}=  0
+FAIL: a=255, b=137, cin=1 | Expected {cout,sum}=393, Got {cout,sum}=  0
+FAIL: a=255, b=138, cin=0 | Expected {cout,sum}=393, Got {cout,sum}=  0
+FAIL: a=255, b=138, cin=1 | Expected {cout,sum}=394, Got {cout,sum}=  0
+FAIL: a=255, b=139, cin=0 | Expected {cout,sum}=394, Got {cout,sum}=  0
+FAIL: a=255, b=139, cin=1 | Expected {cout,sum}=395, Got {cout,sum}=  0
+FAIL: a=255, b=140, cin=0 | Expected {cout,sum}=395, Got {cout,sum}=  0
+FAIL: a=255, b=140, cin=1 | Expected {cout,sum}=396, Got {cout,sum}=  0
+FAIL: a=255, b=141, cin=0 | Expected {cout,sum}=396, Got {cout,sum}=  0
+FAIL: a=255, b=141, cin=1 | Expected {cout,sum}=397, Got {cout,sum}=  0
+FAIL: a=255, b=142, cin=0 | Expected {cout,sum}=397, Got {cout,sum}=  0
+FAIL: a=255, b=142, cin=1 | Expected {cout,sum}=398, Got {cout,sum}=  0
+FAIL: a=255, b=143, cin=0 | Expected {cout,sum}=398, Got {cout,sum}=  0
+FAIL: a=255, b=143, cin=1 | Expected {cout,sum}=399, Got {cout,sum}=  0
+FAIL: a=255, b=144, cin=0 | Expected {cout,sum}=399, Got {cout,sum}=  0
+FAIL: a=255, b=144, cin=1 | Expected {cout,sum}=400, Got {cout,sum}=  0
+FAIL: a=255, b=145, cin=0 | Expected {cout,sum}=400, Got {cout,sum}=  0
+FAIL: a=255, b=145, cin=1 | Expected {cout,sum}=401, Got {cout,sum}=  0
+FAIL: a=255, b=146, cin=0 | Expected {cout,sum}=401, Got {cout,sum}=  0
+FAIL: a=255, b=146, cin=1 | Expected {cout,sum}=402, Got {cout,sum}=  0
+FAIL: a=255, b=147, cin=0 | Expected {cout,sum}=402, Got {cout,sum}=  0
+FAIL: a=255, b=147, cin=1 | Expected {cout,sum}=403, Got {cout,sum}=  0
+FAIL: a=255, b=148, cin=0 | Expected {cout,sum}=403, Got {cout,sum}=  0
+FAIL: a=255, b=148, cin=1 | Expected {cout,sum}=404, Got {cout,sum}=  0
+FAIL: a=255, b=149, cin=0 | Expected {cout,sum}=404, Got {cout,sum}=  0
+FAIL: a=255, b=149, cin=1 | Expected {cout,sum}=405, Got {cout,sum}=  0
+FAIL: a=255, b=150, cin=0 | Expected {cout,sum}=405, Got {cout,sum}=  0
+FAIL: a=255, b=150, cin=1 | Expected {cout,sum}=406, Got {cout,sum}=  0
+FAIL: a=255, b=151, cin=0 | Expected {cout,sum}=406, Got {cout,sum}=  0
+FAIL: a=255, b=151, cin=1 | Expected {cout,sum}=407, Got {cout,sum}=  0
+FAIL: a=255, b=152, cin=0 | Expected {cout,sum}=407, Got {cout,sum}=  0
+FAIL: a=255, b=152, cin=1 | Expected {cout,sum}=408, Got {cout,sum}=  0
+FAIL: a=255, b=153, cin=0 | Expected {cout,sum}=408, Got {cout,sum}=  0
+FAIL: a=255, b=153, cin=1 | Expected {cout,sum}=409, Got {cout,sum}=  0
+FAIL: a=255, b=154, cin=0 | Expected {cout,sum}=409, Got {cout,sum}=  0
+FAIL: a=255, b=154, cin=1 | Expected {cout,sum}=410, Got {cout,sum}=  0
+FAIL: a=255, b=155, cin=0 | Expected {cout,sum}=410, Got {cout,sum}=  0
+FAIL: a=255, b=155, cin=1 | Expected {cout,sum}=411, Got {cout,sum}=  0
+FAIL: a=255, b=156, cin=0 | Expected {cout,sum}=411, Got {cout,sum}=  0
+FAIL: a=255, b=156, cin=1 | Expected {cout,sum}=412, Got {cout,sum}=  0
+FAIL: a=255, b=157, cin=0 | Expected {cout,sum}=412, Got {cout,sum}=  0
+FAIL: a=255, b=157, cin=1 | Expected {cout,sum}=413, Got {cout,sum}=  0
+FAIL: a=255, b=158, cin=0 | Expected {cout,sum}=413, Got {cout,sum}=  0
+FAIL: a=255, b=158, cin=1 | Expected {cout,sum}=414, Got {cout,sum}=  0
+FAIL: a=255, b=159, cin=0 | Expected {cout,sum}=414, Got {cout,sum}=  0
+FAIL: a=255, b=159, cin=1 | Expected {cout,sum}=415, Got {cout,sum}=  0
+FAIL: a=255, b=160, cin=0 | Expected {cout,sum}=415, Got {cout,sum}=  0
+FAIL: a=255, b=160, cin=1 | Expected {cout,sum}=416, Got {cout,sum}=  0
+FAIL: a=255, b=161, cin=0 | Expected {cout,sum}=416, Got {cout,sum}=  0
+FAIL: a=255, b=161, cin=1 | Expected {cout,sum}=417, Got {cout,sum}=  0
+FAIL: a=255, b=162, cin=0 | Expected {cout,sum}=417, Got {cout,sum}=  0
+FAIL: a=255, b=162, cin=1 | Expected {cout,sum}=418, Got {cout,sum}=  0
+FAIL: a=255, b=163, cin=0 | Expected {cout,sum}=418, Got {cout,sum}=  0
+FAIL: a=255, b=163, cin=1 | Expected {cout,sum}=419, Got {cout,sum}=  0
+FAIL: a=255, b=164, cin=0 | Expected {cout,sum}=419, Got {cout,sum}=  0
+FAIL: a=255, b=164, cin=1 | Expected {cout,sum}=420, Got {cout,sum}=  0
+FAIL: a=255, b=165, cin=0 | Expected {cout,sum}=420, Got {cout,sum}=  0
+FAIL: a=255, b=165, cin=1 | Expected {cout,sum}=421, Got {cout,sum}=  0
+FAIL: a=255, b=166, cin=0 | Expected {cout,sum}=421, Got {cout,sum}=  0
+FAIL: a=255, b=166, cin=1 | Expected {cout,sum}=422, Got {cout,sum}=  0
+FAIL: a=255, b=167, cin=0 | Expected {cout,sum}=422, Got {cout,sum}=  0
+FAIL: a=255, b=167, cin=1 | Expected {cout,sum}=423, Got {cout,sum}=  0
+FAIL: a=255, b=168, cin=0 | Expected {cout,sum}=423, Got {cout,sum}=  0
+FAIL: a=255, b=168, cin=1 | Expected {cout,sum}=424, Got {cout,sum}=  0
+FAIL: a=255, b=169, cin=0 | Expected {cout,sum}=424, Got {cout,sum}=  0
+FAIL: a=255, b=169, cin=1 | Expected {cout,sum}=425, Got {cout,sum}=  0
+FAIL: a=255, b=170, cin=0 | Expected {cout,sum}=425, Got {cout,sum}=  0
+FAIL: a=255, b=170, cin=1 | Expected {cout,sum}=426, Got {cout,sum}=  0
+FAIL: a=255, b=171, cin=0 | Expected {cout,sum}=426, Got {cout,sum}=  0
+FAIL: a=255, b=171, cin=1 | Expected {cout,sum}=427, Got {cout,sum}=  0
+FAIL: a=255, b=172, cin=0 | Expected {cout,sum}=427, Got {cout,sum}=  0
+FAIL: a=255, b=172, cin=1 | Expected {cout,sum}=428, Got {cout,sum}=  0
+FAIL: a=255, b=173, cin=0 | Expected {cout,sum}=428, Got {cout,sum}=  0
+FAIL: a=255, b=173, cin=1 | Expected {cout,sum}=429, Got {cout,sum}=  0
+FAIL: a=255, b=174, cin=0 | Expected {cout,sum}=429, Got {cout,sum}=  0
+FAIL: a=255, b=174, cin=1 | Expected {cout,sum}=430, Got {cout,sum}=  0
+FAIL: a=255, b=175, cin=0 | Expected {cout,sum}=430, Got {cout,sum}=  0
+FAIL: a=255, b=175, cin=1 | Expected {cout,sum}=431, Got {cout,sum}=  0
+FAIL: a=255, b=176, cin=0 | Expected {cout,sum}=431, Got {cout,sum}=  0
+FAIL: a=255, b=176, cin=1 | Expected {cout,sum}=432, Got {cout,sum}=  0
+FAIL: a=255, b=177, cin=0 | Expected {cout,sum}=432, Got {cout,sum}=  0
+FAIL: a=255, b=177, cin=1 | Expected {cout,sum}=433, Got {cout,sum}=  0
+FAIL: a=255, b=178, cin=0 | Expected {cout,sum}=433, Got {cout,sum}=  0
+FAIL: a=255, b=178, cin=1 | Expected {cout,sum}=434, Got {cout,sum}=  0
+FAIL: a=255, b=179, cin=0 | Expected {cout,sum}=434, Got {cout,sum}=  0
+FAIL: a=255, b=179, cin=1 | Expected {cout,sum}=435, Got {cout,sum}=  0
+FAIL: a=255, b=180, cin=0 | Expected {cout,sum}=435, Got {cout,sum}=  0
+FAIL: a=255, b=180, cin=1 | Expected {cout,sum}=436, Got {cout,sum}=  0
+FAIL: a=255, b=181, cin=0 | Expected {cout,sum}=436, Got {cout,sum}=  0
+FAIL: a=255, b=181, cin=1 | Expected {cout,sum}=437, Got {cout,sum}=  0
+FAIL: a=255, b=182, cin=0 | Expected {cout,sum}=437, Got {cout,sum}=  0
+FAIL: a=255, b=182, cin=1 | Expected {cout,sum}=438, Got {cout,sum}=  0
+FAIL: a=255, b=183, cin=0 | Expected {cout,sum}=438, Got {cout,sum}=  0
+FAIL: a=255, b=183, cin=1 | Expected {cout,sum}=439, Got {cout,sum}=  0
+FAIL: a=255, b=184, cin=0 | Expected {cout,sum}=439, Got {cout,sum}=  0
+FAIL: a=255, b=184, cin=1 | Expected {cout,sum}=440, Got {cout,sum}=  0
+FAIL: a=255, b=185, cin=0 | Expected {cout,sum}=440, Got {cout,sum}=  0
+FAIL: a=255, b=185, cin=1 | Expected {cout,sum}=441, Got {cout,sum}=  0
+FAIL: a=255, b=186, cin=0 | Expected {cout,sum}=441, Got {cout,sum}=  0
+FAIL: a=255, b=186, cin=1 | Expected {cout,sum}=442, Got {cout,sum}=  0
+FAIL: a=255, b=187, cin=0 | Expected {cout,sum}=442, Got {cout,sum}=  0
+FAIL: a=255, b=187, cin=1 | Expected {cout,sum}=443, Got {cout,sum}=  0
+FAIL: a=255, b=188, cin=0 | Expected {cout,sum}=443, Got {cout,sum}=  0
+FAIL: a=255, b=188, cin=1 | Expected {cout,sum}=444, Got {cout,sum}=  0
+FAIL: a=255, b=189, cin=0 | Expected {cout,sum}=444, Got {cout,sum}=  0
+FAIL: a=255, b=189, cin=1 | Expected {cout,sum}=445, Got {cout,sum}=  0
+FAIL: a=255, b=190, cin=0 | Expected {cout,sum}=445, Got {cout,sum}=  0
+FAIL: a=255, b=190, cin=1 | Expected {cout,sum}=446, Got {cout,sum}=  0
+FAIL: a=255, b=191, cin=0 | Expected {cout,sum}=446, Got {cout,sum}=  0
+FAIL: a=255, b=191, cin=1 | Expected {cout,sum}=447, Got {cout,sum}=  0
+FAIL: a=255, b=192, cin=0 | Expected {cout,sum}=447, Got {cout,sum}=  0
+FAIL: a=255, b=192, cin=1 | Expected {cout,sum}=448, Got {cout,sum}=  0
+FAIL: a=255, b=193, cin=0 | Expected {cout,sum}=448, Got {cout,sum}=  0
+FAIL: a=255, b=193, cin=1 | Expected {cout,sum}=449, Got {cout,sum}=  0
+FAIL: a=255, b=194, cin=0 | Expected {cout,sum}=449, Got {cout,sum}=  0
+FAIL: a=255, b=194, cin=1 | Expected {cout,sum}=450, Got {cout,sum}=  0
+FAIL: a=255, b=195, cin=0 | Expected {cout,sum}=450, Got {cout,sum}=  0
+FAIL: a=255, b=195, cin=1 | Expected {cout,sum}=451, Got {cout,sum}=  0
+FAIL: a=255, b=196, cin=0 | Expected {cout,sum}=451, Got {cout,sum}=  0
+FAIL: a=255, b=196, cin=1 | Expected {cout,sum}=452, Got {cout,sum}=  0
+FAIL: a=255, b=197, cin=0 | Expected {cout,sum}=452, Got {cout,sum}=  0
+FAIL: a=255, b=197, cin=1 | Expected {cout,sum}=453, Got {cout,sum}=  0
+FAIL: a=255, b=198, cin=0 | Expected {cout,sum}=453, Got {cout,sum}=  0
+FAIL: a=255, b=198, cin=1 | Expected {cout,sum}=454, Got {cout,sum}=  0
+FAIL: a=255, b=199, cin=0 | Expected {cout,sum}=454, Got {cout,sum}=  0
+FAIL: a=255, b=199, cin=1 | Expected {cout,sum}=455, Got {cout,sum}=  0
+FAIL: a=255, b=200, cin=0 | Expected {cout,sum}=455, Got {cout,sum}=  0
+FAIL: a=255, b=200, cin=1 | Expected {cout,sum}=456, Got {cout,sum}=  0
+FAIL: a=255, b=201, cin=0 | Expected {cout,sum}=456, Got {cout,sum}=  0
+FAIL: a=255, b=201, cin=1 | Expected {cout,sum}=457, Got {cout,sum}=  0
+FAIL: a=255, b=202, cin=0 | Expected {cout,sum}=457, Got {cout,sum}=  0
+FAIL: a=255, b=202, cin=1 | Expected {cout,sum}=458, Got {cout,sum}=  0
+FAIL: a=255, b=203, cin=0 | Expected {cout,sum}=458, Got {cout,sum}=  0
+FAIL: a=255, b=203, cin=1 | Expected {cout,sum}=459, Got {cout,sum}=  0
+FAIL: a=255, b=204, cin=0 | Expected {cout,sum}=459, Got {cout,sum}=  0
+FAIL: a=255, b=204, cin=1 | Expected {cout,sum}=460, Got {cout,sum}=  0
+FAIL: a=255, b=205, cin=0 | Expected {cout,sum}=460, Got {cout,sum}=  0
+FAIL: a=255, b=205, cin=1 | Expected {cout,sum}=461, Got {cout,sum}=  0
+FAIL: a=255, b=206, cin=0 | Expected {cout,sum}=461, Got {cout,sum}=  0
+FAIL: a=255, b=206, cin=1 | Expected {cout,sum}=462, Got {cout,sum}=  0
+FAIL: a=255, b=207, cin=0 | Expected {cout,sum}=462, Got {cout,sum}=  0
+FAIL: a=255, b=207, cin=1 | Expected {cout,sum}=463, Got {cout,sum}=  0
+FAIL: a=255, b=208, cin=0 | Expected {cout,sum}=463, Got {cout,sum}=  0
+FAIL: a=255, b=208, cin=1 | Expected {cout,sum}=464, Got {cout,sum}=  0
+FAIL: a=255, b=209, cin=0 | Expected {cout,sum}=464, Got {cout,sum}=  0
+FAIL: a=255, b=209, cin=1 | Expected {cout,sum}=465, Got {cout,sum}=  0
+FAIL: a=255, b=210, cin=0 | Expected {cout,sum}=465, Got {cout,sum}=  0
+FAIL: a=255, b=210, cin=1 | Expected {cout,sum}=466, Got {cout,sum}=  0
+FAIL: a=255, b=211, cin=0 | Expected {cout,sum}=466, Got {cout,sum}=  0
+FAIL: a=255, b=211, cin=1 | Expected {cout,sum}=467, Got {cout,sum}=  0
+FAIL: a=255, b=212, cin=0 | Expected {cout,sum}=467, Got {cout,sum}=  0
+FAIL: a=255, b=212, cin=1 | Expected {cout,sum}=468, Got {cout,sum}=  0
+FAIL: a=255, b=213, cin=0 | Expected {cout,sum}=468, Got {cout,sum}=  0
+FAIL: a=255, b=213, cin=1 | Expected {cout,sum}=469, Got {cout,sum}=  0
+FAIL: a=255, b=214, cin=0 | Expected {cout,sum}=469, Got {cout,sum}=  0
+FAIL: a=255, b=214, cin=1 | Expected {cout,sum}=470, Got {cout,sum}=  0
+FAIL: a=255, b=215, cin=0 | Expected {cout,sum}=470, Got {cout,sum}=  0
+FAIL: a=255, b=215, cin=1 | Expected {cout,sum}=471, Got {cout,sum}=  0
+FAIL: a=255, b=216, cin=0 | Expected {cout,sum}=471, Got {cout,sum}=  0
+FAIL: a=255, b=216, cin=1 | Expected {cout,sum}=472, Got {cout,sum}=  0
+FAIL: a=255, b=217, cin=0 | Expected {cout,sum}=472, Got {cout,sum}=  0
+FAIL: a=255, b=217, cin=1 | Expected {cout,sum}=473, Got {cout,sum}=  0
+FAIL: a=255, b=218, cin=0 | Expected {cout,sum}=473, Got {cout,sum}=  0
+FAIL: a=255, b=218, cin=1 | Expected {cout,sum}=474, Got {cout,sum}=  0
+FAIL: a=255, b=219, cin=0 | Expected {cout,sum}=474, Got {cout,sum}=  0
+FAIL: a=255, b=219, cin=1 | Expected {cout,sum}=475, Got {cout,sum}=  0
+FAIL: a=255, b=220, cin=0 | Expected {cout,sum}=475, Got {cout,sum}=  0
+FAIL: a=255, b=220, cin=1 | Expected {cout,sum}=476, Got {cout,sum}=  0
+FAIL: a=255, b=221, cin=0 | Expected {cout,sum}=476, Got {cout,sum}=  0
+FAIL: a=255, b=221, cin=1 | Expected {cout,sum}=477, Got {cout,sum}=  0
+FAIL: a=255, b=222, cin=0 | Expected {cout,sum}=477, Got {cout,sum}=  0
+FAIL: a=255, b=222, cin=1 | Expected {cout,sum}=478, Got {cout,sum}=  0
+FAIL: a=255, b=223, cin=0 | Expected {cout,sum}=478, Got {cout,sum}=  0
+FAIL: a=255, b=223, cin=1 | Expected {cout,sum}=479, Got {cout,sum}=  0
+FAIL: a=255, b=224, cin=0 | Expected {cout,sum}=479, Got {cout,sum}=  0
+FAIL: a=255, b=224, cin=1 | Expected {cout,sum}=480, Got {cout,sum}=  0
+FAIL: a=255, b=225, cin=0 | Expected {cout,sum}=480, Got {cout,sum}=  0
+FAIL: a=255, b=225, cin=1 | Expected {cout,sum}=481, Got {cout,sum}=  0
+FAIL: a=255, b=226, cin=0 | Expected {cout,sum}=481, Got {cout,sum}=  0
+FAIL: a=255, b=226, cin=1 | Expected {cout,sum}=482, Got {cout,sum}=  0
+FAIL: a=255, b=227, cin=0 | Expected {cout,sum}=482, Got {cout,sum}=  0
+FAIL: a=255, b=227, cin=1 | Expected {cout,sum}=483, Got {cout,sum}=  0
+FAIL: a=255, b=228, cin=0 | Expected {cout,sum}=483, Got {cout,sum}=  0
+FAIL: a=255, b=228, cin=1 | Expected {cout,sum}=484, Got {cout,sum}=  0
+FAIL: a=255, b=229, cin=0 | Expected {cout,sum}=484, Got {cout,sum}=  0
+FAIL: a=255, b=229, cin=1 | Expected {cout,sum}=485, Got {cout,sum}=  0
+FAIL: a=255, b=230, cin=0 | Expected {cout,sum}=485, Got {cout,sum}=  0
+FAIL: a=255, b=230, cin=1 | Expected {cout,sum}=486, Got {cout,sum}=  0
+FAIL: a=255, b=231, cin=0 | Expected {cout,sum}=486, Got {cout,sum}=  0
+FAIL: a=255, b=231, cin=1 | Expected {cout,sum}=487, Got {cout,sum}=  0
+FAIL: a=255, b=232, cin=0 | Expected {cout,sum}=487, Got {cout,sum}=  0
+FAIL: a=255, b=232, cin=1 | Expected {cout,sum}=488, Got {cout,sum}=  0
+FAIL: a=255, b=233, cin=0 | Expected {cout,sum}=488, Got {cout,sum}=  0
+FAIL: a=255, b=233, cin=1 | Expected {cout,sum}=489, Got {cout,sum}=  0
+FAIL: a=255, b=234, cin=0 | Expected {cout,sum}=489, Got {cout,sum}=  0
+FAIL: a=255, b=234, cin=1 | Expected {cout,sum}=490, Got {cout,sum}=  0
+FAIL: a=255, b=235, cin=0 | Expected {cout,sum}=490, Got {cout,sum}=  0
+FAIL: a=255, b=235, cin=1 | Expected {cout,sum}=491, Got {cout,sum}=  0
+FAIL: a=255, b=236, cin=0 | Expected {cout,sum}=491, Got {cout,sum}=  0
+FAIL: a=255, b=236, cin=1 | Expected {cout,sum}=492, Got {cout,sum}=  0
+FAIL: a=255, b=237, cin=0 | Expected {cout,sum}=492, Got {cout,sum}=  0
+FAIL: a=255, b=237, cin=1 | Expected {cout,sum}=493, Got {cout,sum}=  0
+FAIL: a=255, b=238, cin=0 | Expected {cout,sum}=493, Got {cout,sum}=  0
+FAIL: a=255, b=238, cin=1 | Expected {cout,sum}=494, Got {cout,sum}=  0
+FAIL: a=255, b=239, cin=0 | Expected {cout,sum}=494, Got {cout,sum}=  0
+FAIL: a=255, b=239, cin=1 | Expected {cout,sum}=495, Got {cout,sum}=  0
+FAIL: a=255, b=240, cin=0 | Expected {cout,sum}=495, Got {cout,sum}=  0
+FAIL: a=255, b=240, cin=1 | Expected {cout,sum}=496, Got {cout,sum}=  0
+FAIL: a=255, b=241, cin=0 | Expected {cout,sum}=496, Got {cout,sum}=  0
+FAIL: a=255, b=241, cin=1 | Expected {cout,sum}=497, Got {cout,sum}=  0
+FAIL: a=255, b=242, cin=0 | Expected {cout,sum}=497, Got {cout,sum}=  0
+FAIL: a=255, b=242, cin=1 | Expected {cout,sum}=498, Got {cout,sum}=  0
+FAIL: a=255, b=243, cin=0 | Expected {cout,sum}=498, Got {cout,sum}=  0
+FAIL: a=255, b=243, cin=1 | Expected {cout,sum}=499, Got {cout,sum}=  0
+FAIL: a=255, b=244, cin=0 | Expected {cout,sum}=499, Got {cout,sum}=  0
+FAIL: a=255, b=244, cin=1 | Expected {cout,sum}=500, Got {cout,sum}=  0
+FAIL: a=255, b=245, cin=0 | Expected {cout,sum}=500, Got {cout,sum}=  0
+FAIL: a=255, b=245, cin=1 | Expected {cout,sum}=501, Got {cout,sum}=  0
+FAIL: a=255, b=246, cin=0 | Expected {cout,sum}=501, Got {cout,sum}=  0
+FAIL: a=255, b=246, cin=1 | Expected {cout,sum}=502, Got {cout,sum}=  0
+FAIL: a=255, b=247, cin=0 | Expected {cout,sum}=502, Got {cout,sum}=  0
+FAIL: a=255, b=247, cin=1 | Expected {cout,sum}=503, Got {cout,sum}=  0
+FAIL: a=255, b=248, cin=0 | Expected {cout,sum}=503, Got {cout,sum}=  0
+FAIL: a=255, b=248, cin=1 | Expected {cout,sum}=504, Got {cout,sum}=  0
+FAIL: a=255, b=249, cin=0 | Expected {cout,sum}=504, Got {cout,sum}=  0
+FAIL: a=255, b=249, cin=1 | Expected {cout,sum}=505, Got {cout,sum}=  0
+FAIL: a=255, b=250, cin=0 | Expected {cout,sum}=505, Got {cout,sum}=  0
+FAIL: a=255, b=250, cin=1 | Expected {cout,sum}=506, Got {cout,sum}=  0
+FAIL: a=255, b=251, cin=0 | Expected {cout,sum}=506, Got {cout,sum}=  0
+FAIL: a=255, b=251, cin=1 | Expected {cout,sum}=507, Got {cout,sum}=  0
+FAIL: a=255, b=252, cin=0 | Expected {cout,sum}=507, Got {cout,sum}=  0
+FAIL: a=255, b=252, cin=1 | Expected {cout,sum}=508, Got {cout,sum}=  0
+FAIL: a=255, b=253, cin=0 | Expected {cout,sum}=508, Got {cout,sum}=  0
+FAIL: a=255, b=253, cin=1 | Expected {cout,sum}=509, Got {cout,sum}=  0
+FAIL: a=255, b=254, cin=0 | Expected {cout,sum}=509, Got {cout,sum}=  0
+FAIL: a=255, b=254, cin=1 | Expected {cout,sum}=510, Got {cout,sum}=  0
+FAIL: a=255, b=255, cin=0 | Expected {cout,sum}=510, Got {cout,sum}=  0
+FAIL: a=255, b=255, cin=1 | Expected {cout,sum}=511, Got {cout,sum}=  0
+FAIL: a=255, b=255, cin=1 | Expected {cout,sum}=511, Got   0
+FAIL: a=255, b=255, cin=0 | Expected {cout,sum}=510, Got   0
+RESULT: 2/131075 passed
+tb.v:86: $finish called at 131075 (1s)

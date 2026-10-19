@@ -1,0 +1,6 @@
+- The testbench reported failures (8/16 checks passed):
+FAIL: din=1, expected detected=1, actual detected=0
+FAIL: din=1, expected detected=1, actual detected=0
+FAIL: din=1, expected detected=1, actual detected=0
+FAIL: din=1, expected detected=1, actual detected=0
+RESULT: 8/16 passed

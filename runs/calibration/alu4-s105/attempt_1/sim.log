@@ -1,0 +1,5 @@
+FAIL: a= 5 b= 3 op=000 | exp: y=1000 z=0 c=0 v=0 n=0 | act: y=1000 z=0 c=0 v=1 n=1
+FAIL: a=10 b= 7 op=000 | exp: y=0001 z=0 c=1 v=1 n=1 | act: y=0001 z=0 c=1 v=0 n=0
+FAIL: a=10 b= 5 op=001 | exp: y=0101 z=0 c=1 v=0 n=0 | act: y=0101 z=0 c=1 v=1 n=0
+RESULT: 11/17 passed
+tb.v:83: $finish called at 17 (1s)

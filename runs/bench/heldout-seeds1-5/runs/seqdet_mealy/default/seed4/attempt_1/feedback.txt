@@ -1,0 +1,5 @@
+- The testbench reported failures (11/17 checks passed):
+FAIL: din=1, state_approx=01, expected detected=1, actual=0
+FAIL: din=1, state_approx=01, expected detected=1, actual=0
+FAIL: din=1, state_approx=01, expected detected=1, actual=0
+RESULT: 11/17 passed

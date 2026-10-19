@@ -1,0 +1,4 @@
+FAIL: All ones 2 | din=1, rst=0, expected detected=0, actual=1
+FAIL: All ones 3 (Match) | din=1, rst=0, expected detected=1, actual=0
+RESULT: 19/23 passed
+tb.v:90: $finish called at 226 (1s)

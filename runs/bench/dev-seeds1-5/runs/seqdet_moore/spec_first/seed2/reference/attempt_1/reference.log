@@ -1,0 +1,2 @@
+RESULT bc618e2c666bc7ed: 686/686 passed
+reference_tb.v:94: $finish called at 3436000 (1ps)

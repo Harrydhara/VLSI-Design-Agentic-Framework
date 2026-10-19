@@ -1,0 +1,2 @@
+RESULT: 512/512 passed
+tb.v:64: $finish called at 512 (1s)

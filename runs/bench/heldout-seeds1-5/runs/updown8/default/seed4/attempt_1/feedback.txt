@@ -1,0 +1,4 @@
+- The testbench reported failures (7/11 checks passed):
+FAIL: Async reset failed during operation. count=  4
+FAIL: rst_n=1, en=1, up=1, count=  1, expected=  1, actual=  0
+RESULT: 7/11 passed

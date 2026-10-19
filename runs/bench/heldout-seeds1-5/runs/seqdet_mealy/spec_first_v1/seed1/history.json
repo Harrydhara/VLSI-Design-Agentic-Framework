@@ -1,0 +1,167 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_mealy",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 1,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first_v1",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 61.875,
+  "tokens": {
+    "prompt": 22449,
+    "output": 9460,
+    "total": 31909
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 552,
+      "output_tokens": 4096,
+      "duration_s": 20.593,
+      "truncated": true
+    },
+    {
+      "role": "testbench_fix",
+      "attempt": null,
+      "prompt_tokens": 4736,
+      "output_tokens": 1080,
+      "duration_s": 5.871,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 472,
+      "output_tokens": 583,
+      "duration_s": 3.363,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 1209,
+      "output_tokens": 618,
+      "duration_s": 3.22,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 6024,
+      "output_tokens": 1180,
+      "duration_s": 6.566,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 2044,
+      "output_tokens": 647,
+      "duration_s": 3.694,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 3,
+      "prompt_tokens": 7412,
+      "output_tokens": 1256,
+      "duration_s": 7.229,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 472,
+      "output_tokens": 583,
+      "duration_s": 3.363,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": false
+      },
+      "feedback": "- The design does not compile:\ndesign.v:34: error: detected is not a valid l-value in seqdet_mealy.\ndesign.v:61: error: detected is not a valid l-value in seqdet_mealy.\ndesign.v:72: error: detected is not a valid l-value in seqdet_mealy.",
+      "reference": {
+        "outcome": "compile_error",
+        "passed": null,
+        "total": null
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 1209,
+      "output_tokens": 618,
+      "duration_s": 3.22,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 33,
+        "tb_total": 39,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (33/39 checks passed):\nFAIL: din=1, hist=110, exp=1, act=0\nFAIL: din=1, hist=101, exp=0, act=1\nFAIL: din=1, hist=101, exp=0, act=1\nFAIL: din=1, hist=110, exp=1, act=0\nFAIL: din=1, hist=101, exp=0, act=1\nFAIL: din=1, hist=101, exp=0, act=1\nRESULT: 33/39 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 684,
+        "total": 684
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 2044,
+      "output_tokens": 647,
+      "duration_s": 3.694,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 33,
+        "tb_total": 39,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (33/39 checks passed):\nFAIL: din=1, hist=110, exp=1, act=0\nFAIL: din=1, hist=101, exp=0, act=1\nFAIL: din=1, hist=101, exp=0, act=1\nFAIL: din=1, hist=110, exp=1, act=0\nFAIL: din=1, hist=101, exp=0, act=1\nFAIL: din=1, hist=101, exp=0, act=1\nRESULT: 33/39 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 684,
+        "total": 684
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 684,
+    "total": 684,
+    "detail": "684/684 checks passed"
+  }
+}

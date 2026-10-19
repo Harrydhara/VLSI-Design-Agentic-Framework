@@ -1,0 +1,54 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_mealy",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 104,
+    "think": false,
+    "max_attempts": 1,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": false
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 10.145,
+  "tokens": {
+    "prompt": 632,
+    "output": 1781,
+    "total": 2413
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 632,
+      "output_tokens": 1781,
+      "duration_s": 10.051,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": false
+      },
+      "feedback": "- The design does not compile:\ndesign.v:56: error: syntax error",
+      "reference": {
+        "outcome": "compile_error",
+        "passed": null,
+        "total": null
+      }
+    }
+  ],
+  "final_attempt": 1,
+  "reference": {
+    "outcome": "compile_error",
+    "passed": null,
+    "total": null,
+    "detail": "design.v:56: syntax error"
+  }
+}

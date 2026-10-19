@@ -1,0 +1,108 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "mux4",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 3,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 23.525,
+  "tokens": {
+    "prompt": 6591,
+    "output": 4496,
+    "total": 11087
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 532,
+      "output_tokens": 1468,
+      "duration_s": 7.388,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 20,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:84: error: syntax error\ntb.v:85: error: Incomprehensible case expression.\ntb.v:85: error: syntax error\ntb.v:86: error: Incomprehensible case expression.\ntb.v:86: error: syntax error\ntb.v:87: error: Incomprehensible case expression.\ntb.v:87: error: syntax error",
+      "reference": {
+        "outcome": "pass",
+        "passed": 1064,
+        "total": 1064
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 2177,
+      "output_tokens": 1512,
+      "duration_s": 7.385,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 20,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:89: error: syntax error\ntb.v:90: error: Incomprehensible case expression.\ntb.v:90: error: syntax error\ntb.v:91: error: Incomprehensible case expression.\ntb.v:91: error: syntax error\ntb.v:92: error: Incomprehensible case expression.\ntb.v:92: error: syntax error\ntb.v:93: error: Incomprehensible case expression.",
+      "reference": {
+        "outcome": "pass",
+        "passed": 1064,
+        "total": 1064
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 3882,
+      "output_tokens": 1516,
+      "duration_s": 7.662,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 16,
+        "tb_total": 16,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 20,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "pass",
+        "passed": 1064,
+        "total": 1064
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 1064,
+    "total": 1064,
+    "detail": "1064/1064 checks passed"
+  }
+}

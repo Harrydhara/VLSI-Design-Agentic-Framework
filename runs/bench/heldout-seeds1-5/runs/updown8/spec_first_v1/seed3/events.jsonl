@@ -1,0 +1,27 @@
+{"t": 0.0, "event": "run_started", "circuit": "updown8", "split": "heldout", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first_v1", "workflow": "spec_first"}
+{"t": 0.003, "event": "model_called", "attempt": null, "role": "testbench", "messages": 2}
+{"t": 5.803, "event": "model_replied", "attempt": null, "role": "testbench", "prompt_tokens": 479, "output_tokens": 1080, "duration_s": 5.798, "truncated": false}
+{"t": 5.957, "event": "testbench_checked", "version": 1, "usable": true}
+{"t": 5.961, "event": "model_called", "attempt": 1, "role": "design", "messages": 2}
+{"t": 7.213, "event": "model_replied", "attempt": 1, "role": "design", "prompt_tokens": 397, "output_tokens": 151, "duration_s": 1.248, "truncated": false}
+{"t": 7.586, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 11, "tb_total": 16, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 7.594, "event": "model_called", "attempt": 1, "role": "testbench_review", "messages": 4}
+{"t": 13.076, "event": "model_replied", "attempt": 1, "role": "testbench_review", "prompt_tokens": 1784, "output_tokens": 1105, "duration_s": 5.476, "truncated": false}
+{"t": 13.142, "event": "testbench_revised", "attempt": 1}
+{"t": 13.369, "event": "checks_done", "attempt": 1, "passed": false, "recheck": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 11, "tb_total": 16, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 13.373, "event": "feedback_sent", "attempt": 1, "chars": 352}
+{"t": 13.377, "event": "model_called", "attempt": 2, "role": "design", "messages": 4}
+{"t": 14.73, "event": "model_replied", "attempt": 2, "role": "design", "prompt_tokens": 782, "output_tokens": 170, "duration_s": 1.349, "truncated": false}
+{"t": 14.958, "event": "checks_done", "attempt": 2, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 11, "tb_total": 16, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 14.962, "event": "model_called", "attempt": 2, "role": "testbench_review", "messages": 6}
+{"t": 21.311, "event": "model_replied", "attempt": 2, "role": "testbench_review", "prompt_tokens": 3114, "output_tokens": 1216, "duration_s": 6.345, "truncated": false}
+{"t": 21.376, "event": "testbench_revised", "attempt": 2}
+{"t": 21.603, "event": "checks_done", "attempt": 2, "passed": false, "recheck": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 11, "tb_total": 16, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 21.607, "event": "feedback_sent", "attempt": 2, "chars": 352}
+{"t": 21.612, "event": "model_called", "attempt": 3, "role": "design", "messages": 6}
+{"t": 44.053, "event": "model_replied", "attempt": 3, "role": "design", "prompt_tokens": 1186, "output_tokens": 4096, "duration_s": 22.438, "truncated": true}
+{"t": 44.197, "event": "checks_done", "attempt": 3, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": false}
+{"t": 44.397, "event": "reference_scored", "attempt": 1, "final": false, "outcome": "pass", "passed": 380, "total": 380}
+{"t": 44.592, "event": "reference_scored", "attempt": 2, "final": false, "outcome": "pass", "passed": 380, "total": 380}
+{"t": 44.709, "event": "reference_scored", "attempt": 3, "final": true, "outcome": "compile_error", "passed": null, "total": null}
+{"t": 44.718, "event": "run_finished", "status": "attempts_exhausted", "attempts": 3, "total_tokens": 15560, "duration_s": 44.718, "reference": "compile_error"}

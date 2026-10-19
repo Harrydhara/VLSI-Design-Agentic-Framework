@@ -1,0 +1,7 @@
+- The testbench reported failures (7/12 checks passed):
+FAIL: time=66 expected=ff actual=02 en=1 up=1
+FAIL: time=76 expected=00 actual=01 en=1 up=0
+FAIL: time=86 expected=ff actual=01 en=0 up=1
+FAIL: time=96 expected=00 actual=02 en=1 up=1
+FAIL: time=116 expected=00 actual=01 en=1 up=1
+RESULT: 7/12 passed

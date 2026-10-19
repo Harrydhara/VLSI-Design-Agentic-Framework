@@ -1,0 +1,9 @@
+- The design compiles, but the design plus testbench does not:
+tb.v:89: error: syntax error
+tb.v:90: error: Incomprehensible case expression.
+tb.v:90: error: syntax error
+tb.v:91: error: Incomprehensible case expression.
+tb.v:91: error: syntax error
+tb.v:92: error: Incomprehensible case expression.
+tb.v:92: error: syntax error
+tb.v:93: error: Incomprehensible case expression.

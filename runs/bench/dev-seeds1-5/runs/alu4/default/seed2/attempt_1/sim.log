@@ -1,0 +1,25 @@
+FAIL: op=000 a=0010 b=0011 | expected y=0101 z=0 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=000 a=1111 b=0001 | expected y=0000 z=1 c=1 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=000 a=0111 b=0111 | expected y=1110 z=0 c=0 o=1 n=1 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=000 a=1000 b=1000 | expected y=0000 z=1 c=1 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=000 a=1000 b=1000 | expected y=0000 z=1 c=1 o=1 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=001 a=0101 b=0010 | expected y=0011 z=0 c=1 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=001 a=0010 b=0101 | expected y=1101 z=0 c=0 o=0 n=1 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=001 a=0111 b=1000 | expected y=1111 z=0 c=0 o=1 n=1 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=010 a=1010 b=1100 | expected y=1000 z=0 c=0 o=0 n=1 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=010 a=0101 b=1010 | expected y=0000 z=1 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=011 a=1010 b=0101 | expected y=1111 z=0 c=0 o=0 n=1 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=011 a=0000 b=0000 | expected y=0000 z=1 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=100 a=1111 b=1111 | expected y=0000 z=1 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=100 a=1111 b=0000 | expected y=1111 z=0 c=0 o=0 n=1 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=101 a=1011 b=0000 | expected y=0110 z=0 c=1 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=101 a=0111 b=0000 | expected y=1110 z=0 c=0 o=0 n=1 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=110 a=1101 b=0000 | expected y=0110 z=0 c=1 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=110 a=1010 b=0000 | expected y=0101 z=0 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=111 a=0010 b=0100 | expected y=0001 z=0 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=111 a=0100 b=0010 | expected y=0000 z=1 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=111 a=1111 b=0001 | expected y=0001 z=0 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=111 a=1000 b=1111 | expected y=0001 z=0 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+FAIL: op=111 a=0111 b=1000 | expected y=0000 z=1 c=0 o=0 n=0 | actual y=xxxx z=x c=x o=x n=x
+RESULT: 0/23 passed
+tb.v:86: $finish called at 0 (1s)

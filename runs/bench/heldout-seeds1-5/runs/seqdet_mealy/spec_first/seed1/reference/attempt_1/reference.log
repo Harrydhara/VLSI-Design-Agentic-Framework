@@ -1,0 +1,7 @@
+design.v:34: error: detected is not a valid l-value in ref_tb.dut.
+design.v:5:      : detected is declared here as wire.
+design.v:61: error: detected is not a valid l-value in ref_tb.dut.
+design.v:5:      : detected is declared here as wire.
+design.v:74: error: detected is not a valid l-value in ref_tb.dut.
+design.v:5:      : detected is declared here as wire.
+3 error(s) during elaboration.

@@ -1,0 +1,26 @@
+FAIL: a=aa b=55 op=000 | Exp: y=00 z=1 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=ff b=f0 op=000 | Exp: y=f0 z=0 c=0 ov=0 n=1 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=aa b=55 op=001 | Exp: y=ff z=0 c=0 ov=0 n=1 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=00 b=00 op=001 | Exp: y=00 z=1 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=ff b=ff op=010 | Exp: y=00 z=1 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=aa b=55 op=010 | Exp: y=ff z=0 c=0 ov=0 n=1 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=01 b=02 op=011 | Exp: y=03 z=0 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=ff b=01 op=011 | Exp: y=00 z=1 c=1 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=7f b=01 op=011 | Exp: y=80 z=0 c=0 ov=1 n=1 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=80 b=80 op=011 | Exp: y=00 z=1 c=1 ov=1 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=05 b=02 op=100 | Exp: y=03 z=0 c=1 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=02 b=05 op=100 | Exp: y=fd z=0 c=0 ov=0 n=1 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=80 b=01 op=100 | Exp: y=7f z=0 c=0 ov=1 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=01 b=80 op=100 | Exp: y=81 z=0 c=0 ov=1 n=1 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=ff b=ff op=100 | Exp: y=00 z=1 c=1 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=82 b=00 op=101 | Exp: y=41 z=0 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=81 b=00 op=101 | Exp: y=c0 z=0 c=1 ov=0 n=1 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=01 b=00 op=101 | Exp: y=00 z=1 c=1 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=81 b=00 op=110 | Exp: y=03 z=0 c=1 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=01 b=00 op=110 | Exp: y=02 z=0 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=05 b=0a op=111 | Exp: y=01 z=0 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=0a b=05 op=111 | Exp: y=00 z=1 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=ff b=01 op=111 | Exp: y=00 z=1 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+FAIL: a=01 b=ff op=111 | Exp: y=01 z=0 c=0 ov=0 n=0 | Got: y=xx z=x c=x ov=x n=x
+RESULT: 0/24 passed
+tb.v:82: $finish called at 0 (1s)

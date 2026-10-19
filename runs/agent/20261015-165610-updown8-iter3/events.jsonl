@@ -1,0 +1,14 @@
+{"t": 0.0, "event": "run_started", "circuit": "updown8", "split": "heldout", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default"}
+{"t": 0.002, "event": "model_called", "attempt": 1, "messages": 2}
+{"t": 5.949, "event": "model_replied", "attempt": 1, "prompt_tokens": 557, "output_tokens": 1059, "duration_s": 5.944, "truncated": false}
+{"t": 6.279, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 11, "tb_total": 14, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 6.285, "event": "feedback_sent", "attempt": 1, "chars": 247}
+{"t": 6.292, "event": "model_called", "attempt": 2, "messages": 4}
+{"t": 12.264, "event": "model_replied", "attempt": 2, "prompt_tokens": 1780, "output_tokens": 1094, "duration_s": 5.966, "truncated": false}
+{"t": 12.51, "event": "checks_done", "attempt": 2, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 11, "tb_total": 14, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 12.514, "event": "feedback_sent", "attempt": 2, "chars": 247}
+{"t": 12.518, "event": "model_called", "attempt": 3, "messages": 6}
+{"t": 18.237, "event": "model_replied", "attempt": 3, "prompt_tokens": 3038, "output_tokens": 1094, "duration_s": 5.713, "truncated": false}
+{"t": 18.557, "event": "checks_done", "attempt": 3, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 11, "tb_total": 14, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 18.715, "event": "reference_scored", "attempt": 3, "outcome": "pass", "passed": 380, "total": 380}
+{"t": 18.719, "event": "run_finished", "status": "attempts_exhausted", "attempts": 3, "total_tokens": 8622, "duration_s": 18.719, "reference": "pass"}

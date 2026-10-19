@@ -1,0 +1,39 @@
+{
+   "creator": "Yosys 0.57+260 (git sha1 ed4eb6d33, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\mux2": {
+         "num_wires":         4,
+         "num_wire_bits":     25,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 25,
+         "num_ports":         4,
+         "num_port_bits":     25,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_MUX_": 8
+         }
+      }
+   },
+      "design": {
+         "num_wires":         4,
+         "num_wire_bits":     25,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 25,
+         "num_ports":         4,
+         "num_port_bits":     25,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_MUX_": 8
+         }
+      }
+}
+

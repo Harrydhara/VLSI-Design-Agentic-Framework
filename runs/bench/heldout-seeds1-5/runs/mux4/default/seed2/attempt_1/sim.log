@@ -1,0 +1,22 @@
+FAIL: sel=0, expected=4'hA, actual=x
+FAIL: sel=1, expected=4'hA, actual=x
+FAIL: sel=2, expected=4'hA, actual=x
+FAIL: sel=3, expected=4'hA, actual=x
+FAIL: sel=0, expected=4'h1, actual=x
+FAIL: Logic mismatch at sel=0
+FAIL: sel=1, expected=4'h2, actual=x
+FAIL: Logic mismatch at sel=1
+FAIL: sel=2, expected=4'h3, actual=x
+FAIL: Logic mismatch at sel=2
+FAIL: sel=3, expected=4'h4, actual=x
+FAIL: Logic mismatch at sel=3
+FAIL: sel=0, expected=4'h0, actual=x
+FAIL: sel=1, expected=4'hF, actual=x
+FAIL: sel=2, expected=4'h0, actual=x
+FAIL: sel=3, expected=4'hF, actual=x
+FAIL: sel=0, expected=4'b1010, actual=xxxx
+FAIL: sel=1, expected=4'b0101, actual=xxxx
+FAIL: sel=2, expected=4'b1100, actual=xxxx
+FAIL: sel=3, expected=4'b0011, actual=xxxx
+RESULT: 0/16 passed
+tb.v:81: $finish called at 0 (1s)

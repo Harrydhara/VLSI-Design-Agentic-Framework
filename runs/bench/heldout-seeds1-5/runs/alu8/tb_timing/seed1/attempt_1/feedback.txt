@@ -1,0 +1,5 @@
+- The design compiles, but the design plus testbench does not:
+tb.v:44: error: syntax error
+tb.v:44: error: Malformed conditional expression.
+tb.v:49: error: syntax error
+tb.v:49: error: Malformed conditional expression.

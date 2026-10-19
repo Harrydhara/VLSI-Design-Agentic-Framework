@@ -1,0 +1,6 @@
+- The testbench reported failures (13/17 checks passed):
+FAIL: op=000 a=0101 b=0011 | Exp: y=1000 z=0 c=0 v=0 n=0 | Got: y=1000 z=0 c=0 v=1 n=1
+FAIL: op=001 a=1010 b=0100 | Exp: y=0110 z=0 c=1 v=0 n=0 | Got: y=0110 z=0 c=1 v=1 n=0
+FAIL: op=001 a=0111 b=1000 | Exp: y=1111 z=0 c=1 v=1 n=1 | Got: y=1111 z=0 c=0 v=1 n=1
+FAIL: op=111 a=1110 b=0001 | Exp: y=0001 z=0 c=0 v=0 n=0 | Got: y=0000 z=1 c=0 v=0 n=0
+RESULT: 13/17 passed

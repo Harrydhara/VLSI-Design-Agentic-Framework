@@ -1,0 +1,124 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "seqdet_mealy",
+  "split": "heldout",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 2,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 41.148,
+  "tokens": {
+    "prompt": 8597,
+    "output": 7022,
+    "total": 15619
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 552,
+      "output_tokens": 1695,
+      "duration_s": 9.896,
+      "truncated": false
+    },
+    {
+      "role": "testbench_fix",
+      "attempt": null,
+      "prompt_tokens": 2382,
+      "output_tokens": 1347,
+      "duration_s": 6.739,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 472,
+      "output_tokens": 583,
+      "duration_s": 3.272,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 1234,
+      "output_tokens": 623,
+      "duration_s": 3.235,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 3957,
+      "output_tokens": 2774,
+      "duration_s": 15.215,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 472,
+      "output_tokens": 583,
+      "duration_s": 3.272,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": false
+      },
+      "feedback": "- The design does not compile:\ndesign.v:34: error: detected is not a valid l-value in seqdet_mealy.\ndesign.v:61: error: detected is not a valid l-value in seqdet_mealy.\ndesign.v:64: error: detected is not a valid l-value in seqdet_mealy.\ndesign.v:71: error: detected is not a valid l-value in seqdet_mealy.",
+      "reference": {
+        "outcome": "compile_error",
+        "passed": null,
+        "total": null
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 1234,
+      "output_tokens": 623,
+      "duration_s": 3.235,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 46,
+        "tb_total": 46,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 9,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "fail",
+        "passed": 681,
+        "total": 684
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "fail",
+    "passed": 681,
+    "total": 684,
+    "detail": "681/684 checks passed"
+  }
+}

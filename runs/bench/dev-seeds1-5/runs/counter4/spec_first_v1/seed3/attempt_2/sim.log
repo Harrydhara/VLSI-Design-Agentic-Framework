@@ -1,0 +1,3 @@
+FAIL: rst=1, en=1, clk_edge=rising. Expected count= 0, Actual count= x
+RESULT: 22/24 passed
+tb.v:130: $finish called at 275000 (1ps)

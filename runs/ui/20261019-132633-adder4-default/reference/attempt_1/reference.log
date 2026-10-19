@@ -1,0 +1,7 @@
+MISMATCH a=1 b=15 cin=0: expected sum=0 cout=1, got sum=0 cout=0
+MISMATCH a=2 b=14 cin=0: expected sum=0 cout=1, got sum=0 cout=0
+MISMATCH a=2 b=15 cin=0: expected sum=1 cout=1, got sum=1 cout=0
+MISMATCH a=3 b=13 cin=0: expected sum=0 cout=1, got sum=0 cout=0
+MISMATCH a=3 b=14 cin=0: expected sum=1 cout=1, got sum=1 cout=0
+RESULT 47c0f48dfcb9b865: 256/512 passed
+reference_tb.v:32: $finish called at 512000 (1ps)

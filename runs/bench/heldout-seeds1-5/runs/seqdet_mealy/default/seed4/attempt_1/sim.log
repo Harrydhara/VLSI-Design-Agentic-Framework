@@ -1,0 +1,5 @@
+FAIL: din=1, state_approx=01, expected detected=1, actual=0
+FAIL: din=1, state_approx=01, expected detected=1, actual=0
+FAIL: din=1, state_approx=01, expected detected=1, actual=0
+RESULT: 11/17 passed
+tb.v:103: $finish called at 247 (1s)

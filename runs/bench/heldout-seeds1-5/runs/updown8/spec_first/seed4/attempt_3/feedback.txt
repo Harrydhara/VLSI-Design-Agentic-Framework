@@ -1,0 +1,4 @@
+- The testbench reported failures (515/519 checks passed):
+FAIL: rst_n=0 | Expected: 0, Actual:   x
+FAIL: Post-Reset | Expected:   0, Actual:   1
+RESULT: 515/519 passed

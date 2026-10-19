@@ -1,0 +1,27 @@
+- The testbench reported failures (0/393732 checks passed):
+FAIL: a=  0, b=  0, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  0, op=001 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  0, op=010 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  1, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  1, op=001 | Exp: y=  1 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  1, op=010 | Exp: y=  1 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  2, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  2, op=001 | Exp: y=  2 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  2, op=010 | Exp: y=  2 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  3, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  3, op=001 | Exp: y=  3 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  3, op=010 | Exp: y=  3 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  4, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  4, op=001 | Exp: y=  4 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  4, op=010 | Exp: y=  4 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  5, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  5, op=001 | Exp: y=  5 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  5, op=010 | Exp: y=  5 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  6, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  6, op=001 | Exp: y=  6 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  6, op=010 | Exp: y=  6 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  7, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  7, op=001 | Exp: y=  7 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  7, op=010 | Exp: y=  7 z=0 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+FAIL: a=  0, b=  8, op=000 | Exp: y=  0 z=1 c=0 o=0 n=0 | Act: y=  x z=x c=x o=x n=x
+... (748 more lines)

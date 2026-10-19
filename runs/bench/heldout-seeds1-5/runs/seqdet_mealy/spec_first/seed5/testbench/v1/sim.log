@@ -1,0 +1,10 @@
+FAIL: din=1, hist=110, expected=1, actual=0
+FAIL: din=1, hist=110, expected=1, actual=0
+FAIL: din=1, hist=110, expected=1, actual=0
+FAIL: din=1, hist=110, expected=1, actual=0
+FAIL: din=1, hist=110, expected=1, actual=0
+FAIL: din=1, hist=110, expected=1, actual=0
+FAIL: din=1, hist=110, expected=1, actual=0
+FAIL: din=1, hist=110, expected=1, actual=0
+RESULT: 49/53 passed
+tb.v:128: $finish called at 275100 (1ps)

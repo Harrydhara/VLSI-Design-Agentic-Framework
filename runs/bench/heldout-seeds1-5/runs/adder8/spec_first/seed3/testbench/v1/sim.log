@@ -1,0 +1,741 @@
+FAIL: a=  0, b=  0, cin=1 | Expected={cout=0, sum=  1}=  1, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  1, cin=0 | Expected={cout=0, sum=  1}=  1, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  1, cin=1 | Expected={cout=0, sum=  2}=  2, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  2, cin=0 | Expected={cout=0, sum=  2}=  2, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  2, cin=1 | Expected={cout=0, sum=  3}=  3, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  3, cin=0 | Expected={cout=0, sum=  3}=  3, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  3, cin=1 | Expected={cout=0, sum=  4}=  4, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  4, cin=0 | Expected={cout=0, sum=  4}=  4, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  4, cin=1 | Expected={cout=0, sum=  5}=  5, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  5, cin=0 | Expected={cout=0, sum=  5}=  5, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  5, cin=1 | Expected={cout=0, sum=  6}=  6, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  6, cin=0 | Expected={cout=0, sum=  6}=  6, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  6, cin=1 | Expected={cout=0, sum=  7}=  7, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  7, cin=0 | Expected={cout=0, sum=  7}=  7, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  7, cin=1 | Expected={cout=0, sum=  8}=  8, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  8, cin=0 | Expected={cout=0, sum=  8}=  8, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  8, cin=1 | Expected={cout=0, sum=  9}=  9, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  9, cin=0 | Expected={cout=0, sum=  9}=  9, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=  9, cin=1 | Expected={cout=0, sum= 10}= 10, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 10, cin=0 | Expected={cout=0, sum= 10}= 10, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 10, cin=1 | Expected={cout=0, sum= 11}= 11, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 11, cin=0 | Expected={cout=0, sum= 11}= 11, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 11, cin=1 | Expected={cout=0, sum= 12}= 12, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 12, cin=0 | Expected={cout=0, sum= 12}= 12, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 12, cin=1 | Expected={cout=0, sum= 13}= 13, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 13, cin=0 | Expected={cout=0, sum= 13}= 13, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 13, cin=1 | Expected={cout=0, sum= 14}= 14, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 14, cin=0 | Expected={cout=0, sum= 14}= 14, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 14, cin=1 | Expected={cout=0, sum= 15}= 15, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 15, cin=0 | Expected={cout=0, sum= 15}= 15, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 15, cin=1 | Expected={cout=0, sum= 16}= 16, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 16, cin=0 | Expected={cout=0, sum= 16}= 16, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 16, cin=1 | Expected={cout=0, sum= 17}= 17, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 17, cin=0 | Expected={cout=0, sum= 17}= 17, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 17, cin=1 | Expected={cout=0, sum= 18}= 18, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 18, cin=0 | Expected={cout=0, sum= 18}= 18, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 18, cin=1 | Expected={cout=0, sum= 19}= 19, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 19, cin=0 | Expected={cout=0, sum= 19}= 19, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 19, cin=1 | Expected={cout=0, sum= 20}= 20, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 20, cin=0 | Expected={cout=0, sum= 20}= 20, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 20, cin=1 | Expected={cout=0, sum= 21}= 21, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 21, cin=0 | Expected={cout=0, sum= 21}= 21, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 21, cin=1 | Expected={cout=0, sum= 22}= 22, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 22, cin=0 | Expected={cout=0, sum= 22}= 22, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 22, cin=1 | Expected={cout=0, sum= 23}= 23, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 23, cin=0 | Expected={cout=0, sum= 23}= 23, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 23, cin=1 | Expected={cout=0, sum= 24}= 24, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 24, cin=0 | Expected={cout=0, sum= 24}= 24, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 24, cin=1 | Expected={cout=0, sum= 25}= 25, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 25, cin=0 | Expected={cout=0, sum= 25}= 25, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 25, cin=1 | Expected={cout=0, sum= 26}= 26, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 26, cin=0 | Expected={cout=0, sum= 26}= 26, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 26, cin=1 | Expected={cout=0, sum= 27}= 27, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 27, cin=0 | Expected={cout=0, sum= 27}= 27, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 27, cin=1 | Expected={cout=0, sum= 28}= 28, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 28, cin=0 | Expected={cout=0, sum= 28}= 28, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 28, cin=1 | Expected={cout=0, sum= 29}= 29, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 29, cin=0 | Expected={cout=0, sum= 29}= 29, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 29, cin=1 | Expected={cout=0, sum= 30}= 30, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 30, cin=0 | Expected={cout=0, sum= 30}= 30, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 30, cin=1 | Expected={cout=0, sum= 31}= 31, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 31, cin=0 | Expected={cout=0, sum= 31}= 31, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 31, cin=1 | Expected={cout=0, sum= 32}= 32, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 32, cin=0 | Expected={cout=0, sum= 32}= 32, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 32, cin=1 | Expected={cout=0, sum= 33}= 33, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 33, cin=0 | Expected={cout=0, sum= 33}= 33, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 33, cin=1 | Expected={cout=0, sum= 34}= 34, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 34, cin=0 | Expected={cout=0, sum= 34}= 34, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 34, cin=1 | Expected={cout=0, sum= 35}= 35, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 35, cin=0 | Expected={cout=0, sum= 35}= 35, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 35, cin=1 | Expected={cout=0, sum= 36}= 36, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 36, cin=0 | Expected={cout=0, sum= 36}= 36, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 36, cin=1 | Expected={cout=0, sum= 37}= 37, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 37, cin=0 | Expected={cout=0, sum= 37}= 37, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 37, cin=1 | Expected={cout=0, sum= 38}= 38, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 38, cin=0 | Expected={cout=0, sum= 38}= 38, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 38, cin=1 | Expected={cout=0, sum= 39}= 39, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 39, cin=0 | Expected={cout=0, sum= 39}= 39, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 39, cin=1 | Expected={cout=0, sum= 40}= 40, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 40, cin=0 | Expected={cout=0, sum= 40}= 40, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 40, cin=1 | Expected={cout=0, sum= 41}= 41, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 41, cin=0 | Expected={cout=0, sum= 41}= 41, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 41, cin=1 | Expected={cout=0, sum= 42}= 42, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 42, cin=0 | Expected={cout=0, sum= 42}= 42, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 42, cin=1 | Expected={cout=0, sum= 43}= 43, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 43, cin=0 | Expected={cout=0, sum= 43}= 43, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 43, cin=1 | Expected={cout=0, sum= 44}= 44, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 44, cin=0 | Expected={cout=0, sum= 44}= 44, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 44, cin=1 | Expected={cout=0, sum= 45}= 45, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 45, cin=0 | Expected={cout=0, sum= 45}= 45, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 45, cin=1 | Expected={cout=0, sum= 46}= 46, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 46, cin=0 | Expected={cout=0, sum= 46}= 46, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 46, cin=1 | Expected={cout=0, sum= 47}= 47, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 47, cin=0 | Expected={cout=0, sum= 47}= 47, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 47, cin=1 | Expected={cout=0, sum= 48}= 48, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 48, cin=0 | Expected={cout=0, sum= 48}= 48, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 48, cin=1 | Expected={cout=0, sum= 49}= 49, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 49, cin=0 | Expected={cout=0, sum= 49}= 49, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 49, cin=1 | Expected={cout=0, sum= 50}= 50, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 50, cin=0 | Expected={cout=0, sum= 50}= 50, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 50, cin=1 | Expected={cout=0, sum= 51}= 51, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 51, cin=0 | Expected={cout=0, sum= 51}= 51, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 51, cin=1 | Expected={cout=0, sum= 52}= 52, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 52, cin=0 | Expected={cout=0, sum= 52}= 52, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 52, cin=1 | Expected={cout=0, sum= 53}= 53, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 53, cin=0 | Expected={cout=0, sum= 53}= 53, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 53, cin=1 | Expected={cout=0, sum= 54}= 54, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 54, cin=0 | Expected={cout=0, sum= 54}= 54, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 54, cin=1 | Expected={cout=0, sum= 55}= 55, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 55, cin=0 | Expected={cout=0, sum= 55}= 55, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 55, cin=1 | Expected={cout=0, sum= 56}= 56, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 56, cin=0 | Expected={cout=0, sum= 56}= 56, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 56, cin=1 | Expected={cout=0, sum= 57}= 57, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 57, cin=0 | Expected={cout=0, sum= 57}= 57, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 57, cin=1 | Expected={cout=0, sum= 58}= 58, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 58, cin=0 | Expected={cout=0, sum= 58}= 58, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 58, cin=1 | Expected={cout=0, sum= 59}= 59, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 59, cin=0 | Expected={cout=0, sum= 59}= 59, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 59, cin=1 | Expected={cout=0, sum= 60}= 60, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 60, cin=0 | Expected={cout=0, sum= 60}= 60, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 60, cin=1 | Expected={cout=0, sum= 61}= 61, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 61, cin=0 | Expected={cout=0, sum= 61}= 61, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 61, cin=1 | Expected={cout=0, sum= 62}= 62, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 62, cin=0 | Expected={cout=0, sum= 62}= 62, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 62, cin=1 | Expected={cout=0, sum= 63}= 63, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 63, cin=0 | Expected={cout=0, sum= 63}= 63, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 63, cin=1 | Expected={cout=0, sum= 64}= 64, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 64, cin=0 | Expected={cout=0, sum= 64}= 64, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 64, cin=1 | Expected={cout=0, sum= 65}= 65, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 65, cin=0 | Expected={cout=0, sum= 65}= 65, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 65, cin=1 | Expected={cout=0, sum= 66}= 66, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 66, cin=0 | Expected={cout=0, sum= 66}= 66, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 66, cin=1 | Expected={cout=0, sum= 67}= 67, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 67, cin=0 | Expected={cout=0, sum= 67}= 67, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 67, cin=1 | Expected={cout=0, sum= 68}= 68, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 68, cin=0 | Expected={cout=0, sum= 68}= 68, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 68, cin=1 | Expected={cout=0, sum= 69}= 69, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 69, cin=0 | Expected={cout=0, sum= 69}= 69, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 69, cin=1 | Expected={cout=0, sum= 70}= 70, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 70, cin=0 | Expected={cout=0, sum= 70}= 70, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 70, cin=1 | Expected={cout=0, sum= 71}= 71, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 71, cin=0 | Expected={cout=0, sum= 71}= 71, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 71, cin=1 | Expected={cout=0, sum= 72}= 72, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 72, cin=0 | Expected={cout=0, sum= 72}= 72, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 72, cin=1 | Expected={cout=0, sum= 73}= 73, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 73, cin=0 | Expected={cout=0, sum= 73}= 73, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 73, cin=1 | Expected={cout=0, sum= 74}= 74, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 74, cin=0 | Expected={cout=0, sum= 74}= 74, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 74, cin=1 | Expected={cout=0, sum= 75}= 75, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 75, cin=0 | Expected={cout=0, sum= 75}= 75, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 75, cin=1 | Expected={cout=0, sum= 76}= 76, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 76, cin=0 | Expected={cout=0, sum= 76}= 76, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 76, cin=1 | Expected={cout=0, sum= 77}= 77, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 77, cin=0 | Expected={cout=0, sum= 77}= 77, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 77, cin=1 | Expected={cout=0, sum= 78}= 78, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 78, cin=0 | Expected={cout=0, sum= 78}= 78, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 78, cin=1 | Expected={cout=0, sum= 79}= 79, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 79, cin=0 | Expected={cout=0, sum= 79}= 79, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 79, cin=1 | Expected={cout=0, sum= 80}= 80, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 80, cin=0 | Expected={cout=0, sum= 80}= 80, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 80, cin=1 | Expected={cout=0, sum= 81}= 81, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 81, cin=0 | Expected={cout=0, sum= 81}= 81, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 81, cin=1 | Expected={cout=0, sum= 82}= 82, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 82, cin=0 | Expected={cout=0, sum= 82}= 82, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 82, cin=1 | Expected={cout=0, sum= 83}= 83, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 83, cin=0 | Expected={cout=0, sum= 83}= 83, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 83, cin=1 | Expected={cout=0, sum= 84}= 84, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 84, cin=0 | Expected={cout=0, sum= 84}= 84, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 84, cin=1 | Expected={cout=0, sum= 85}= 85, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 85, cin=0 | Expected={cout=0, sum= 85}= 85, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 85, cin=1 | Expected={cout=0, sum= 86}= 86, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 86, cin=0 | Expected={cout=0, sum= 86}= 86, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 86, cin=1 | Expected={cout=0, sum= 87}= 87, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 87, cin=0 | Expected={cout=0, sum= 87}= 87, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 87, cin=1 | Expected={cout=0, sum= 88}= 88, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 88, cin=0 | Expected={cout=0, sum= 88}= 88, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 88, cin=1 | Expected={cout=0, sum= 89}= 89, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 89, cin=0 | Expected={cout=0, sum= 89}= 89, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 89, cin=1 | Expected={cout=0, sum= 90}= 90, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 90, cin=0 | Expected={cout=0, sum= 90}= 90, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 90, cin=1 | Expected={cout=0, sum= 91}= 91, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 91, cin=0 | Expected={cout=0, sum= 91}= 91, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 91, cin=1 | Expected={cout=0, sum= 92}= 92, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 92, cin=0 | Expected={cout=0, sum= 92}= 92, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 92, cin=1 | Expected={cout=0, sum= 93}= 93, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 93, cin=0 | Expected={cout=0, sum= 93}= 93, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 93, cin=1 | Expected={cout=0, sum= 94}= 94, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 94, cin=0 | Expected={cout=0, sum= 94}= 94, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 94, cin=1 | Expected={cout=0, sum= 95}= 95, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 95, cin=0 | Expected={cout=0, sum= 95}= 95, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 95, cin=1 | Expected={cout=0, sum= 96}= 96, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 96, cin=0 | Expected={cout=0, sum= 96}= 96, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 96, cin=1 | Expected={cout=0, sum= 97}= 97, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 97, cin=0 | Expected={cout=0, sum= 97}= 97, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 97, cin=1 | Expected={cout=0, sum= 98}= 98, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 98, cin=0 | Expected={cout=0, sum= 98}= 98, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 98, cin=1 | Expected={cout=0, sum= 99}= 99, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 99, cin=0 | Expected={cout=0, sum= 99}= 99, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b= 99, cin=1 | Expected={cout=0, sum=100}=100, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=100, cin=0 | Expected={cout=0, sum=100}=100, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=100, cin=1 | Expected={cout=0, sum=101}=101, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=101, cin=0 | Expected={cout=0, sum=101}=101, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=101, cin=1 | Expected={cout=0, sum=102}=102, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=102, cin=0 | Expected={cout=0, sum=102}=102, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=102, cin=1 | Expected={cout=0, sum=103}=103, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=103, cin=0 | Expected={cout=0, sum=103}=103, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=103, cin=1 | Expected={cout=0, sum=104}=104, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=104, cin=0 | Expected={cout=0, sum=104}=104, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=104, cin=1 | Expected={cout=0, sum=105}=105, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=105, cin=0 | Expected={cout=0, sum=105}=105, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=105, cin=1 | Expected={cout=0, sum=106}=106, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=106, cin=0 | Expected={cout=0, sum=106}=106, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=106, cin=1 | Expected={cout=0, sum=107}=107, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=107, cin=0 | Expected={cout=0, sum=107}=107, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=107, cin=1 | Expected={cout=0, sum=108}=108, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=108, cin=0 | Expected={cout=0, sum=108}=108, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=108, cin=1 | Expected={cout=0, sum=109}=109, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=109, cin=0 | Expected={cout=0, sum=109}=109, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=109, cin=1 | Expected={cout=0, sum=110}=110, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=110, cin=0 | Expected={cout=0, sum=110}=110, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=110, cin=1 | Expected={cout=0, sum=111}=111, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=111, cin=0 | Expected={cout=0, sum=111}=111, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=111, cin=1 | Expected={cout=0, sum=112}=112, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=112, cin=0 | Expected={cout=0, sum=112}=112, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=112, cin=1 | Expected={cout=0, sum=113}=113, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=113, cin=0 | Expected={cout=0, sum=113}=113, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=113, cin=1 | Expected={cout=0, sum=114}=114, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=114, cin=0 | Expected={cout=0, sum=114}=114, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=114, cin=1 | Expected={cout=0, sum=115}=115, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=115, cin=0 | Expected={cout=0, sum=115}=115, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=115, cin=1 | Expected={cout=0, sum=116}=116, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=116, cin=0 | Expected={cout=0, sum=116}=116, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=116, cin=1 | Expected={cout=0, sum=117}=117, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=117, cin=0 | Expected={cout=0, sum=117}=117, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=117, cin=1 | Expected={cout=0, sum=118}=118, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=118, cin=0 | Expected={cout=0, sum=118}=118, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=118, cin=1 | Expected={cout=0, sum=119}=119, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=119, cin=0 | Expected={cout=0, sum=119}=119, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=119, cin=1 | Expected={cout=0, sum=120}=120, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=120, cin=0 | Expected={cout=0, sum=120}=120, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=120, cin=1 | Expected={cout=0, sum=121}=121, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=121, cin=0 | Expected={cout=0, sum=121}=121, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=121, cin=1 | Expected={cout=0, sum=122}=122, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=122, cin=0 | Expected={cout=0, sum=122}=122, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=122, cin=1 | Expected={cout=0, sum=123}=123, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=123, cin=0 | Expected={cout=0, sum=123}=123, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=123, cin=1 | Expected={cout=0, sum=124}=124, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=124, cin=0 | Expected={cout=0, sum=124}=124, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=124, cin=1 | Expected={cout=0, sum=125}=125, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=125, cin=0 | Expected={cout=0, sum=125}=125, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=125, cin=1 | Expected={cout=0, sum=126}=126, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=126, cin=0 | Expected={cout=0, sum=126}=126, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=126, cin=1 | Expected={cout=0, sum=127}=127, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=127, cin=0 | Expected={cout=0, sum=127}=127, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=127, cin=1 | Expected={cout=0, sum=128}=128, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=128, cin=0 | Expected={cout=0, sum=128}=128, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=128, cin=1 | Expected={cout=0, sum=129}=129, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=129, cin=0 | Expected={cout=0, sum=129}=129, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=129, cin=1 | Expected={cout=0, sum=130}=130, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=130, cin=0 | Expected={cout=0, sum=130}=130, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=130, cin=1 | Expected={cout=0, sum=131}=131, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=131, cin=0 | Expected={cout=0, sum=131}=131, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=131, cin=1 | Expected={cout=0, sum=132}=132, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=132, cin=0 | Expected={cout=0, sum=132}=132, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=132, cin=1 | Expected={cout=0, sum=133}=133, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=133, cin=0 | Expected={cout=0, sum=133}=133, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=133, cin=1 | Expected={cout=0, sum=134}=134, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=134, cin=0 | Expected={cout=0, sum=134}=134, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=134, cin=1 | Expected={cout=0, sum=135}=135, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=135, cin=0 | Expected={cout=0, sum=135}=135, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=135, cin=1 | Expected={cout=0, sum=136}=136, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=136, cin=0 | Expected={cout=0, sum=136}=136, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=136, cin=1 | Expected={cout=0, sum=137}=137, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=137, cin=0 | Expected={cout=0, sum=137}=137, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=137, cin=1 | Expected={cout=0, sum=138}=138, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=138, cin=0 | Expected={cout=0, sum=138}=138, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=138, cin=1 | Expected={cout=0, sum=139}=139, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=139, cin=0 | Expected={cout=0, sum=139}=139, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=139, cin=1 | Expected={cout=0, sum=140}=140, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=140, cin=0 | Expected={cout=0, sum=140}=140, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=140, cin=1 | Expected={cout=0, sum=141}=141, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=141, cin=0 | Expected={cout=0, sum=141}=141, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=141, cin=1 | Expected={cout=0, sum=142}=142, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=142, cin=0 | Expected={cout=0, sum=142}=142, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=142, cin=1 | Expected={cout=0, sum=143}=143, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=143, cin=0 | Expected={cout=0, sum=143}=143, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=143, cin=1 | Expected={cout=0, sum=144}=144, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=144, cin=0 | Expected={cout=0, sum=144}=144, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=144, cin=1 | Expected={cout=0, sum=145}=145, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=145, cin=0 | Expected={cout=0, sum=145}=145, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=145, cin=1 | Expected={cout=0, sum=146}=146, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=146, cin=0 | Expected={cout=0, sum=146}=146, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=146, cin=1 | Expected={cout=0, sum=147}=147, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=147, cin=0 | Expected={cout=0, sum=147}=147, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=147, cin=1 | Expected={cout=0, sum=148}=148, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=148, cin=0 | Expected={cout=0, sum=148}=148, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=148, cin=1 | Expected={cout=0, sum=149}=149, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=149, cin=0 | Expected={cout=0, sum=149}=149, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=149, cin=1 | Expected={cout=0, sum=150}=150, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=150, cin=0 | Expected={cout=0, sum=150}=150, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=150, cin=1 | Expected={cout=0, sum=151}=151, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=151, cin=0 | Expected={cout=0, sum=151}=151, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=151, cin=1 | Expected={cout=0, sum=152}=152, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=152, cin=0 | Expected={cout=0, sum=152}=152, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=152, cin=1 | Expected={cout=0, sum=153}=153, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=153, cin=0 | Expected={cout=0, sum=153}=153, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=153, cin=1 | Expected={cout=0, sum=154}=154, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=154, cin=0 | Expected={cout=0, sum=154}=154, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=154, cin=1 | Expected={cout=0, sum=155}=155, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=155, cin=0 | Expected={cout=0, sum=155}=155, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=155, cin=1 | Expected={cout=0, sum=156}=156, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=156, cin=0 | Expected={cout=0, sum=156}=156, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=156, cin=1 | Expected={cout=0, sum=157}=157, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=157, cin=0 | Expected={cout=0, sum=157}=157, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=157, cin=1 | Expected={cout=0, sum=158}=158, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=158, cin=0 | Expected={cout=0, sum=158}=158, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=158, cin=1 | Expected={cout=0, sum=159}=159, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=159, cin=0 | Expected={cout=0, sum=159}=159, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=159, cin=1 | Expected={cout=0, sum=160}=160, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=160, cin=0 | Expected={cout=0, sum=160}=160, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=160, cin=1 | Expected={cout=0, sum=161}=161, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=161, cin=0 | Expected={cout=0, sum=161}=161, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=161, cin=1 | Expected={cout=0, sum=162}=162, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=162, cin=0 | Expected={cout=0, sum=162}=162, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=162, cin=1 | Expected={cout=0, sum=163}=163, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=163, cin=0 | Expected={cout=0, sum=163}=163, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=163, cin=1 | Expected={cout=0, sum=164}=164, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=164, cin=0 | Expected={cout=0, sum=164}=164, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=164, cin=1 | Expected={cout=0, sum=165}=165, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=165, cin=0 | Expected={cout=0, sum=165}=165, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=165, cin=1 | Expected={cout=0, sum=166}=166, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=166, cin=0 | Expected={cout=0, sum=166}=166, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=166, cin=1 | Expected={cout=0, sum=167}=167, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=167, cin=0 | Expected={cout=0, sum=167}=167, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=167, cin=1 | Expected={cout=0, sum=168}=168, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=168, cin=0 | Expected={cout=0, sum=168}=168, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=168, cin=1 | Expected={cout=0, sum=169}=169, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=169, cin=0 | Expected={cout=0, sum=169}=169, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=169, cin=1 | Expected={cout=0, sum=170}=170, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=170, cin=0 | Expected={cout=0, sum=170}=170, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=170, cin=1 | Expected={cout=0, sum=171}=171, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=171, cin=0 | Expected={cout=0, sum=171}=171, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=171, cin=1 | Expected={cout=0, sum=172}=172, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=172, cin=0 | Expected={cout=0, sum=172}=172, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=172, cin=1 | Expected={cout=0, sum=173}=173, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=173, cin=0 | Expected={cout=0, sum=173}=173, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=173, cin=1 | Expected={cout=0, sum=174}=174, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=174, cin=0 | Expected={cout=0, sum=174}=174, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=174, cin=1 | Expected={cout=0, sum=175}=175, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=175, cin=0 | Expected={cout=0, sum=175}=175, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=175, cin=1 | Expected={cout=0, sum=176}=176, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=176, cin=0 | Expected={cout=0, sum=176}=176, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=176, cin=1 | Expected={cout=0, sum=177}=177, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=177, cin=0 | Expected={cout=0, sum=177}=177, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=177, cin=1 | Expected={cout=0, sum=178}=178, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=178, cin=0 | Expected={cout=0, sum=178}=178, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=178, cin=1 | Expected={cout=0, sum=179}=179, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=179, cin=0 | Expected={cout=0, sum=179}=179, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=179, cin=1 | Expected={cout=0, sum=180}=180, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=180, cin=0 | Expected={cout=0, sum=180}=180, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=180, cin=1 | Expected={cout=0, sum=181}=181, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=181, cin=0 | Expected={cout=0, sum=181}=181, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=181, cin=1 | Expected={cout=0, sum=182}=182, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=182, cin=0 | Expected={cout=0, sum=182}=182, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=182, cin=1 | Expected={cout=0, sum=183}=183, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=183, cin=0 | Expected={cout=0, sum=183}=183, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=183, cin=1 | Expected={cout=0, sum=184}=184, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=184, cin=0 | Expected={cout=0, sum=184}=184, Actual={cout=0, sum=  0}=  0
+FAIL: a=  0, b=1
+... [11600005 bytes of output omitted] ...
+Expected={cout=1, sum= 72}=328, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 73, cin=1 | Expected={cout=1, sum= 73}=329, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 74, cin=0 | Expected={cout=1, sum= 73}=329, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 74, cin=1 | Expected={cout=1, sum= 74}=330, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 75, cin=0 | Expected={cout=1, sum= 74}=330, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 75, cin=1 | Expected={cout=1, sum= 75}=331, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 76, cin=0 | Expected={cout=1, sum= 75}=331, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 76, cin=1 | Expected={cout=1, sum= 76}=332, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 77, cin=0 | Expected={cout=1, sum= 76}=332, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 77, cin=1 | Expected={cout=1, sum= 77}=333, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 78, cin=0 | Expected={cout=1, sum= 77}=333, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 78, cin=1 | Expected={cout=1, sum= 78}=334, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 79, cin=0 | Expected={cout=1, sum= 78}=334, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 79, cin=1 | Expected={cout=1, sum= 79}=335, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 80, cin=0 | Expected={cout=1, sum= 79}=335, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 80, cin=1 | Expected={cout=1, sum= 80}=336, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 81, cin=0 | Expected={cout=1, sum= 80}=336, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 81, cin=1 | Expected={cout=1, sum= 81}=337, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 82, cin=0 | Expected={cout=1, sum= 81}=337, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 82, cin=1 | Expected={cout=1, sum= 82}=338, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 83, cin=0 | Expected={cout=1, sum= 82}=338, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 83, cin=1 | Expected={cout=1, sum= 83}=339, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 84, cin=0 | Expected={cout=1, sum= 83}=339, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 84, cin=1 | Expected={cout=1, sum= 84}=340, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 85, cin=0 | Expected={cout=1, sum= 84}=340, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 85, cin=1 | Expected={cout=1, sum= 85}=341, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 86, cin=0 | Expected={cout=1, sum= 85}=341, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 86, cin=1 | Expected={cout=1, sum= 86}=342, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 87, cin=0 | Expected={cout=1, sum= 86}=342, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 87, cin=1 | Expected={cout=1, sum= 87}=343, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 88, cin=0 | Expected={cout=1, sum= 87}=343, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 88, cin=1 | Expected={cout=1, sum= 88}=344, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 89, cin=0 | Expected={cout=1, sum= 88}=344, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 89, cin=1 | Expected={cout=1, sum= 89}=345, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 90, cin=0 | Expected={cout=1, sum= 89}=345, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 90, cin=1 | Expected={cout=1, sum= 90}=346, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 91, cin=0 | Expected={cout=1, sum= 90}=346, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 91, cin=1 | Expected={cout=1, sum= 91}=347, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 92, cin=0 | Expected={cout=1, sum= 91}=347, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 92, cin=1 | Expected={cout=1, sum= 92}=348, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 93, cin=0 | Expected={cout=1, sum= 92}=348, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 93, cin=1 | Expected={cout=1, sum= 93}=349, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 94, cin=0 | Expected={cout=1, sum= 93}=349, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 94, cin=1 | Expected={cout=1, sum= 94}=350, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 95, cin=0 | Expected={cout=1, sum= 94}=350, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 95, cin=1 | Expected={cout=1, sum= 95}=351, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 96, cin=0 | Expected={cout=1, sum= 95}=351, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 96, cin=1 | Expected={cout=1, sum= 96}=352, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 97, cin=0 | Expected={cout=1, sum= 96}=352, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 97, cin=1 | Expected={cout=1, sum= 97}=353, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 98, cin=0 | Expected={cout=1, sum= 97}=353, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 98, cin=1 | Expected={cout=1, sum= 98}=354, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 99, cin=0 | Expected={cout=1, sum= 98}=354, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b= 99, cin=1 | Expected={cout=1, sum= 99}=355, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=100, cin=0 | Expected={cout=1, sum= 99}=355, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=100, cin=1 | Expected={cout=1, sum=100}=356, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=101, cin=0 | Expected={cout=1, sum=100}=356, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=101, cin=1 | Expected={cout=1, sum=101}=357, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=102, cin=0 | Expected={cout=1, sum=101}=357, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=102, cin=1 | Expected={cout=1, sum=102}=358, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=103, cin=0 | Expected={cout=1, sum=102}=358, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=103, cin=1 | Expected={cout=1, sum=103}=359, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=104, cin=0 | Expected={cout=1, sum=103}=359, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=104, cin=1 | Expected={cout=1, sum=104}=360, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=105, cin=0 | Expected={cout=1, sum=104}=360, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=105, cin=1 | Expected={cout=1, sum=105}=361, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=106, cin=0 | Expected={cout=1, sum=105}=361, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=106, cin=1 | Expected={cout=1, sum=106}=362, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=107, cin=0 | Expected={cout=1, sum=106}=362, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=107, cin=1 | Expected={cout=1, sum=107}=363, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=108, cin=0 | Expected={cout=1, sum=107}=363, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=108, cin=1 | Expected={cout=1, sum=108}=364, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=109, cin=0 | Expected={cout=1, sum=108}=364, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=109, cin=1 | Expected={cout=1, sum=109}=365, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=110, cin=0 | Expected={cout=1, sum=109}=365, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=110, cin=1 | Expected={cout=1, sum=110}=366, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=111, cin=0 | Expected={cout=1, sum=110}=366, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=111, cin=1 | Expected={cout=1, sum=111}=367, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=112, cin=0 | Expected={cout=1, sum=111}=367, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=112, cin=1 | Expected={cout=1, sum=112}=368, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=113, cin=0 | Expected={cout=1, sum=112}=368, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=113, cin=1 | Expected={cout=1, sum=113}=369, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=114, cin=0 | Expected={cout=1, sum=113}=369, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=114, cin=1 | Expected={cout=1, sum=114}=370, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=115, cin=0 | Expected={cout=1, sum=114}=370, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=115, cin=1 | Expected={cout=1, sum=115}=371, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=116, cin=0 | Expected={cout=1, sum=115}=371, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=116, cin=1 | Expected={cout=1, sum=116}=372, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=117, cin=0 | Expected={cout=1, sum=116}=372, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=117, cin=1 | Expected={cout=1, sum=117}=373, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=118, cin=0 | Expected={cout=1, sum=117}=373, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=118, cin=1 | Expected={cout=1, sum=118}=374, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=119, cin=0 | Expected={cout=1, sum=118}=374, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=119, cin=1 | Expected={cout=1, sum=119}=375, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=120, cin=0 | Expected={cout=1, sum=119}=375, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=120, cin=1 | Expected={cout=1, sum=120}=376, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=121, cin=0 | Expected={cout=1, sum=120}=376, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=121, cin=1 | Expected={cout=1, sum=121}=377, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=122, cin=0 | Expected={cout=1, sum=121}=377, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=122, cin=1 | Expected={cout=1, sum=122}=378, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=123, cin=0 | Expected={cout=1, sum=122}=378, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=123, cin=1 | Expected={cout=1, sum=123}=379, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=124, cin=0 | Expected={cout=1, sum=123}=379, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=124, cin=1 | Expected={cout=1, sum=124}=380, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=125, cin=0 | Expected={cout=1, sum=124}=380, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=125, cin=1 | Expected={cout=1, sum=125}=381, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=126, cin=0 | Expected={cout=1, sum=125}=381, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=126, cin=1 | Expected={cout=1, sum=126}=382, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=127, cin=0 | Expected={cout=1, sum=126}=382, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=127, cin=1 | Expected={cout=1, sum=127}=383, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=128, cin=0 | Expected={cout=1, sum=127}=383, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=128, cin=1 | Expected={cout=1, sum=128}=384, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=129, cin=0 | Expected={cout=1, sum=128}=384, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=129, cin=1 | Expected={cout=1, sum=129}=385, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=130, cin=0 | Expected={cout=1, sum=129}=385, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=130, cin=1 | Expected={cout=1, sum=130}=386, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=131, cin=0 | Expected={cout=1, sum=130}=386, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=131, cin=1 | Expected={cout=1, sum=131}=387, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=132, cin=0 | Expected={cout=1, sum=131}=387, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=132, cin=1 | Expected={cout=1, sum=132}=388, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=133, cin=0 | Expected={cout=1, sum=132}=388, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=133, cin=1 | Expected={cout=1, sum=133}=389, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=134, cin=0 | Expected={cout=1, sum=133}=389, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=134, cin=1 | Expected={cout=1, sum=134}=390, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=135, cin=0 | Expected={cout=1, sum=134}=390, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=135, cin=1 | Expected={cout=1, sum=135}=391, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=136, cin=0 | Expected={cout=1, sum=135}=391, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=136, cin=1 | Expected={cout=1, sum=136}=392, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=137, cin=0 | Expected={cout=1, sum=136}=392, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=137, cin=1 | Expected={cout=1, sum=137}=393, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=138, cin=0 | Expected={cout=1, sum=137}=393, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=138, cin=1 | Expected={cout=1, sum=138}=394, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=139, cin=0 | Expected={cout=1, sum=138}=394, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=139, cin=1 | Expected={cout=1, sum=139}=395, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=140, cin=0 | Expected={cout=1, sum=139}=395, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=140, cin=1 | Expected={cout=1, sum=140}=396, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=141, cin=0 | Expected={cout=1, sum=140}=396, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=141, cin=1 | Expected={cout=1, sum=141}=397, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=142, cin=0 | Expected={cout=1, sum=141}=397, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=142, cin=1 | Expected={cout=1, sum=142}=398, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=143, cin=0 | Expected={cout=1, sum=142}=398, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=143, cin=1 | Expected={cout=1, sum=143}=399, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=144, cin=0 | Expected={cout=1, sum=143}=399, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=144, cin=1 | Expected={cout=1, sum=144}=400, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=145, cin=0 | Expected={cout=1, sum=144}=400, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=145, cin=1 | Expected={cout=1, sum=145}=401, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=146, cin=0 | Expected={cout=1, sum=145}=401, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=146, cin=1 | Expected={cout=1, sum=146}=402, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=147, cin=0 | Expected={cout=1, sum=146}=402, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=147, cin=1 | Expected={cout=1, sum=147}=403, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=148, cin=0 | Expected={cout=1, sum=147}=403, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=148, cin=1 | Expected={cout=1, sum=148}=404, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=149, cin=0 | Expected={cout=1, sum=148}=404, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=149, cin=1 | Expected={cout=1, sum=149}=405, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=150, cin=0 | Expected={cout=1, sum=149}=405, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=150, cin=1 | Expected={cout=1, sum=150}=406, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=151, cin=0 | Expected={cout=1, sum=150}=406, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=151, cin=1 | Expected={cout=1, sum=151}=407, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=152, cin=0 | Expected={cout=1, sum=151}=407, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=152, cin=1 | Expected={cout=1, sum=152}=408, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=153, cin=0 | Expected={cout=1, sum=152}=408, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=153, cin=1 | Expected={cout=1, sum=153}=409, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=154, cin=0 | Expected={cout=1, sum=153}=409, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=154, cin=1 | Expected={cout=1, sum=154}=410, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=155, cin=0 | Expected={cout=1, sum=154}=410, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=155, cin=1 | Expected={cout=1, sum=155}=411, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=156, cin=0 | Expected={cout=1, sum=155}=411, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=156, cin=1 | Expected={cout=1, sum=156}=412, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=157, cin=0 | Expected={cout=1, sum=156}=412, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=157, cin=1 | Expected={cout=1, sum=157}=413, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=158, cin=0 | Expected={cout=1, sum=157}=413, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=158, cin=1 | Expected={cout=1, sum=158}=414, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=159, cin=0 | Expected={cout=1, sum=158}=414, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=159, cin=1 | Expected={cout=1, sum=159}=415, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=160, cin=0 | Expected={cout=1, sum=159}=415, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=160, cin=1 | Expected={cout=1, sum=160}=416, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=161, cin=0 | Expected={cout=1, sum=160}=416, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=161, cin=1 | Expected={cout=1, sum=161}=417, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=162, cin=0 | Expected={cout=1, sum=161}=417, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=162, cin=1 | Expected={cout=1, sum=162}=418, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=163, cin=0 | Expected={cout=1, sum=162}=418, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=163, cin=1 | Expected={cout=1, sum=163}=419, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=164, cin=0 | Expected={cout=1, sum=163}=419, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=164, cin=1 | Expected={cout=1, sum=164}=420, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=165, cin=0 | Expected={cout=1, sum=164}=420, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=165, cin=1 | Expected={cout=1, sum=165}=421, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=166, cin=0 | Expected={cout=1, sum=165}=421, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=166, cin=1 | Expected={cout=1, sum=166}=422, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=167, cin=0 | Expected={cout=1, sum=166}=422, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=167, cin=1 | Expected={cout=1, sum=167}=423, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=168, cin=0 | Expected={cout=1, sum=167}=423, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=168, cin=1 | Expected={cout=1, sum=168}=424, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=169, cin=0 | Expected={cout=1, sum=168}=424, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=169, cin=1 | Expected={cout=1, sum=169}=425, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=170, cin=0 | Expected={cout=1, sum=169}=425, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=170, cin=1 | Expected={cout=1, sum=170}=426, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=171, cin=0 | Expected={cout=1, sum=170}=426, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=171, cin=1 | Expected={cout=1, sum=171}=427, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=172, cin=0 | Expected={cout=1, sum=171}=427, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=172, cin=1 | Expected={cout=1, sum=172}=428, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=173, cin=0 | Expected={cout=1, sum=172}=428, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=173, cin=1 | Expected={cout=1, sum=173}=429, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=174, cin=0 | Expected={cout=1, sum=173}=429, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=174, cin=1 | Expected={cout=1, sum=174}=430, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=175, cin=0 | Expected={cout=1, sum=174}=430, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=175, cin=1 | Expected={cout=1, sum=175}=431, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=176, cin=0 | Expected={cout=1, sum=175}=431, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=176, cin=1 | Expected={cout=1, sum=176}=432, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=177, cin=0 | Expected={cout=1, sum=176}=432, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=177, cin=1 | Expected={cout=1, sum=177}=433, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=178, cin=0 | Expected={cout=1, sum=177}=433, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=178, cin=1 | Expected={cout=1, sum=178}=434, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=179, cin=0 | Expected={cout=1, sum=178}=434, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=179, cin=1 | Expected={cout=1, sum=179}=435, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=180, cin=0 | Expected={cout=1, sum=179}=435, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=180, cin=1 | Expected={cout=1, sum=180}=436, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=181, cin=0 | Expected={cout=1, sum=180}=436, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=181, cin=1 | Expected={cout=1, sum=181}=437, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=182, cin=0 | Expected={cout=1, sum=181}=437, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=182, cin=1 | Expected={cout=1, sum=182}=438, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=183, cin=0 | Expected={cout=1, sum=182}=438, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=183, cin=1 | Expected={cout=1, sum=183}=439, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=184, cin=0 | Expected={cout=1, sum=183}=439, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=184, cin=1 | Expected={cout=1, sum=184}=440, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=185, cin=0 | Expected={cout=1, sum=184}=440, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=185, cin=1 | Expected={cout=1, sum=185}=441, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=186, cin=0 | Expected={cout=1, sum=185}=441, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=186, cin=1 | Expected={cout=1, sum=186}=442, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=187, cin=0 | Expected={cout=1, sum=186}=442, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=187, cin=1 | Expected={cout=1, sum=187}=443, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=188, cin=0 | Expected={cout=1, sum=187}=443, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=188, cin=1 | Expected={cout=1, sum=188}=444, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=189, cin=0 | Expected={cout=1, sum=188}=444, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=189, cin=1 | Expected={cout=1, sum=189}=445, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=190, cin=0 | Expected={cout=1, sum=189}=445, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=190, cin=1 | Expected={cout=1, sum=190}=446, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=191, cin=0 | Expected={cout=1, sum=190}=446, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=191, cin=1 | Expected={cout=1, sum=191}=447, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=192, cin=0 | Expected={cout=1, sum=191}=447, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=192, cin=1 | Expected={cout=1, sum=192}=448, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=193, cin=0 | Expected={cout=1, sum=192}=448, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=193, cin=1 | Expected={cout=1, sum=193}=449, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=194, cin=0 | Expected={cout=1, sum=193}=449, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=194, cin=1 | Expected={cout=1, sum=194}=450, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=195, cin=0 | Expected={cout=1, sum=194}=450, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=195, cin=1 | Expected={cout=1, sum=195}=451, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=196, cin=0 | Expected={cout=1, sum=195}=451, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=196, cin=1 | Expected={cout=1, sum=196}=452, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=197, cin=0 | Expected={cout=1, sum=196}=452, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=197, cin=1 | Expected={cout=1, sum=197}=453, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=198, cin=0 | Expected={cout=1, sum=197}=453, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=198, cin=1 | Expected={cout=1, sum=198}=454, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=199, cin=0 | Expected={cout=1, sum=198}=454, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=199, cin=1 | Expected={cout=1, sum=199}=455, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=200, cin=0 | Expected={cout=1, sum=199}=455, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=200, cin=1 | Expected={cout=1, sum=200}=456, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=201, cin=0 | Expected={cout=1, sum=200}=456, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=201, cin=1 | Expected={cout=1, sum=201}=457, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=202, cin=0 | Expected={cout=1, sum=201}=457, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=202, cin=1 | Expected={cout=1, sum=202}=458, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=203, cin=0 | Expected={cout=1, sum=202}=458, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=203, cin=1 | Expected={cout=1, sum=203}=459, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=204, cin=0 | Expected={cout=1, sum=203}=459, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=204, cin=1 | Expected={cout=1, sum=204}=460, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=205, cin=0 | Expected={cout=1, sum=204}=460, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=205, cin=1 | Expected={cout=1, sum=205}=461, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=206, cin=0 | Expected={cout=1, sum=205}=461, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=206, cin=1 | Expected={cout=1, sum=206}=462, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=207, cin=0 | Expected={cout=1, sum=206}=462, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=207, cin=1 | Expected={cout=1, sum=207}=463, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=208, cin=0 | Expected={cout=1, sum=207}=463, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=208, cin=1 | Expected={cout=1, sum=208}=464, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=209, cin=0 | Expected={cout=1, sum=208}=464, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=209, cin=1 | Expected={cout=1, sum=209}=465, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=210, cin=0 | Expected={cout=1, sum=209}=465, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=210, cin=1 | Expected={cout=1, sum=210}=466, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=211, cin=0 | Expected={cout=1, sum=210}=466, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=211, cin=1 | Expected={cout=1, sum=211}=467, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=212, cin=0 | Expected={cout=1, sum=211}=467, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=212, cin=1 | Expected={cout=1, sum=212}=468, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=213, cin=0 | Expected={cout=1, sum=212}=468, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=213, cin=1 | Expected={cout=1, sum=213}=469, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=214, cin=0 | Expected={cout=1, sum=213}=469, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=214, cin=1 | Expected={cout=1, sum=214}=470, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=215, cin=0 | Expected={cout=1, sum=214}=470, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=215, cin=1 | Expected={cout=1, sum=215}=471, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=216, cin=0 | Expected={cout=1, sum=215}=471, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=216, cin=1 | Expected={cout=1, sum=216}=472, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=217, cin=0 | Expected={cout=1, sum=216}=472, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=217, cin=1 | Expected={cout=1, sum=217}=473, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=218, cin=0 | Expected={cout=1, sum=217}=473, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=218, cin=1 | Expected={cout=1, sum=218}=474, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=219, cin=0 | Expected={cout=1, sum=218}=474, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=219, cin=1 | Expected={cout=1, sum=219}=475, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=220, cin=0 | Expected={cout=1, sum=219}=475, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=220, cin=1 | Expected={cout=1, sum=220}=476, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=221, cin=0 | Expected={cout=1, sum=220}=476, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=221, cin=1 | Expected={cout=1, sum=221}=477, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=222, cin=0 | Expected={cout=1, sum=221}=477, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=222, cin=1 | Expected={cout=1, sum=222}=478, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=223, cin=0 | Expected={cout=1, sum=222}=478, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=223, cin=1 | Expected={cout=1, sum=223}=479, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=224, cin=0 | Expected={cout=1, sum=223}=479, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=224, cin=1 | Expected={cout=1, sum=224}=480, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=225, cin=0 | Expected={cout=1, sum=224}=480, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=225, cin=1 | Expected={cout=1, sum=225}=481, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=226, cin=0 | Expected={cout=1, sum=225}=481, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=226, cin=1 | Expected={cout=1, sum=226}=482, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=227, cin=0 | Expected={cout=1, sum=226}=482, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=227, cin=1 | Expected={cout=1, sum=227}=483, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=228, cin=0 | Expected={cout=1, sum=227}=483, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=228, cin=1 | Expected={cout=1, sum=228}=484, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=229, cin=0 | Expected={cout=1, sum=228}=484, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=229, cin=1 | Expected={cout=1, sum=229}=485, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=230, cin=0 | Expected={cout=1, sum=229}=485, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=230, cin=1 | Expected={cout=1, sum=230}=486, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=231, cin=0 | Expected={cout=1, sum=230}=486, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=231, cin=1 | Expected={cout=1, sum=231}=487, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=232, cin=0 | Expected={cout=1, sum=231}=487, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=232, cin=1 | Expected={cout=1, sum=232}=488, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=233, cin=0 | Expected={cout=1, sum=232}=488, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=233, cin=1 | Expected={cout=1, sum=233}=489, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=234, cin=0 | Expected={cout=1, sum=233}=489, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=234, cin=1 | Expected={cout=1, sum=234}=490, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=235, cin=0 | Expected={cout=1, sum=234}=490, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=235, cin=1 | Expected={cout=1, sum=235}=491, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=236, cin=0 | Expected={cout=1, sum=235}=491, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=236, cin=1 | Expected={cout=1, sum=236}=492, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=237, cin=0 | Expected={cout=1, sum=236}=492, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=237, cin=1 | Expected={cout=1, sum=237}=493, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=238, cin=0 | Expected={cout=1, sum=237}=493, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=238, cin=1 | Expected={cout=1, sum=238}=494, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=239, cin=0 | Expected={cout=1, sum=238}=494, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=239, cin=1 | Expected={cout=1, sum=239}=495, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=240, cin=0 | Expected={cout=1, sum=239}=495, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=240, cin=1 | Expected={cout=1, sum=240}=496, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=241, cin=0 | Expected={cout=1, sum=240}=496, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=241, cin=1 | Expected={cout=1, sum=241}=497, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=242, cin=0 | Expected={cout=1, sum=241}=497, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=242, cin=1 | Expected={cout=1, sum=242}=498, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=243, cin=0 | Expected={cout=1, sum=242}=498, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=243, cin=1 | Expected={cout=1, sum=243}=499, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=244, cin=0 | Expected={cout=1, sum=243}=499, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=244, cin=1 | Expected={cout=1, sum=244}=500, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=245, cin=0 | Expected={cout=1, sum=244}=500, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=245, cin=1 | Expected={cout=1, sum=245}=501, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=246, cin=0 | Expected={cout=1, sum=245}=501, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=246, cin=1 | Expected={cout=1, sum=246}=502, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=247, cin=0 | Expected={cout=1, sum=246}=502, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=247, cin=1 | Expected={cout=1, sum=247}=503, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=248, cin=0 | Expected={cout=1, sum=247}=503, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=248, cin=1 | Expected={cout=1, sum=248}=504, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=249, cin=0 | Expected={cout=1, sum=248}=504, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=249, cin=1 | Expected={cout=1, sum=249}=505, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=250, cin=0 | Expected={cout=1, sum=249}=505, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=250, cin=1 | Expected={cout=1, sum=250}=506, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=251, cin=0 | Expected={cout=1, sum=250}=506, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=251, cin=1 | Expected={cout=1, sum=251}=507, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=252, cin=0 | Expected={cout=1, sum=251}=507, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=252, cin=1 | Expected={cout=1, sum=252}=508, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=253, cin=0 | Expected={cout=1, sum=252}=508, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=253, cin=1 | Expected={cout=1, sum=253}=509, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=254, cin=0 | Expected={cout=1, sum=253}=509, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=254, cin=1 | Expected={cout=1, sum=254}=510, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=255, cin=0 | Expected={cout=1, sum=254}=510, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=255, cin=1 | Expected={cout=1, sum=255}=511, Actual={cout=0, sum=  0}=  0
+FAIL: a=255, b=255, cin=1 | Expected=511, Actual=  0
+FAIL: a=  0, b=  0, cin=1 | Expected=  1, Actual=  0
+FAIL: a=255, b=  0, cin=0 | Expected=255, Actual=  0
+RESULT: 2/131076 passed
+tb.v:77: $finish called at 131076 (1s)

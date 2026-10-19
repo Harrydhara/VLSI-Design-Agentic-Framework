@@ -1,0 +1,2 @@
+circuit,split,family,strategy,seed,status,attempts_used,oneshot_outcome,final_outcome,attempt_outcomes,oneshot_compiled,final_compiled,oneshot_synth_ok,final_synth_ok,oneshot_cells,final_cells,final_latches,own_checks_passed,prompt_tokens,output_tokens,total_tokens,duration_s,run_dir
+adder4,dev,adder,default,1,dev_passed,2,fail,pass,fail|pass,True,True,True,True,17,23,0,True,1223,374,1597,0.83,/mnt/c/Users/harrydhara16/Documents/Claude framework/runs/bench/demo2/runs/adder4/default/seed1

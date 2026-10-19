@@ -1,0 +1,45 @@
+{
+   "creator": "Yosys 0.57+260 (git sha1 ed4eb6d33, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\adder4": {
+         "num_wires":         18,
+         "num_wire_bits":     27,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 14,
+         "num_ports":         5,
+         "num_port_bits":     14,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         17,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 6,
+            "$_NAND_": 3,
+            "$_XNOR_": 5,
+            "$_XOR_": 3
+         }
+      }
+   },
+      "design": {
+         "num_wires":         18,
+         "num_wire_bits":     27,
+         "num_pub_wires":     5,
+         "num_pub_wire_bits": 14,
+         "num_ports":         5,
+         "num_port_bits":     14,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         17,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 6,
+            "$_NAND_": 3,
+            "$_XNOR_": 5,
+            "$_XOR_": 3
+         }
+      }
+}
+

@@ -1,0 +1,3 @@
+- The design does not compile:
+design.v:58: error: syntax error
+design.v:58: error: Malformed statement

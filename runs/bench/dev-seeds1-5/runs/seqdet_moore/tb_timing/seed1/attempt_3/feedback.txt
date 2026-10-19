@@ -1,0 +1,3 @@
+- The simulation did not finish within 10 s. Check that the testbench calls $finish and that the design has no infinite loop.
+Output before it was stopped:
+[killed: still running after 10 s]

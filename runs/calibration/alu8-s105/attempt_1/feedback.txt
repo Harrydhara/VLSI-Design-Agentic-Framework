@@ -1,0 +1,5 @@
+- The testbench reported failures (20/23 checks passed):
+FAIL: op=001 a=170 b= 85 | expected y=255 z=0 c=0 o=0 n=0, actual y=255 z=0 c=0 o=0 n=1
+FAIL: op=010 a=170 b= 85 | expected y=255 z=0 c=0 o=0 n=0, actual y=255 z=0 c=0 o=0 n=1
+FAIL: op=011 a=128 b=128 | expected y=  0 z=1 c=1 o=0 n=0, actual y=  0 z=1 c=1 o=1 n=0
+RESULT: 20/23 passed

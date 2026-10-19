@@ -1,0 +1,6 @@
+{"t": 0.0, "event": "run_started", "circuit": "updown8", "split": "heldout", "model": "ollama:gemma4:26b", "max_attempts": 3, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing"}
+{"t": 0.008, "event": "model_called", "attempt": 1, "messages": 2}
+{"t": 18.374, "event": "model_replied", "attempt": 1, "prompt_tokens": 904, "output_tokens": 3305, "duration_s": 18.362, "truncated": false}
+{"t": 18.646, "event": "checks_done", "attempt": 1, "passed": true, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 268, "tb_total": 268, "sim_timed_out": false, "synth_ok": true, "cells": 47, "latches": 0}
+{"t": 18.751, "event": "reference_scored", "attempt": 1, "final": true, "outcome": "pass", "passed": 380, "total": 380}
+{"t": 18.758, "event": "run_finished", "status": "dev_passed", "attempts": 1, "total_tokens": 4209, "duration_s": 18.757, "reference": "pass"}

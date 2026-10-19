@@ -1,0 +1,7 @@
+MISMATCH at 36 ns: rst=0 en=1 expected count=1, got 2
+MISMATCH at 46 ns: rst=0 en=1 expected count=2, got 3
+MISMATCH at 56 ns: rst=0 en=1 expected count=3, got 4
+MISMATCH at 66 ns: rst=0 en=1 expected count=4, got 5
+MISMATCH at 76 ns: rst=0 en=1 expected count=5, got 6
+RESULT 17350051b4b32f2a: 125/249 passed
+reference_tb.v:75: $finish called at 2496000 (1ps)

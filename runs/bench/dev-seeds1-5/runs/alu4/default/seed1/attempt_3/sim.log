@@ -1,0 +1,23 @@
+FAIL: a=0010 b=0011 op=000 | exp: y=0101 c=0 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1111 b=0001 op=000 | exp: y=0000 c=1 v=0 z=1 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1111 b=0001 op=000 | exp: y=0000 c=1 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0111 b=0111 op=000 | exp: y=1110 c=0 v=0 z=0 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0111 b=0111 op=000 | exp: y=1110 c=0 v=1 z=0 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0111 b=0111 op=000 | exp: y=1110 c=0 v=1 z=0 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0001 b=0001 op=000 | exp: y=0010 c=0 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1111 b=1111 op=000 | exp: y=1110 c=1 v=1 z=0 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0111 b=0111 op=000 | exp: y=1110 c=0 v=0 z=1 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0111 b=0010 op=001 | exp: y=0101 c=1 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0010 b=0111 op=001 | exp: y=1011 c=0 v=0 z=0 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0111 b=1111 op=001 | exp: y=1000 c=0 v=0 z=1 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1001 b=0001 op=001 | exp: y=1000 c=0 v=0 z=1 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1010 b=1100 op=010 | exp: y=1000 c=0 v=0 z=0 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1010 b=1100 op=011 | exp: y=1110 c=0 v=0 z=0 n=1 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1010 b=1100 op=100 | exp: y=0110 c=0 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1011 b=1100 op=101 | exp: y=0110 c=1 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1011 b=1100 op=110 | exp: y=0101 c=1 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0010 b=0100 op=111 | exp: y=0001 c=0 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=1111 b=0001 op=111 | exp: y=0001 c=0 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+FAIL: a=0001 b=1111 op=111 | exp: y=0000 c=0 v=0 z=0 n=0 | act: y=xxxx c=x v=x z=x n=x
+RESULT: 0/21 passed
+tb.v:68: $finish called at 0 (1s)

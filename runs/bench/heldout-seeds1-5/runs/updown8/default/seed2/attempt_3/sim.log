@@ -1,0 +1,3 @@
+FAIL: Async reset failed mid-count. Expected 0, got   2
+RESULT: 11/12 passed
+tb.v:117: $finish called at 2685 (1s)

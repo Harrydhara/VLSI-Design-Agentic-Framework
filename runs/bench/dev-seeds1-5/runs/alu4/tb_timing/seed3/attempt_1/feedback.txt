@@ -1,0 +1,4 @@
+- The testbench reported failures (18/20 checks passed):
+FAIL: a=15 b= 1 op=7 | expected y= 0 z=1 c=0 o=0 n=0, actual y= 1 z=0 c=0 o=0 n=0
+FAIL: a= 1 b=15 op=7 | expected y= 1 z=0 c=0 o=0 n=0, actual y= 0 z=1 c=0 o=0 n=0
+RESULT: 18/20 passed

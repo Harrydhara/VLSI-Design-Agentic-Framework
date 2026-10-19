@@ -1,0 +1,5 @@
+read_verilog -sv design.v
+hierarchy -check -top alu8
+synth -top alu8
+check
+tee -q -o synth_stat.json stat -json

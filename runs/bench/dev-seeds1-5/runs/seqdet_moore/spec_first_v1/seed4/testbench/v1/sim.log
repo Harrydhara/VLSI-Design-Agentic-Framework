@@ -1,0 +1,6 @@
+FAIL: din=1, rst=0, state=4, expected=1, actual=0
+FAIL: din=1, rst=0, state=4, expected=1, actual=0
+FAIL: din=1, rst=0, state=4, expected=1, actual=0
+FAIL: din=1, rst=0, state=4, expected=1, actual=0
+RESULT: 14/18 passed
+tb.v:86: $finish called at 236 (1s)

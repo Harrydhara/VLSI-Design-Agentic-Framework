@@ -1,0 +1,6 @@
+- The testbench reported failures (12/16 checks passed):
+FAIL: time=13 sel=00 d0=1 d1=2 d2=3 d3=4 expected=0 actual=1
+FAIL: time=14 sel=01 d0=1 d1=2 d2=3 d3=4 expected=0 actual=2
+FAIL: time=15 sel=10 d0=1 d1=2 d2=3 d3=4 expected=0 actual=3
+FAIL: time=16 sel=11 d0=1 d1=2 d2=3 d3=4 expected=0 actual=4
+RESULT: 12/16 passed

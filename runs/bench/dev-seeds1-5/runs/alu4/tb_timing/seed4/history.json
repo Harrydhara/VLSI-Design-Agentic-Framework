@@ -1,0 +1,84 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 4,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/tb_timing",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "dev_passed",
+  "error": null,
+  "duration_s": 29.356,
+  "tokens": {
+    "prompt": 5334,
+    "output": 5574,
+    "total": 10908
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 1136,
+      "output_tokens": 2905,
+      "duration_s": 15.005,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "synth_ok": true,
+        "cells": 136,
+        "latches": 0
+      },
+      "feedback": "- The design compiles, but the design plus testbench does not:\ntb.v:86: error: syntax error\ntb.v:86: error: Malformed statement",
+      "reference": {
+        "outcome": "fail",
+        "passed": 1920,
+        "total": 2048
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 4198,
+      "output_tokens": 2669,
+      "duration_s": 13.387,
+      "truncated": false,
+      "dev_passed": true,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 19,
+        "tb_total": 19,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 136,
+        "latches": 0
+      },
+      "feedback": "",
+      "reference": {
+        "outcome": "fail",
+        "passed": 1920,
+        "total": 2048
+      }
+    }
+  ],
+  "final_attempt": 2,
+  "reference": {
+    "outcome": "fail",
+    "passed": 1920,
+    "total": 2048,
+    "detail": "1920/2048 checks passed"
+  }
+}

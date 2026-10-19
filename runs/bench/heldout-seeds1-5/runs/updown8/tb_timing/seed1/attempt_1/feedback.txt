@@ -1,0 +1,27 @@
+- The testbench reported failures (12/268 checks passed):
+FAIL: time=76 expected=00 actual=01 en=1 up=1
+FAIL: time=116 expected=03 actual=02 en=1 up=1
+FAIL: time=126 expected=05 actual=03 en=1 up=1
+FAIL: time=136 expected=07 actual=04 en=1 up=1
+FAIL: time=146 expected=09 actual=05 en=1 up=1
+FAIL: time=156 expected=0b actual=06 en=1 up=1
+FAIL: time=166 expected=0d actual=07 en=1 up=1
+FAIL: time=176 expected=0f actual=08 en=1 up=1
+FAIL: time=186 expected=11 actual=09 en=1 up=1
+FAIL: time=196 expected=13 actual=0a en=1 up=1
+FAIL: time=206 expected=15 actual=0b en=1 up=1
+FAIL: time=216 expected=17 actual=0c en=1 up=1
+FAIL: time=226 expected=19 actual=0d en=1 up=1
+FAIL: time=236 expected=1b actual=0e en=1 up=1
+FAIL: time=246 expected=1d actual=0f en=1 up=1
+FAIL: time=256 expected=1f actual=10 en=1 up=1
+FAIL: time=266 expected=21 actual=11 en=1 up=1
+FAIL: time=276 expected=23 actual=12 en=1 up=1
+FAIL: time=286 expected=25 actual=13 en=1 up=1
+FAIL: time=296 expected=27 actual=14 en=1 up=1
+FAIL: time=306 expected=29 actual=15 en=1 up=1
+FAIL: time=316 expected=2b actual=16 en=1 up=1
+FAIL: time=326 expected=2d actual=17 en=1 up=1
+FAIL: time=336 expected=2f actual=18 en=1 up=1
+FAIL: time=346 expected=31 actual=19 en=1 up=1
+... (232 more lines)

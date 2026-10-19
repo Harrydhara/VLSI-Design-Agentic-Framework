@@ -1,0 +1,114 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 5,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 43.247,
+  "tokens": {
+    "prompt": 15711,
+    "output": 8189,
+    "total": 23900
+  },
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 789,
+      "output_tokens": 3310,
+      "duration_s": 17.099,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 26,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 134,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/26 checks passed):\nFAIL: a= 5 b= 3 op=000 | Expected: y= 8 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 7 op=000 | Expected: y= 1 z=0 c=1 o=1 n=1 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 7 op=000 | Expected: y= 1 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=12 b= 5 op=000 | Expected: y= 1 z=0 c=1 o=1 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 7 b= 6 op=000 | Expected: y=13 z=0 c=0 o=1 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 1 op=000 | Expected: y= 0 z=1 c=1 o=1 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b=15 op=000 | Expected: y=14 z=0 c=1 o=0 n=1 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 7 b= 8 op=000 | Expected: y=15 z=0 c=0 o=1 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 5 op=001 | Expected: y= 5 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 5 b=10 op=001 | Expected: y=11 z=0 c=0 o=0 n=1 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 5 b= 5 op=001 | Expected: y= 0 z=1 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 5 op=010 | Expected: y= 5 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 0 b=15 op=010 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 5 op=011 | Expected: y=15 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 0 b= 0 op=011 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 5 op=100 | Expected: y=10 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b=15 op=100 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=11 b=15 op=101 | Expected: y= 6 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 7 b=15 op=101 | Expected: y=14 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=11 b=15 op=110 | Expected: y= 5 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=14 b=15 op=110 | Expected: y= 7 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 2 b= 3 op=111 | Expected: y= 1 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 3 b= 2 op=111 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 1 op=111 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 1 op=111 | Expected: y= 1 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\n... (2 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 5512,
+      "output_tokens": 2589,
+      "duration_s": 12.893,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 23,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 134,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/23 checks passed):\nFAIL: a= 5 b= 3 op=000 | Expected: y= 8 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 7 op=000 | Expected: y= 1 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 7 b= 6 op=000 | Expected: y=13 z=0 c=0 o=1 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 1 op=000 | Expected: y= 0 z=1 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b=15 op=000 | Expected: y=14 z=0 c=1 o=0 n=1 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 7 b= 8 op=000 | Expected: y=15 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 5 op=001 | Expected: y= 5 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 5 b=10 op=001 | Expected: y=11 z=0 c=0 o=1 n=1 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 5 b= 5 op=001 | Expected: y= 0 z=1 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 5 op=010 | Expected: y= 5 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 0 b=15 op=010 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 5 op=011 | Expected: y=15 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 0 b= 0 op=011 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 5 op=100 | Expected: y=10 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b=15 op=100 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=11 b=15 op=101 | Expected: y= 6 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 7 b=15 op=101 | Expected: y=14 z=0 c=0 o=0 n=1 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=11 b=15 op=110 | Expected: y= 5 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=14 b=15 op=110 | Expected: y= 7 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 2 b= 3 op=111 | Expected: y= 1 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 3 b= 2 op=111 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 1 op=111 | Expected: y= 1 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 1 b=15 op=111 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nRESULT: 0/23 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 9410,
+      "output_tokens": 2290,
+      "duration_s": 11.918,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 0,
+        "tb_total": 23,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 134,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (0/23 checks passed):\nFAIL: a= 5 b= 3 op=000 | Expected: y= 8 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 7 op=000 | Expected: y= 1 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 7 b= 6 op=000 | Expected: y=13 z=0 c=0 o=1 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 1 op=000 | Expected: y= 0 z=1 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b=15 op=000 | Expected: y=14 z=0 c=1 o=0 n=1 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 7 b= 8 op=000 | Expected: y=15 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 5 op=001 | Expected: y= 5 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 5 b=10 op=001 | Expected: y=11 z=0 c=0 o=1 n=1 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 5 b= 5 op=001 | Expected: y= 0 z=1 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 5 op=010 | Expected: y= 5 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 0 b=15 op=010 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=10 b= 5 op=011 | Expected: y=15 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 0 b= 0 op=011 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 5 op=100 | Expected: y=10 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b=15 op=100 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=11 b=15 op=101 | Expected: y= 6 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 7 b=15 op=101 | Expected: y=14 z=0 c=0 o=0 n=1 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=11 b=15 op=110 | Expected: y= 5 z=0 c=1 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=14 b=15 op=110 | Expected: y= 7 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 2 b= 3 op=111 | Expected: y= 1 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 3 b= 2 op=111 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a=15 b= 1 op=111 | Expected: y= 1 z=0 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nFAIL: a= 1 b=15 op=111 | Expected: y= 0 z=1 c=0 o=0 n=0 | Actual: y= x z=x c=x o=x n=x\nRESULT: 0/23 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 2048,
+    "total": 2048,
+    "detail": "2048/2048 checks passed"
+  }
+}

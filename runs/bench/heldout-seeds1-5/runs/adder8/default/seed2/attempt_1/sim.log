@@ -1,0 +1,2 @@
+tb.v:86: Error: System task/function $cout() is not defined by any module.
+sim.vvp: Program not runnable, 1 errors.

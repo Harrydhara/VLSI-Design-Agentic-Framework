@@ -1,0 +1,21 @@
+- The testbench reported failures (0/19 checks passed):
+FAIL: a=0111 b=0001 op=000 | exp: y=1000 c=0 o=1 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=0010 b=0011 op=000 | exp: y=0101 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=1111 b=0001 op=000 | exp: y=0000 c=1 o=0 z=1 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=0101 b=0010 op=001 | exp: y=0011 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=0010 b=0101 op=001 | exp: y=1101 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=0111 b=1111 op=001 | exp: y=1000 c=0 o=0 z=1 n=1 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=1010 b=1100 op=010 | exp: y=1000 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=1010 b=0101 op=011 | exp: y=1111 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=1010 b=1100 op=100 | exp: y=0110 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=1011 b=0000 op=101 | exp: y=0110 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=0011 b=0000 op=101 | exp: y=0110 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=1101 b=0000 op=110 | exp: y=0110 c=1 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=0110 b=0000 op=110 | exp: y=0011 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=0001 b=0010 op=111 | exp: y=0001 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=1111 b=0001 op=111 | exp: y=0001 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=1111 b=1110 op=111 | exp: y=0000 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=0000 b=0000 op=111 | exp: y=0000 c=0 o=0 z=0 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=0000 b=0000 op=010 | exp: y=0000 c=0 o=0 z=1 n=0 | act: y=xxxx c=x o=x z=x n=x
+FAIL: a=1000 b=0000 op=010 | exp: y=1000 c=0 o=0 z=0 n=1 | act: y=xxxx c=x o=x z=x n=x
+RESULT: 0/19 passed

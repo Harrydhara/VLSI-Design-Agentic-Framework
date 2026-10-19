@@ -1,0 +1,23 @@
+FAIL: rst=0, en=1, expected= 1, actual= 0
+FAIL: rst=0, en=1, expected= 2, actual= 0
+FAIL: rst=0, en=0, expected= 2, actual= 0
+FAIL: rst=0, en=0, expected= 2, actual= 0
+FAIL: rst=0, en=1, expected=15, actual= 0
+FAIL: rst=0, en=1, expected= 1, actual= 0
+FAIL: rst=0, en=1, expected= 1, actual= 0
+FAIL: rst=0, en=1, expected= 2, actual= 0
+FAIL: rst=0, en=1, expected= 3, actual= 0
+FAIL: rst=0, en=1, expected= 4, actual= 0
+FAIL: rst=0, en=1, expected= 5, actual= 0
+FAIL: rst=0, en=1, expected= 6, actual= 0
+FAIL: rst=0, en=1, expected= 7, actual= 0
+FAIL: rst=0, en=1, expected= 8, actual= 0
+FAIL: rst=0, en=1, expected= 9, actual= 0
+FAIL: rst=0, en=1, expected=10, actual= 0
+FAIL: rst=0, en=1, expected=11, actual= 0
+FAIL: rst=0, en=1, expected=12, actual= 0
+FAIL: rst=0, en=1, expected=13, actual= 0
+FAIL: rst=0, en=1, expected=14, actual= 0
+FAIL: rst=0, en=1, expected=15, actual= 0
+RESULT: -16/26 passed
+tb.v:128: $finish called at 396000 (1ps)

@@ -1,0 +1,5 @@
+FAIL: din=1, rst=0, expected=1, actual=0
+FAIL: din=1, rst=0, expected=1, actual=0
+FAIL: din=1, rst=0, expected=1, actual=0
+RESULT: 11/14 passed
+tb.v:112: $finish called at 176 (1s)

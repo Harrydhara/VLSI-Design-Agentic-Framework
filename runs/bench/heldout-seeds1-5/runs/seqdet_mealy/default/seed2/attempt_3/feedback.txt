@@ -1,0 +1,4 @@
+- The testbench reported failures (10/14 checks passed):
+FAIL: Async reset failed, state=01
+FAIL: Mealy output did not react immediately to din=1
+RESULT: 10/14 passed

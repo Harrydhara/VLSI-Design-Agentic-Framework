@@ -1,0 +1,5 @@
+- The testbench reported failures (7/13 checks passed):
+FAIL: din=1, expected detected=1, actual=0
+FAIL: din=1, expected detected=1, actual=0
+FAIL: din=1, expected detected=1, actual=0
+RESULT: 7/13 passed

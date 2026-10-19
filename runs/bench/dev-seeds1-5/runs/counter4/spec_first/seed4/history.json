@@ -1,0 +1,173 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "counter4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 4,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/examples/spec_first",
+    "workflow": "spec_first",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 21.091,
+  "tokens": {
+    "prompt": 15035,
+    "output": 2892,
+    "total": 17927
+  },
+  "calls": [
+    {
+      "role": "testbench",
+      "attempt": null,
+      "prompt_tokens": 446,
+      "output_tokens": 1029,
+      "duration_s": 5.789,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 363,
+      "output_tokens": 102,
+      "duration_s": 1.037,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 1,
+      "prompt_tokens": 2250,
+      "output_tokens": 539,
+      "duration_s": 3.46,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 1309,
+      "output_tokens": 113,
+      "duration_s": 1.188,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 2,
+      "prompt_tokens": 3564,
+      "output_tokens": 498,
+      "duration_s": 3.286,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 2266,
+      "output_tokens": 113,
+      "duration_s": 1.298,
+      "truncated": false
+    },
+    {
+      "role": "testbench_review",
+      "attempt": 3,
+      "prompt_tokens": 4837,
+      "output_tokens": 498,
+      "duration_s": 3.393,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 363,
+      "output_tokens": 102,
+      "duration_s": 1.037,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": -26,
+        "tb_total": 42,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 10,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (-26/42 checks passed):\nFAIL: rst=1, en=1, clk_edge=rising. Expected count= 0, Actual count= x\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 2, Actual count= 1\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 3, Actual count= 2\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 4, Actual count= 3\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 5, Actual count= 4\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 6, Actual count= 5\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 7, Actual count= 6\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 8, Actual count= 7\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 9, Actual count= 8\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=10, Actual count= 9\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=11, Actual count=10\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=12, Actual count=11\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=13, Actual count=12\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=14, Actual count=13\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=15, Actual count=14\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 0, Actual count=15\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0\nFAIL: rst=1, en=1, clk_edge=rising. Expected count= 0, Actual count= 1\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 2, Actual count= 1\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 3, Actual count= 2\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 4, Actual count= 3\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 5, Actual count= 4\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 6, Actual count= 5\n... (10 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 249,
+        "total": 249
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 1309,
+      "output_tokens": 113,
+      "duration_s": 1.188,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": -26,
+        "tb_total": 42,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 10,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (-26/42 checks passed):\nFAIL: rst=1, en=1, clk_edge=rising. Expected count= 0, Actual count= x\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 2, Actual count= 1\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 3, Actual count= 2\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 4, Actual count= 3\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 5, Actual count= 4\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 6, Actual count= 5\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 7, Actual count= 6\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 8, Actual count= 7\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 9, Actual count= 8\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=10, Actual count= 9\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=11, Actual count=10\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=12, Actual count=11\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=13, Actual count=12\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=14, Actual count=13\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=15, Actual count=14\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 0, Actual count=15\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0\nFAIL: rst=1, en=1, clk_edge=rising. Expected count= 0, Actual count= 1\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 2, Actual count= 1\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 3, Actual count= 2\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 4, Actual count= 3\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 5, Actual count= 4\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 6, Actual count= 5\n... (10 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 249,
+        "total": 249
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 2266,
+      "output_tokens": 113,
+      "duration_s": 1.298,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": -26,
+        "tb_total": 42,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 10,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (-26/42 checks passed):\nFAIL: rst=1, en=1, clk_edge=rising. Expected count= 0, Actual count= x\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 2, Actual count= 1\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 3, Actual count= 2\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 4, Actual count= 3\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 5, Actual count= 4\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 6, Actual count= 5\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 7, Actual count= 6\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 8, Actual count= 7\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 9, Actual count= 8\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=10, Actual count= 9\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=11, Actual count=10\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=12, Actual count=11\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=13, Actual count=12\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=14, Actual count=13\nFAIL: rst=0, en=1, clk_edge=rising. Expected count=15, Actual count=14\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 0, Actual count=15\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0\nFAIL: rst=1, en=1, clk_edge=rising. Expected count= 0, Actual count= 1\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 1, Actual count= 0\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 2, Actual count= 1\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 3, Actual count= 2\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 4, Actual count= 3\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 5, Actual count= 4\nFAIL: rst=0, en=1, clk_edge=rising. Expected count= 6, Actual count= 5\n... (10 more lines)",
+      "reference": {
+        "outcome": "pass",
+        "passed": 249,
+        "total": 249
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 249,
+    "total": 249,
+    "detail": "249/249 checks passed"
+  }
+}

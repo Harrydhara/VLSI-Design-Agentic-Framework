@@ -1,0 +1,4 @@
+FAIL: rst_n=1, en=1, up=1, expected=255, actual=254
+FAIL: rst_n=1, en=1, up=1, expected=  0, actual=255
+RESULT: 11/13 passed
+tb.v:110: $finish called at 2665 (1s)

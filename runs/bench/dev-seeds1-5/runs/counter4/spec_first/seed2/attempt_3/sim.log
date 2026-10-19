@@ -1,0 +1,2 @@
+RESULT: 26/26 passed
+tb.v:123: $finish called at 395000 (1ps)
