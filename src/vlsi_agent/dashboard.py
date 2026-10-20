@@ -22,11 +22,11 @@ from vlsi_agent.agent import DESIGN_FILE, RunResult, run_agent
 from vlsi_agent.benchview import BENCH_ROOT, CHARTS, bench_markdown, export_benchmark, list_benchmarks, load_benchmark
 from vlsi_agent.circuits import get_circuit, load_circuits
 from vlsi_agent.config import PROJECT_ROOT, Config, ToolsConfig, load_config
-from vlsi_agent.llm import FakeLLM, OllamaLLM
+from vlsi_agent.llm import Completion, FakeLLM, OllamaLLM
 from vlsi_agent.progress import describe_event
 from vlsi_agent.prompts import TEMPLATES, PromptError, find_strategies, workflow_of
-from vlsi_agent.runview import (CHECK_HEADERS, RUNS_ROOT, attempt_diffs, check_table, export_run_zip, list_runs,
-                                load_run, mismatch_lines, run_markdown)
+from vlsi_agent.runview import (CHECK_HEADERS, ORIGIN_FILE, RUNS_ROOT, attempt_diffs, check_columns, check_table,
+                                export_run_zip, list_runs, load_run, mismatch_lines, run_markdown)
 from vlsi_agent.strategy_editor import (CUSTOM_ROOT, FILE_HELP, WORKFLOW_TEXT, Draft, check_draft, check_markdown,
                                         draft_from_slots, load_draft, preview, save_draft, suggest_name)
 from vlsi_agent.waveform import (MAX_WINDOW_NS, default_window, display_rows, is_clocked, mismatch_times,
@@ -226,6 +226,51 @@ def benchmark_charts(name: str | None) -> tuple:
     return (bench_markdown(view), *(chart(view) for chart in CHARTS))
 
 
+MANUAL_DIR = RUNS_ROOT / "manual"
+EDIT_HINT = ("Edit this attempt's design or testbench, then **Check & test** runs exactly what the agent's attempts "
+             "get: compile, your testbench, synthesis and the hidden test. The result is saved as a new run in "
+             "`runs/manual/` (the original run is not changed) and opens below.")
+
+
+class _ManualEdit(FakeLLM):
+    """Hands the agent the edited code as its only reply, so it is checked exactly like a model's."""
+
+    name = "manual edit"
+
+
+def edit_defaults(relative: str | None, number: str | None) -> tuple[str, str]:
+    """(design, testbench) of an attempt, to start editing from."""
+    folder = _run_folder(relative)
+    if folder is None or not number:
+        return "", ""
+    a = load_run(folder).attempt(int(number))
+    return a.design or "", a.testbench or ""
+
+
+def retest_edit(config: Config, relative: str | None, number: str | None, design_text: str, testbench_text: str,
+                runs_dir: Path = MANUAL_DIR) -> tuple[str, str | None]:
+    """Check edited code like one agent attempt; returns (status markdown, the new run's list entry or None)."""
+    folder = _run_folder(relative)
+    if folder is None or not number:
+        return "Choose a run and an attempt first.", None
+    if not (design_text or "").strip():
+        return "There is no design to test.", None
+    circuit = get_circuit(load_run(folder).history["circuit"])
+    blocks = [design_text.strip()] + ([testbench_text.strip()] if (testbench_text or "").strip() else [])
+    reply = (f"Manual edit of `{relative}`, attempt {number}.\n\n"
+             + "\n\n".join(f"```verilog\n{block}\n```" for block in blocks) + "\n")
+    run_dir = _new_run_dir(runs_dir, circuit.name, "edit")
+    llm = _ManualEdit([Completion(reply, _ManualEdit.name, 0, 0, 0.0, False)])
+    run_agent(config, circuit, llm, run_dir, max_attempts=1, prompts_dir=PROJECT_ROOT / "prompts" / "default",
+              score_every_attempt=True)
+    (run_dir / ORIGIN_FILE).write_text(json.dumps({"edited_from": relative, "attempt": int(number)}, indent=2) + "\n",
+                                       encoding="utf-8")
+    own, compile_, testbench, synthesis, hidden = check_columns(load_run(run_dir).attempts[0])
+    entry = _relative(run_dir)
+    return (f"**Saved as `{entry}`** and opened below. Own checks **{own}** (compile {compile_}, testbench "
+            f"{testbench}, synthesis {synthesis}) · hidden test **{hidden}**."), entry
+
+
 EDITOR_SLOTS = max(len(files) for files in TEMPLATES.values())  # text boxes for one workflow's templates
 
 
@@ -334,6 +379,14 @@ def build_app(config: Config | None = None):
                 design = gr.Code(label="design.v", interactive=False)
             with gr.Tab("Testbench"):
                 testbench = gr.Code(label="tb.v", interactive=False)
+            with gr.Tab("Edit & re-test"):
+                gr.Markdown(EDIT_HINT)
+                edit_design = gr.Code(label="design.v (editable)", interactive=True)
+                edit_testbench = gr.Code(label="tb.v (editable; leave empty to test without one)", interactive=True)
+                with gr.Row():
+                    retest_button = gr.Button("Check & test", variant="primary")
+                    reset_button = gr.Button("Reset to this attempt")
+                retest_status = gr.Markdown()
             with gr.Tab("Changes from the previous attempt"):
                 diffs = gr.HTML(padding=False)
             with gr.Tab("Hidden test"):
@@ -432,12 +485,23 @@ def build_app(config: Config | None = None):
         export_run_button.click(export_run, run_picker, run_export)
         # Picking a run often leaves the attempt number as it was (say 3 → 3), which fires no
         # attempt change, so the attempt views are refreshed here; attempt.input covers clicks.
+        editors = [edit_design, edit_testbench]
         for picked in (run_picker.change, app.load):
             (picked(on_run_picked, run_picker, [run_info, checks, attempt, run_export])
              .then(results_for_attempt, [run_picker, attempt], attempt_files)
+             .then(edit_defaults, [run_picker, attempt], editors)
              .then(on_attempt_wave, [run_picker, attempt], wave_reset))
-        attempt.input(results_for_attempt, [run_picker, attempt], attempt_files).then(
-            on_attempt_wave, [run_picker, attempt], wave_reset)
+        (attempt.input(results_for_attempt, [run_picker, attempt], attempt_files)
+         .then(edit_defaults, [run_picker, attempt], editors)
+         .then(on_attempt_wave, [run_picker, attempt], wave_reset))
+        reset_button.click(edit_defaults, [run_picker, attempt], editors).then(lambda: "", None, retest_status)
+
+        def on_retest(relative, number, design_text, testbench_text):
+            status_text, entry = retest_edit(config, relative, number, design_text, testbench_text)
+            picker = gr.update(choices=list_runs(), value=entry) if entry else gr.update()
+            return status_text, picker
+
+        retest_button.click(on_retest, [run_picker, attempt, edit_design, edit_testbench], [retest_status, run_picker])
         for trigger in (draw.click, wave_start.submit, wave_length.submit):
             trigger(on_draw, [run_picker, attempt, wave_start, wave_length], [wave_note, wave_plot])
         for shown in (bench_picker.change, app.load):

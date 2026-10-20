@@ -105,6 +105,9 @@ changes from the previous attempt, the hidden test's mismatch lines, the feedbac
 the model and its reply. The **Waveform** tab re-runs that attempt's design through the
 hidden test and plots a time window (Plotly), opening just before the first mismatch,
 with dashed lines at the mismatches and the test's expected value under each output.
+The **Edit & re-test** tab lets you change an attempt's design or testbench and run exactly
+what the agent's attempts get (compile, the testbench, synthesis, the hidden test); the
+result is saved as a new run in `runs/manual/`, and the original run is not changed.
 
 **4. Benchmarks** charts any folder under `runs/bench/` (Plotly): hidden-test passes after
 1, 2, 3 attempts per strategy (one-shot vs iterative on the same runs), one-shot →

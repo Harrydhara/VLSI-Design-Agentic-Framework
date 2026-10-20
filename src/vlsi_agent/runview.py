@@ -17,6 +17,7 @@ from pathlib import Path
 from vlsi_agent.config import PROJECT_ROOT
 
 RUNS_ROOT = PROJECT_ROOT / "runs"
+ORIGIN_FILE = "origin.json"  # in a manual re-test run: the run and attempt it was edited from
 
 
 @dataclass(frozen=True)
@@ -38,6 +39,7 @@ class RunView:
     folder: Path
     history: dict
     attempts: list[AttemptView]
+    origin: dict | None = None  # {"edited_from": run, "attempt": n} for a manual re-test
 
     def attempt(self, number: int) -> AttemptView:
         return next(a for a in self.attempts if a.number == number)
@@ -77,7 +79,9 @@ def load_run(folder: Path) -> RunView:
             reference=a["reference"],
             reference_log=_read(folder / "reference" / a["folder"] / "reference.log") or "",
         ))
-    return RunView(folder, history, attempts)
+    origin_file = folder / ORIGIN_FILE
+    origin = json.loads(origin_file.read_text(encoding="utf-8")) if origin_file.is_file() else None
+    return RunView(folder, history, attempts, origin)
 
 
 # --------------------------------------------------------------------------- summaries
@@ -132,6 +136,10 @@ def run_markdown(run: RunView) -> str:
     final = h.get("reference")
     verdict = (f"**Hidden reference test: {final['outcome'].upper()}** ({final['detail']})" if final
                else "**No design was produced.**")
+    if run.origin:  # a manual re-test: no model and no strategy were involved
+        return (f"{verdict}\n\n`{h['circuit']}` ({h['split']}) · manual edit of `{run.origin['edited_from']}`, "
+                f"attempt {run.origin['attempt']} · own checks {'PASS' if h['status'] == 'dev_passed' else 'FAIL'} · "
+                f"{h['duration_s']:.1f} s\n\nRun files: `{where}`")
     strategy = Path(settings["prompts"]).name
     workflow = settings.get("workflow", "single")
     return (f"{verdict}\n\n`{h['circuit']}` ({h['split']}) · strategy `{strategy}`"

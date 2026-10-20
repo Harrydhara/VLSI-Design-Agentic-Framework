@@ -10,8 +10,8 @@ from samples import ADDER, ADDER_NO_CARRY, TB, block, reply
 from vlsi_agent.agent import run_agent
 from vlsi_agent.circuits import get_circuit
 from vlsi_agent.config import PROJECT_ROOT, load_config
-from vlsi_agent.dashboard import (_run_folder, export_run, results_for_attempt, results_for_run,
-                                  waveform_defaults, waveform_for_attempt)
+from vlsi_agent.dashboard import (_run_folder, edit_defaults, export_run, results_for_attempt, results_for_run,
+                                  retest_edit, waveform_defaults, waveform_for_attempt)
 from vlsi_agent.llm import FakeLLM
 from vlsi_agent.runview import (CHECK_HEADERS, attempt_diffs, check_table, diff_html, export_run_zip, list_runs,
                                 load_run, mismatch_lines, run_markdown, run_summary_markdown)
@@ -160,3 +160,32 @@ def test_dashboard_export_run(scripted_run, monkeypatch):
     path = Path(export_run("ui/demo"))
     assert path.name == "ui-demo.zip" and "ui-demo/summary.md" in zipfile.ZipFile(path).namelist()
     assert export_run("../../src") is None and export_run(None) is None
+
+
+@integration
+def test_manual_edit_is_checked_like_an_attempt_and_saved_as_a_new_run(scripted_run, monkeypatch):
+    import vlsi_agent.dashboard as dashboard
+    runs_root = scripted_run.parents[1]
+    monkeypatch.setattr(dashboard, "RUNS_ROOT", runs_root)
+    original = (scripted_run / "history.json").read_text()
+    design, testbench = edit_defaults("ui/demo", "1")
+    assert "assign cout = 1'b0" in design and "module tb" in testbench
+
+    status, entry = retest_edit(CONFIG, "ui/demo", "1", ADDER, testbench, runs_dir=runs_root / "manual")
+    assert entry.startswith("manual/") and entry.endswith("-adder4-edit") and entry in list_runs(runs_root)
+    assert "Own checks **PASS**" in status and "hidden test **PASS 512/512**" in status
+    run = load_run(runs_root / entry)
+    assert run.origin == {"edited_from": "ui/demo", "attempt": 1}
+    assert run.history["settings"]["model"] == "manual edit" and run.history["tokens"]["total"] == 0
+    assert "manual edit of `ui/demo`, attempt 1" in run_markdown(run)
+    assert (scripted_run / "history.json").read_text() == original  # the agent's run is never changed
+
+    status, _ = retest_edit(CONFIG, "ui/demo", "1", ADDER.replace(";", "", 1), testbench, runs_dir=runs_root / "manual")
+    assert "Own checks **FAIL** (compile failed" in status and "hidden test **COMPILE_ERROR**" in status
+    status, _ = retest_edit(CONFIG, "ui/demo", "1", ADDER, "", runs_dir=runs_root / "manual")
+    assert "testbench none" in status and "hidden test **PASS 512/512**" in status  # own checks need a testbench
+
+
+def test_manual_edit_needs_a_run_and_a_design():
+    assert retest_edit(CONFIG, None, "1", "module x; endmodule", "") == ("Choose a run and an attempt first.", None)
+    assert retest_edit(CONFIG, "../../src", "1", "module x; endmodule", "")[1] is None
