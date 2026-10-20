@@ -16,8 +16,10 @@ name: vlsi-agent  # containers vlsi-agent-app-1 ..., volume vlsi-agent_ollama-mo
 
 services:
   app:
+    # Published by .github/workflows/docker-image.yml on every push to main. If it cannot be
+    # pulled (e.g. in a fork), Compose builds it from this folder instead.
+    image: ghcr.io/harrydhara/vlsi-design-agentic-framework:latest
     build: .
-    image: vlsi-agent:latest
     environment:
       - VLSI_AGENT_OLLAMA_URL=http://ollama:11434
       # Docker Desktop (Windows, macOS) runs containers on UTC: put TZ=<Area/City>, e.g.

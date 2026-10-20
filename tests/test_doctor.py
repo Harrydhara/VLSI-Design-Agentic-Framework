@@ -46,6 +46,7 @@ def test_cli_reports_bad_config(tmp_path, capsys):
 
 
 @pytest.mark.integration
+@pytest.mark.ollama
 def test_real_environment_is_ready():
     checks = run_checks(load_config())
     failed = [f"{c.name}: {c.detail}" for c in checks if not c.ok]

@@ -24,4 +24,5 @@ where = ["src"]
 testpaths = ["tests"]
 markers = [
     "integration: needs the real EDA tools and/or a running Ollama server (run inside WSL)",
+    "ollama: needs a running Ollama server with the model (deselect with -m \"not ollama\")",
 ]

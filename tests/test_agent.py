@@ -208,6 +208,7 @@ def test_zero_attempts_is_rejected(tmp_path):
         run(tmp_path, [GOOD], max_attempts=0)
 
 
+@pytest.mark.ollama
 def test_real_model_run_completes(tmp_path):
     result = run_agent(CONFIG, ADDER4, OllamaLLM(CONFIG.llm), tmp_path / "run", max_attempts=2)
     assert result.status in STATUSES and result.status != "llm_error", result.error

@@ -17,8 +17,10 @@ cd VLSI-Design-Agentic-Framework
 docker compose up -d
 ```
 
-Then open http://localhost:7860. The first `up` builds the app image (several minutes:
-Yosys is compiled from source) and downloads gemma4:26b, about 17 GB
+Then open http://localhost:7860. The first `up` downloads the app image from GitHub's
+container registry (`ghcr.io/harrydhara/vlsi-design-agentic-framework`, published by
+`.github/workflows/docker-image.yml` after its tests pass) or, if it cannot, builds it here
+(several minutes: Yosys is compiled from source). It also downloads gemma4:26b, about 17 GB
 (`docker compose logs -f pull-model` shows the progress). The dashboard starts meanwhile,
 and runs work once the download is done. The first model call after each start takes about
 1.5 minutes while gemma4 is loaded onto the GPU; later calls run at full speed (~170
@@ -28,6 +30,8 @@ tokens/s on an RTX 4090).
   runs and custom strategies outlive the containers. The model stays in the Docker volume
   `vlsi-agent_ollama-models`. `docker compose down` stops everything and keeps both;
   `docker compose down -v` also deletes the model.
+- **Updates:** `docker compose pull`, then `docker compose up -d`. To use your own changes
+  instead of the published image: `docker compose up -d --build`.
 - **Command line:** any command from this README works in the app container, e.g.
   `docker compose exec app vlsi-agent run adder4` or
   `docker compose run --rm --no-deps app vlsi-agent check-fixtures`.
@@ -80,6 +84,7 @@ still give different answers, so compare settings over several runs.
 ```bash
 ~/.venvs/vlsi-agent/bin/pytest            # everything
 ~/.venvs/vlsi-agent/bin/pytest -m "not integration"   # skip tests that need the real tools/Ollama
+~/.venvs/vlsi-agent/bin/pytest -m "not ollama"        # skip only the 3 that need the model server
 ```
 
 ## Dashboard
@@ -236,6 +241,7 @@ when adding a circuit; the dashboard relies on both.
 | `compose.yaml` | The Docker stack: app, Ollama on the GPU, one-time model download |
 | `compose.host-ollama.yaml` | Override: the app uses an Ollama already running on the machine |
 | `docker/constraints.txt` | Exact Python package versions for the image |
+| `.github/workflows/docker-image.yml` | Builds, tests and publishes the image to ghcr.io on every push to `main` |
 | `src/vlsi_agent/` | The Python package (`cli.py`, `config.py`, `doctor.py`, ...) |
 | `src/vlsi_agent/eda.py` | Runs iverilog, vvp and Yosys with timeouts; returns structured results |
 | `src/vlsi_agent/circuits.py` | Loads and validates circuit folders |

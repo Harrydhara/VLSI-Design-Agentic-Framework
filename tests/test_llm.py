@@ -206,6 +206,7 @@ def test_no_module_gives_none():
 
 
 @pytest.mark.integration
+@pytest.mark.ollama
 def test_real_model_writes_a_module():
     reply = OllamaLLM(LLM_CONFIG).complete([
         Message("user", "Write a Verilog module with exactly this header, implementing y = a & b. "
