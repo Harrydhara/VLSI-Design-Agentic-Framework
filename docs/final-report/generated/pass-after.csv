@@ -1,5 +1,0 @@
-strategy,label,heldout1,heldout2,heldout3,dev1,dev2,dev3
-default,default,22,24,24,24,24,24
-tbtiming,tb_timing,25,25,25,23,22,22
-sfone,spec_first~v1,20,21,21,23,24,24
-sftwo,spec_first~v2,20,23,23,23,24,23
