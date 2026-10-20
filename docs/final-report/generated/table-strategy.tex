@@ -1,0 +1,17 @@
+\begin{tabular}{l rrrr c r rr}
+\toprule
+Strategy & One-shot & Iterative & Fixed & Broken & \makecell{Pass after\\1 / 2 / 3} & \makecell{Own checks\\reject correct} & \makecell{Mean\\tokens} & \makecell{Mean\\time} \\
+\midrule
+\multicolumn{9}{l}{\textit{Held-out circuits}} \\
+default & 22/25 & \up{24/25} & 2 & 0 & 22 / 24 / 24 & 81\% & 10,501 & 23.7\,s \\
+tb\_timing & 25/25 & 25/25 & 0 & 0 & 25 / 25 / 25 & 54\% & 6,780 & 18.3\,s \\
+spec\_first v1 & 20/25 & \up{21/25} & 2 & 1 & 20 / 21 / 21 & 65\% & 12,526 & 26.1\,s \\
+spec\_first v2 & 20/25 & \up{23/25} & 3 & 0 & 20 / 23 / 23 & 59\% & 12,817 & 25.9\,s \\
+\midrule
+\multicolumn{9}{l}{\textit{Dev circuits}} \\
+default & 24/25 & 24/25 & 0 & 0 & 24 / 24 / 24 & 51\% & 7,296 & 16.6\,s \\
+tb\_timing & 23/25 & \down{22/25} & 0 & 1 & 23 / 22 / 22 & 36\% & 5,906 & 15.9\,s \\
+spec\_first v1 & 23/25 & \up{24/25} & 1 & 0 & 23 / 24 / 24 & 21\% & 5,985 & 15.4\,s \\
+spec\_first v2 & 23/25 & 23/25 & 2 & 2 & 23 / 24 / 23 & 32\% & 6,744 & 15.6\,s \\
+\bottomrule
+\end{tabular}

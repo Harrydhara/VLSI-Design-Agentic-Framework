@@ -1,0 +1,16 @@
+\begin{tabular}{l l l r r}
+\toprule
+Circuit & Family & Split & \makecell{Hidden-test\\checks} & \makecell{Fixtures\\correct / faulty} \\
+\midrule
+\texttt{adder4} & adder & Dev & 512 & 2 / 3 \\
+\texttt{mux2} & mux & Dev & 524 & 2 / 4 \\
+\texttt{counter4} & counter & Dev & 249 & 2 / 4 \\
+\texttt{alu4} & alu & Dev & 2,048 & 2 / 5 \\
+\texttt{seqdet\_moore} & fsm & Dev & 686 & 2 / 4 \\
+\texttt{adder8} & adder & Held-out & 131,072 & 2 / 3 \\
+\texttt{mux4} & mux & Held-out & 1,064 & 2 / 3 \\
+\texttt{updown8} & counter & Held-out & 380 & 2 / 4 \\
+\texttt{alu8} & alu & Held-out & 524,288 & 2 / 4 \\
+\texttt{seqdet\_mealy} & fsm & Held-out & 684 & 2 / 4 \\
+\bottomrule
+\end{tabular}

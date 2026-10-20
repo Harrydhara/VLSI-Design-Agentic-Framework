@@ -1,0 +1,5 @@
+strategy,label,heldout,dev
+default,default,81,51
+tbtiming,tb\_timing,54,36
+sfone,spec\_first~v1,65,21
+sftwo,spec\_first~v2,59,32

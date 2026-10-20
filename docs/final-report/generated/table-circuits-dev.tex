@@ -1,0 +1,11 @@
+\begin{tabular}{l c c c c r}
+\toprule
+Circuit & default & tb\_timing & spec\_first v1 & spec\_first v2 & Median cells \\
+\midrule
+\texttt{adder4} & 5 & 5 & 5 & 5 & 23 \\
+\texttt{mux2} & 5 & 5 & 5 & 5 & 8 \\
+\texttt{counter4} & 5 & 5 & 5 & \down{5 $\to$ 3} & 10 \\
+\texttt{alu4} & 4 & \down{4 $\to$ 3} & \up{3 $\to$ 4} & \up{3 $\to$ 5} & 134 \\
+\texttt{seqdet\_moore} & 5 & 4 & 5 & 5 & 18 \\
+\bottomrule
+\end{tabular}
