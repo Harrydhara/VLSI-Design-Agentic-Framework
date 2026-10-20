@@ -4,13 +4,54 @@ An LLM (local Ollama, `gemma4:26b`) writes Verilog from a circuit spec. Icarus V
 Yosys check it, and the tool feedback drives revisions. Final scores come from reference
 tests the agent never sees.
 
-## Setup (inside WSL Ubuntu)
+## Quick start with Docker
+
+Needs Docker with access to an NVIDIA GPU: Docker Desktop with the WSL 2 backend on
+Windows, or Docker Engine plus the NVIDIA Container Toolkit on Linux. The containers have
+the tool versions the benchmarks used: Icarus Verilog 12, Yosys 0.57+260 (built from
+source), Ollama 0.31.2, and the Python packages pinned in `docker/constraints.txt`.
+
+```bash
+git clone https://github.com/Harrydhara/VLSI-Design-Agentic-Framework
+cd VLSI-Design-Agentic-Framework
+docker compose up -d
+```
+
+Then open http://localhost:7860. The first `up` builds the app image (several minutes:
+Yosys is compiled from source) and downloads gemma4:26b, about 17 GB
+(`docker compose logs -f pull-model` shows the progress). The dashboard starts meanwhile,
+and runs work once the download is done. The first model call after each start takes about
+1.5 minutes while gemma4 is loaded onto the GPU; later calls run at full speed (~170
+tokens/s on an RTX 4090).
+
+- **Your files:** `runs/` and `prompts/custom/` are mounted from the project folder, so
+  runs and custom strategies outlive the containers. The model stays in the Docker volume
+  `vlsi-agent_ollama-models`. `docker compose down` stops everything and keeps both;
+  `docker compose down -v` also deletes the model.
+- **Command line:** any command from this README works in the app container, e.g.
+  `docker compose exec app vlsi-agent run adder4` or
+  `docker compose run --rm --no-deps app vlsi-agent check-fixtures`.
+- **Port:** the dashboard only listens on this computer (it can start runs and write files,
+  with no login). If 7860 is taken, set `VLSI_AGENT_PORT=7861` in the shell or a `.env`
+  file next to `compose.yaml`.
+- **Time zone:** run folders are named by local time. Linux engines pass the host's time
+  zone on. Docker Desktop (Windows, macOS) runs containers on UTC unless `.env` has a line
+  like `TZ=America/Phoenix`.
+- **Ollama already installed:** a 24 GB GPU holds gemma4 only once, so don't let two
+  Ollamas load it. To use the one you have (Docker Engine on Linux or in WSL), start only
+  the app: `docker compose -f compose.yaml -f compose.host-ollama.yaml up -d app`.
+- **One Docker engine per machine:** on Windows, Docker Desktop's WSL integration takes
+  over the Docker socket inside a WSL distro that also runs its own engine, and quitting
+  Desktop leaves that distro without one until its engine is restarted.
+- **Disk:** about 10 GB of images plus 18 GB for the model.
+
+## Setup without Docker (inside WSL Ubuntu)
 
 The tools (Ollama, iverilog, yosys) run in WSL, so the Python environment lives there too.
 The virtual environment goes in the Linux home folder because it is much faster than `/mnt/c`.
 
 ```bash
-cd "/mnt/c/Users/harrydhara16/Documents/Claude framework"
+cd VLSI-Design-Agentic-Framework   # your clone, e.g. under /mnt/c/Users/<you>/...
 python3 -m venv ~/.venvs/vlsi-agent
 ~/.venvs/vlsi-agent/bin/pip install -e ".[dev]"
 ```
@@ -21,7 +62,8 @@ python3 -m venv ~/.venvs/vlsi-agent
 ~/.venvs/vlsi-agent/bin/vlsi-agent doctor
 ```
 
-All checks should say `OK`. Tool paths and the model name are in `config/default.toml`.
+All checks should say `OK`. Tool paths and the model name are in `config/default.toml`;
+the environment variable `VLSI_AGENT_OLLAMA_URL` overrides its Ollama address.
 
 To send the model a single prompt (the reply goes to stdout, token usage to stderr):
 
@@ -190,6 +232,10 @@ when adding a circuit; the dashboard relies on both.
 | Path | What it holds |
 |---|---|
 | `config/default.toml` | Model, pinned EDA tool paths, tool timeouts |
+| `Dockerfile` | The app image: Icarus Verilog, Yosys built from the benchmark commit, the package and dashboard |
+| `compose.yaml` | The Docker stack: app, Ollama on the GPU, one-time model download |
+| `compose.host-ollama.yaml` | Override: the app uses an Ollama already running on the machine |
+| `docker/constraints.txt` | Exact Python package versions for the image |
 | `src/vlsi_agent/` | The Python package (`cli.py`, `config.py`, `doctor.py`, ...) |
 | `src/vlsi_agent/eda.py` | Runs iverilog, vvp and Yosys with timeouts; returns structured results |
 | `src/vlsi_agent/circuits.py` | Loads and validates circuit folders |

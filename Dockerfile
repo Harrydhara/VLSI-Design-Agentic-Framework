@@ -28,9 +28,10 @@ RUN git clone --quiet https://github.com/YosysHQ/yosys.git /src/yosys \
 
 # ---------------------------------------------------------------------------- app
 FROM ${UBUNTU}
-# Icarus Verilog 12 from Ubuntu 24.04, as on the benchmark machine; runtime libraries for Yosys.
+# Icarus Verilog 12 from Ubuntu 24.04, as on the benchmark machine; runtime libraries for Yosys;
+# tzdata so TZ=<Area/City> works (run folders are named by local time).
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        iverilog python3 python3-venv libreadline8t64 libtcl8.6 libffi8 \
+        iverilog python3 python3-venv libreadline8t64 libtcl8.6 libffi8 tzdata \
     && rm -rf /var/lib/apt/lists/*
 COPY --from=yosys /stage/usr/local/ /usr/local/
 

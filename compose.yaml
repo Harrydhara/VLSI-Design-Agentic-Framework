@@ -5,6 +5,9 @@
 #   docker compose logs -f pull-model         # the first start downloads gemma4:26b (~17 GB)
 #   docker compose down                       # stop; the model and your runs are kept
 #
+# The first model call after a start takes about 1.5 minutes (gemma4 is loaded onto the GPU
+# and its kernels warmed up); later calls run at full speed (~170 tokens/s on an RTX 4090).
+#
 # The GPU needs the NVIDIA driver plus the NVIDIA Container Toolkit (Linux) or Docker
 # Desktop's WSL 2 backend (Windows). Already running Ollama on this machine? Use it instead:
 #   docker compose -f compose.yaml -f compose.host-ollama.yaml up -d app
@@ -16,7 +19,11 @@ services:
     build: .
     image: vlsi-agent:latest
     environment:
-      VLSI_AGENT_OLLAMA_URL: http://ollama:11434
+      - VLSI_AGENT_OLLAMA_URL=http://ollama:11434
+      # Docker Desktop (Windows, macOS) runs containers on UTC: put TZ=<Area/City>, e.g.
+      # TZ=America/Phoenix, in a .env file next to this one. Unset, it is left out entirely
+      # (an empty TZ would mean UTC), and Linux engines use the /etc/localtime mount below.
+      - TZ
     ports:
       # Only this computer can open the dashboard: it can start runs and write files, with no login.
       - "127.0.0.1:${VLSI_AGENT_PORT:-7860}:7860"
