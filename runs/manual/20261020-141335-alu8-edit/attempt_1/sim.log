@@ -1,0 +1,24 @@
+FAIL: a=170 b= 85 op=000 | Expected: y=  0 z=1 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=255 b= 15 op=000 | Expected: y= 15 z=0 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=170 b= 85 op=001 | Expected: y=255 z=0 c=0 v=0 n=1 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=  0 b=  0 op=001 | Expected: y=  0 z=1 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=170 b= 85 op=010 | Expected: y=255 z=0 c=0 v=0 n=1 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=170 b=170 op=010 | Expected: y=  0 z=1 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a= 10 b= 20 op=011 | Expected: y= 30 z=0 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=255 b=  1 op=011 | Expected: y=  0 z=1 c=1 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=127 b=  1 op=011 | Expected: y=128 z=0 c=0 v=1 n=1 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=128 b=128 op=011 | Expected: y=  0 z=1 c=1 v=1 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a= 20 b= 10 op=100 | Expected: y= 10 z=0 c=1 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a= 10 b= 20 op=100 | Expected: y=246 z=0 c=0 v=0 n=1 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=255 b=  0 op=100 | Expected: y=255 z=0 c=1 v=0 n=1 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=127 b=128 op=100 | Expected: y=255 z=0 c=0 v=1 n=1 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=131 b=  0 op=101 | Expected: y=193 z=0 c=1 v=0 n=1 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=  3 b=  0 op=101 | Expected: y=  1 z=0 c=1 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=129 b=  0 op=110 | Expected: y=  3 z=0 c=1 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a= 64 b=  0 op=110 | Expected: y=128 z=0 c=0 v=0 n=1 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=  5 b= 10 op=111 | Expected: y=  1 z=0 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a= 10 b=  5 op=111 | Expected: y=  0 z=1 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=251 b=  5 op=111 | Expected: y=  1 z=0 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=  5 b=251 op=111 | Expected: y=  0 z=1 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+RESULT: 0/22 passed
+tb.v:75: $finish called at 0 (1s)

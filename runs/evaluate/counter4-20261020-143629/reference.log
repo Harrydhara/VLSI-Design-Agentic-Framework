@@ -1,0 +1,8 @@
+VCD info: dumpfile reference.vcd opened for output.
+MISMATCH at 236 ns: rst=0 en=0 expected count=4, got 5
+MISMATCH at 246 ns: rst=0 en=0 expected count=4, got 6
+MISMATCH at 256 ns: rst=0 en=0 expected count=4, got 7
+MISMATCH at 266 ns: rst=0 en=0 expected count=4, got 8
+MISMATCH at 276 ns: rst=0 en=1 expected count=5, got 9
+RESULT fafd7869f1813e99: 54/249 passed
+reference_tb.v:85: $finish called at 2496000 (1ps)

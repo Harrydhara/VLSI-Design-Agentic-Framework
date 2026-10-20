@@ -1,0 +1,19 @@
+- The design compiles, but the design plus testbench does not:
+tb.v:36: error: syntax error
+tb.v:43: error: Malformed statement
+tb.v:36: error: Malformed conditional expression.
+tb.v:58: error: syntax error
+tb.v:58: error: Invalid module instantiation
+tb.v:58: error: Invalid module instantiation
+tb.v:58: error: Invalid module instantiation
+tb.v:59: error: Invalid module instantiation
+tb.v:63: error: syntax error
+tb.v:63: error: Invalid module instantiation
+tb.v:67: error: syntax error
+tb.v:67: error: Invalid module instantiation
+tb.v:67: error: Invalid module instantiation
+tb.v:67: error: Invalid module instantiation
+tb.v:68: error: Invalid module instantiation
+tb.v:72: error: syntax error
+tb.v:72: error: Invalid module instantiation
+tb.v:77: error: syntax error

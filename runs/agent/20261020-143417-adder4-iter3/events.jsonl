@@ -1,0 +1,7 @@
+{"t": 0.0, "event": "run_started", "circuit": "adder4", "split": "dev", "model": "fake", "max_attempts": 3, "max_total_tokens": 500, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default", "workflow": "single"}
+{"t": 0.003, "event": "model_called", "attempt": 1, "role": "design", "messages": 2}
+{"t": 0.011, "event": "model_replied", "attempt": 1, "role": "design", "prompt_tokens": 465, "output_tokens": 189, "duration_s": 0.0, "truncated": false}
+{"t": 0.362, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 256, "tb_total": 512, "sim_timed_out": false, "synth_ok": true, "cells": 17, "latches": 0}
+{"t": 0.368, "event": "budget_exhausted", "used": 654, "budget": 500}
+{"t": 0.495, "event": "reference_scored", "attempt": 1, "final": true, "outcome": "fail", "passed": 256, "total": 512}
+{"t": 0.507, "event": "run_finished", "status": "token_budget_exhausted", "attempts": 1, "total_tokens": 654, "duration_s": 0.507, "reference": "fail"}

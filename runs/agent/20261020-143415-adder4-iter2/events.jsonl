@@ -1,0 +1,10 @@
+{"t": 0.0, "event": "run_started", "circuit": "adder4", "split": "dev", "model": "fake", "max_attempts": 2, "max_total_tokens": 50000, "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default", "workflow": "single"}
+{"t": 0.009, "event": "model_called", "attempt": 1, "role": "design", "messages": 2}
+{"t": 0.016, "event": "model_replied", "attempt": 1, "role": "design", "prompt_tokens": 465, "output_tokens": 189, "duration_s": 0.0, "truncated": false}
+{"t": 0.454, "event": "checks_done", "attempt": 1, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 256, "tb_total": 512, "sim_timed_out": false, "synth_ok": true, "cells": 17, "latches": 0}
+{"t": 0.461, "event": "feedback_sent", "attempt": 1, "chars": 162}
+{"t": 0.469, "event": "model_called", "attempt": 2, "role": "design", "messages": 4}
+{"t": 0.479, "event": "model_replied", "attempt": 2, "role": "design", "prompt_tokens": 758, "output_tokens": 189, "duration_s": 0.0, "truncated": false}
+{"t": 1.05, "event": "checks_done", "attempt": 2, "passed": false, "code_found": true, "has_top": true, "has_testbench": true, "compiled": true, "tb_passed": 256, "tb_total": 512, "sim_timed_out": false, "synth_ok": true, "cells": 17, "latches": 0}
+{"t": 1.236, "event": "reference_scored", "attempt": 2, "final": true, "outcome": "fail", "passed": 256, "total": 512}
+{"t": 1.244, "event": "run_finished", "status": "attempts_exhausted", "attempts": 2, "total_tokens": 1601, "duration_s": 1.243, "reference": "fail"}
