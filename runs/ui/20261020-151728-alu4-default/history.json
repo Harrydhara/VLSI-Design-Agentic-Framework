@@ -1,0 +1,141 @@
+{
+  "tool_version": "0.1.0",
+  "circuit": "alu4",
+  "split": "dev",
+  "settings": {
+    "model": "ollama:gemma4:26b",
+    "temperature": 0.2,
+    "seed": 42,
+    "think": false,
+    "max_attempts": 3,
+    "max_total_tokens": 50000,
+    "prompts": "/mnt/c/Users/harrydhara16/Documents/Claude framework/prompts/default",
+    "workflow": "single",
+    "yosys": "/usr/local/bin/yosys",
+    "score_every_attempt": true
+  },
+  "status": "attempts_exhausted",
+  "error": null,
+  "duration_s": 52.512,
+  "tokens": {
+    "prompt": 10948,
+    "output": 7612,
+    "total": 18560
+  },
+  "calls": [
+    {
+      "role": "design",
+      "attempt": 1,
+      "prompt_tokens": 789,
+      "output_tokens": 2746,
+      "duration_s": 25.622,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 2,
+      "prompt_tokens": 3751,
+      "output_tokens": 2441,
+      "duration_s": 12.2,
+      "truncated": false
+    },
+    {
+      "role": "design",
+      "attempt": 3,
+      "prompt_tokens": 6408,
+      "output_tokens": 2425,
+      "duration_s": 12.42,
+      "truncated": false
+    }
+  ],
+  "attempts": [
+    {
+      "number": 1,
+      "folder": "attempt_1",
+      "prompt_tokens": 789,
+      "output_tokens": 2746,
+      "duration_s": 25.622,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 13,
+        "tb_total": 15,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 135,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (13/15 checks passed):\nFAIL: op=000 a=0101 b=0011 | Exp: y=1000 z=0 c=0 o=0 n=0 | Got: y=1000 z=0 c=0 o=1 n=1\nFAIL: op=001 a=1000 b=0001 | Exp: y=0111 z=0 c=0 o=1 n=0 | Got: y=0111 z=0 c=1 o=1 n=0\nRESULT: 13/15 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    },
+    {
+      "number": 2,
+      "folder": "attempt_2",
+      "prompt_tokens": 3751,
+      "output_tokens": 2441,
+      "duration_s": 12.2,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 13,
+        "tb_total": 15,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 135,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (13/15 checks passed):\nFAIL: op=000 a=0101 b=0011 | Exp: y=1000 z=0 c=0 o=0 n=0 | Got: y=1000 z=0 c=0 o=1 n=1\nFAIL: op=001 a=1000 b=0001 | Exp: y=0111 z=0 c=0 o=1 n=0 | Got: y=0111 z=0 c=1 o=1 n=0\nRESULT: 13/15 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    },
+    {
+      "number": 3,
+      "folder": "attempt_3",
+      "prompt_tokens": 6408,
+      "output_tokens": 2425,
+      "duration_s": 12.42,
+      "truncated": false,
+      "dev_passed": false,
+      "checks": {
+        "code_found": true,
+        "has_top": true,
+        "has_testbench": true,
+        "compiled": true,
+        "tb_passed": 13,
+        "tb_total": 15,
+        "sim_timed_out": false,
+        "synth_ok": true,
+        "cells": 135,
+        "latches": 0
+      },
+      "feedback": "- The testbench reported failures (13/15 checks passed):\nFAIL: op=000 a=0101 b=0011 | Exp: y=1000 z=0 c=0 o=0 n=0 | Got: y=1000 z=0 c=0 o=1 n=1\nFAIL: op=001 a=1000 b=0001 | Exp: y=0111 z=0 c=0 o=1 n=0 | Got: y=0111 z=0 c=1 o=1 n=0\nRESULT: 13/15 passed",
+      "reference": {
+        "outcome": "pass",
+        "passed": 2048,
+        "total": 2048
+      }
+    }
+  ],
+  "final_attempt": 3,
+  "reference": {
+    "outcome": "pass",
+    "passed": 2048,
+    "total": 2048,
+    "detail": "2048/2048 checks passed"
+  }
+}

@@ -2,7 +2,7 @@
 % (Agentic_AI_VLSI_Proposal.tex). Compiles with pdflatex (Overleaf's default).
 %
 %   python docs/final-report/generate.py     # tables, chart data and numbers from runs/bench/
-%   cd docs/final-report && latexmk -pdf report.tex
+%   cd docs/final-report && pdflatex report.tex && pdflatex report.tex
 %
 % Numbers in the text come from \fact{key} (generated/facts.tex), never typed by hand;
 % a mistyped key prints in red. Blue boxes are the parts still to be written.
@@ -29,11 +29,14 @@
 \usepackage{hyperref}
 
 % --- Added for the report ---
+\usepackage{xurl}  % URLs and paths may break anywhere, not only at slashes
+\usepackage{placeins}  % \FloatBarrier: keep the main text's tables out of the appendix
+\usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{makecell}
 \usepackage{caption}
 \usepackage{float}
-\usepackage{fvextra}  % fancyvrb plus line wrapping, for the prompts in the appendix
+\usepackage{fvextra}  % fancyvrb plus line wrapping, for code and prompts
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18, /pgf/number format/assume math mode=true}  % numbers in the text font, not serif math
 
@@ -61,7 +64,7 @@
 % The proposal's framed answer box.
 \newcommand{\answerbox}[1]{%
   \par\smallskip\begingroup\setlength{\fboxsep}{6pt}%
-  \noindent\fcolorbox{border}{accent}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\small\raggedright #1}}%
+  \noindent\fcolorbox{border}{accent}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\small #1}}%
   \par\endgroup\smallskip}
 
 % Numbers from the runs; an unknown key shows up in red.
@@ -76,12 +79,15 @@
   \noindent\fcolorbox{todo}{todo!6}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{\small
     \textbf{\textcolor{todo}{To write:}} #1}}%
   \par\endgroup\smallskip}
-% A screenshot to take from the dashboard.
-\newcommand{\shot}[2]{%
-  \begin{figure}[H]\centering
-    \fcolorbox{border}{accent}{\parbox[c][4.2cm][c]{0.8\linewidth}{\centering\small\textcolor{secondary}{Screenshot: #2}}}
-    \caption{#1}
+% A dashboard screenshot in a thin frame.
+\newcommand{\screenshot}[3]{%
+  \begin{figure}[tbp]\centering
+    \setlength{\fboxsep}{0pt}\fcolorbox{border}{white}{\includegraphics[width=#2\linewidth]{figures/#1}}
+    \caption{#3}\label{fig:#1}
   \end{figure}}
+% Code and tool output.
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\footnotesize, frame=single, rulecolor=\color{border},
+  breaklines, framesep=4pt}
 
 \title{\textbf{\Large ECE 425-525: Course Project, Final Report}}
 \author{\textbf{Project ID: P04}}
@@ -97,37 +103,56 @@
 
 \todo{Team members' names and roles (agent and integration; EDA and evaluation; dashboard and delivery).}
 
-\answerbox{\textbf{At a glance.} A local LLM (\fact{model}) writes Verilog and a self-checking
-testbench from a specification; Icarus Verilog and Yosys check it, and the agent revises from
-that feedback for up to \fact{max-attempts} attempts. Hidden reference tests the agent never sees
-score every attempt. Over \fact{runs} paired runs (4 strategies, \fact{circuits} circuits, seeds
-\fact{seeds}), revising fixed \fact{fixed} one-shot failures and broke \fact{broken} correct designs.
-The main obstacle was the model's own testbench: on held-out circuits it rejected
-\fact{heldout-rejected-range} of the designs that were in fact correct.}
-
-\todo{Abstract (150 words): problem, what was built, how it was evaluated, the headline numbers above, and
-the main lesson (iteration repairs compile-level errors far more often than logic errors; the model's own
-tests are the bottleneck).}
+\answerbox{\textbf{Abstract.} We built an agent that writes Verilog RTL and a self-checking testbench from a
+specification using a local language model (\fact{model}), checks both with Icarus Verilog and Yosys, and revises
+from the tool feedback for up to \fact{max-attempts} attempts, together with a browser dashboard and a container
+image that make it usable in a course. Hidden reference tests that the agent never sees score every attempt, so
+each run yields a paired one-shot and iterative result. Over \fact{runs} runs on \fact{circuits} circuits with four
+prompt strategies, revising fixed \fact{fixed} one-shot failures and broke \fact{broken} correct designs; most fixes
+were compile errors that the tools named by line, and no revision fixed a specification-level logic bug unless the
+testbench was written separately from the design. The bottleneck is the model's own testbench: on circuits held out
+during development it rejected \fact{heldout-rejected-range} of the designs that were in fact correct, so most
+revisions went into designs that were already right.}
 
 % ============================================================================
 \section{Introduction}
 
-\todo{The proposal's ``aha'': Verilog that looks right can still describe the wrong circuit. Who the toolkit is
-for (students of digital design, VLSI and agentic AI). The question we test: does feeding EDA-tool feedback back
-to the model beat one-shot generation, judged by tests the agent cannot see? Contributions: the agent and its
-two workflows, the honest evaluation (hidden tests, paired scores, a held-out split declared in advance), the
-dashboard, and the containerised delivery. Outline of the report.}
+Large language models can write Verilog that looks right and compiles, yet describes the wrong circuit. That gap is
+the point of departure of our proposal: a student should be able to watch an agent generate a design, see a test
+fail, inspect the revision, and learn which settings actually make the hardware correct. Tool feedback seems the
+obvious remedy. A compiler names the line it rejects and a testbench names the input it fails, so an agent that
+feeds these messages back to the model should improve on its first attempt.
+
+We test that claim directly. Our agent generates a design and a testbench from a specification, runs development
+checks (compilation, simulation of its own testbench, synthesis), and revises from their results. A separate
+reference test, written by the team and never shown to the agent, decides whether a design is correct. We ask two
+questions: \emph{does iterating on tool feedback beat one-shot generation}, and \emph{how reliable is the feedback
+that the agent gives itself}?
+
+This report describes:
+\begin{itemize}
+  \item the agent, with a single-conversation workflow and a workflow that writes the testbench from the
+        specification before any design exists (Section~\ref{sec:design});
+  \item an evaluation that keeps the agent away from the tests that score it, scores every attempt so that one run
+        gives paired one-shot and iterative results, and uses a held-out set of circuits declared in advance
+        (Sections~\ref{sec:design} and~\ref{sec:method});
+  \item the toolkit students use: a dashboard to run the agent, inspect every attempt down to waveforms, edit and
+        re-test its RTL, compare strategies and write new ones, delivered as a tested, published container image
+        (Section~\ref{sec:toolkit});
+  \item the results of \fact{runs} benchmark runs and what they say about where agentic RTL generation fails
+        (Sections~\ref{sec:results} and~\ref{sec:discussion}).
+\end{itemize}
 
 % ============================================================================
 \section{Related work}
 
 \todo{Step 4 of the plan, 1 to 1.5 pages, every citation checked against the paper itself: LLM-for-RTL benchmarks
 (e.g.\ VerilogEval, RTLLM), feedback-driven agents (e.g.\ AutoChip), fine-tuned RTL models (e.g.\ RTLCoder,
-ChipNeMo), and what our study adds (paired one-shot vs.\ iterative scores on the same runs, the agent's own
-checks measured against an independent test, a declared held-out split).}
+ChipNeMo), and what our study adds (paired one-shot vs.\ iterative scores on the same runs, the agent's own checks
+measured against an independent test, a declared held-out split).}
 
 % ============================================================================
-\section{System design}
+\section{System design}\label{sec:design}
 
 \begin{figure}[H]
 \centering
@@ -159,19 +184,45 @@ after the loop ends.}
 \label{fig:loop}
 \end{figure}
 
-\todo{The loop (Figure~\ref{fig:loop}): the \texttt{single} workflow (one reply holds design and testbench) and
-\texttt{spec\_first} (the testbench is written from the specification first, in its own conversation, and its author
-reviews disputed checks). Limits: \fact{max-attempts} attempts, \fact{budget} tokens. What the development checks
-report back. Every run keeps its event log, history and the prompts it used.}
+Figure~\ref{fig:loop} shows the loop. The model receives the circuit's description and its exact module header and
+replies with two Verilog blocks: the design and a self-checking testbench that must end by printing
+\texttt{RESULT: passed/total passed}. The framework extracts the code, compiles design and testbench with Icarus
+Verilog, runs the testbench, and synthesizes the design with Yosys, flagging inferred latches. If any of these
+development checks fails, their output (capped at a few thousand characters) goes back to the model with a request
+to fix the design or, if a check itself is wrong, the testbench. The run stops when the checks pass, after
+\fact{max-attempts} attempts, or when its budget of \fact{budget} tokens is spent. Every tool runs with a timeout and
+capped output, so a design that hangs the simulator ends as a timeout instead of stopping the agent.
+
+The second workflow, \texttt{spec\_first}, splits the work into two conversations. One writes the testbench from the
+specification alone, before any design exists, and must show that it runs against a placeholder design. The other
+writes the design and never sees the testbench. When a design fails some of the testbench's checks, the failing
+checks first go back to the testbench's author, who either corrects its testbench or confirms it; only then does
+the design conversation get the feedback.
+
+Every run writes an event log as it happens and a history file at the end with the settings, every model call,
+every attempt's checks and scores, and a copy of the prompts the run used, so that results stay interpretable after
+a strategy is edited.
 
 \subsection{Keeping the evaluation honest}
-\todo{Hidden reference tests are written by the team and stay outside the agent's view; each run replaces their
-result-line placeholder with a random token, so generated code cannot print a fake pass. Each attempt is scored
-after the loop, so one run gives a paired one-shot (attempt 1) and iterative (final) score. The tools run with
-timeouts and capped output. The \fact{fixtures} fixtures (\fact{fixtures-correct} correct, the rest deliberately
-faulty) check the tests themselves (\texttt{docs/acceptance-checks.md}).}
+
+The agent is scored only by the hidden reference tests. They are written by the team, kept outside everything the
+model sees, and run only after the loop has finished. A generated design could in principle print a fake result
+line and stop the simulation; to rule that out, each run replaces a placeholder in the reference test's result line
+with a fresh random token, and only a line carrying that token counts. The reference tests are exhaustive for the
+combinational circuits and combine directed and random sequences for the sequential ones.
+
+Because every attempt is scored, attempt~1 is exactly what a one-shot run would have produced, and the final
+attempt is the iterative result. Each run therefore gives a paired comparison, and shows when a revision fixed a
+failing design or broke a correct one.
+
+The reference tests are themselves tested. Each circuit comes with hand-written correct and deliberately faulty
+designs (\fact{fixtures} in all, \fact{fixtures-correct} of them correct). Every correct design must pass, and every
+faulty one must fail for its intended reason: a dropped carry, a reset of the wrong kind, swapped multiplexer
+selects, a signed comparison done unsigned, a simulation that never finishes. The acceptance checks in
+\texttt{docs/acceptance-checks.md} record this together with each team member's completion check.
 
 \subsection{Circuits}
+
 \begin{table}[H]
 \centering\small
 \input{generated/table-circuit-list.tex}
@@ -180,32 +231,84 @@ once per strategy, with the runs declared in advance.}
 \label{tab:circuits}
 \end{table}
 
-% ============================================================================
-\section{The toolkit}
-
-\todo{What a student does with it, by dashboard section: (1) pick a circuit, strategy, mode and model; (2) watch the
-run live; (3) inspect every attempt: design, testbench, changes from the previous attempt, the hidden test's
-mismatches, waveforms, the feedback the model got, and editing the RTL to re-test it; (4) benchmark charts;
-(5) the strategy editor. Exports. Then delivery: Docker image with pinned tool versions, Compose with Ollama on the
-GPU, the image published by CI after its tests pass.}
-
-\shot{Running the agent: inputs and the live log.}{sections 1 and 2 during a gemma4 run}
-\shot{One attempt in the results view, with the waveform of a failing hidden test.}{section 3, Waveform tab, alu8 SLT bug}
-\shot{Editing an attempt's RTL and re-testing it.}{section 3, Edit \& re-test tab with the signed-comparison fix}
-\shot{Benchmark charts.}{section 4, held-out benchmark}
+The circuits come in pairs of the same family (Table~\ref{tab:circuits}), one for development and one held out:
+adders, multiplexers, counters, ALUs with eight operations and four flags, and overlapping sequence detectors with
+Moore and Mealy outputs. The first six circuits proved too easy, as the model passed nearly all of them in one
+shot, so the ALU and sequence-detector pairs were added before any benchmark run to leave room for iteration to
+matter.
 
 % ============================================================================
-\section{Experimental method}
+\section{The toolkit}\label{sec:toolkit}
 
-\todo{Model \fact{model} through Ollama, temperature \fact{temperature}, fixed seeds \fact{seeds} (the same seed
-reproduced a run exactly at this temperature). Up to \fact{max-attempts} attempts and \fact{budget} tokens per run.
-Four strategies: \texttt{default} (the baseline, unchanged), \texttt{tb\_timing}, \texttt{spec\_first} v1 and v2.
-Every attempt scored, so one-shot and iterative come from the same runs (paired). Metrics as promised in the
-proposal: compilation, hidden-test pass rate, synthesis, retries, latency and tokens; cell counts only for passing
-designs under the same Yosys flow. Order of work: tune on dev, declare, run held-out once, no tuning after.}
+The dashboard is a browser application (Gradio and Plotly) organized in five sections. A student picks a circuit,
+whose specification and module header are shown, a strategy, one-shot or iterative mode, the attempt limit and the
+model, and watches the run's log stream in as it happens (Figure~\ref{fig:run-log.jpg}). A scripted model replays a
+recorded adder4 run, so the interface can be tried without a GPU.
+
+\screenshot{run-log.jpg}{0.72}{A run of the agent on alu4: the dashboard's status line and live log. The model's own
+testbench fails every attempt (13/15 checks), so the agent revises twice and stops at the limit, while the hidden
+test passes all three designs.}
+
+The results section opens any saved run, whether started from the dashboard, the command line or a benchmark, and
+shows for each attempt the agent's checks next to the hidden test's verdict, the design and testbench, the changes
+from the previous attempt, the hidden test's mismatch lines, the feedback the model received, and the model's raw
+reply. A waveform view re-runs the hidden test on any attempt and plots the circuit's inputs and outputs, with the
+test's expected values beneath them, around the first mismatch (Figure~\ref{fig:waveform.jpg}).
+
+\screenshot{waveform.jpg}{0.72}{The waveform view on a held-out alu8 design with a signed-comparison bug. For the
+operation SLT (op 7) the design keeps \texttt{y = 1} while the expected value drops to 0 once \texttt{b} becomes
+negative; dashed lines mark the reported mismatches.}
+
+Students can also edit an attempt's design or testbench and run exactly the checks the agent's attempts get. The
+edited code goes through the same loop as a single attempt, and the result is saved as a new run that records where
+it came from (Figure~\ref{fig:edit-retest.jpg}). The remaining sections chart any benchmark
+(Figure~\ref{fig:benchmark-charts.jpg}) and provide a strategy editor, which copies a strategy, checks its template
+placeholders, previews the prompts as the model will receive them, and saves the copy without touching the shipped
+strategies. Runs and benchmark results can be exported as archives and standalone pages.
+
+\screenshot{edit-retest.jpg}{0.62}{Editing and re-testing the design of Figure~\ref{fig:waveform.jpg}. Declaring the two
+sign-extended operands \texttt{signed} makes the hidden test pass all 524,288 checks, while the model's own testbench
+still reports 0/22.}
+
+\screenshot{benchmark-charts.jpg}{0.95}{Two of the dashboard's five benchmark charts for the held-out circuits:
+passes after each attempt, and passes per circuit (one-shot $\to$ iterative). The dashboard names strategies by
+folder, so \texttt{spec\_first} there is version~2.}
+
+For delivery, the toolkit ships as a container image with the exact tool versions the benchmarks used: Icarus
+Verilog~12, Yosys built from the same commit, and pinned Python packages. A Compose file starts the dashboard
+together with an Ollama server on the GPU and downloads the model on first start; runs and custom strategies are
+kept in the project folder across container restarts. A continuous-integration workflow builds the image on every
+push to the main branch, runs the fixture check and the test suite inside it, and only then publishes it, so a
+teammate can pull a tested image instead of building one. Following Member~3's completion check, a fresh clone with the published
+image was used to open the dashboard, run an example, edit and rerun a strategy, and export the result, and the
+runs and strategy survived recreating the container.
 
 % ============================================================================
-\section{Results}
+\section{Experimental method}\label{sec:method}
+
+All runs used \fact{model} through Ollama on one RTX 4090, at temperature \fact{temperature} with thinking disabled,
+at most 4,096 output tokens per reply, and up to \fact{max-attempts} attempts and \fact{budget} tokens per run (no
+run reached the budget). Each strategy ran every circuit with seeds \fact{seeds}. With the same seed and prompt a run
+repeats exactly, so each seed is one independent sample.
+
+We compared four strategies:
+\begin{itemize}
+  \item \texttt{default}: the starter prompts, kept unchanged as the baseline;
+  \item \texttt{tb\_timing}: the same, plus advice on when a testbench should sample a clocked output;
+  \item \texttt{spec\_first} v1: the two-conversation workflow of Section~\ref{sec:design};
+  \item \texttt{spec\_first} v2: the same, but the testbench's author must quote the sentence of the specification
+        behind any expected value it changes.
+\end{itemize}
+
+We report, as the proposal promised, compilation, hidden-test pass rate, synthesis, attempts used, time and tokens,
+and cell counts only for designs that pass the hidden test, all synthesized with the same generic Yosys flow. The
+work proceeded in a fixed order: a difficulty check with one-shot runs on the four harder circuits (seeds 101--105),
+then strategies were developed and compared on the dev circuits only, declared in a commit, and run once on the
+held-out circuits without further tuning. Round~1 compared \texttt{default} and \texttt{tb\_timing}; round~2 added
+both versions of \texttt{spec\_first}.
+
+% ============================================================================
+\section{Results}\label{sec:results}
 
 \begin{table}[H]
 \centering\small\setlength{\tabcolsep}{4.5pt}
@@ -215,6 +318,15 @@ designs under the same Yosys flow. Order of work: tune on dev, declare, run held
 own development checks failed.}
 \label{tab:strategy}
 \end{table}
+
+Revising from the agent's own feedback rarely changed the outcome (Table~\ref{tab:strategy}). Over all \fact{runs}
+paired runs, revisions fixed \fact{fixed} designs and broke \fact{broken}. On the held-out circuits \texttt{default}
+went from \fact{heldout-default-oneshot} to \fact{heldout-default-final}, and both of its fixes were the same compile
+error on mux4; \texttt{tb\_timing} passed every held-out run in one shot. The \texttt{spec\_first} versions started
+lower on held-out (\fact{heldout-sfone-oneshot} and \fact{heldout-sftwo-oneshot}) and recovered to
+\fact{heldout-sfone-final} and \fact{heldout-sftwo-final}. Figure~\ref{fig:pass-after} shows the same results as if
+every run had stopped after one, two or three attempts: nearly every change happens at attempt~2, and the third
+attempt never added a pass (for \texttt{spec\_first} v2 on dev it lost one).
 
 \begin{figure}[H]
 \centering
@@ -237,6 +349,16 @@ The vertical axis starts at 17.5.}
 \label{fig:pass-after}
 \end{figure}
 
+The strategies' differences are small and do not hold across splits. Combined over dev and held-out circuits the
+four strategies scored \fact{both-final-range}, and their order flips: \texttt{tb\_timing} was the worst on dev and
+the best on held-out. With 25 runs per cell, differences of one to three runs are within noise; for example,
+22/25 against 25/25 gives $p \approx 0.23$ in Fisher's exact test.
+
+Tables~\ref{tab:circuits-heldout} and~\ref{tab:circuits-dev} locate the changes. The adders never failed. Apart
+from mux4's compile errors and revisions that broke two counters (updown8 and counter4), every failure was on an
+ALU or a sequence detector. The median cell counts of passing designs are listed for completeness; as the proposal
+noted, they are a rough area measure, not power, area or timing.
+
 \begin{table}[H]
 \centering\small
 \input{generated/table-circuits-heldout.tex}
@@ -253,6 +375,14 @@ designs.}
 \end{table}
 
 \subsection{How reliable were the agent's own checks?}
+
+Every attempt that produced code was judged twice: by the agent's development checks and by the hidden test.
+Figure~\ref{fig:own-checks} and Table~\ref{tab:own-checks} compare the two. On the held-out circuits every strategy's
+checks rejected \fact{heldout-rejected-range} of the designs that were in fact correct (\fact{dev-rejected-range} on
+dev), while they accepted few wrong designs. A correct design that fails the agent's checks gets revised anyway,
+which is where most of the extra cost goes: the \fact{runs-1-attempts} runs that stopped after one attempt used
+\fact{tokens-1-attempts} tokens on average, the \fact{runs-3-attempts} that used all three attempts
+\fact{tokens-3-attempts}.
 
 \begin{figure}[H]
 \centering
@@ -280,6 +410,12 @@ all attempts.}
 \label{tab:own-checks}
 \end{table}
 
+In the \texttt{spec\_first} runs, a failing design first sent the testbench's author back to review its checks.
+Table~\ref{tab:reviews} judges each review by whether the design under review actually passed the hidden test.
+Version~1's author revised its testbench in 30 of 40 reviews and gave in to a buggy design 5 times; version~2's
+author, required to quote the specification, revised in only 8 of 40 but kept a testbench that was rejecting a
+correct design 28 times. Neither judged its own testbench reliably.
+
 \begin{table}[H]
 \centering\small\setlength{\tabcolsep}{5pt}
 \input{generated/table-reviews.tex}
@@ -288,61 +424,166 @@ design under review.}
 \label{tab:reviews}
 \end{table}
 
-\todo{Walk the reader through the tables: revising fixed \fact{fixed} and broke \fact{broken} of \fact{runs} paired runs;
-on held-out, \texttt{default} went \fact{heldout-default-oneshot} $\to$ \fact{heldout-default-final} and
-\texttt{spec\_first} v2 \fact{heldout-sftwo-oneshot} $\to$ \fact{heldout-sftwo-final}; over both splits the strategies
-score \fact{both-final-range} and their order flips between splits. Own
-checks rejected \fact{heldout-rejected-range} of correct held-out designs (\fact{dev-rejected-range} on dev). Cost:
-iterative runs used several times the one-shot tokens.}
-
 % ============================================================================
-\section{Discussion}
+\section{Discussion}\label{sec:discussion}
 
-\todo{What iteration fixes: errors the tools name (compile errors, e.g.\ assigning a non-reg output in an always
-block). What it does not fix: specification-level logic bugs (the unsigned SLT comparison survived every revision).
-Why: the model's testbench shares the design's misconception, has timing bugs, or rejects correct designs, so the
-feedback is often wrong (the proposal's ``biggest roadblock''). The \texttt{spec\_first} result: separating the
-testbench author reduced false rejections on dev but not on held-out. Strategy differences are within run-to-run
-noise at 25 runs per cell. Examples from the benchmark report (docs/benchmark-report.html).}
+\textbf{What iteration fixes.} The revisions that turned failures into passes were mostly compile errors that the
+tools reported by line. In both held-out mux4 fixes the design assigned the output inside an \texttt{always} block
+but declared it as a plain output; Icarus Verilog reported \texttt{y is not a valid l-value}, and the model changed
+one declaration. Most of \texttt{spec\_first}'s held-out recoveries on seqdet\_mealy were the same kind of error.
+
+\textbf{What it does not fix.} No revision in round~1 fixed a specification-level logic bug. The dominant one was the
+ALUs' set-less-than: the specification asks for a signed comparison, and the model sign-extended both operands and
+compared them with \texttt{<}, which remains unsigned (Appendix~\ref{app:example}). The feedback could not help,
+because it came from the model's own testbench, and that testbench was wrong in other ways.
+
+\textbf{Why: the checks are the bottleneck.} The proposal named as its biggest risk that the model would write a
+design and a testbench with the same mistake. That happened, but the larger problem was broader: the model's
+testbenches sampled clocked outputs at the wrong moment, computed wrong expected values, failed to compile, or never
+printed a result. A loop is only as good as its checks, and here the checks rejected most correct designs, so most
+revisions were spent on designs that were already right, and occasionally broke them.
+
+\textbf{Separating the testbench's author helps only partly.} Writing the testbench first, in its own conversation,
+lowered false rejections on the dev circuits from 51\% to 21\% and was the only strategy whose revisions fixed the
+signed-comparison bug (3 dev runs). On the held-out circuits the gain did not hold: false rejections stayed at
+\fact{heldout-sfone-rejected} and \fact{heldout-sftwo-rejected}, and the strategy ended at
+\fact{heldout-sfone-final} and \fact{heldout-sftwo-final} against \fact{heldout-default-final} and
+\fact{heldout-tbtiming-final} for the simpler strategies, at the highest token cost. Requiring the author to quote
+the specification stopped it from giving in to buggy designs, but it then defended testbenches whose expected values
+were right and whose timing was wrong.
+
+For a teaching toolkit this points to where effort pays off: better checks (for example a testbench harness that
+fixes when outputs are sampled) rather than more elaborate revision prompts. The dashboard's edit-and-re-test view
+makes the point tangible: a one-word fix passes the hidden test while the model's own testbench still fails it.
 
 % ============================================================================
 \section{Limitations and threats to validity}
 
-\todo{Five seeds per setting; one model; small circuits; reference tests written by the team (checked by fixtures,
-but not proofs); cell counts are not power, area or timing; GPU nondeterminism; RAG and LoRA fine-tuning (stretch
-goals) not attempted.}
+\begin{itemize}
+  \item \textbf{Small samples.} Each strategy has 25 runs per split; differences of one to three runs are within noise.
+  \item \textbf{One dominant bug.} Most logic failures were the ALUs' signed comparison, so conclusions about which
+        logic bugs iteration can fix rest mostly on one bug type.
+  \item \textbf{One model and setting.} All runs used \fact{model} at temperature \fact{temperature}; other models or
+        settings may revise differently.
+  \item \textbf{Small circuits.} At most 8 bits and a handful of states.
+  \item \textbf{Strategies change the first prompt too.} \texttt{tb\_timing}'s and \texttt{spec\_first}'s one-shot
+        results differ from \texttt{default}'s partly because their prompts differ, so the comparison is not a pure test
+        of feedback.
+  \item \textbf{Bounded evidence.} Passing a reference test is strong evidence, not proof; the reference tests were
+        written by the team and checked with fixtures. Cell counts are not power, area or timing.
+  \item \textbf{Held-out circuits used more than once.} They served in the difficulty check and in both rounds, though
+        strategies were tuned on dev only and each round's held-out runs were declared beforehand.
+  \item \textbf{Stretch goals not attempted.} Retrieval-augmented generation and LoRA fine-tuning were left out.
+\end{itemize}
 
 % ============================================================================
 \section{Reproducibility}
 
-\todo{The repository (github.com/Harrydhara/VLSI-Design-Agentic-Framework), the image
-(ghcr.io/harrydhara/vlsi-design-agentic-framework) with pinned versions (Icarus Verilog 12, Yosys 0.57+260 built from
-the benchmark commit, Ollama 0.31.2, exact Python packages). Commands: rerun a benchmark (\texttt{vlsi-agent bench}),
-regenerate these tables (\texttt{generate.py}), and the HTML report. All runs behind this report are committed under
-\texttt{runs/bench/}.}
+Everything behind this report is public.
+\begin{itemize}[itemsep=4pt]\raggedright
+  \item \textbf{Repository:} \url{https://github.com/Harrydhara/VLSI-Design-Agentic-Framework}, with every benchmark
+        run under \texttt{runs/bench/}.
+  \item \textbf{Container image:} \nolinkurl{ghcr.io/harrydhara/vlsi-design-agentic-framework}, which pins Icarus
+        Verilog~12, Yosys 0.57+260 built from the benchmark commit, Ollama 0.31.2 and the Python packages.
+  \item \textbf{Commands:} \texttt{vlsi-agent bench} reruns a benchmark and resumes where it stopped;
+        \nolinkurl{docs/final-report/generate.py} regenerates this report's tables and figures from the runs, and
+        \nolinkurl{docs/report/build.py} the longer benchmark report. Both use the same summary code, and a test checks
+        that their numbers agree with the dashboard's.
+\end{itemize}
+Repeating a run with the same seed and prompt reproduces it exactly: an alu4 run started from the dashboard matched an
+earlier command-line run token for token (18,560 tokens, the same three verdicts).
 
 % ============================================================================
 \section{Deliverables against the proposal}
 
-\todo{One table: each proposal promise (MVP, dashboard features, evaluation, final deliverables) and each member's
-completion check from the division of work, with the evidence (docs/acceptance-checks.md: all three checks pass) and
-any gaps (RAG and LoRA not attempted; an FPGA board was optional and not used).}
+Table~\ref{tab:deliverables} compares what the proposal promised, and the completion checks of the division of work,
+with what was delivered. Everything in the minimum viable product and the final submission was delivered; of the
+stretch goals, the 4-bit ALU was, while retrieval-augmented generation and LoRA fine-tuning were not attempted.
+
+\begin{table}[!htb]
+\centering\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{6.2cm} >{\raggedright\arraybackslash}p{1.9cm} X}
+\toprule
+Promise & Status & Evidence \\
+\midrule
+MVP: generate, simulate, revise and synthesize adders, multiplexers and counters & Done & Sections~\ref{sec:design}--\ref{sec:toolkit} \\
+Compare baseline and improved prompts on held-out specifications with independent reference tests & Done & \fact{runs} paired runs, Section~\ref{sec:results} \\
+Dashboard: specification input, prompt and RTL editing, one-shot or iterative, attempt limit, run, test, synthesize, export & Done & Figures~\ref{fig:run-log.jpg}--\ref{fig:benchmark-charts.jpg} \\
+Outputs: Verilog, revision diffs, waveforms, pass/fail, cell counts, tool logs & Done & Section~\ref{sec:toolkit} \\
+Metrics: compilation, test pass rate, synthesis, retries, latency, tokens; cells only for passing designs & Done & Tables~\ref{tab:strategy}--\ref{tab:circuits-dev} \\
+Controlled tool environment (Docker) and Git & Done & Image, Compose, published by CI \\
+Stretch: 4-bit ALU & Done & alu4 and alu8, plus two sequence detectors \\
+Stretch: RAG; LoRA fine-tuning & Not done & Section~\ref{sec:conclusion} \\
+Optional FPGA board & Not used & -- \\
+Final deliverables: report, documented repository, live demonstration & Done & This report; README; the presentation's demo \\
+Completion checks of all three team members (division of work) & Pass & \texttt{docs/acceptance-checks.md} \\
+\bottomrule
+\end{tabularx}
+\caption{The proposal's promises and the division of work's completion checks.}
+\label{tab:deliverables}
+\end{table}
+
+\todo{Say in the team's words how the stack differs from the proposal: it named a hosted LLM API or PyTorch/Hugging
+Face Transformers for inference; we used a local model through Ollama, which kept runs free, private and
+reproducible on one GPU.}
 
 % ============================================================================
-\section{Conclusion and future work}
+\section{Conclusion and future work}\label{sec:conclusion}
 
-\todo{The answer to the research question in two sentences. Future work: better testbench feedback (a harness that
-samples at the right moment), RAG over Verilog examples, LoRA fine-tuning with separate data, multi-agent review, larger
-circuits (a FIFO pair), delivering the last compiling design.}
+Iterating on tool feedback improved one-shot generation only slightly: it reliably repaired errors the tools could
+name, but rarely the logic, because the model's own tests rejected most correct designs and missed or shared the
+real bugs. Making an agent better at hardware therefore starts with making its checks trustworthy.
+
+Next steps follow from that: a testbench harness that provides the clock, reset and sampling time, so the model
+writes only stimulus and expected values; keeping the last design that compiled and stopping when a revision repeats
+the previous design; retrieval of verified Verilog examples and fine-tuning with separate training and evaluation
+data, the stretch goals left open; a review agent that judges disputed checks; and larger circuits such as a FIFO,
+more seeds and a second model.
 
 % ============================================================================
+\FloatBarrier
 \appendix
-\section{A worked example: the unsigned SLT bug}
+\section{A worked example: the signed-comparison bug}\label{app:example}
 
-\todo{One run end to end (runs/bench/heldout-seeds1-5/runs/alu8/default/seed4): the specification, the design's
-9-bit sign-extended but unsigned comparison, the own testbench's verdict, the feedback, three unchanged attempts, the
-hidden test's mismatches and waveform, and the one-word manual fix that passes 524,288/524,288
-(runs/manual/20261020-141335-alu8-edit) while the model's testbench still reports 0/22.}
+Run \texttt{runs/bench/heldout-seeds1-5/runs/alu8/default/seed4}. The specification defines operation 111:
+
+\begin{code}
+111  SLT   1 if a < b as signed two's complement numbers, otherwise 0
+\end{code}
+
+All three attempts implemented it the same way:
+
+\begin{code}
+wire [8:0] sa = {a[7], a};
+wire [8:0] sb = {b[7], b};
+...
+3'b111: begin // SLT
+    y_reg = (sa < sb) ? 8'h01 : 8'h00;
+end
+\end{code}
+
+Sign extension does not make \texttt{<} signed: both vectors are still unsigned, so $b = -128$ becomes
+\texttt{9'h180} and compares as larger than 0. The model's own testbench could not reveal this. It failed every one
+of its checks with all outputs unknown. This is how the feedback after attempt~1 began (after attempt~2 it was the
+same with 0/22):
+
+\begin{code}
+- The testbench reported failures (0/23 checks passed):
+FAIL: a=170 b= 85 op=000 | Expected: y=  0 z=1 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+FAIL: a=255 b= 15 op=000 | Expected: y= 15 z=0 c=0 v=0 n=0 | Actual: y=  x z=x c=x v=x n=x
+...
+\end{code}
+
+The hidden test scored all three attempts 491,520 of 524,288 and pinpointed the operation:
+
+\begin{code}
+MISMATCH op=111 a=0 b=128: expected y=0 zero=1 carry=0 overflow=0 negative=0, got y=1 zero=0 ...
+\end{code}
+
+Figure~\ref{fig:waveform.jpg} shows the same failure as a waveform. Editing the design in the dashboard to declare
+\texttt{wire signed [8:0] sa} and \texttt{sb} makes the hidden test pass all 524,288 checks, while the model's
+testbench still reports 0/22 (Figure~\ref{fig:edit-retest.jpg}; the run is saved in \texttt{runs/manual/}).
 
 \section{The baseline prompts}
 

@@ -202,6 +202,11 @@ def facts(G: dict) -> dict[str, object]:
     for split in SPLITS:
         shares = [pct(G[split, s]["rejected"], G[split, s]["correct"]) for s in B.STRATEGIES]
         f[f"{split}-rejected-range"] = f"{min(shares)}--{max(shares)}\\%"
+    all_rows = [r for split in SPLITS for s in B.STRATEGIES for r in B.rows(split, s)]
+    for k in range(1, B.MAX_ATTEMPTS + 1):  # what each extra attempt costs
+        used = [r["total_tokens"] for r in all_rows if r["attempts_used"] == k]
+        f[f"tokens-{k}-attempts"] = f"{round(statistics.mean(used)):,}" if used else "--"
+        f[f"runs-{k}-attempts"] = len(used)
     f["runs"] = sum(g["runs"] for g in G.values())
     f["fixed"] = sum(g["fixed"] for g in G.values())
     f["broken"] = sum(g["broken"] for g in G.values())
