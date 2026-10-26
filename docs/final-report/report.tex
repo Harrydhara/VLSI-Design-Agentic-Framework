@@ -37,6 +37,7 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{fvextra}  % fancyvrb plus line wrapping, for code and prompts
+\usepackage{cite}  % sorted, compressed citation numbers
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18, /pgf/number format/assume math mode=true}  % numbers in the text font, not serif math
 
@@ -85,6 +86,8 @@
     \setlength{\fboxsep}{0pt}\fcolorbox{border}{white}{\includegraphics[width=#2\linewidth]{figures/#1}}
     \caption{#3}\label{fig:#1}
   \end{figure}}
+% A DOI in the bibliography, linked.
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{doi:\nolinkurl{#1}}}
 % Code and tool output.
 \DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\footnotesize, frame=single, rulecolor=\color{border},
   breaklines, framesep=4pt}
@@ -144,12 +147,68 @@ This report describes:
 \end{itemize}
 
 % ============================================================================
-\section{Related work}
+\section{Related work}\label{sec:related}
 
-\todo{Step 4 of the plan, 1 to 1.5 pages, every citation checked against the paper itself: LLM-for-RTL benchmarks
-(e.g.\ VerilogEval, RTLLM), feedback-driven agents (e.g.\ AutoChip), fine-tuned RTL models (e.g.\ RTLCoder,
-ChipNeMo), and what our study adds (paired one-shot vs.\ iterative scores on the same runs, the agent's own checks
-measured against an independent test, a declared held-out split).}
+% Every claim below was checked against the cited paper itself; docs/final-report/citations.md says where.
+\textbf{Benchmarks.} Thakur et al.~\cite{thakur2023} fine-tuned open code models on Verilog collected from GitHub and
+textbooks and tested them with testbenches on 17 problems of graded difficulty; the fine-tuned CodeGen-16B outperformed
+the commercial Codex model on functional correctness. VerilogEval~\cite{verilogeval} turned 156 problems from the
+HDLBits exercise site into text-only descriptions, one set written by hand and one generated with GPT-3.5, and scores
+a completion by simulating it with Icarus Verilog against a golden solution, reporting pass@$k$. Its
+revision~\cite{revisiting} adds specification-to-RTL tasks and classifies failures automatically.
+RTLLM~\cite{rtllm} provides 30 designs, each with a description, a testbench and a hand-written reference design, and
+grades three goals in turn: syntax, functionality, and design quality as power, performance and area after synthesis.
+In all of them the test that decides correctness is written by the benchmark's authors, never by the model under
+test. Our hidden reference tests follow the same rule.
+
+\textbf{Loops with feedback.} In Chip-Chat~\cite{chipchat} an experienced engineer worked with ChatGPT-4 to design an
+8-bit accumulator-based processor that went to tapeout on a SkyWater 130\,nm shuttle; the engineer steered the
+conversation and verified the output, writing the testbenches. AutoChip~\cite{autochip} replaced the engineer with
+tools: each candidate is compiled with Icarus Verilog and simulated with a testbench supplied with the problem, and
+the errors and mismatches go back to the model until every test passes or an iteration limit is reached. With
+feedback from only the latest iteration it produced 24.2\% more functionally correct code than zero-shot generation.
+RTLFixer~\cite{rtlfixer} found about 55\% of the errors in LLM-written Verilog to be syntax errors and, with
+retrieval-augmented generation and ReAct prompting, fixed about 98.5\% of the compilation errors in its dataset.
+Multi-agent systems go further. VerilogCoder~\cite{verilogcoder} plans a module as a dependency graph of sub-tasks
+and gives its debug agent a simulator and a waveform tracer that follows a mismatched signal back through the
+abstract syntax tree. MAGE~\cite{mage} samples many candidate designs at high temperature, scores them in simulation,
+and debugs them with checkpoints of the expected internal state that locate the first mismatch. With GPT-4 Turbo and
+Claude~3.5 Sonnet respectively, they report 94.2\% and 95.7\% on the revised VerilogEval~\cite{revisiting}.
+
+\textbf{Who writes the test.} These loops differ in where the test that drives them comes from, and that is the
+question our study isolates. In AutoChip the testbench that produces the feedback is also the one that decides
+success, and VerilogCoder's debug agent revises until the code passes a provided testbench. MAGE has an agent write
+the testbench from the specification, combined with the golden testbench when one is available, and a judge agent
+that regenerates the testbench when it decides that the testbench, not the design, is wrong. Writing the test is
+itself hard: in AutoChip's evaluation the problems that asked for a testbench fared worst, with none of the generated
+code compiling, and AutoBench~\cite{autobench}, an LLM testbench generator, reports that generating testbenches
+directly has a low pass rate. AutoBench counts a generated testbench as preliminarily correct only if it reports no
+errors on the golden design, the same false-rejection measure we apply to our agent's testbenches
+(Section~\ref{sec:own-checks}).
+
+\textbf{Self-correction.} Self-Refine~\cite{selfrefine} has one model write, critique and revise its own output, and
+reports an average gain of about 20\% absolute over one-step generation across seven tasks. Huang
+et al.~\cite{huang2024} find that without external feedback, models struggle to correct their own reasoning and
+sometimes get worse. Our agent sits between the two: the compiler and the synthesizer give external feedback, but
+the testbench that judges behavior is the model's own, so the feedback on function is only as good as the model's
+reading of the specification.
+
+\textbf{Adapted models.} Another line of work changes the model rather than the loop. RTLCoder~\cite{rtlcoder}
+fine-tunes a 7B model on more than 27,000 instruction--code pairs generated with GPT-3.5 and outperforms GPT-3.5 on
+RTL benchmarks, arguing that a local open model removes the privacy concern of uploading every instruction to a
+commercial provider. ChipNeMo~\cite{chipnemo} adapts LLaMA2 models to chip design through domain-adaptive
+tokenization, continued pretraining, alignment and a domain-adapted retrieval model, and evaluates them as an
+engineering assistant chatbot, for EDA script generation and for bug summarization. We used an unmodified model
+through Ollama, so our results describe an off-the-shelf model inside the loop; fine-tuning was a stretch goal we did
+not attempt (Section~\ref{sec:conclusion}).
+
+\textbf{What this study adds.} We do not propose a stronger generator: our circuits are smaller than these
+benchmarks' and our model (\fact{model}) runs locally. What we add is measurement. First, the agent never sees the
+test that scores it, and every attempt is scored, so each run yields a paired one-shot and final result and counts
+both the failures that revision fixed and the correct designs it broke. Second, we measure the agent's own checks
+against that independent test, which shows how often a model-written testbench rejects a correct design: the
+quantity that decides whether a loop like AutoChip's can work where no reference testbench exists. Third, the
+held-out circuits and runs were declared before each round, and strategies were tuned on the dev circuits only.
 
 % ============================================================================
 \section{System design}\label{sec:design}
@@ -374,7 +433,7 @@ designs.}
 \label{tab:circuits-dev}
 \end{table}
 
-\subsection{How reliable were the agent's own checks?}
+\subsection{How reliable were the agent's own checks?}\label{sec:own-checks}
 
 Every attempt that produced code was judged twice: by the agent's development checks and by the hidden test.
 Figure~\ref{fig:own-checks} and Table~\ref{tab:own-checks} compare the two. On the held-out circuits every strategy's
@@ -540,6 +599,70 @@ writes only stimulus and expected values; keeping the last design that compiled 
 the previous design; retrieval of verified Verilog examples and fine-tuning with separate training and evaluation
 data, the stretch goals left open; a review agent that judges disputed checks; and larger circuits such as a FIFO,
 more seeds and a second model.
+
+% ============================================================================
+% In order of first citation. Venues and DOIs checked on Crossref; the two arXiv
+% entries have no published version there.
+\FloatBarrier
+\begingroup\small
+\begin{thebibliography}{99}
+
+\bibitem{thakur2023} S.~Thakur, B.~Ahmad, Z.~Fan, H.~Pearce, B.~Tan, R.~Karri, B.~Dolan-Gavitt, and S.~Garg,
+``Benchmarking large language models for automated Verilog RTL code generation,'' in \emph{Proc.\ Design,
+Automation \& Test in Europe Conf.\ (DATE)}, 2023, pp.~1--6, \doi{10.23919/DATE56975.2023.10137086}.
+
+\bibitem{verilogeval} M.~Liu, N.~Pinckney, B.~Khailany, and H.~Ren, ``VerilogEval: Evaluating large language models
+for Verilog code generation,'' in \emph{Proc.\ IEEE/ACM Int.\ Conf.\ on Computer Aided Design (ICCAD)}, 2023,
+pp.~1--8, \doi{10.1109/ICCAD57390.2023.10323812}.
+
+\bibitem{revisiting} N.~Pinckney, C.~Batten, M.~Liu, H.~Ren, and B.~Khailany, ``Revisiting VerilogEval: A year of
+improvements in large-language models for hardware code generation,'' \emph{ACM Trans.\ Design Automation of
+Electronic Systems}, vol.~30, no.~6, pp.~1--20, 2025, \doi{10.1145/3718088}.
+
+\bibitem{rtllm} Y.~Lu, S.~Liu, Q.~Zhang, and Z.~Xie, ``RTLLM: An open-source benchmark for design RTL generation
+with large language model,'' in \emph{Proc.\ Asia and South Pacific Design Automation Conf.\ (ASP-DAC)}, 2024,
+pp.~722--727, \doi{10.1109/ASP-DAC58780.2024.10473904}.
+
+\bibitem{chipchat} J.~Blocklove, S.~Garg, R.~Karri, and H.~Pearce, ``Chip-Chat: Challenges and opportunities in
+conversational hardware design,'' in \emph{Proc.\ ACM/IEEE Workshop on Machine Learning for CAD (MLCAD)}, 2023,
+pp.~1--6, \doi{10.1109/MLCAD58807.2023.10299874}.
+
+\bibitem{autochip} S.~Thakur, J.~Blocklove, H.~Pearce, B.~Tan, S.~Garg, and R.~Karri, ``AutoChip: Automating HDL
+generation using LLM feedback,'' \href{https://arxiv.org/abs/2311.04887v2}{arXiv:2311.04887v2}, 2024.
+
+\bibitem{rtlfixer} Y.-D.~Tsai, M.~Liu, and H.~Ren, ``RTLFixer: Automatically fixing RTL syntax errors with large
+language model,'' in \emph{Proc.\ ACM/IEEE Design Automation Conf.\ (DAC)}, 2024, pp.~1--6,
+\doi{10.1145/3649329.3657353}.
+
+\bibitem{verilogcoder} C.-T.~Ho, H.~Ren, and B.~Khailany, ``VerilogCoder: Autonomous Verilog coding agents with
+graph-based planning and abstract syntax tree (AST)-based waveform tracing tool,'' in \emph{Proc.\ AAAI Conf.\ on
+Artificial Intelligence}, vol.~39, no.~1, 2025, pp.~300--307, \doi{10.1609/aaai.v39i1.32007}.
+
+\bibitem{mage} Y.~Zhao, H.~Zhang, H.~Huang, Z.~Yu, and J.~Zhao, ``MAGE: A multi-agent engine for automated RTL code
+generation,'' in \emph{Proc.\ ACM/IEEE Design Automation Conf.\ (DAC)}, 2025, pp.~1--7,
+\doi{10.1109/DAC63849.2025.11133191}.
+
+\bibitem{autobench} R.~Qiu, G.~L.~Zhang, R.~Drechsler, U.~Schlichtmann, and B.~Li, ``AutoBench: Automatic testbench
+generation and evaluation using LLMs for HDL design,'' in \emph{Proc.\ ACM/IEEE Int.\ Symp.\ on Machine Learning for
+CAD (MLCAD)}, 2024, pp.~1--10, \doi{10.1145/3670474.3685956}.
+
+\bibitem{selfrefine} A.~Madaan, N.~Tandon, P.~Gupta, S.~Hallinan, L.~Gao, S.~Wiegreffe, U.~Alon, N.~Dziri,
+S.~Prabhumoye, Y.~Yang, S.~Gupta, B.~P.~Majumder, K.~Hermann, S.~Welleck, A.~Yazdanbakhsh, and P.~Clark,
+``Self-Refine: Iterative refinement with self-feedback,'' in \emph{Advances in Neural Information Processing Systems
+36 (NeurIPS)}, 2023.
+
+\bibitem{huang2024} J.~Huang, X.~Chen, S.~Mishra, H.~S.~Zheng, A.~W.~Yu, X.~Song, and D.~Zhou, ``Large language
+models cannot self-correct reasoning yet,'' in \emph{Proc.\ Int.\ Conf.\ on Learning Representations (ICLR)}, 2024.
+
+\bibitem{rtlcoder} S.~Liu, W.~Fang, Y.~Lu, Q.~Zhang, H.~Zhang, and Z.~Xie, ``RTLCoder: Outperforming GPT-3.5 in
+design RTL generation with our open-source dataset and lightweight solution,'' in \emph{Proc.\ IEEE LLM Aided Design
+Workshop (LAD)}, 2024, pp.~1--5, \doi{10.1109/LAD62341.2024.10691788}.
+
+\bibitem{chipnemo} M.~Liu, T.-D.~Ene, R.~Kirby, C.~Cheng, N.~Pinckney, R.~Liang, et~al., ``ChipNeMo:
+Domain-adapted LLMs for chip design,'' \href{https://arxiv.org/abs/2311.00176}{arXiv:2311.00176}, 2023.
+
+\end{thebibliography}
+\endgroup
 
 % ============================================================================
 \FloatBarrier
