@@ -1,0 +1,17 @@
+\begin{tabular}{l ccc r}
+\toprule
+Strategy & Compiled & Synthesized & \makecell{Passed the\\hidden test} & \makecell{Mean\\attempts} \\
+\midrule
+\multicolumn{5}{l}{\textit{Held-out circuits}} \\
+default & \up{23 $\to$ 25} & \up{23 $\to$ 25} & \up{22 $\to$ 24} & 2.5 \\
+tb\_timing & 25 $\to$ 25 & 25 $\to$ 25 & 25 $\to$ 25 & 1.6 \\
+spec\_first v1 & \up{22 $\to$ 23} & \up{22 $\to$ 23} & \up{20 $\to$ 21} & 1.9 \\
+spec\_first v2 & \up{21 $\to$ 24} & \up{21 $\to$ 24} & \up{20 $\to$ 23} & 1.8 \\
+\midrule
+\multicolumn{5}{l}{\textit{Dev circuits}} \\
+default & 25 $\to$ 25 & 25 $\to$ 25 & 24 $\to$ 24 & 1.7 \\
+tb\_timing & 25 $\to$ 25 & 25 $\to$ 25 & \down{23 $\to$ 22} & 1.6 \\
+spec\_first v1 & 25 $\to$ 25 & 25 $\to$ 25 & \up{23 $\to$ 24} & 1.2 \\
+spec\_first v2 & \down{25 $\to$ 24} & \down{25 $\to$ 24} & 23 $\to$ 23 & 1.4 \\
+\bottomrule
+\end{tabular}

@@ -413,6 +413,19 @@ four strategies scored \fact{both-final-range}, and their order flips: \texttt{t
 the best on held-out. With 25 runs per cell, differences of one to three runs are within noise; for example,
 22/25 against 25/25 gives $p \approx 0.23$ in Fisher's exact test.
 
+Table~\ref{tab:outcomes} keeps apart the outcomes the proposal named: compilation, synthesis and the hidden test.
+In all \fact{runs} runs every design that compiled also synthesized, so the first two columns agree. Every one-shot
+compile failure was on a held-out circuit, and there revising raised the number of compiling designs for three of
+the four strategies.
+
+\begin{table}[H]
+\centering\small
+\input{generated/table-outcomes.tex}
+\caption{Compilation, synthesis and hidden-test outcomes, one-shot $\to$ final, out of 25 runs per strategy and
+split, and the mean number of attempts per run.}
+\label{tab:outcomes}
+\end{table}
+
 Tables~\ref{tab:circuits-heldout} and~\ref{tab:circuits-dev} locate the changes. The adders never failed. Apart
 from mux4's compile errors and revisions that broke two counters (updown8 and counter4), every failure was on an
 ALU or a sequence detector. The median cell counts of passing designs are listed for completeness; as the proposal
@@ -556,8 +569,11 @@ earlier command-line run token for token (18,560 tokens, the same three verdicts
 \section{Deliverables against the proposal}
 
 Table~\ref{tab:deliverables} compares what the proposal promised, and the completion checks of the division of work,
-with what was delivered. Everything in the minimum viable product and the final submission was delivered; of the
-stretch goals, the 4-bit ALU was, while retrieval-augmented generation and LoRA fine-tuning were not attempted.
+with what was delivered. Everything in the minimum viable product and the final submission was delivered, with two
+gaps: the dashboard has a student choose one of the ten circuits rather than type in a new specification, and the
+short introductions to logic gates, Verilog and simulation for students from other majors were not written. Of the
+stretch goals, the 4-bit ALU was delivered, while retrieval-augmented generation and LoRA fine-tuning were not
+attempted.
 
 \begin{table}[!htb]
 \centering\small
@@ -568,13 +584,15 @@ Promise & Status & Evidence \\
 \midrule
 MVP: generate, simulate, revise and synthesize adders, multiplexers and counters & Done & Sections~\ref{sec:design}--\ref{sec:toolkit} \\
 Compare baseline and improved prompts on held-out specifications with independent reference tests & Done & \fact{runs} paired runs, Section~\ref{sec:results} \\
-Dashboard: specification input, prompt and RTL editing, one-shot or iterative, attempt limit, run, test, synthesize, export & Done & Figures~\ref{fig:run-log.jpg}--\ref{fig:benchmark-charts.jpg} \\
+Dashboard: choose a circuit and see its specification, edit prompts and RTL, one-shot or iterative, attempt limit, run, test, synthesize, reset, export & Done & Figures~\ref{fig:run-log.jpg}--\ref{fig:benchmark-charts.jpg} \\
+Dashboard: enter a new circuit description and bit width & Partly & Ten circuits in five families to choose from; a new specification is added as files with its own reference test (README) \\
 Outputs: Verilog, revision diffs, waveforms, pass/fail, cell counts, tool logs & Done & Section~\ref{sec:toolkit} \\
 Metrics: compilation, test pass rate, synthesis, retries, latency, tokens; cells only for passing designs & Done & Tables~\ref{tab:strategy}--\ref{tab:circuits-dev} \\
 Controlled tool environment (Docker) and Git & Done & Image, Compose, published by CI \\
 Stretch: 4-bit ALU & Done & alu4 and alu8, plus two sequence detectors \\
 Stretch: RAG; LoRA fine-tuning & Not done & Section~\ref{sec:conclusion} \\
 Optional FPGA board & Not used & -- \\
+Guided examples and short introductions for students from other majors & Partly & A scripted example run and documented strategy examples; no introductions to logic gates, Verilog or simulation \\
 Final deliverables: report, documented repository, live demonstration & Done & This report; README; the presentation's demo \\
 Completion checks of all three team members (division of work) & Pass & \texttt{docs/acceptance-checks.md} \\
 \bottomrule

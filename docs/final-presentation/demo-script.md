@@ -4,7 +4,7 @@ The demo follows the slides and shows the talk's main finding live: the agent's 
 a correct design, and a one-word edit fixes a design that the agent could not. It uses only the
 dashboard, in four parts: a live run, its results, the signed-comparison bug, and the benchmark charts.
 
-The slides are the Slides deck "VLSI Design Agent: Final Presentation"; slide 16 hands over to this demo.
+The slides are the Slides deck "VLSI Design Agent: Final Presentation"; its last slide (17) hands over to this demo.
 
 ## Before the talk (15 minutes ahead)
 
@@ -14,7 +14,7 @@ The slides are the Slides deck "VLSI Design Agent: Final Presentation"; slide 16
    - WSL, without Docker: `~/.venvs/vlsi-agent/bin/vlsi-agent ui`, with Ollama running.
 2. Open http://localhost:7860 in a browser and zoom to 125–150% so the room can read it.
 3. **Warm up the model.** The first call after a start takes about 1.5 minutes while gemma4 loads onto
-   the GPU. In **1. Design inputs** pick adder4, *One-shot*, model `gemma4:26b`, press
+   the GPU. In **1. Design inputs** pick adder4, *One-shot*, model *gemma4:26b via Ollama*, press
    **Generate & test**, and wait for it to finish.
 4. In **3. Results**, check that the run list contains
    `bench/heldout-seeds1-5/runs/alu8/default/seed4` (type `alu8/default/seed4` into the list to filter it).
@@ -32,7 +32,7 @@ In **1. Design inputs** choose:
 | Strategy | `prompts/default` |
 | Mode | Iterative |
 | Maximum attempts | 3 |
-| Model | `gemma4:26b` |
+| Model | gemma4:26b via Ollama |
 
 Press **Generate & test**. The run takes about 55 seconds; talk while the log streams in **2. Run**:
 

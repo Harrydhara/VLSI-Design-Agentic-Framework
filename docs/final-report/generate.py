@@ -93,6 +93,26 @@ def table_strategy(G: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
+def table_outcomes(G: dict) -> str:
+    """Compilation, synthesis and hidden-test outcomes kept apart, as the proposal asked."""
+    lines = [r"\begin{tabular}{l ccc r}", r"\toprule",
+             r"Strategy & Compiled & Synthesized & \makecell{Passed the\\hidden test} & \makecell{Mean\\attempts} \\",
+             r"\midrule"]
+    for k, split in enumerate(SPLITS):
+        if k:
+            lines.append(r"\midrule")
+        lines.append(rf"\multicolumn{{5}}{{l}}{{\textit{{{B.SPLIT_LABEL[split]} circuits}}}} \\")
+        for strategy in B.STRATEGIES:
+            g = G[split, strategy]
+            cells = []
+            for outcome in ("compiled", "synth_ok", "pass"):
+                first, final = B.n(g[f"oneshot_{outcome}"]), B.n(g[f"final_{outcome}"])
+                cells.append(change(first, final, f"{first} $\\to$ {final}"))
+            lines.append(rf"{tex(B.LABEL[strategy])} & " + " & ".join(cells) + rf" & {g['mean_attempts']:.1f} \\")
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    return "\n".join(lines) + "\n"
+
+
 def table_circuits(split: str) -> str:
     cols = " ".join("c" for _ in B.STRATEGIES)
     head = " & ".join(tex(B.LABEL[s]) for s in B.STRATEGIES)
@@ -240,6 +260,7 @@ def main() -> None:
     G = groups()
     files = {
         "table-strategy.tex": table_strategy(G),
+        "table-outcomes.tex": table_outcomes(G),
         "table-circuits-heldout.tex": table_circuits("heldout"),
         "table-circuits-dev.tex": table_circuits("dev"),
         "table-own-checks.tex": table_own_checks(G),
