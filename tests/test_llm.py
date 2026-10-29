@@ -8,8 +8,8 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import pytest
 
 from vlsi_agent.config import load_config
-from vlsi_agent.llm import (Completion, FakeLLM, LLMError, Message, OllamaLLM, estimate_tokens,
-                            extract_verilog)
+from vlsi_agent.llm import (Completion, FakeLLM, LLMError, Message, MLXLLM, OllamaLLM, estimate_tokens,
+                            extract_verilog, make_llm)
 
 LLM_CONFIG = load_config().llm
 
@@ -23,8 +23,16 @@ OK_REPLY = {
 }
 
 
+MLX_REPLY = {
+    "model": "mlx-community/gemma-4-26b-a4b-it-4bit",
+    "choices": [{"index": 0, "finish_reason": "stop",
+                 "message": {"role": "assistant", "content": "endmodule", "reasoning": "It ends a module."}}],
+    "usage": {"prompt_tokens": 28, "completion_tokens": 3, "total_tokens": 31},
+}
+
+
 class StubOllama:
-    """A tiny HTTP server that pretends to be Ollama's /api/chat."""
+    """A tiny HTTP server that pretends to be Ollama's /api/chat (or, given MLX_REPLY, mlx_lm.server)."""
 
     def __init__(self):
         self.requests: list[dict] = []
@@ -144,6 +152,62 @@ def test_message_role_is_checked():
         Message("robot", "hi")
 
 
+# --------------------------------------------------------------- MLX client (stub server)
+
+
+def mlx_client(url: str, **overrides) -> MLXLLM:
+    return MLXLLM(dataclasses.replace(LLM_CONFIG, backend="mlx", base_url=url,
+                                      model="mlx-community/gemma-4-26b-a4b-it-4bit", **overrides))
+
+
+def test_mlx_request_carries_model_settings_and_messages(stub):
+    stub.body = json.dumps(MLX_REPLY).encode()
+    mlx_client(stub.url, temperature=0.3, seed=7, think=True, max_output_tokens=123).complete(MESSAGES)
+    [request] = stub.requests
+    assert request["path"] == "/v1/chat/completions"
+    sent = request["json"]
+    assert sent["model"] == "mlx-community/gemma-4-26b-a4b-it-4bit" and sent["stream"] is False
+    assert (sent["temperature"], sent["seed"], sent["max_tokens"]) == (0.3, 7, 123)
+    assert sent["chat_template_kwargs"] == {"enable_thinking": True}
+    assert sent["messages"][1] == {"role": "user", "content": "Which keyword ends a module?"}
+
+
+def test_mlx_reply_is_parsed(stub):
+    stub.body = json.dumps(MLX_REPLY).encode()
+    result = mlx_client(stub.url).complete(MESSAGES)
+    assert result.text == "endmodule" and result.thinking == "It ends a module."
+    assert (result.prompt_tokens, result.output_tokens, result.total_tokens) == (28, 3, 31)
+    assert not result.truncated
+
+
+def test_mlx_reply_cut_off_by_the_token_limit_is_marked_truncated(stub):
+    reply = json.loads(json.dumps(MLX_REPLY))
+    reply["choices"][0]["finish_reason"] = "length"
+    stub.body = json.dumps(reply).encode()
+    assert mlx_client(stub.url).complete(MESSAGES).truncated
+
+
+def test_mlx_errors_are_reported(stub):
+    stub.status = 404
+    stub.body = b'{"error":"Repository Not Found for url"}'
+    with pytest.raises(LLMError, match=r"the MLX server returned HTTP 404: Repository Not Found"):
+        mlx_client(stub.url).complete(MESSAGES)
+    stub.status = 200
+    stub.body = b'{"object": "chat.completion"}'
+    with pytest.raises(LLMError, match="without choices"):
+        mlx_client(stub.url).complete(MESSAGES)
+
+
+def test_mlx_server_not_running_names_the_start_command():
+    with pytest.raises(LLMError, match=r"cannot reach the MLX server .* mlx_lm.server --model mlx-community/"):
+        mlx_client("http://127.0.0.1:9").complete(MESSAGES)
+
+
+def test_make_llm_follows_the_backend():
+    assert isinstance(make_llm(dataclasses.replace(LLM_CONFIG, backend="ollama")), OllamaLLM)
+    assert isinstance(make_llm(dataclasses.replace(LLM_CONFIG, backend="mlx")), MLXLLM)
+
+
 # --------------------------------------------------------------- FakeLLM
 
 
@@ -208,7 +272,7 @@ def test_no_module_gives_none():
 @pytest.mark.integration
 @pytest.mark.ollama
 def test_real_model_writes_a_module():
-    reply = OllamaLLM(LLM_CONFIG).complete([
+    reply = make_llm(LLM_CONFIG).complete([
         Message("user", "Write a Verilog module with exactly this header, implementing y = a & b. "
                         "Reply with one ```verilog code block.\nmodule and2(input a, input b, output y);"),
     ])

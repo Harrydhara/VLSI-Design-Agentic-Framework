@@ -2,6 +2,7 @@
 # To experiment, copy this file and pass the copy with --config instead of editing it.
 
 [llm]
+backend = "ollama"        # "ollama", or "mlx" for mlx_lm.server on Apple silicon (see config/macos-mlx.toml)
 base_url = "http://localhost:11434"  # Ollama server running inside WSL; VLSI_AGENT_OLLAMA_URL overrides it
 model = "gemma4:26b"
 request_timeout_s = 300

@@ -4,7 +4,7 @@ import pytest
 
 from vlsi_agent import cli
 from vlsi_agent.config import load_config
-from vlsi_agent.doctor import check_ollama, check_tool, run_checks
+from vlsi_agent.doctor import check_mlx, check_ollama, check_tool, run_checks
 
 
 def test_tool_that_works_passes():
@@ -35,6 +35,12 @@ def test_unreachable_ollama_fails_both_checks():
     # Port 9 (discard) is never an Ollama server; the connection is refused at once.
     server, model = check_ollama("http://127.0.0.1:9", "gemma4:26b", timeout_s=2)
     assert not server.ok and "cannot reach" in server.detail
+    assert not model.ok and "skipped" in model.detail
+
+
+def test_unreachable_mlx_server_fails_both_checks():
+    server, model = check_mlx("http://127.0.0.1:9", "mlx-community/gemma-4-26b-a4b-it-4bit", timeout_s=2)
+    assert not server.ok and "mlx_lm.server --model mlx-community/gemma-4-26b-a4b-it-4bit" in server.detail
     assert not model.ok and "skipped" in model.detail
 
 

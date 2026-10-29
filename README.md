@@ -1,7 +1,7 @@
 # VLSI Design Agent
 
-An LLM (local Ollama, `gemma4:26b`) writes Verilog from a circuit spec. Icarus Verilog and
-Yosys check it, and the tool feedback drives revisions. Final scores come from reference
+An LLM (local Ollama, `gemma4:26b`; or MLX on a Mac) writes Verilog from a circuit spec.
+Icarus Verilog and Yosys check it, and the tool feedback drives revisions. Final scores come from reference
 tests the agent never sees.
 
 ## Quick start with Docker
@@ -60,14 +60,47 @@ python3 -m venv ~/.venvs/vlsi-agent
 ~/.venvs/vlsi-agent/bin/pip install -e ".[dev]"
 ```
 
+## Setup on a Mac (Apple silicon, MLX)
+
+Docker on macOS cannot use the Mac's GPU, so everything runs natively. The model runs in
+`mlx_lm.server`, which uses Apple's MLX framework. `config/macos-mlx.toml` holds the
+settings: the MLX backend, the same Gemma 4 model in MLX format, and the Homebrew tool paths.
+
+```bash
+brew install icarus-verilog yosys
+cd VLSI-Design-Agentic-Framework
+python3 -m venv ~/.venvs/vlsi-agent
+~/.venvs/vlsi-agent/bin/pip install -e ".[dev,ui,mlx]"
+export VLSI_AGENT_CONFIG=config/macos-mlx.toml   # e.g. in ~/.zshrc; or give --config every time
+```
+
+Start the model server in its own terminal and keep it running. The first start downloads
+the model (about 15 GB) into `~/.cache/huggingface`.
+
+```bash
+~/.venvs/vlsi-agent/bin/mlx_lm.server --model mlx-community/gemma-4-26b-a4b-it-4bit --port 8080
+```
+
+Every command in this README then works as written. Some differences from the benchmark setup:
+
+- **Memory:** the 4-bit model's weights alone take about 15 GB of unified memory, so a Mac
+  with 24 GB is the practical minimum. On a smaller Mac, set `[llm] model` in a copy of the
+  config to a smaller model, e.g. `mlx-community/gemma-4-12B-it-qat-4bit`, and give the
+  server the same name.
+- **Tool versions:** Homebrew has Icarus Verilog 13 and Yosys 0.70, not 12 and 0.57. All
+  fixtures get their expected outcomes, but synthesis cell counts can differ from the report.
+- **Ollama:** Ollama also runs natively on a Mac. To use it, keep `config/default.toml`'s
+  `[llm]` section and copy only the `[tools]` paths from `config/macos-mlx.toml`.
+
 ## Check the environment
 
 ```bash
 ~/.venvs/vlsi-agent/bin/vlsi-agent doctor
 ```
 
-All checks should say `OK`. Tool paths and the model name are in `config/default.toml`;
-the environment variable `VLSI_AGENT_OLLAMA_URL` overrides its Ollama address.
+All checks should say `OK`. Tool paths, the model and its backend (`ollama` or `mlx`) are in
+`config/default.toml`. The environment variable `VLSI_AGENT_CONFIG` names a different
+default config file, and `VLSI_AGENT_OLLAMA_URL` overrides the model server's address.
 
 To send the model a single prompt (the reply goes to stdout, token usage to stderr):
 
@@ -83,7 +116,7 @@ still give different answers, so compare settings over several runs.
 
 ```bash
 ~/.venvs/vlsi-agent/bin/pytest            # everything
-~/.venvs/vlsi-agent/bin/pytest -m "not integration"   # skip tests that need the real tools/Ollama
+~/.venvs/vlsi-agent/bin/pytest -m "not integration"   # skip tests that need the real tools/model server
 ~/.venvs/vlsi-agent/bin/pytest -m "not ollama"        # skip only the 3 that need the model server
 ```
 
@@ -240,6 +273,7 @@ when adding a circuit; the dashboard relies on both.
 | Path | What it holds |
 |---|---|
 | `config/default.toml` | Model, pinned EDA tool paths, tool timeouts |
+| `config/macos-mlx.toml` | The same for a Mac: the MLX model server and Homebrew tool paths |
 | `Dockerfile` | The app image: Icarus Verilog, Yosys built from the benchmark commit, the package and dashboard |
 | `compose.yaml` | The Docker stack: app, Ollama on the GPU, one-time model download |
 | `compose.host-ollama.yaml` | Override: the app uses an Ollama already running on the machine |
@@ -249,7 +283,7 @@ when adding a circuit; the dashboard relies on both.
 | `src/vlsi_agent/eda.py` | Runs iverilog, vvp and Yosys with timeouts; returns structured results |
 | `src/vlsi_agent/circuits.py` | Loads and validates circuit folders |
 | `src/vlsi_agent/evaluate.py` | Scores a design with a circuit's hidden reference test |
-| `src/vlsi_agent/llm.py` | Ollama client, scripted `FakeLLM` for tests, Verilog extraction from replies |
+| `src/vlsi_agent/llm.py` | Ollama and MLX clients, scripted `FakeLLM` for tests, Verilog extraction from replies |
 | `src/vlsi_agent/agent.py` | The generate / check / revise loop, event log, history export |
 | `src/vlsi_agent/bench.py` | Benchmark runner (resumable) and summary tables |
 | `src/vlsi_agent/devcheck.py` | Development checks: the only feedback the model sees |

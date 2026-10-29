@@ -1,6 +1,6 @@
 import pytest
 
-from vlsi_agent.config import DEFAULT_CONFIG_PATH, ConfigError, load_config
+from vlsi_agent.config import DEFAULT_CONFIG_PATH, PROJECT_ROOT, ConfigError, load_config
 
 VALID = """
 [llm]
@@ -36,11 +36,35 @@ def write(tmp_path, text):
     return path
 
 
-def test_default_config_loads():
+def test_default_config_loads(monkeypatch):
+    monkeypatch.delenv("VLSI_AGENT_CONFIG", raising=False)
     config = load_config()
     assert config.source == DEFAULT_CONFIG_PATH
-    assert config.llm.model == "gemma4:26b"
+    assert config.llm.backend == "ollama" and config.llm.model == "gemma4:26b"
     assert config.tools.yosys == "/usr/local/bin/yosys"
+
+
+def test_macos_config_loads():
+    config = load_config(PROJECT_ROOT / "config" / "macos-mlx.toml")
+    assert config.llm.backend == "mlx" and config.llm.model == "mlx-community/gemma-4-26b-a4b-it-4bit"
+    assert config.tools.yosys == "/opt/homebrew/bin/yosys"
+
+
+def test_default_file_can_come_from_the_environment(tmp_path, monkeypatch):
+    monkeypatch.setenv("VLSI_AGENT_CONFIG", "config/macos-mlx.toml")  # relative to the project folder
+    assert load_config().source == PROJECT_ROOT / "config" / "macos-mlx.toml"
+    monkeypatch.setenv("VLSI_AGENT_CONFIG", str(write(tmp_path, VALID)))
+    assert load_config().source == tmp_path / "config.toml"
+    assert load_config(DEFAULT_CONFIG_PATH).source == DEFAULT_CONFIG_PATH  # an explicit path still wins
+
+
+def test_backend_defaults_to_ollama_and_is_checked(tmp_path):
+    assert "backend" not in VALID  # a config written before the key existed
+    assert load_config(write(tmp_path, VALID)).llm.backend == "ollama"
+    mlx = VALID.replace("[llm]\n", '[llm]\nbackend = "mlx"\n')
+    assert load_config(write(tmp_path, mlx)).llm.backend == "mlx"
+    with pytest.raises(ConfigError, match=r"\[llm\] backend should be one of ollama, mlx, got 'vllm'"):
+        load_config(write(tmp_path, VALID.replace("[llm]\n", '[llm]\nbackend = "vllm"\n')))
 
 
 def test_valid_file_loads_and_int_becomes_float(tmp_path):

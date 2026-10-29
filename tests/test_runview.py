@@ -62,8 +62,11 @@ def test_run_view_reads_every_attempt(scripted_run):
 def test_check_table_has_one_row_per_attempt(scripted_run):
     rows = check_table(load_run(scripted_run))
     assert len(CHECK_HEADERS) == len(rows[0])
-    assert rows == [[1, "FAIL", "ok", "256/512", "17 cells", "FAIL 256/512"],
-                    [2, "PASS", "ok", "512/512", "23 cells", "PASS 512/512"]]
+    # Yosys versions map the adder to different cell counts (0.57: 17 and 23, 0.70: 17 and 20).
+    cells = [row.pop(4) for row in rows]
+    assert all(re.fullmatch(r"\d+ cells", c) for c in cells), cells
+    assert rows == [[1, "FAIL", "ok", "256/512", "FAIL 256/512"],
+                    [2, "PASS", "ok", "512/512", "PASS 512/512"]]
 
 
 @integration

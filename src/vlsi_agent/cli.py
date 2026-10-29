@@ -15,7 +15,7 @@ from vlsi_agent.bench import parse_seeds, run_benchmark, summarize
 from vlsi_agent.circuits import CircuitError, get_circuit, load_circuits
 from vlsi_agent.config import PROJECT_ROOT, Config, ConfigError, load_config, project_path
 from vlsi_agent.evaluate import reference_test
-from vlsi_agent.llm import FakeLLM, LLMError, Message, OllamaLLM
+from vlsi_agent.llm import FakeLLM, LLMError, Message, make_llm
 from vlsi_agent.progress import describe_event
 from vlsi_agent.prompts import PromptError, load_strategy
 
@@ -28,7 +28,8 @@ def build_parser() -> argparse.ArgumentParser:
         description="Generate Verilog with an LLM and check it with Icarus Verilog and Yosys.",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
-    parser.add_argument("--config", type=Path, help="TOML config file (default: config/default.toml)")
+    parser.add_argument("--config", type=Path,
+                        help="TOML config file (default: $VLSI_AGENT_CONFIG, else config/default.toml)")
     sub = parser.add_subparsers(dest="command", required=True)
 
     sub.add_parser("doctor", help="check that the EDA tools and the LLM are ready")
@@ -146,7 +147,7 @@ def cmd_run(config: Config, args: argparse.Namespace) -> int:
     attempts = 1 if args.one_shot else (args.attempts if args.attempts is not None else config.agent.max_attempts)
     if attempts < 1:
         raise UsageError("--attempts must be at least 1")
-    llm = FakeLLM(load_fake_script(args.fake)) if args.fake else OllamaLLM(config.llm)
+    llm = FakeLLM(load_fake_script(args.fake)) if args.fake else make_llm(config.llm)
 
     mode = "oneshot" if attempts == 1 else f"iter{attempts}"
     base = RUNS_DIR / "agent" / f"{time.strftime('%Y%m%d-%H%M%S')}-{circuit.name}-{mode}"
@@ -183,7 +184,7 @@ def cmd_bench(config: Config, args: argparse.Namespace) -> int:
     script = load_fake_script(args.fake) if args.fake else None
 
     def make_llm(run_config: Config):
-        return FakeLLM(script) if script is not None else OllamaLLM(run_config.llm)
+        return FakeLLM(script) if script is not None else make_llm(run_config.llm)
 
     out = args.out.resolve() if args.out else RUNS_DIR / "bench" / f"{time.strftime('%Y%m%d-%H%M%S')}-{scope}"
     total = len(circuits) * len(strategies) * len(seeds)
@@ -200,21 +201,21 @@ def cmd_bench(config: Config, args: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_ui(host: str, port: int) -> int:
+def cmd_ui(config: Config, host: str, port: int) -> int:
     try:
         import gradio  # noqa: F401
     except ModuleNotFoundError:
         print('The dashboard needs Gradio and Plotly: pip install -e ".[ui]"', file=sys.stderr)
         return 2
     from vlsi_agent.dashboard import launch
-    launch(host, port)
+    launch(config, host, port)
     return 0
 
 
 def cmd_ask(config: Config, prompt: str, system: str | None, show_thinking: bool) -> int:
     messages = ([Message("system", system)] if system else []) + [Message("user", prompt)]
     try:
-        reply = OllamaLLM(config.llm).complete(messages)
+        reply = make_llm(config.llm).complete(messages)
     except LLMError as e:
         print(f"LLM error: {e}", file=sys.stderr)
         return 1
@@ -249,7 +250,7 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "bench":
             return cmd_bench(config, args)
         if args.command == "ui":
-            return cmd_ui(args.host, args.port)
+            return cmd_ui(config, args.host, args.port)
         if args.command == "ask":
             return cmd_ask(config, args.prompt, args.system, args.show_thinking)
     except CircuitError as e:

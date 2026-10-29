@@ -2,7 +2,8 @@
 
 Validation is strict: a missing key, an unknown key (usually a typo), or a value of
 the wrong type is an error, so a mistake in an edited config fails loudly instead of
-silently falling back to a default.
+silently falling back to a default. The one exception is [llm] backend, which came
+later: config files written before it existed still mean Ollama.
 """
 
 from __future__ import annotations
@@ -10,12 +11,14 @@ from __future__ import annotations
 import dataclasses
 import os
 import tomllib
-from dataclasses import dataclass, fields
+from dataclasses import MISSING, dataclass, fields
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CONFIG_PATH = PROJECT_ROOT / "config" / "default.toml"
+CONFIG_ENV = "VLSI_AGENT_CONFIG"  # replaces the default config file, e.g. config/macos-mlx.toml on a Mac
 OLLAMA_URL_ENV = "VLSI_AGENT_OLLAMA_URL"  # replaces [llm] base_url, e.g. http://ollama:11434 in Docker Compose
+BACKENDS = ("ollama", "mlx")
 
 
 def project_path(path: Path | str) -> Path:
@@ -38,6 +41,7 @@ class LLMConfig:
     think: bool
     keep_alive: str
     max_output_tokens: int
+    backend: str = "ollama"  # "ollama", or "mlx" for mlx_lm.server on Apple silicon
 
 
 @dataclass(frozen=True)
@@ -90,16 +94,23 @@ def _build_section(section: str, cls: type, data: object) -> object:
     unknown = sorted(set(data) - set(expected))
     if unknown:
         raise ConfigError(f"[{section}] unknown key(s): {', '.join(unknown)}")
-    missing = sorted(set(expected) - set(data))
+    missing = sorted(name for name, f in expected.items() if name not in data and f.default is MISSING)
     if missing:
         raise ConfigError(f"[{section}] missing key(s): {', '.join(missing)}")
-    values = {name: _check_type(section, name, data[name], f.type) for name, f in expected.items()}
+    values = {name: _check_type(section, name, data[name], f.type) for name, f in expected.items() if name in data}
     return cls(**values)
 
 
 def load_config(path: Path | str | None = None) -> Config:
-    """Read a config file (default: config/default.toml) and return a validated Config."""
-    path = Path(path) if path is not None else DEFAULT_CONFIG_PATH
+    """Read a config file and return a validated Config.
+
+    Without a path, the file is $VLSI_AGENT_CONFIG (relative to the project folder) or
+    else config/default.toml.
+    """
+    if path is not None:
+        path = Path(path)
+    else:
+        path = project_path(os.environ[CONFIG_ENV]) if os.environ.get(CONFIG_ENV) else DEFAULT_CONFIG_PATH
     try:
         with path.open("rb") as f:
             data = tomllib.load(f)
@@ -116,6 +127,8 @@ def load_config(path: Path | str | None = None) -> Config:
         raise ConfigError(f"{path}: missing section(s): {', '.join(missing)}")
 
     sections = {name: _build_section(name, cls, data[name]) for name, cls in _SECTIONS.items()}
+    if sections["llm"].backend not in BACKENDS:
+        raise ConfigError(f"[llm] backend should be one of {', '.join(BACKENDS)}, got {sections['llm'].backend!r}")
     url = os.environ.get(OLLAMA_URL_ENV)
     if url is not None:  # where the model server is depends on where this runs, not on the experiment
         if not url.startswith(("http://", "https://")):

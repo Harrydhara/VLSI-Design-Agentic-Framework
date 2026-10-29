@@ -13,6 +13,7 @@ dependencies = []
 [project.optional-dependencies]
 dev = ["pytest>=8"]
 ui = ["gradio>=5,<6", "plotly>=5"]
+mlx = ["mlx-lm>=0.32; sys_platform == 'darwin' and platform_machine == 'arm64'"]  # the model server on Apple silicon
 
 [project.scripts]
 vlsi-agent = "vlsi_agent.cli:main"
@@ -23,6 +24,6 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = [
-    "integration: needs the real EDA tools and/or a running Ollama server (run inside WSL)",
-    "ollama: needs a running Ollama server with the model (deselect with -m \"not ollama\")",
+    "integration: needs the real EDA tools and/or a running model server (Ollama or MLX)",
+    "ollama: needs a running model server (Ollama or MLX) with the model (deselect with -m \"not ollama\")",
 ]

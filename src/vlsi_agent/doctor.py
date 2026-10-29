@@ -1,4 +1,4 @@
-"""Environment check: are the EDA tools and the Ollama model ready to use?"""
+"""Environment check: are the EDA tools and the model server (Ollama or MLX) ready to use?"""
 
 from __future__ import annotations
 
@@ -9,6 +9,7 @@ import urllib.request
 from dataclasses import dataclass
 
 from vlsi_agent.config import Config
+from vlsi_agent.llm import OLLAMA_HINT
 
 
 @dataclass(frozen=True)
@@ -48,8 +49,7 @@ def check_ollama(base_url: str, model: str, timeout_s: float = 5) -> list[Check]
     except (urllib.error.URLError, TimeoutError, OSError) as e:
         reason = getattr(e, "reason", e)
         return [
-            Check("ollama server", False, f"cannot reach {base_url} ({reason}); is the service running? "
-                                          "Try: systemctl status ollama"),
+            Check("ollama server", False, f"cannot reach {base_url} ({reason}); {OLLAMA_HINT}"),
             Check(f"model {model}", False, "skipped: server not reachable"),
         ]
     checks = [Check("ollama server", True, f"version {version} at {base_url}")]
@@ -66,13 +66,40 @@ def check_ollama(base_url: str, model: str, timeout_s: float = 5) -> list[Check]
     return checks
 
 
+def check_mlx(base_url: str, model: str, timeout_s: float = 5) -> list[Check]:
+    """Check mlx_lm.server answers and has the configured model downloaded."""
+    base_url = base_url.rstrip("/")
+    start = f"mlx_lm.server --model {model} --port 8080"
+    try:
+        status = _get_json(f"{base_url}/health", timeout_s).get("status", "?")
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        reason = getattr(e, "reason", e)
+        return [
+            Check("mlx server", False, f"cannot reach {base_url} ({reason}); start it with: {start}"),
+            Check(f"model {model}", False, "skipped: server not reachable"),
+        ]
+    checks = [Check("mlx server", True, f"status {status} at {base_url}")]
+
+    try:
+        names = [m["id"] for m in _get_json(f"{base_url}/v1/models", timeout_s).get("data", [])]
+    except (urllib.error.URLError, TimeoutError, OSError, KeyError, ValueError) as e:
+        checks.append(Check(f"model {model}", False, f"could not list models: {e}"))
+        return checks
+    if model in names:
+        checks.append(Check(f"model {model}", True, "downloaded"))
+    else:
+        checks.append(Check(f"model {model}", False, f"not downloaded; the first run downloads it, or run: {start}"))
+    return checks
+
+
 def run_checks(config: Config) -> list[Check]:
     tools = config.tools
+    check_server = check_mlx if config.llm.backend == "mlx" else check_ollama
     return [
         check_tool("iverilog", [tools.iverilog, "-V"]),
         check_tool("vvp", [tools.vvp, "-V"]),
         check_tool("yosys", [tools.yosys, "-V"]),
-        *check_ollama(config.llm.base_url, config.llm.model),
+        *check_server(config.llm.base_url, config.llm.model),
     ]
 
 

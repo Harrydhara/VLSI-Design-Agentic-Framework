@@ -1,6 +1,7 @@
 import dataclasses
 import os
 import signal
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -59,11 +60,9 @@ def put(workdir: Path, files: dict[str, str]) -> Path:
 
 def alive(pid: int) -> bool:
     """True if the process exists and is not a zombie waiting to be reaped."""
-    try:
-        state = Path(f"/proc/{pid}/stat").read_text().rsplit(")", 1)[1].split()[0]
-    except (OSError, IndexError):  # ProcessLookupError if it exits while we read
-        return False
-    return state not in ("Z", "X")
+    # ps works on Linux and macOS (which has no /proc); it prints nothing for a process that is gone.
+    state = subprocess.run(["ps", "-o", "stat=", "-p", str(pid)], capture_output=True, text=True).stdout.strip()
+    return bool(state) and state[0] not in ("Z", "X")
 
 
 # --------------------------------------------------------------- no EDA tools needed

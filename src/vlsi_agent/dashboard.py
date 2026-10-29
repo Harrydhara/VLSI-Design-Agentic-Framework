@@ -22,7 +22,7 @@ from vlsi_agent.agent import DESIGN_FILE, RunResult, run_agent
 from vlsi_agent.benchview import BENCH_ROOT, CHARTS, bench_markdown, export_benchmark, list_benchmarks, load_benchmark
 from vlsi_agent.circuits import get_circuit, load_circuits
 from vlsi_agent.config import PROJECT_ROOT, Config, ToolsConfig, load_config
-from vlsi_agent.llm import Completion, FakeLLM, OllamaLLM
+from vlsi_agent.llm import BACKEND_NAMES, Completion, FakeLLM, make_llm
 from vlsi_agent.progress import describe_event
 from vlsi_agent.prompts import TEMPLATES, PromptError, find_strategies, workflow_of
 from vlsi_agent.runview import (CHECK_HEADERS, ORIGIN_FILE, RUNS_ROOT, attempt_diffs, check_columns, check_table,
@@ -95,7 +95,7 @@ def stream_run(config: Config, circuit_name: str, strategy: str, max_attempts: i
             return
         llm = FakeLLM(json.loads(DEMO_SCRIPT.read_text()))
     else:
-        llm = OllamaLLM(config.llm)
+        llm = make_llm(config.llm)
     circuit = get_circuit(circuit_name)
     run_dir = _new_run_dir(runs_dir, circuit_name, strategy)
 
@@ -339,7 +339,7 @@ def build_app(config: Config | None = None):
     import gradio as gr
 
     config = config or load_config()
-    real_model = f"{config.llm.model} via Ollama"
+    real_model = f"{config.llm.model} via {BACKEND_NAMES[config.llm.backend]}"
     runs = list_runs()
     # Gradio 5 takes css here; Gradio 6 moves it to launch() (pyproject pins gradio<6).
     with gr.Blocks(title="VLSI Design Agent", css=CSS) as app:
@@ -547,5 +547,5 @@ def build_app(config: Config | None = None):
     return app
 
 
-def launch(host: str, port: int) -> None:
-    build_app().launch(server_name=host, server_port=port, show_api=False)
+def launch(config: Config, host: str, port: int) -> None:
+    build_app(config).launch(server_name=host, server_port=port, show_api=False)
