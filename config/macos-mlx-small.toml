@@ -1,0 +1,33 @@
+# Settings for a Mac with Apple silicon: the model runs in mlx_lm.server, the EDA tools come
+# from Homebrew. Use it with --config config/macos-mlx.toml, or set VLSI_AGENT_CONFIG to it.
+# Only [llm] backend, base_url and model, and the [tools] paths differ from default.toml.
+
+[llm]
+backend = "mlx"                  # mlx_lm.server; start it first (see the README)
+base_url = "http://127.0.0.1:8080"
+model = "mlx-community/gemma-4-12B-it-qat-4bit" # Smaller than 26B
+request_timeout_s = 300
+temperature = 0.2         # lower = more repeatable answers; 0 always picks the likeliest token
+seed = 42                 # helps repeatability, but on a GPU identical runs can still differ
+think = false             # true: gemma4 reasons before answering (slower; those tokens count too)
+keep_alive = "10m"        # not used by MLX: the server keeps its model loaded while it runs
+max_output_tokens = 4096  # cap per call; a reply that hits it is marked truncated
+
+[agent]
+max_attempts = 3              # 1 = one-shot baseline; more = revise from development-check feedback
+max_total_tokens = 50000      # no new model call starts once this many tokens (prompt + output) are used
+prompts_dir = "prompts/default"   # system.txt, task.txt, feedback.txt (relative to the project folder)
+feedback_max_chars = 3000     # cap on the tool output sent back to the model per attempt
+
+[tools]
+# Homebrew on Apple silicon: brew install icarus-verilog yosys. These are newer than the
+# versions the benchmarks used (Icarus Verilog 12, Yosys 0.57), so cell counts can differ.
+iverilog = "/opt/homebrew/bin/iverilog"
+vvp = "/opt/homebrew/bin/vvp"
+yosys = "/opt/homebrew/bin/yosys"
+
+# A tool still running after its timeout is killed and the result is marked timed_out.
+compile_timeout_s = 30
+sim_timeout_s = 10      # a testbench that never calls $finish hits this
+synth_timeout_s = 60
+max_log_kb = 64         # keep at most this much of each tool's output (start and end)

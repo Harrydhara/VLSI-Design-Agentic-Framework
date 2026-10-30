@@ -14,9 +14,9 @@ The slides are the Slides deck "VLSI Design Agent: Final Presentation"; its last
    - WSL, without Docker: `~/.venvs/vlsi-agent/bin/vlsi-agent ui`, with Ollama running.
 2. Open http://localhost:7860 in a browser and zoom to 125–150% so the room can read it.
 3. **Warm up the model.** The first call after a start takes about 1.5 minutes while gemma4 loads onto
-   the GPU. In **1. Design inputs** pick adder4, *One-shot*, model *gemma4:26b via Ollama*, press
+   the GPU. In **1. Design and run** pick adder4, *One-shot*, model *gemma4:26b via Ollama*, press
    **Generate & test**, and wait for it to finish.
-4. In **3. Results**, check that the run list contains
+4. Open **2. Results** and check that the run list contains
    `bench/heldout-seeds1-5/runs/alu8/default/seed4` (type `alu8/default/seed4` into the list to filter it).
 5. Close other programs that use the GPU. Keep the slides open in another window.
 
@@ -24,7 +24,7 @@ The slides are the Slides deck "VLSI Design Agent: Final Presentation"; its last
 
 ### 1. A live run (0:00–1:30)
 
-In **1. Design inputs** choose:
+In **1. Design and run** choose:
 
 | Setting | Value |
 |---|---|
@@ -34,7 +34,7 @@ In **1. Design inputs** choose:
 | Maximum attempts | 3 |
 | Model | gemma4:26b via Ollama |
 
-Press **Generate & test**. The run takes about 55 seconds; talk while the log streams in **2. Run**:
+Press **Generate & test**. The run takes about 55 seconds; talk while the log streams in **1. Design and run**:
 
 > "The model gets the ALU's specification and its exact module header, and writes a design and a
 > testbench. The framework compiles both with Icarus, runs the testbench, and synthesizes with Yosys.
@@ -51,7 +51,7 @@ numbers differ, describe what the log shows instead.
 
 ### 2. The results view (1:30–2:15)
 
-In **3. Results** the new run is selected (the list is newest first).
+**2. Results** opens by itself when the run finishes, with the new run selected (the list is newest first).
 
 - Point at the table **Each attempt: the agent's own checks and the hidden test**: own checks FAIL,
   hidden test PASS, three times.
@@ -91,7 +91,7 @@ run is not changed.
 
 ### 4. The benchmark charts (4:15–5:00)
 
-In **4. Benchmarks** choose `heldout-seeds1-5`.
+Open **3. Benchmarks** and choose `heldout-seeds1-5`.
 
 - **Hidden-test passes if stopped after k attempts:** the bars barely change after attempt 1.
 - **Passes per circuit, one-shot → iterative:** the few changes are mux4 (compile errors) and
@@ -103,7 +103,7 @@ In **4. Benchmarks** choose `heldout-seeds1-5`.
 
 | Problem | What to do |
 |---|---|
-| The live run is slow or hangs (model not loaded, GPU busy) | Do not wait more than a minute. In **3. Results** open `ui/20261020-151728-alu4-default`, the same run recorded earlier, and continue with part 2. |
+| The live run is slow or hangs (model not loaded, GPU busy) | Do not wait more than a minute. In **2. Results** open `ui/20261020-151728-alu4-default`, the same run recorded earlier, and continue with part 2. |
 | No GPU or Ollama at all | Set **Model** to *Scripted demo (no GPU)* and **Circuit** to adder4: it replays a recorded run with real Icarus and Yosys checks. Then open the recorded alu4 run as above. |
 | The edit gives a compile error | Press **Reset to this attempt** and add `signed` again, or open the saved edit `manual/20261020-141335-alu8-edit`. |
 | The dashboard does not start | Present slides 6 and 13, which show the live log and the waveform, and the figures in `docs/final-report/figures/`. |

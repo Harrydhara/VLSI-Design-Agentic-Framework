@@ -132,7 +132,7 @@ iterative mode and the model, then press **Generate & test** to watch the run's 
 live. "Scripted demo (no GPU)" replays `examples/scripted_adder4.json` for adder4. Runs
 started from the dashboard are saved under `runs/ui/`.
 
-**3. Results** opens any saved run (dashboard, CLI or benchmark): a table of each
+**2. Results** opens any saved run (dashboard, CLI or benchmark): a table of each
 attempt's own checks and hidden-test score, then per attempt the design, testbench,
 changes from the previous attempt, the hidden test's mismatch lines, the feedback sent to
 the model and its reply. The **Waveform** tab re-runs that attempt's design through the
@@ -142,7 +142,7 @@ The **Edit & re-test** tab lets you change an attempt's design or testbench and 
 what the agent's attempts get (compile, the testbench, synthesis, the hidden test); the
 result is saved as a new run in `runs/manual/`, and the original run is not changed.
 
-**4. Benchmarks** charts any folder under `runs/bench/` (Plotly): hidden-test passes after
+**3. Benchmarks** charts any folder under `runs/bench/` (Plotly): hidden-test passes after
 1, 2, 3 attempts per strategy (one-shot vs iterative on the same runs), one-shot →
 iterative per circuit, how often the agent's own checks rejected correct designs or
 accepted wrong ones, revisions that fixed or broke a design, and tokens per run. The
@@ -215,7 +215,7 @@ The prompts are plain text in `prompts/default/` (`system.txt`, `task.txt`,
 `--prompts <folder>` (or set `prompts_dir` in a config copy). A misspelled placeholder
 is reported before any model call.
 
-Or use the dashboard's **5. Strategy editor**: load any strategy, edit its templates
+Or use the dashboard's **4. Strategy editor**: load any strategy, edit its templates
 (each shows which placeholders it may use), **Check** them, preview them filled in for a
 circuit, and **Save** the copy as `prompts/custom/<name>/`, which then appears in the
 strategy list. The shipped strategies are never changed, and saving never replaces a

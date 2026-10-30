@@ -72,7 +72,7 @@ def summary_markdown(result: RunResult, run_dir: Path) -> str:
         parts.append(f"one-shot {first.outcome.upper()} → final {final.outcome.upper()}")
     parts += [f"{len(result.attempts)} attempt(s)", f"{result.total_tokens:,} tokens", f"{result.duration_s:.1f} s",
               f"stopped because: {result.status.replace('_', ' ')}"]
-    return " · ".join(parts) + "\n\nDetails are in **3. Results** below."
+    return " · ".join(parts) + "\n\nDetails are in **2. Results** below."
 
 
 def _new_run_dir(runs_dir: Path, circuit: str, strategy: str) -> Path:
@@ -300,7 +300,7 @@ def editor_save(loaded_from: str | None, workflow: str, name: str, slot_values, 
         entry = str(folder)
     warnings = check_draft(draft)[1]
     status = (f"**Saved `{entry}`**" + (" (replaced the earlier version)" if replaced else "")
-              + ". Choose it under **1. Design inputs** to run it.")
+              + ". Choose it under **1. Design and run** to run it.")
     if warnings:
         status += "\n\n" + "\n".join(f"- ⚠️ {w}" for w in warnings)
     return status, entry
@@ -340,132 +340,139 @@ def build_app(config: Config | None = None):
 
     config = config or load_config()
     real_model = f"{config.llm.model} via {BACKEND_NAMES[config.llm.backend]}"
-    runs = list_runs()
     # Gradio 5 takes css here; Gradio 6 moves it to launch() (pyproject pins gradio<6).
     with gr.Blocks(title="VLSI Design Agent", css=CSS) as app:
-        gr.Markdown("# VLSI Design Agent\nAn LLM writes Verilog from a specification. Icarus Verilog and Yosys check "
-                    "it, the agent revises from that feedback, and a hidden reference test scores the result.")
-        with gr.Row(equal_height=False):
-            with gr.Column(scale=1, min_width=320):
-                gr.Markdown("### 1. Design inputs")
-                circuit = gr.Dropdown([c.name for c in load_circuits()], value="adder4", label="Circuit")
-                spec = gr.Markdown(spec_markdown("adder4"))
-                strategy = gr.Dropdown(strategy_choices(), value="prompts/default", label="Strategy (prompts folder)")
-                mode = gr.Radio(["Iterative", "One-shot"], value="Iterative", label="Mode")
-                attempts = gr.Slider(1, 5, value=config.agent.max_attempts, step=1,
-                                     label="Maximum attempts (iterative mode)")
-                model = gr.Radio([real_model, DEMO_MODEL], value=real_model, label="Model")
-                run_button = gr.Button("Generate & test", variant="primary")
-            with gr.Column(scale=2, min_width=420):
-                gr.Markdown("### 2. Run")
-                status = gr.Markdown("Pick a circuit and a strategy, then press **Generate & test**.")
-                log = gr.Textbox(label="Agent and tool log", lines=14, max_lines=30, interactive=False,
-                                 autoscroll=True)
+        gr.Markdown("# VLSI Design Agent\nThis tool implements a basic LLM agent loop for VLSI design. First, the LLM "
+                    "writes Verilog from a specification. Then, two VLSI tools (Icarus Verilog and Yosys) check that "
+                    "code. If the tools report errors, the agent reads their feedback and revises the design. "
+                    "Finally, a hidden reference test suite scores the result.")
+        with gr.Accordion("1. Design and run", open=True):
+            with gr.Row(equal_height=False):
+                with gr.Column(scale=1, min_width=320):
+                    circuit = gr.Dropdown([c.name for c in load_circuits()], value="adder4", label="Circuit")
+                    spec = gr.Markdown(spec_markdown("adder4"))
+                    strategy = gr.Dropdown(strategy_choices(), value="prompts/default",
+                                           label="Strategy (prompts folder)")
+                    mode = gr.Radio(["Iterative", "One-shot"], value="Iterative", label="Mode")
+                    attempts = gr.Slider(1, 5, value=config.agent.max_attempts, step=1,
+                                         label="Maximum attempts (iterative mode)")
+                    model = gr.Radio([real_model, DEMO_MODEL], value=real_model, label="Model")
+                    run_button = gr.Button("Generate & test", variant="primary")
+                with gr.Column(scale=2, min_width=420):
+                    status = gr.Markdown("Pick a circuit and a strategy, then press **Generate & test**.")
+                    log = gr.Textbox(label="Agent and tool log", lines=14, max_lines=30, interactive=False,
+                                     autoscroll=True)
 
-        gr.Markdown("### 3. Results")
-        with gr.Row():
-            run_picker = gr.Dropdown(runs, value=runs[0] if runs else None, label="Run (newest first)",
-                                     filterable=True, scale=5)
-            refresh = gr.Button("Refresh list", scale=1)
-        run_info = gr.Markdown()
-        with gr.Row(equal_height=True):
-            export_run_button = gr.Button("Export run (.zip)", scale=1)
-            run_export = gr.File(label="Run folder and summary.md", interactive=False, height=60, scale=3)
-        checks = gr.Dataframe(headers=CHECK_HEADERS, value=[], interactive=False, wrap=True, row_count=1,
-                              label="Each attempt: the agent's own checks and the hidden test")
-        attempt = gr.Radio([], label="Attempt")
-        with gr.Tabs():
-            with gr.Tab("Design"):
-                design = gr.Code(label="design.v", interactive=False)
-            with gr.Tab("Testbench"):
-                testbench = gr.Code(label="tb.v", interactive=False)
-            with gr.Tab("Edit & re-test"):
-                gr.Markdown(EDIT_HINT)
-                edit_design = gr.Code(label="design.v (editable)", interactive=True)
-                edit_testbench = gr.Code(label="tb.v (editable; leave empty to test without one)", interactive=True)
-                with gr.Row():
-                    retest_button = gr.Button("Check & test", variant="primary")
-                    reset_button = gr.Button("Reset to this attempt")
-                retest_status = gr.Markdown()
-            with gr.Tab("Changes from the previous attempt"):
-                diffs = gr.HTML(padding=False)
-            with gr.Tab("Hidden test"):
-                hidden = gr.Markdown()
-            with gr.Tab("Waveform"):
-                with gr.Row(equal_height=True):
-                    wave_start = gr.Number(0, label="Start (ns)", precision=0, minimum=0)
-                    wave_length = gr.Number(64, label="Length (ns)", precision=0, minimum=1, maximum=MAX_WINDOW_NS)
-                    draw = gr.Button("Draw waveform")
-                wave_note = gr.Markdown(WAVE_HINT)
-                wave_plot = gr.Plot(show_label=False)
-            with gr.Tab("Feedback sent to the model"):
-                feedback = gr.Textbox(lines=12, interactive=False, show_label=False)
-            with gr.Tab("Model reply"):
-                reply = gr.Markdown()
-
-        gr.Markdown("### 4. Benchmarks")
-        benchmarks = list_benchmarks()
-        with gr.Row():
-            bench_picker = gr.Dropdown(benchmarks, value=benchmarks[0] if benchmarks else None,
-                                       label="Benchmark (runs/bench/)", scale=5)
-            bench_refresh = gr.Button("Refresh list", scale=1)
-        bench_info = gr.Markdown()
-        with gr.Row(equal_height=True):
-            export_bench_button = gr.Button("Export charts and rows", scale=1)
-            bench_export = gr.File(label="Charts (standalone HTML) and rows (CSV)", file_count="multiple",
-                                   interactive=False, height=90, scale=3)
-        with gr.Row(equal_height=False):  # side by side when there is room, stacked otherwise
-            pass_plot, heatmap_plot = gr.Plot(show_label=False, min_width=460), gr.Plot(show_label=False, min_width=460)
-        with gr.Row(equal_height=False):
-            checks_plot, fixed_plot = gr.Plot(show_label=False, min_width=460), gr.Plot(show_label=False, min_width=460)
-        tokens_plot = gr.Plot(show_label=False)
-        bench_outputs = [bench_info, pass_plot, heatmap_plot, checks_plot, fixed_plot, tokens_plot]
-
-        gr.Markdown("### 5. Strategy editor\nCopy a strategy, change its prompts, check them and save the copy under "
-                    "`prompts/custom/`; it then appears in **1. Design inputs**. The shipped strategies are never "
-                    "changed, and every run keeps a copy of the prompts it used.")
-        start_draft, start_name = editor_draft("prompts/default")
-        start_files = list(TEMPLATES[start_draft.workflow])
-        with gr.Row():
-            editor_source = gr.Dropdown(strategy_choices(), value="prompts/default", label="Start from", scale=5)
-            editor_load = gr.Button("Load", scale=1)
-        editor_workflow = gr.State(start_draft.workflow)
-        editor_loaded = gr.State("prompts/default")  # the strategy whose files are in the editor
-        workflow_md = gr.Markdown("Workflow: " + WORKFLOW_TEXT[start_draft.workflow])
-        slots = []
-        for i in range(EDITOR_SLOTS):
-            shown = i < len(start_files)
-            slots.append(gr.Textbox(start_draft.texts[start_files[i]] if shown else "", lines=6, max_lines=30,
-                                    label=f"{start_files[i]}.txt" if shown else "template",
-                                    info=FILE_HELP[start_files[i]] if shown else None, visible=shown))
-        editor_notes = gr.Textbox(start_draft.notes, lines=4, label="README.md: notes on this strategy",
-                                  info="What you changed and why. Never sent to the model.")
-        with gr.Row(equal_height=True):
-            editor_name = gr.Textbox(start_name, label="Save as prompts/custom/<name>", scale=4)
-            editor_check = gr.Button("Check", scale=1)
-            editor_save_button = gr.Button("Save", variant="primary", scale=1)
-        editor_status = gr.Markdown()
-        with gr.Accordion("Preview: the prompts as the model receives them", open=False):
+        with gr.Accordion("2. Results", open=False) as results_section:
+            with gr.Row():
+                run_picker = gr.Dropdown(list_runs(), value=None, label="Run (newest first)", filterable=True,
+                                         scale=5)
+                refresh = gr.Button("Refresh list", scale=1)
+            run_info = gr.Markdown()
             with gr.Row(equal_height=True):
-                preview_circuit = gr.Dropdown([c.name for c in load_circuits()], value="adder4",
-                                              label="Circuit", scale=4)
-                preview_button = gr.Button("Preview", scale=1)
-            preview_text = gr.Textbox(lines=24, max_lines=60, interactive=False, show_label=False)
+                export_run_button = gr.Button("Export run (.zip)", scale=1)
+                run_export = gr.File(label="Run folder and summary.md", interactive=False, height=60, scale=3)
+            checks = gr.Dataframe(headers=CHECK_HEADERS, value=[], interactive=False, wrap=True, row_count=1,
+                                  label="Each attempt: the agent's own checks and the hidden test")
+            attempt = gr.Radio([], label="Attempt")
+            with gr.Tabs():
+                with gr.Tab("Design"):
+                    design = gr.Code(label="design.v", interactive=False)
+                with gr.Tab("Testbench"):
+                    testbench = gr.Code(label="tb.v", interactive=False)
+                with gr.Tab("Edit & re-test"):
+                    gr.Markdown(EDIT_HINT)
+                    edit_design = gr.Code(label="design.v (editable)", interactive=True)
+                    edit_testbench = gr.Code(label="tb.v (editable; leave empty to test without one)",
+                                             interactive=True)
+                    with gr.Row():
+                        retest_button = gr.Button("Check & test", variant="primary")
+                        reset_button = gr.Button("Reset to this attempt")
+                    retest_status = gr.Markdown()
+                with gr.Tab("Changes from the previous attempt"):
+                    diffs = gr.HTML(padding=False)
+                with gr.Tab("Hidden test"):
+                    hidden = gr.Markdown()
+                with gr.Tab("Waveform"):
+                    with gr.Row(equal_height=True):
+                        wave_start = gr.Number(0, label="Start (ns)", precision=0, minimum=0)
+                        wave_length = gr.Number(64, label="Length (ns)", precision=0, minimum=1,
+                                                maximum=MAX_WINDOW_NS)
+                        draw = gr.Button("Draw waveform")
+                    wave_note = gr.Markdown(WAVE_HINT)
+                    wave_plot = gr.Plot(show_label=False)
+                with gr.Tab("Feedback sent to the model"):
+                    feedback = gr.Textbox(lines=12, interactive=False, show_label=False)
+                with gr.Tab("Model reply"):
+                    reply = gr.Markdown()
+
+        with gr.Accordion("3. Benchmarks", open=False):
+            with gr.Row():
+                bench_picker = gr.Dropdown(list_benchmarks(), value=None, label="Benchmark (runs/bench/)", scale=5)
+                bench_refresh = gr.Button("Refresh list", scale=1)
+            bench_info = gr.Markdown()
+            with gr.Row(equal_height=True):
+                export_bench_button = gr.Button("Export charts and rows", scale=1)
+                bench_export = gr.File(label="Charts (standalone HTML) and rows (CSV)", file_count="multiple",
+                                       interactive=False, height=90, scale=3)
+            with gr.Row(equal_height=False):  # side by side when there is room, stacked otherwise
+                pass_plot = gr.Plot(show_label=False, min_width=460)
+                heatmap_plot = gr.Plot(show_label=False, min_width=460)
+            with gr.Row(equal_height=False):
+                checks_plot = gr.Plot(show_label=False, min_width=460)
+                fixed_plot = gr.Plot(show_label=False, min_width=460)
+            tokens_plot = gr.Plot(show_label=False)
+            bench_outputs = [bench_info, pass_plot, heatmap_plot, checks_plot, fixed_plot, tokens_plot]
+
+        with gr.Accordion("4. Strategy editor", open=False):
+            gr.Markdown("Copy a strategy, change its prompts, check them and save the copy under `prompts/custom/`; "
+                        "it then appears in **1. Design and run**. The shipped strategies are never changed, and "
+                        "every run keeps a copy of the prompts it used.")
+            start_draft, start_name = editor_draft("prompts/default")
+            start_files = list(TEMPLATES[start_draft.workflow])
+            with gr.Row():
+                editor_source = gr.Dropdown(strategy_choices(), value="prompts/default", label="Start from", scale=5)
+                editor_load = gr.Button("Load", scale=1)
+            editor_workflow = gr.State(start_draft.workflow)
+            editor_loaded = gr.State("prompts/default")  # the strategy whose files are in the editor
+            workflow_md = gr.Markdown("Workflow: " + WORKFLOW_TEXT[start_draft.workflow])
+            slots = []
+            for i in range(EDITOR_SLOTS):
+                shown = i < len(start_files)
+                slots.append(gr.Textbox(start_draft.texts[start_files[i]] if shown else "", lines=6, max_lines=30,
+                                        label=f"{start_files[i]}.txt" if shown else "template",
+                                        info=FILE_HELP[start_files[i]] if shown else None, visible=shown))
+            editor_notes = gr.Textbox(start_draft.notes, lines=4, label="README.md: notes on this strategy",
+                                      info="What you changed and why. Never sent to the model.")
+            with gr.Row(equal_height=True):
+                editor_name = gr.Textbox(start_name, label="Save as prompts/custom/<name>", scale=4)
+                editor_check = gr.Button("Check", scale=1)
+                editor_save_button = gr.Button("Save", variant="primary", scale=1)
+            editor_status = gr.Markdown()
+            with gr.Accordion("Preview: the prompts as the model receives them", open=False):
+                with gr.Row(equal_height=True):
+                    preview_circuit = gr.Dropdown([c.name for c in load_circuits()], value="adder4",
+                                                  label="Circuit", scale=4)
+                    preview_button = gr.Button("Preview", scale=1)
+                preview_text = gr.Textbox(lines=24, max_lines=60, interactive=False, show_label=False)
 
         circuit.change(spec_markdown, circuit, spec)
 
         def on_run(circuit_name, strategy_path, mode_name, max_attempts, model_name):
             busy = gr.update(interactive=False, value="Running...")  # one run at a time, and it shows
+            keep = gr.update()
             try:
                 for log_text, status_text, run_dir in stream_run(
                         config, circuit_name, strategy_path, 1 if mode_name == "One-shot" else int(max_attempts),
                         model_name == DEMO_MODEL):
-                    picker = (gr.update(choices=list_runs(), value=_relative(run_dir)) if run_dir is not None
-                              else gr.update())
-                    yield log_text, status_text, picker, busy
+                    if run_dir is None:
+                        yield log_text, status_text, keep, busy, keep
+                    else:  # finished: select the new run and open its results
+                        yield (log_text, status_text, gr.update(choices=list_runs(), value=_relative(run_dir)), busy,
+                               gr.update(open=True))
             except Exception as e:  # e.g. a broken strategy: say so, and never leave the button disabled
-                yield gr.update(), f"**Could not start the run:** {type(e).__name__}: {e}", gr.update(), busy
-            yield gr.update(), gr.update(), gr.update(), gr.update(interactive=True, value="Generate & test")
+                yield keep, f"**Could not start the run:** {type(e).__name__}: {e}", keep, busy, keep
+            yield keep, keep, keep, gr.update(interactive=True, value="Generate & test"), keep
 
         def on_run_picked(relative):
             summary, table, choices, selected = results_for_run(relative)
@@ -480,7 +487,8 @@ def build_app(config: Config | None = None):
 
         attempt_files = [design, testbench, diffs, hidden, feedback, reply]
         wave_reset = [wave_start, wave_length, wave_note, wave_plot]
-        run_button.click(on_run, [circuit, strategy, mode, attempts, model], [log, status, run_picker, run_button])
+        run_button.click(on_run, [circuit, strategy, mode, attempts, model],
+                         [log, status, run_picker, run_button, results_section])
         refresh.click(lambda: gr.update(choices=list_runs()), None, run_picker)
         export_run_button.click(export_run, run_picker, run_export)
         # Picking a run often leaves the attempt number as it was (say 3 → 3), which fires no

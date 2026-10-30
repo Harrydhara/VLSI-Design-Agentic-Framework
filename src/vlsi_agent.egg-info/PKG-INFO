@@ -9,23 +9,102 @@ Requires-Dist: pytest>=8; extra == "dev"
 Provides-Extra: ui
 Requires-Dist: gradio<6,>=5; extra == "ui"
 Requires-Dist: plotly>=5; extra == "ui"
+Provides-Extra: mlx
+Requires-Dist: mlx-lm>=0.32; (sys_platform == "darwin" and platform_machine == "arm64") and extra == "mlx"
 
 # VLSI Design Agent
 
-An LLM (local Ollama, `gemma4:26b`) writes Verilog from a circuit spec. Icarus Verilog and
-Yosys check it, and the tool feedback drives revisions. Final scores come from reference
+An LLM (local Ollama, `gemma4:26b`; or MLX on a Mac) writes Verilog from a circuit spec.
+Icarus Verilog and Yosys check it, and the tool feedback drives revisions. Final scores come from reference
 tests the agent never sees.
 
-## Setup (inside WSL Ubuntu)
+## Quick start with Docker
+
+Needs Docker with access to an NVIDIA GPU: Docker Desktop with the WSL 2 backend on
+Windows, or Docker Engine plus the NVIDIA Container Toolkit on Linux. The containers have
+the tool versions the benchmarks used: Icarus Verilog 12, Yosys 0.57+260 (built from
+source), Ollama 0.31.2, and the Python packages pinned in `docker/constraints.txt`.
+
+```bash
+git clone https://github.com/Harrydhara/VLSI-Design-Agentic-Framework
+cd VLSI-Design-Agentic-Framework
+docker compose up -d
+```
+
+Then open http://localhost:7860. The first `up` downloads the app image from GitHub's
+container registry (`ghcr.io/harrydhara/vlsi-design-agentic-framework`, published by
+`.github/workflows/docker-image.yml` after its tests pass) or, if it cannot, builds it here
+(several minutes: Yosys is compiled from source). It also downloads gemma4:26b, about 17 GB
+(`docker compose logs -f pull-model` shows the progress). The dashboard starts meanwhile,
+and runs work once the download is done. The first model call after each start takes about
+1.5 minutes while gemma4 is loaded onto the GPU; later calls run at full speed (~170
+tokens/s on an RTX 4090).
+
+- **Your files:** `runs/` and `prompts/custom/` are mounted from the project folder, so
+  runs and custom strategies outlive the containers. The model stays in the Docker volume
+  `vlsi-agent_ollama-models`. `docker compose down` stops everything and keeps both;
+  `docker compose down -v` also deletes the model.
+- **Updates:** `docker compose pull`, then `docker compose up -d`. To use your own changes
+  instead of the published image: `docker compose up -d --build`.
+- **Command line:** any command from this README works in the app container, e.g.
+  `docker compose exec app vlsi-agent run adder4` or
+  `docker compose run --rm --no-deps app vlsi-agent check-fixtures`.
+- **Port:** the dashboard only listens on this computer (it can start runs and write files,
+  with no login). If 7860 is taken, set `VLSI_AGENT_PORT=7861` in the shell or a `.env`
+  file next to `compose.yaml`.
+- **Time zone:** run folders are named by local time. Linux engines pass the host's time
+  zone on. Docker Desktop (Windows, macOS) runs containers on UTC unless `.env` has a line
+  like `TZ=America/Phoenix`.
+- **Ollama already installed:** a 24 GB GPU holds gemma4 only once, so don't let two
+  Ollamas load it. To use the one you have (Docker Engine on Linux or in WSL), start only
+  the app: `docker compose -f compose.yaml -f compose.host-ollama.yaml up -d app`.
+- **One Docker engine per machine:** on Windows, Docker Desktop's WSL integration takes
+  over the Docker socket inside a WSL distro that also runs its own engine, and quitting
+  Desktop leaves that distro without one until its engine is restarted.
+- **Disk:** about 10 GB of images plus 18 GB for the model.
+
+## Setup without Docker (inside WSL Ubuntu)
 
 The tools (Ollama, iverilog, yosys) run in WSL, so the Python environment lives there too.
 The virtual environment goes in the Linux home folder because it is much faster than `/mnt/c`.
 
 ```bash
-cd "/mnt/c/Users/harrydhara16/Documents/Claude framework"
+cd VLSI-Design-Agentic-Framework   # your clone, e.g. under /mnt/c/Users/<you>/...
 python3 -m venv ~/.venvs/vlsi-agent
 ~/.venvs/vlsi-agent/bin/pip install -e ".[dev]"
 ```
+
+## Setup on a Mac (Apple silicon, MLX)
+
+Docker on macOS cannot use the Mac's GPU, so everything runs natively. The model runs in
+`mlx_lm.server`, which uses Apple's MLX framework. `config/macos-mlx.toml` holds the
+settings: the MLX backend, the same Gemma 4 model in MLX format, and the Homebrew tool paths.
+
+```bash
+brew install icarus-verilog yosys
+cd VLSI-Design-Agentic-Framework
+python3 -m venv ~/.venvs/vlsi-agent
+~/.venvs/vlsi-agent/bin/pip install -e ".[dev,ui,mlx]"
+export VLSI_AGENT_CONFIG=config/macos-mlx.toml   # e.g. in ~/.zshrc; or give --config every time
+```
+
+Start the model server in its own terminal and keep it running. The first start downloads
+the model (about 15 GB) into `~/.cache/huggingface`.
+
+```bash
+~/.venvs/vlsi-agent/bin/mlx_lm.server --model mlx-community/gemma-4-26b-a4b-it-4bit --port 8080
+```
+
+Every command in this README then works as written. Some differences from the benchmark setup:
+
+- **Memory:** the 4-bit model's weights alone take about 15 GB of unified memory, so a Mac
+  with 24 GB is the practical minimum. On a smaller Mac, set `[llm] model` in a copy of the
+  config to a smaller model, e.g. `mlx-community/gemma-4-12B-it-qat-4bit`, and give the
+  server the same name.
+- **Tool versions:** Homebrew has Icarus Verilog 13 and Yosys 0.70, not 12 and 0.57. All
+  fixtures get their expected outcomes, but synthesis cell counts can differ from the report.
+- **Ollama:** Ollama also runs natively on a Mac. To use it, keep `config/default.toml`'s
+  `[llm]` section and copy only the `[tools]` paths from `config/macos-mlx.toml`.
 
 ## Check the environment
 
@@ -33,7 +112,9 @@ python3 -m venv ~/.venvs/vlsi-agent
 ~/.venvs/vlsi-agent/bin/vlsi-agent doctor
 ```
 
-All checks should say `OK`. Tool paths and the model name are in `config/default.toml`.
+All checks should say `OK`. Tool paths, the model and its backend (`ollama` or `mlx`) are in
+`config/default.toml`. The environment variable `VLSI_AGENT_CONFIG` names a different
+default config file, and `VLSI_AGENT_OLLAMA_URL` overrides the model server's address.
 
 To send the model a single prompt (the reply goes to stdout, token usage to stderr):
 
@@ -49,8 +130,44 @@ still give different answers, so compare settings over several runs.
 
 ```bash
 ~/.venvs/vlsi-agent/bin/pytest            # everything
-~/.venvs/vlsi-agent/bin/pytest -m "not integration"   # skip tests that need the real tools/Ollama
+~/.venvs/vlsi-agent/bin/pytest -m "not integration"   # skip tests that need the real tools/model server
+~/.venvs/vlsi-agent/bin/pytest -m "not ollama"        # skip only the 3 that need the model server
 ```
+
+## Dashboard
+
+```bash
+~/.venvs/vlsi-agent/bin/pip install -e ".[ui]"   # Gradio and Plotly, once
+~/.venvs/vlsi-agent/bin/vlsi-agent ui             # then open http://localhost:7860
+```
+
+Pick a circuit (its specification and module header are shown), a strategy, one-shot or
+iterative mode and the model, then press **Generate & test** to watch the run's progress
+live. "Scripted demo (no GPU)" replays `examples/scripted_adder4.json` for adder4. Runs
+started from the dashboard are saved under `runs/ui/`.
+
+**3. Results** opens any saved run (dashboard, CLI or benchmark): a table of each
+attempt's own checks and hidden-test score, then per attempt the design, testbench,
+changes from the previous attempt, the hidden test's mismatch lines, the feedback sent to
+the model and its reply. The **Waveform** tab re-runs that attempt's design through the
+hidden test and plots a time window (Plotly), opening just before the first mismatch,
+with dashed lines at the mismatches and the test's expected value under each output.
+The **Edit & re-test** tab lets you change an attempt's design or testbench and run exactly
+what the agent's attempts get (compile, the testbench, synthesis, the hidden test); the
+result is saved as a new run in `runs/manual/`, and the original run is not changed.
+
+**4. Benchmarks** charts any folder under `runs/bench/` (Plotly): hidden-test passes after
+1, 2, 3 attempts per strategy (one-shot vs iterative on the same runs), one-shot →
+iterative per circuit, how often the agent's own checks rejected correct designs or
+accepted wrong ones, revisions that fixed or broke a design, and tokens per run. The
+numbers are rebuilt from each run's `history.json`, as the report does.
+
+**Export:** *Export run (.zip)* packs the chosen run folder with a readable `summary.md`
+(verdict, each attempt's checks, the hidden test's mismatches, the feedback sent, the
+final design). *Export charts and rows* gives the benchmark's charts as one standalone
+HTML page (opens offline) and its rows as CSV. The zip holds the raw run files, so
+`history.json` keeps the absolute path of the prompts folder; the CSV's paths are
+relative to the project.
 
 ## Run the agent
 
@@ -112,6 +229,13 @@ The prompts are plain text in `prompts/default/` (`system.txt`, `task.txt`,
 `--prompts <folder>` (or set `prompts_dir` in a config copy). A misspelled placeholder
 is reported before any model call.
 
+Or use the dashboard's **5. Strategy editor**: load any strategy, edit its templates
+(each shows which placeholders it may use), **Check** them, preview them filled in for a
+circuit, and **Save** the copy as `prompts/custom/<name>/`, which then appears in the
+strategy list. The shipped strategies are never changed, and saving never replaces a
+different custom strategy than the one loaded. Every run keeps a copy of the templates it
+used in its folder (`prompts/`), so editing a strategy later does not change the record.
+
 A strategy folder can also change the workflow with a `strategy.toml`.
 [`prompts/examples/spec_first/`](prompts/examples/spec_first/README.md) uses
 `workflow = "spec_first"`: the testbench is written from the specification in its own
@@ -153,20 +277,36 @@ Reference tests print `RESULT __RESULT_TOKEN__: ...` instead. The placeholder is
 replaced with a random token on every run and only that line counts, so a generated
 design that prints its own `RESULT` line and calls `$finish` cannot fake a pass.
 
+Reference tests also print failures as `MISMATCH at <t> ns...` (the first 5), and dump
+waveforms only on request: `+vcd` writes `reference.vcd`, and `+vcd_from=<ns>` /
+`+vcd_until=<ns>` limit it to a window. Copy the block from an existing `reference_tb.v`
+when adding a circuit; the dashboard relies on both.
+
 ## Layout
 
 | Path | What it holds |
 |---|---|
-| `config/default.toml` | Model, Ollama URL, pinned EDA tool paths, tool timeouts |
+| `config/default.toml` | Model, pinned EDA tool paths, tool timeouts |
+| `config/macos-mlx.toml` | The same for a Mac: the MLX model server and Homebrew tool paths |
+| `Dockerfile` | The app image: Icarus Verilog, Yosys built from the benchmark commit, the package and dashboard |
+| `compose.yaml` | The Docker stack: app, Ollama on the GPU, one-time model download |
+| `compose.host-ollama.yaml` | Override: the app uses an Ollama already running on the machine |
+| `docker/constraints.txt` | Exact Python package versions for the image |
+| `.github/workflows/docker-image.yml` | Builds, tests and publishes the image to ghcr.io on every push to `main` |
 | `src/vlsi_agent/` | The Python package (`cli.py`, `config.py`, `doctor.py`, ...) |
 | `src/vlsi_agent/eda.py` | Runs iverilog, vvp and Yosys with timeouts; returns structured results |
 | `src/vlsi_agent/circuits.py` | Loads and validates circuit folders |
 | `src/vlsi_agent/evaluate.py` | Scores a design with a circuit's hidden reference test |
-| `src/vlsi_agent/llm.py` | Ollama client, scripted `FakeLLM` for tests, Verilog extraction from replies |
+| `src/vlsi_agent/llm.py` | Ollama and MLX clients, scripted `FakeLLM` for tests, Verilog extraction from replies |
 | `src/vlsi_agent/agent.py` | The generate / check / revise loop, event log, history export |
 | `src/vlsi_agent/bench.py` | Benchmark runner (resumable) and summary tables |
 | `src/vlsi_agent/devcheck.py` | Development checks: the only feedback the model sees |
 | `src/vlsi_agent/prompts.py` | Loads and fills the prompt templates |
+| `src/vlsi_agent/dashboard.py` | The Gradio dashboard (`vlsi-agent ui`) |
+| `src/vlsi_agent/runview.py` | Reads saved run folders for the dashboard's results view |
+| `src/vlsi_agent/benchview.py` | Reads benchmark folders and draws the dashboard's benchmark charts |
+| `src/vlsi_agent/strategy_editor.py` | Loads, checks, previews and saves strategies for the dashboard's editor |
+| `src/vlsi_agent/waveform.py` | Windowed reference-test VCD dumps, VCD parser, Plotly waveform figure |
 | `prompts/default/` | The starter agent's prompts |
 | `examples/` | Scripted replies for running without a GPU |
 | `docs/` | Reports, e.g. `benchmark-report.html` |
