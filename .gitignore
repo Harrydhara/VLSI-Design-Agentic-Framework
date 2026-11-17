@@ -5,6 +5,7 @@ build/
 dist/
 .pytest_cache/
 .venv/
+.venv312/
 
 # Run outputs (generated RTL, logs, waveforms). The empty folder itself is kept, so Docker
 # Compose mounts it instead of creating a root-owned one.

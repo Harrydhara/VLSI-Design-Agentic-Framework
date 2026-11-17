@@ -57,6 +57,8 @@ def describe_event(e: dict) -> str | None:
                                f"({checks_text(e)})" + (" after the testbench fix" if e.get("recheck") else ""),
         "feedback_sent": lambda: f"attempt {n}: sent the check results back to the model ({e['chars']} chars)",
         "budget_exhausted": lambda: f"token budget used up ({e['used']}/{e['budget']}), stopping",
+        "duplicate_revision": lambda: f"attempt {n}: the same design and the same check results as attempt "
+                                      f"{e['same_as']}, stopping instead of revising again",
         "model_error": lambda: f"{_who(e)}: model error: {e['error']}",
         "reference_scored": lambda: f"hidden reference test on attempt {n}: {e['outcome'].upper()}"
                                     + (f" {e['passed']}/{e['total']}" if e["total"] else "")

@@ -208,6 +208,29 @@ def test_zero_attempts_is_rejected(tmp_path):
         run(tmp_path, [GOOD], max_attempts=0)
 
 
+def test_a_repeated_revision_stops_the_loop_only_when_asked_to(tmp_path):
+    stopping = dataclasses.replace(CONFIG, agent=dataclasses.replace(CONFIG.agent, stop_on_duplicate=True))
+    fake = FakeLLM([BAD, BAD, GOOD])  # the second reply repeats the first; a third call would have fixed it
+    result = run_agent(stopping, ADDER4, fake, tmp_path / "stops", max_attempts=3, score_every_attempt=True)
+    assert result.status == "duplicate_revision" and len(fake.calls) == 2 and len(result.attempts) == 2
+    assert result.final_attempt == 2 and result.reference.outcome == "fail"  # still scored, like any other run
+    events = [json.loads(line) for line in (result.run_dir / "events.jsonl").read_text().splitlines()]
+    assert {"attempt": 2, "same_as": 1}.items() <= next(e for e in events if e["event"] == "duplicate_revision").items()
+    history = json.loads((result.run_dir / "history.json").read_text())
+    assert history["status"] == "duplicate_revision" and history["settings"]["stop_on_duplicate"] is True
+
+    # A different design, or the same design on the last allowed attempt, is not a duplicate stop.
+    changed = BAD.replace("assign sum = a + b + cin;", "assign sum = a + b + cin + 1'b0;")
+    result = run_agent(stopping, ADDER4, FakeLLM([BAD, changed, GOOD]), tmp_path / "differs", max_attempts=3)
+    assert result.status == "dev_passed" and len(result.attempts) == 3
+    result = run_agent(stopping, ADDER4, FakeLLM([BAD, BAD]), tmp_path / "limit", max_attempts=2)
+    assert result.status == "attempts_exhausted"
+
+    result, fake = run(tmp_path, [BAD, BAD, GOOD], max_attempts=3)  # the default config: off
+    assert result.status == "dev_passed" and len(fake.calls) == 3
+    assert json.loads((result.run_dir / "history.json").read_text())["settings"]["stop_on_duplicate"] is False
+
+
 @pytest.mark.ollama
 def test_real_model_run_completes(tmp_path):
     result = run_agent(CONFIG, ADDER4, make_llm(CONFIG.llm), tmp_path / "run", max_attempts=2)

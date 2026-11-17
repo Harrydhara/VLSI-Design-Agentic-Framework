@@ -2,8 +2,9 @@
 
 Validation is strict: a missing key, an unknown key (usually a typo), or a value of
 the wrong type is an error, so a mistake in an edited config fails loudly instead of
-silently falling back to a default. The one exception is [llm] backend, which came
-later: config files written before it existed still mean Ollama.
+silently falling back to a default. The exceptions are keys that came later, so config
+files written before they existed keep their meaning: [llm] backend (Ollama) and
+[agent] stop_on_duplicate (off).
 """
 
 from __future__ import annotations
@@ -50,6 +51,9 @@ class AgentConfig:
     max_total_tokens: int
     prompts_dir: str
     feedback_max_chars: int
+    # Came later, so older config files still mean "off": stop the loop when a revision repeats the
+    # previous attempt's design and gets the same check results (see agent.py).
+    stop_on_duplicate: bool = False
 
 
 @dataclass(frozen=True)

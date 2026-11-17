@@ -39,7 +39,9 @@ class RunView:
     folder: Path
     history: dict
     attempts: list[AttemptView]
-    origin: dict | None = None  # {"edited_from": run, "attempt": n} for a manual re-test
+    # {"edited_from": run, "attempt": n} for a manual re-test; {"own_design": True, "circuit": name}
+    # for a design written in the page
+    origin: dict | None = None
 
     def attempt(self, number: int) -> AttemptView:
         return next(a for a in self.attempts if a.number == number)
@@ -136,9 +138,11 @@ def run_markdown(run: RunView) -> str:
     final = h.get("reference")
     verdict = (f"**Hidden reference test: {final['outcome'].upper()}** ({final['detail']})" if final
                else "**No design was produced.**")
-    if run.origin:  # a manual re-test: no model and no strategy were involved
-        return (f"{verdict}\n\n`{h['circuit']}` ({h['split']}) · manual edit of `{run.origin['edited_from']}`, "
-                f"attempt {run.origin['attempt']} · own checks {'PASS' if h['status'] == 'dev_passed' else 'FAIL'} · "
+    if run.origin:  # checked by hand (an edited attempt, or a design of the user's own): no model, no strategy
+        source = ("a design written in the page (Level 3)" if run.origin.get("own_design")
+                  else f"manual edit of `{run.origin['edited_from']}`, attempt {run.origin['attempt']}")
+        return (f"{verdict}\n\n`{h['circuit']}` ({h['split']}) · {source} · "
+                f"own checks {'PASS' if h['status'] == 'dev_passed' else 'FAIL'} · "
                 f"{h['duration_s']:.1f} s\n\nRun files: `{where}`")
     strategy = Path(settings["prompts"]).name
     workflow = settings.get("workflow", "single")

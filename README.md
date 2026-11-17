@@ -4,6 +4,12 @@ An LLM (local Ollama, `gemma4:26b`; or MLX on a Mac) writes Verilog from a circu
 Icarus Verilog and Yosys check it, and the tool feedback drives revisions. Final scores come from reference
 tests the agent never sees.
 
+The dashboard is also a self-contained course on the subject. It leads from **Level 1 · Beginner** (remember and
+understand the ideas) through **Level 2 · Intermediate** (apply and analyze with guided labs on the preconfigured
+tool) to **Level 3 · Advanced** (evaluate and create your own design, testbench or prompt strategy), following
+Bloom's taxonomy, and has a **Developer view** of the code and data behind every chart. See
+[Dashboard](#dashboard) and [`docs/learning-path.md`](docs/learning-path.md).
+
 ## Quick start with Docker
 
 Needs Docker with access to an NVIDIA GPU: Docker Desktop with the WSL 2 backend on
@@ -127,8 +133,22 @@ still give different answers, so compare settings over several runs.
 ~/.venvs/vlsi-agent/bin/vlsi-agent ui             # then open http://localhost:7860
 ```
 
-Pick a circuit (its specification and module header are shown), a strategy, one-shot or
-iterative mode and the model, then press **Generate & test** to watch the run's progress
+The page has five tabs, meant to be read from left to right:
+
+| Tab | Bloom's stages | What it holds | Needs |
+|---|---|---|---|
+| **Start here** | | What the field is, why it matters, who benefits, what to know first, how the levels work | a browser |
+| **Level 1 · Beginner** | Remember, Understand | A glossary, six short lessons, four explorers (signed or unsigned, which inputs expose a bug, when a testbench looks, the four verdicts), a quiz | a browser |
+| **Level 2 · Intermediate** | Apply, Analyze | Four guided labs that set up the tool for you, then the tool itself: **1. Design and run**, **2. Results**, **3. Benchmarks** | recorded runs: nothing; new runs: the tools (the scripted demo needs no GPU) |
+| **Level 3 · Advanced** | Evaluate, Create | **A.** write your own design and testbench and have them judged against the hidden test; **B.** the strategy editor; **C.** compare two runs, with the facts worked out for you and questions to answer, downloadable as `evaluation.md` | the tools; your own strategy also needs the model |
+| **Developer view** | | How a click becomes a chart, which function each control calls, every source file, and for any run: its events, where its time went, the messages to and from the model, its files | nothing |
+
+The lessons, quiz and labs are plain Python in `src/vlsi_agent/learn.py`; the labs open the recorded runs in
+`runs/`, so they work from a clone without a GPU. A design written in Level 3 is saved as a run in `runs/manual/`
+like an edited attempt.
+
+**1. Design and run** (in Level 2): pick a circuit (its specification and module header are shown), a strategy,
+one-shot or iterative mode and the model, then press **Generate & test** to watch the run's progress
 live. "Scripted demo (no GPU)" replays `examples/scripted_adder4.json` for adder4. Runs
 started from the dashboard are saved under `runs/ui/`.
 
@@ -171,8 +191,14 @@ model call once the token budget is used up. Then the final design is scored wit
 circuit's **hidden reference test**, which the model never sees.
 
 The run status (`dev_passed`, `attempts_exhausted`, `token_budget_exhausted`,
-`llm_error`) describes the development checks. The score is the reference outcome. The two
+`llm_error`, `duplicate_revision`) describes the development checks. The score is the reference outcome. The two
 can disagree: a wrong testbench written by the model can reject a correct design.
+
+**Stopping on a repeated revision (off by default).** With `stop_on_duplicate = true` in the config's `[agent]`
+section, the loop also stops when a revision repeats the previous attempt's design (ignoring spacing) and gets the
+same check results: sending the same feedback again rarely helps. In the 200 recorded benchmark runs this
+happened in 16 of the 86 runs that used more than one attempt. The recorded benchmarks ran without it, so turn it
+on only for new comparisons, and report it as a setting (it is saved in each run's `history.json`).
 
 Each run gets a folder under `runs/agent/`: `events.jsonl` (written live),
 `history.json` (settings, every attempt, the scores), `attempt_<n>/` (raw reply, design,
@@ -215,7 +241,7 @@ The prompts are plain text in `prompts/default/` (`system.txt`, `task.txt`,
 `--prompts <folder>` (or set `prompts_dir` in a config copy). A misspelled placeholder
 is reported before any model call.
 
-Or use the dashboard's **4. Strategy editor**: load any strategy, edit its templates
+Or use the dashboard's strategy editor (Level 3, section B): load any strategy, edit its templates
 (each shows which placeholders it may use), **Check** them, preview them filled in for a
 circuit, and **Save** the copy as `prompts/custom/<name>/`, which then appears in the
 strategy list. The shipped strategies are never changed, and saving never replaces a
@@ -288,7 +314,10 @@ when adding a circuit; the dashboard relies on both.
 | `src/vlsi_agent/bench.py` | Benchmark runner (resumable) and summary tables |
 | `src/vlsi_agent/devcheck.py` | Development checks: the only feedback the model sees |
 | `src/vlsi_agent/prompts.py` | Loads and fills the prompt templates |
-| `src/vlsi_agent/dashboard.py` | The Gradio dashboard (`vlsi-agent ui`) |
+| `src/vlsi_agent/dashboard.py` | The Gradio dashboard (`vlsi-agent ui`): the five tabs and their callbacks |
+| `src/vlsi_agent/learn.py` | The learning path: lessons, explorers, the quiz and the guided labs |
+| `src/vlsi_agent/compare.py` | Level 3: what happened in a run, and the comparison of two runs |
+| `src/vlsi_agent/devview.py` | Developer view: source browser, a run's events, timing, files and messages |
 | `src/vlsi_agent/runview.py` | Reads saved run folders for the dashboard's results view |
 | `src/vlsi_agent/benchview.py` | Reads benchmark folders and draws the dashboard's benchmark charts |
 | `src/vlsi_agent/strategy_editor.py` | Loads, checks, previews and saves strategies for the dashboard's editor |

@@ -3,7 +3,9 @@
 max_attempts = 1 is the one-shot baseline; more attempts turn on revision, with the
 same model and the same prompts. The loop stops when the development checks pass,
 when the attempts run out, or, before any model call, once the token budget is used
-up (a single call can still overshoot the budget by its own size). Afterwards the
+up (a single call can still overshoot the budget by its own size). With [agent]
+stop_on_duplicate it also stops when a revision repeats the previous attempt's design
+and gets the same check results (status duplicate_revision). Afterwards the
 final design (from the last attempt that produced code) is scored with the circuit's
 hidden reference test. The model never sees that test or its result, and the loop
 never uses it to decide anything: scoring only starts once the loop has finished.
@@ -50,7 +52,7 @@ from vlsi_agent.evaluate import ReferenceResult, reference_test
 from vlsi_agent.llm import LLM, Completion, LLMError, Message, extract_verilog
 from vlsi_agent.prompts import TEMPLATES, Prompts, SpecFirstPrompts, load_strategy
 
-STATUSES = ("dev_passed", "attempts_exhausted", "token_budget_exhausted", "llm_error")
+STATUSES = ("dev_passed", "attempts_exhausted", "token_budget_exhausted", "llm_error", "duplicate_revision")
 TESTBENCH_TRIES = 3  # spec_first: the first testbench plus up to two fixes
 
 NO_CODE_FEEDBACK = ("- No Verilog module was found in your reply. Reply with two ```verilog code blocks: "
@@ -130,6 +132,14 @@ class EventLog:
             self._on_event(event)
 
 
+def same_revision(before: Attempt, now: Attempt, top: str) -> bool:
+    """True when an attempt repeats the one before it: the same design (ignoring spacing) and
+    the same check results. Sending the same feedback again is then unlikely to help."""
+    if before.code is None or now.code is None or before.feedback != now.feedback:
+        return False
+    return " ".join(separate(before.code, top).design.split()) == " ".join(separate(now.code, top).design.split())
+
+
 def _check_summary(report: DevReport | None) -> dict:
     if report is None:
         return {"code_found": False}
@@ -201,6 +211,18 @@ class _Run:
         self.log.emit("checks_done", attempt=number, passed=attempt.dev_passed, **_check_summary(report))
         return attempt
 
+    def repeated(self, attempt: Attempt) -> bool:
+        """With [agent] stop_on_duplicate: True (and the run's status is set) when this failed
+        attempt repeats the attempt before it, so the loop should stop instead of revising again."""
+        if not self.config.agent.stop_on_duplicate:
+            return False
+        earlier = [a for a in self.result.attempts if a.number < attempt.number]
+        if not earlier or not same_revision(earlier[-1], attempt, self.circuit.spec.top):
+            return False
+        self.result.status = "duplicate_revision"
+        self.log.emit("duplicate_revision", attempt=attempt.number, same_as=earlier[-1].number)
+        return True
+
     def recheck(self, attempt: Attempt, testbench: str) -> None:
         """Run the checks again on an attempt's design with a revised testbench."""
         spec = self.circuit.spec
@@ -225,7 +247,7 @@ def _loop_single(run: _Run, prompts: Prompts, max_attempts: int) -> None:
         if attempt.dev_passed:
             run.result.status = "dev_passed"
             return
-        if number == max_attempts or not run.budget_left():
+        if number == max_attempts or run.repeated(attempt) or not run.budget_left():
             return
         messages += [Message("assistant", completion.text),
                      Message("user", prompts.feedback_message(number, max_attempts, attempt.feedback))]
@@ -318,7 +340,7 @@ def _loop_spec_first(run: _Run, prompts: SpecFirstPrompts, max_attempts: int) ->
         if attempt.dev_passed:
             run.result.status = "dev_passed"
             return
-        if number == max_attempts or not run.budget_left():
+        if number == max_attempts or run.repeated(attempt) or not run.budget_left():
             return
         design_messages += [Message("assistant", completion.text),
                             Message("user", prompts.design_feedback_message(number, max_attempts, attempt.feedback))]
@@ -401,6 +423,7 @@ def _write_history(result: RunResult, config: Config, circuit: Circuit, llm: LLM
             "workflow": result.workflow,
             "yosys": config.tools.yosys,
             "score_every_attempt": score_every_attempt,
+            "stop_on_duplicate": config.agent.stop_on_duplicate,
         },
         "status": result.status,
         "error": result.error,

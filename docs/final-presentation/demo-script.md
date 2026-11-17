@@ -6,6 +6,12 @@ dashboard, in four parts: a live run, its results, the signed-comparison bug, an
 
 The slides are the Slides deck "VLSI Design Agent: Final Presentation"; its last slide (17) hands over to this demo.
 
+**Where the sections are now.** The dashboard has become a learning path with five tabs. The sections this
+script uses, **1. Design and run**, **2. Results** and **3. Benchmarks**, are in the tab
+**Level 2 · Intermediate**, below the guided labs; open that tab first. The labs there set up parts 1, 3 and 4
+of this demo with one button each. For the recorded final video, which walks through all five tabs, see
+[`final-video-plan.md`](final-video-plan.md).
+
 ## Before the talk (15 minutes ahead)
 
 1. Start the dashboard on the presenting machine, one of:
